@@ -1,2 +1,5 @@
 # emacs files
 *~
+
+# Python puddles #
+__pycache__/

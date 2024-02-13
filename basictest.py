@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+import calendar
 import toml
 import time
 from datetime import date, datetime, timezone
@@ -12,23 +12,21 @@ configfile_name = './salt-main.toml'
 statefile_name = './salt-state.toml'
 
 # Open the main and state config files, read, get data, and close the files
+# proper handling of time formats will be needed.
+
+# Maybe right approach to time is keeping all the stuff in the saxe
+# blue library in the time format that bluesky expects, keep
+# everything here in unix time, and convert as needed.
+
+
 main_config = readMainConfig(configfile_name)
 state_config = readStateConfig(statefile_name)
 
-# now_iso = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
-# now_iso = datetime.now(timezone.utc).isoformat()
+
 now_unix = time.time()
-
-print (now_unix)
+now_iso  = datetime.now(timezone.utc).isoformat()
 lastread_iso = state_config['FEED_1']['feed_last_read']
-
-print (lastread_iso)
-
 lastread_unix = time.strptime(lastread_iso, "%Y-%m-%dT%H:%M:%S.%f%z")
-print (lastread_unix)
-# lastreadiso = lastreadz.replace("Z", "+00:00")
-# lastreadparse = datetime.fromisoformat(lastreadiso)
-
 
 
 # state_config['FEED_1']['feed_last_read'] = now_iso
@@ -45,13 +43,16 @@ most_recent = entries_retrieved[0]
 print (most_recent)
 python_time = most_recent['published_parsed']
 s = python_time
-print (python_time)
-print (type(python_time))
+print (s)
+print (type(s))
 
 # print (python_time.isoformat())
 
 dt = datetime(*s[:6], tzinfo=timezone.utc) # iterated unpacking
+print (dt)
 
+rtime = calendar.timegm(s)
+print (rtime)
 
 # print (now_iso.timetuple())
 
