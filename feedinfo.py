@@ -32,6 +32,7 @@ post_media_detail = {
     'media_size': 'filesize in bytes',
     'content_warn': 'content_warning if any',
     'content_rating':'adult, not adult, etc',
+    'media_rating':'adult, not adult, etc',
     'sensitive_media': 'boolean, true or false',
     'alt_text': 'alt text string'
 }

@@ -25,8 +25,6 @@ configfile_name = './salt-main.toml'
 main_config = readMainConfig(configfile_name)
 
 
-
-
 statefile_name = main_config['GENERAL']['statefile']
 state_config = readStateConfig(statefile_name)
 
@@ -37,7 +35,7 @@ lastread_unix = time.strptime(lastread_iso, "%Y-%m-%dT%H:%M:%S.%f%z")
 # lastread_unix = time.strptime(lastread_iso, "%Y-%m-%dT%H:%M:%S.%f%z")
 
 
-# state_config['FEED_1']['feed_last_read'] = now_iso
+state_config['FEED_1']['feed_last_read'] = now_iso
 state_config['FEED_1']['URL'] = main_config['FEED_1']['URL']
 feed1_url  = main_config['FEED_1']['URL']
 
@@ -76,6 +74,9 @@ for i in range (0, items_retrieved):
 print (boolean_list)
 most_recent = entries_retrieved[0]
 oldest = entries_retrieved[items_retrieved-1]
+print()
+print()
+print (entries_retrieved[0])
 
 # print ('Most Recent \n')
 # print (most_recent)

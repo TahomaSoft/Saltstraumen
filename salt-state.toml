@@ -9,6 +9,7 @@ feed_previous_last_read_unix = 1707782935.669592
 feed_previous_last_read_iso = "2024-02-13T00:08:55.669580+00:00"
 newest_feed_item_unix = 1707682563
 oldest_feed_item_unix = 0
+feed_last_read = "2024-02-16T23:02:45.617102+00:00"
 
 [BSKY_INFO]
 previous_last_posted_unix = 0
