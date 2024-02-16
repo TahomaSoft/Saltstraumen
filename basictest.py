@@ -2,6 +2,7 @@
 import calendar
 import toml
 import time
+from operator import attrgetter
 from datetime import date, datetime, timezone
 from configswork import readMainConfig, readStateConfig, writeStateConfig
 import feedparser
@@ -25,8 +26,9 @@ state_config = readStateConfig(statefile_name)
 
 now_unix = time.time()
 now_iso  = datetime.now(timezone.utc).isoformat()
-lastread_iso = state_config['FEED_1']['feed_last_read']
+lastread_iso = state_config['FEED_1']['feed_last_read_iso']
 lastread_unix = time.strptime(lastread_iso, "%Y-%m-%dT%H:%M:%S.%f%z")
+# lastread_unix = time.strptime(lastread_iso, "%Y-%m-%dT%H:%M:%S.%f%z")
 
 
 # state_config['FEED_1']['feed_last_read'] = now_iso
@@ -38,13 +40,26 @@ feed1 = feedparser.parse(feed1_url)
 
 items_retrieved = len(feed1['entries'])
 entries_retrieved = feed1['entries']
-most_recent = entries_retrieved[0]
 
+print ("Items Retrieved: \n", items_retrieved)
+# print ("Entries Retrieved: \n", entries_retrieved)
+
+sorted_entries = sorted(entries_retrieved, reverse = True, key=attrgetter('published_parsed'))
+
+most_recent = entries_retrieved[0]
+oldest = entries_retrieved[items_retrieved-1]
+
+print ('Most Recent \n')
 print (most_recent)
 python_time = most_recent['published_parsed']
 s = python_time
 print (s)
 print (type(s))
+
+print ('Oldest \n')
+
+print (oldest)
+
 
 # print (python_time.isoformat())
 
@@ -53,6 +68,8 @@ print (dt)
 
 rtime = calendar.timegm(s)
 print (rtime)
+
+state_config['FEED_1']['newest_feed_item_unix'] = rtime
 
 # print (now_iso.timetuple())
 

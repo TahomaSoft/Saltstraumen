@@ -3,7 +3,15 @@ stuff = "yes"
 
 [FEED_1]
 URL = "https://artsocial.boston/@erik.rss"
-feed_last_read_iso = "2024-02-13T00:08:55.669580+00:00"
-feed_last_read_unix = 1707782935.669592
-feed_previous_last_read_unix = 1707782849.4270766
-feed_previous_last_read_iso = "2024-02-13T00:07:29.427065+00:00"
+feed_last_read_iso = "2024-02-13T00:34:52.299783+00:00"
+feed_last_read_unix = 1707784492.2997947
+feed_previous_last_read_unix = 1707782935.669592
+feed_previous_last_read_iso = "2024-02-13T00:08:55.669580+00:00"
+newest_feed_item_unix = 1707682563
+oldest_feed_item_unix = 0
+
+[BSKY_INFO]
+previous_last_posted_unix = 0
+previous_last_posted_iso = 0
+last_posted_unix = 0
+last_posted_iso = 0
