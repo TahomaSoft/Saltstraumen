@@ -6,11 +6,13 @@ from operator import attrgetter
 from datetime import date, datetime, timezone
 from configswork import readMainConfig, readStateConfig, writeStateConfig
 import feedparser
+import ticktocktime
+from ticktocktime import tuple_time2unix,unix_time_now
 
 # this is the main program
 
 configfile_name = './salt-main.toml'
-statefile_name = './salt-state.toml'
+# statefile_name = './salt-state.toml'
 
 # Open the main and state config files, read, get data, and close the files
 # proper handling of time formats will be needed.
@@ -21,8 +23,12 @@ statefile_name = './salt-state.toml'
 
 
 main_config = readMainConfig(configfile_name)
-state_config = readStateConfig(statefile_name)
 
+
+
+
+statefile_name = main_config['GENERAL']['statefile']
+state_config = readStateConfig(statefile_name)
 
 now_unix = time.time()
 now_iso  = datetime.now(timezone.utc).isoformat()
@@ -46,28 +52,50 @@ print ("Items Retrieved: \n", items_retrieved)
 
 sorted_entries = sorted(entries_retrieved, reverse = True, key=attrgetter('published_parsed'))
 
+# create an array to hold info on which posts should be reposted on bsky
+# Based on date differences from last run and post date
+
+boolean_list = [None] * items_retrieved
+publish_dates = [None] * items_retrieved
+# print (type(boolean_list))
+
+for i in range (0, items_retrieved):
+    # if sorted_entries[i]
+    # boolean_list[i] = False
+    # print (sorted_entries[i])
+    publish_dates[i] = tuple_time2unix(sorted_entries[i]['published_parsed'])
+    # print (publish_dates[i])
+    compare_date_unix =  unix_time_now()
+    if publish_dates[i] >= compare_date_unix:
+        boolean_list[i] = True
+
+    elif   publish_dates[i] < compare_date_unix:   
+        boolean_list[i] = False
+
+    
+print (boolean_list)
 most_recent = entries_retrieved[0]
 oldest = entries_retrieved[items_retrieved-1]
 
-print ('Most Recent \n')
-print (most_recent)
+# print ('Most Recent \n')
+# print (most_recent)
 python_time = most_recent['published_parsed']
 s = python_time
-print (s)
-print (type(s))
+# print (s)
+# print (type(s))
 
-print ('Oldest \n')
+# print ('Oldest \n')
 
-print (oldest)
+# print (oldest)
 
 
 # print (python_time.isoformat())
 
 dt = datetime(*s[:6], tzinfo=timezone.utc) # iterated unpacking
-print (dt)
+#print (dt)
 
 rtime = calendar.timegm(s)
-print (rtime)
+# print (rtime)
 
 state_config['FEED_1']['newest_feed_item_unix'] = rtime
 

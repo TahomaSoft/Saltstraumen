@@ -1,5 +1,5 @@
 [GENERAL]
-statefile = "salt-state.config"
+statefile = "salt-state.toml"
 timezone_abbreviation = "UTC"
 number_of_feeds_monitoring = 1
 
