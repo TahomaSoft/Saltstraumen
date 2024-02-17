@@ -5,8 +5,23 @@ Goal for this test module is to pull in one post from mastodon and
 repost it on bluesky.
 """
 from SaxeBlueskyPython import ticktocktime
-import salt_config_modules
 import feedstructs
-import
+from  heavy_lifting import open_read_config
 
-q
+
+
+
+
+configfileName = './salt-main.toml'
+
+configDets = open_read_config(configfileName)
+# Returns dict 'main_config': ,'state_config':
+# print (configDets['main_config'])
+
+# print ()
+
+#print (configDets['state_config'])
+print (configDets['main_config'])
+
+
+exit()
