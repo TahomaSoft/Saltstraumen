@@ -3,17 +3,57 @@ Feed info data structures
 """
 
 
-feed_metadata = {
-    'previous_last_read': 'unixtime',
-    'last_read': 'unixtime',
-    'number_elements':'integer 0-whatever',
-    'oldest_post': 'unixtime',
-    'youngest_post':'unixtime',
-    'URL':'feed url string',
-    'time_jitter': 'reserved'
+
+'''
+Data structure for main configuration elements
+'''
+
+simple_bsky_info = {
+    'Username': 'A user Name',
+    'App_passwd': 'a app password',
+    'Nickname': 'account nickname'
+}
+
+main_config_genInfo = {
+    'Title': 'Overall Config Name',
+    'Statefile': 'name of the file to write state info',
+    'TZ_abbr': 'UTC',
+    'NumFeeds': 1
+}
+
+main_config_feedInfo = {
+    'Name': 'Arbitrary Feed name for reference',
+    'Number': 0,
+    'URL': 'URL of the feed',
+    'Type': 'rss',
+    'TimeJitter': 0
+}
+
+state_config_genInfo = {
+    'Title': 'a title'
 }
 
 
+feed_metadata = {
+    'Name': 'Nick name for feed',
+    'Number': 'item number',
+    'URL':'feed url string',
+    'feed_last_read_iso': 'iso time',
+    'feed_last_read_unix': 'unixtime',
+    'feed_previous_last_read_iso': 'iso time',
+    'feed_previous_last_read_unix': 'unixtime',
+    'newest_feed_item_unix':'unixtime',
+    'newest_feed_item_iso':'iso time',
+    'oldest_feed_item_iso': 'iso time',
+    'oldest_feed_item_unix': 'unixtime',
+}
+
+bsky_post_metadata = {
+    'previous_last_posted_unix':'unixtime',
+    'previous_last_posted_iso': 'iso time',
+    'last_posted_unix': 'unixtime',
+    'last_posted_iso': 'iso time',
+}
 
 post_constructor = {
     'original_url': 'long url from mastodon',
