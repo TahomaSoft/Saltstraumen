@@ -14,7 +14,8 @@ import json
 
 MainConfigInfo.create('moo.txt')
 
-rval = StateConfigInfo.create('foo.toml')
+# file name to open, number of feeds to create
+rval = StateConfigInfo.create('foo.toml',3) 
 
 t = MainConfigInfo.read('salt-main.toml')
 
@@ -26,8 +27,11 @@ x = StateConfigInfo.update_bsky_now(x)
 
 z = StateConfigInfo.check_feed_nums(x)
 
+print (z)
 
-hmf = FetchFeeds.check_feed_nums(t)
+# exit()
+
+hmf = MainConfigInfo.check_feed_nums(t)
 
 
 feedURLs = [0]*hmf
@@ -49,7 +53,7 @@ for i in range (0,hmf):
     #    FetchFeeds.sort_feed(fd_content[i])
     j[i] = FetchFeeds.enumerate_feed_items(full_fd_content[i])
     ent_fd[i] = FetchFeeds.sort_entries(full_fd_content[i])
-    # print (json.dumps(ent_fd[i]))
+    print (json.dumps(ent_fd[i]))
 
 uet=StateConfigInfo.update_entry_times (ent_fd,x)
 

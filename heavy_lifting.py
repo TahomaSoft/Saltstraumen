@@ -29,6 +29,11 @@ def open_read_mconfig (mainconfigfile_name):
     
     return (configs)
 
+# class MainStateConsistency:
+  # Check to be sure both state files have right amount of feeds
+  # Other consistency checks:
+      # feed url consistent
+      # feed names consistent
 
 class MainConfigInfo:
     ''' Class to manage the main config file and info'''
@@ -59,6 +64,14 @@ class MainConfigInfo:
         '''
         rmc = readMainConfig (MAINconfigfile_name)
         return rmc
+    
+    
+    def check_feed_nums (Main_config_info):
+        '''Read main config file and deduce number of feeds'''
+        '''Main config file checking'''
+        j = len(Main_config_info['FEEDS'])
+        return j
+    
 
 class FetchFeeds:
     '''
@@ -67,7 +80,7 @@ class FetchFeeds:
     def find_feeds (Main_config_info):
         '''Return a small structure with the feed URLs'''
         cf = Main_config_info
-        numfeeds = FetchFeeds.check_feed_nums(cf)
+        numfeeds = MainConfigInfo.check_feed_nums(cf)
         feedURLs = [None] * numfeeds
         for i in range (0, numfeeds):
             feedURLs[i] = cf['FEEDS'][i]['URL']
@@ -82,19 +95,15 @@ class FetchFeeds:
         '''Describe how many entries are in a feed'''
         its = len (feed['entries'])
         return its
-    
-    def check_feed_nums (Main_config_info):
-        '''Read main config file and deduce number of feeds'''
-        j = len(Main_config_info['FEEDS'])
-        return j
-    
+   
     def sort_entries (a_feed):
         '''sort one feed'''
         sorted_entries = sorted(a_feed['entries'],
             reverse = True, key=attrgetter('published_parsed'))
-        # Merge sorted entries back into feed
+        ''' Merge sorted entries back into feed
         # print (type (a_feed))
         # print (type (sorted_entries))
+        '''
         a_feed['entries'] = sorted_entries
         # print (a_feed)
         return a_feed
@@ -104,8 +113,9 @@ class StateConfigInfo:
         self.nothing = 0
         
     ''' Class to manage the state file and info'''
-    def create (file2create_filename):
+    def create (file2create_filename, NFeeds=1):
         '''creates a new skeletal state file'''
+        '''with NFeeds number of feeds'''
         a = state_config_genInfo
         b = feed_metadata
         c = bsky_post_metadata
@@ -114,16 +124,21 @@ class StateConfigInfo:
             cf.write('\n')
             toml.dump(a,cf)
             cf.write('\n')
-            cf.write('[[FEEDS]]')
-            cf.write('\n')
-            toml.dump(b,cf)
-            cf.write('\n')
+            for i in range (0,NFeeds):
+                cf.write('[[FEEDS]]')
+                cf.write('\n')
+                toml.dump(b,cf)
+                cf.write('\n')
+            # end for loop
+
             cf.write('[BSKY_INFO]')
             cf.write('\n')
             toml.dump(c,cf)
             cf.write('\n')
             j= cf.close()
             return j
+        
+#    def update (file2update_name, main_config_data):
 
     def read(filename):
         ''' read state file '''
@@ -167,6 +182,10 @@ class StateConfigInfo:
         return info
 
     def check_feed_nums (info):
+        '''
+        Checks feed numbers in STATE file
+        info variable is an instance of the full state file info
+        '''
         j = len(info['FEEDS'])
         return j
         
@@ -240,9 +259,11 @@ class StateConfigInfo:
     
 
 
+# class FeedEntriesMash:
+#    def WhichEntries2Pub(reftime, feed):
+    
         
 
-    # def update_feed_now ():
     
 
 
