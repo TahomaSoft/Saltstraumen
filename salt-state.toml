@@ -41,7 +41,7 @@ oldest_feed_item_iso = 1708242840
 Title = "a feed set"
 
 [BSKY_INFO]
-previous_last_posted_unix = 1708267525.3533921
-previous_last_posted_iso = "2024-02-18T14:45:25.353393+00:00"
-last_posted_unix = 1708267525.3534052
-last_posted_iso = "2024-02-18T14:45:25.353405+00:00"
+previous_last_posted_unix = 1708269066.5081244
+previous_last_posted_iso = "2024-02-18T15:11:06.508125+00:00"
+last_posted_unix = 1708269066.5081377
+last_posted_iso = "2024-02-18T15:11:06.508137+00:00"

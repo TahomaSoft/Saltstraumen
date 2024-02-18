@@ -4,6 +4,7 @@ Modules for doing bulk of work
 import toml
 import feedparser
 import json
+import syslog
 from operator import attrgetter
 from feedstructs import main_config_genInfo, main_config_feedInfo
 from feedstructs import simple_bsky_info, state_config_genInfo
@@ -29,12 +30,46 @@ def open_read_mconfig (mainconfigfile_name):
     
     return (configs)
 
-# class MainStateConsistency:
-  # Check to be sure both state files have right amount of feeds
-  # Other consistency checks:
-      # feed url consistent
-      # feed names consistent
+class MainStateConsistency:
+    ''' Check to be sure both state files have right amount of feeds
+    Other consistency checks:
+    * feed url consistent
+    * feed names consistent
+    '''
+    def feeds(mainconfigfilename, stateconfigfilename):
+        '''
+        Open both the main and state config files
+        from file names and check to see if feeds are consistent.
+        If not consistent, throw an error and quit 
+        Suggest in error message to recreate state file config
+        using class/routine StateConfigInfo.create
+        and editing as needed
+        '''
+        mci = MainConfigInfo.read(mainconfigfilename)
+        sci = StateConfigInfo.read(stateconfigfilename)
 
+        f_mci = MainConfigInfo.check_feed_nums(mci)
+        f_sci = StateConfigInfo.check_feed_nums(sci)
+
+        if f_mci != f_sci:
+            print ("Main and State Config file mismatch!")
+            print ("Main file lists: ",f_mci)
+            print ("State file lists: ", f_sci)
+            print ("Consider using StateConfigInfo.create routine ...")
+            print ("To fix the problem")
+            syslog.syslog (syslog.LOG_ERR,
+                'SALTSTRAUMEN: Main config and \
+                state file feed number mismatch')
+            # effectively returns error and quits
+            # return 1
+            raise Exception('Config and State File feed mismatch')
+
+    
+        elif f_mci == f_sci:
+            return 0
+            pass # OK 
+        
+        
 class MainConfigInfo:
     ''' Class to manage the main config file and info'''
     def create (file2create_filename):
@@ -69,6 +104,10 @@ class MainConfigInfo:
     def check_feed_nums (Main_config_info):
         '''Read main config file and deduce number of feeds'''
         '''Main config file checking'''
+        '''
+        Takes the data structure read from the main config file
+        as the argument
+        '''
         j = len(Main_config_info['FEEDS'])
         return j
     

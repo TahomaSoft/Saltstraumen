@@ -8,6 +8,8 @@ repost it on bluesky.
 from SaxeBlueskyPython import ticktocktime
 import feedstructs
 from  heavy_lifting import MainConfigInfo, StateConfigInfo, FetchFeeds
+from  heavy_lifting import MainStateConsistency
+
 from operator import attrgetter
 import sys
 import json
@@ -28,6 +30,8 @@ x = StateConfigInfo.update_bsky_now(x)
 z = StateConfigInfo.check_feed_nums(x)
 
 print (z)
+
+foo = MainStateConsistency.feeds('moo.txt', 'salt-state.toml')
 
 # exit()
 
