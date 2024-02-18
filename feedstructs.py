@@ -58,12 +58,15 @@ bsky_post_metadata = {
 post_constructor = {
     'original_url': 'long url from mastodon',
     'rating': 'reserved',
+    'html_text':'Original string from _summary_ ',
     'basic_text': 'string',
     'orig_post_time': 'convert to unixtime',
     'number_of_media': 'integer, 0-4 (hopefully)',
     'lang_of_post': 'string',
     'base_post_mime_t': 'string',
-    'media_array': 'to be constructed'
+    'media_array': 'to be constructed from post_media_detail',
+    'published_parsed': 'published parsed python',
+    
 }
 
 post_media_detail = {

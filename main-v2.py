@@ -30,28 +30,32 @@ z = StateConfigInfo.check_feed_nums(x)
 hmf = FetchFeeds.check_feed_nums(t)
 
 
-feedURLs = [0]* hmf
-full_fd_content = [0]* hmf
-ent_fd  = [0]* hmf
-entries_per_feed =  [0]* hmf
+feedURLs = [0]*hmf
+full_fd_content = [0]*hmf
+ent_fd  = [0]*hmf
+entries_per_feed =  [0]*hmf
+uet = [0,0]*hmf # updated entry times
 j = entries_per_feed
 feedURLs = FetchFeeds.find_feeds(t)
 
-print (feedURLs)
+# print (feedURLs)
 
 for i in range (0,hmf):
     
     full_fd_content[i]= FetchFeeds.fetch_feed(feedURLs[i])
-    sys.stdout.write("\n")
+    # sys.stdout.write("\n")
     # sys.stdout.write (json.dumps(fd_content[i]))
-    sys.stdout.write("\n")
+    # sys.stdout.write("\n")
     #    FetchFeeds.sort_feed(fd_content[i])
     j[i] = FetchFeeds.enumerate_feed_items(full_fd_content[i])
     ent_fd[i] = FetchFeeds.sort_entries(full_fd_content[i])
-    print (ent_fd[i])
-    
+    # print (json.dumps(ent_fd[i]))
 
+uet=StateConfigInfo.update_entry_times (ent_fd,x)
 
+# print (json.dumps(uet))
+
+x = StateConfigInfo.write_info('salt-state.toml',uet)
 exit ()
 
 

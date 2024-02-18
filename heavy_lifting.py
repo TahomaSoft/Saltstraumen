@@ -9,7 +9,7 @@ from feedstructs import main_config_genInfo, main_config_feedInfo
 from feedstructs import simple_bsky_info, state_config_genInfo
 from feedstructs import feed_metadata, bsky_post_metadata
 from SaxeBlueskyPython.ticktocktime import unix_time_now, iso_time_now
-
+from SaxeBlueskyPython.ticktocktime import tuple_time2iso, tuple_time2unix
 # Code block function to retrieve posts, sort, flag those that are newer
 
 
@@ -92,7 +92,12 @@ class FetchFeeds:
         '''sort one feed'''
         sorted_entries = sorted(a_feed['entries'],
             reverse = True, key=attrgetter('published_parsed'))
-        return sorted_entries
+        # Merge sorted entries back into feed
+        # print (type (a_feed))
+        # print (type (sorted_entries))
+        a_feed['entries'] = sorted_entries
+        # print (a_feed)
+        return a_feed
     
 class StateConfigInfo:
     def  __init__(self):
@@ -191,12 +196,47 @@ class StateConfigInfo:
                 = iso_time_now()
         return (info)
 
-    def update_entry_times (sorted_feeds_entries):
+    def update_entry_times (sorted_feeds,state_info):
+        si = state_info
+        sf = sorted_feeds
+        # print (type (si))
+        # print (si['FEEDS'][0])
         '''
-        Takes arary of feeds that have been 
-        sorted (with only the entries parts)
+        Takes a feeds that has been 
+        sorted. Takes state info
+        returns updated state info
         '''
-        return info
+        # print (sf[0]['entries'][0])
+        # print (len(sf))
+        j = len(sf)
+        newestEntry = oldestEntry= [0]*j
+        oeTime = neTime = [0]*j
+        neTime_iso = neTime_unix = [0]*j
+        oeTime_iso = oeTime_unix = [0]*j
+    
+        for i in range (0,j):
+            fi = FetchFeeds.enumerate_feed_items(sf[i]) # number of feed entries
+
+            # print (fi)
+            newestEntry[i] = sf[i]['entries'][0]
+            oldestEntry[i] = sf[i]['entries'][fi-1]
+
+            neTime[i] = newestEntry[i]['published_parsed']
+            oeTime[i] = oldestEntry[i]['published_parsed']
+            # print (neTime[i])
+            # print (type(neTime[i]))
+            
+            neTime_iso[i] = tuple_time2iso (neTime[i])
+            neTime_unix[i] = tuple_time2unix (neTime[i])
+            oeTime_iso[i] = tuple_time2iso (oeTime[i])
+            oeTime_unix[i] = tuple_time2unix (oeTime[i])
+            #  print (si)
+            si['FEEDS'][i]['newest_feed_item_unix'] = neTime_unix[i]
+            si['FEEDS'][i]['newest_feed_item_iso'] = neTime_iso[i]
+            si['FEEDS'][i]['oldest_feed_item_iso'] = oeTime_iso[i]
+            si['FEEDS'][i]['oldest_feed_item_unix'] = oeTime_unix[i]
+        
+        return si
     
 
 
