@@ -24,6 +24,19 @@ newest_feed_item_iso = 1707682563
 oldest_feed_item_unix = 0
 oldest_feed_item_iso = 0
 
+[[FEEDS]]
+Name = "nws"
+Number = 3
+URL = "https://api.weather.gov/alerts/active.atom?area=MA"
+feed_last_read_iso = "2024-02-13T00:34:52.299783+00:00"
+feed_last_read_unix = 1707784492.2997947
+feed_previous_last_read_unix = 1707782935.669592
+feed_previous_last_read_iso = "2024-02-13T00:08:55.669580+00:00"
+newest_feed_item_unix = 1707682563
+newest_feed_item_iso = 1707682563
+oldest_feed_item_unix = 0
+oldest_feed_item_iso = 0
+
 [GENERAL]
 Title = "a feed set"
 

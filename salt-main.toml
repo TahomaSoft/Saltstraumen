@@ -2,7 +2,7 @@
 Title = "a feed set"
 Statefile = "salt-state.toml"
 TZ_abbr = "UTC"
-NumFeeds = 3
+NumFeeds = 2
 
 [[FEEDS]]
 Name = "Erik at Artsocial.boston"
@@ -17,16 +17,6 @@ Number = 2
 URL = "https://puget.social/@erik.rss"
 Type = "rss"
 TimeJitter = 0
-
-[[FEEDS]]
-Name = "NWS Test MA"
-Number = 3
-URL = "https://api.weather.gov/alerts/active.atom?area=MA"
-Type = "rss"
-TimeJitter = 0
-
-
-
 
 
 [BSKY_ACCOUNT]

@@ -2,46 +2,33 @@
 Name = "Erik at Artsocial.boston"
 Number = 1
 URL = "https://artsocial.boston/@erik.rss"
-feed_last_read_iso = "2024-02-13T00:34:52.299783+00:00"
-feed_last_read_unix = 1707784492.2997947
-feed_previous_last_read_unix = 1707782935.669592
-feed_previous_last_read_iso = "2024-02-13T00:08:55.669580+00:00"
-newest_feed_item_unix = 1691519572
-newest_feed_item_iso = 1691519572
+feed_last_read_iso = "2024-02-19T03:47:54.160953+00:00"
+feed_last_read_unix = 1708314474.1609523
+feed_previous_last_read_unix = 1708314284.2263947
+feed_previous_last_read_iso = "2024-02-19T03:44:44.226395+00:00"
+newest_feed_item_unix = 1707682563
+newest_feed_item_iso = "2024-02-11T20:16:03+00:00"
 oldest_feed_item_unix = 1691519572
-oldest_feed_item_iso = 1691519572
+oldest_feed_item_iso = "2023-08-08T18:32:52+00:00"
 
 [[FEEDS]]
 Name = "Erik at Puget.social"
 Number = 2
 URL = "https://artsocial.boston/@erik.rss"
-feed_last_read_iso = "2024-02-13T00:34:52.299783+00:00"
-feed_last_read_unix = 1707784492.2997947
+feed_last_read_iso = "2024-02-19T03:47:54.160964+00:00"
+feed_last_read_unix = 1708314474.1609638
 feed_previous_last_read_unix = 1707782935.669592
 feed_previous_last_read_iso = "2024-02-13T00:08:55.669580+00:00"
-newest_feed_item_unix = 1703114519
-newest_feed_item_iso = 1703114519
+newest_feed_item_unix = 1704036618
+newest_feed_item_iso = "2023-12-31T15:30:18+00:00"
 oldest_feed_item_unix = 1703114519
-oldest_feed_item_iso = 1703114519
-
-[[FEEDS]]
-Name = "Erik at Puget.social"
-Number = 3
-URL = "nws"
-feed_last_read_iso = "2024-02-13T00:34:52.299783+00:00"
-feed_last_read_unix = 1707784492.2997947
-feed_previous_last_read_unix = 1707782935.669592
-feed_previous_last_read_iso = "2024-02-13T00:08:55.669580+00:00"
-newest_feed_item_unix = 1708242840
-newest_feed_item_iso = 1708242840
-oldest_feed_item_unix = 1708242840
-oldest_feed_item_iso = 1708242840
+oldest_feed_item_iso = "2023-12-20T23:21:59+00:00"
 
 [GENERAL]
 Title = "a feed set"
 
 [BSKY_INFO]
-previous_last_posted_unix = 1708269066.5081244
-previous_last_posted_iso = "2024-02-18T15:11:06.508125+00:00"
-last_posted_unix = 1708269066.5081377
-last_posted_iso = "2024-02-18T15:11:06.508137+00:00"
+previous_last_posted_unix = 1708198996.792862
+previous_last_posted_iso = "2024-02-17T19:43:16.792862+00:00"
+last_posted_unix = 1708198996.7928734
+last_posted_iso = "2024-02-17T19:43:16.792873+00:00"

@@ -18,17 +18,7 @@ from SaxeBlueskyPython.ticktocktime import tuple_time2iso, tuple_time2unix
 # code block to open up and read the config files
 
 
-def open_read_mconfig (mainconfigfile_name):
-    '''Function to read main config file'''
-    main_config = readMainConfig(mainconfigfile_name)
-    statefile_name = main_config['GENERAL']['statefile']
-    state_config = readStateConfig(statefile_name)
-    configs = {
-        'main_config':main_config,
-        'state_config':state_config,
-        }
-    
-    return (configs)
+
 
 class MainStateConsistency:
     ''' Check to be sure both state files have right amount of feeds
@@ -66,10 +56,23 @@ class MainStateConsistency:
 
     
         elif f_mci == f_sci:
-            return 0
-            pass # OK 
+            return f_mci
+
+
+    def open_read_mconfig (mainconfigfile_name):
+        '''Function to read main config file'''
+        ''' And open state file based on info in main config file'''
+        main_config = readMainConfig(mainconfigfile_name)
+        statefile_name = main_config['GENERAL']['statefile']
+        state_config = readStateConfig(statefile_name)
+        configs = {
+            'main_config':main_config,
+            'state_config':state_config,
+        }
         
-        
+        return (configs)
+    # End open_read_mconfig
+    
 class MainConfigInfo:
     ''' Class to manage the main config file and info'''
     def create (file2create_filename):
@@ -111,6 +114,7 @@ class MainConfigInfo:
         j = len(Main_config_info['FEEDS'])
         return j
     
+   
 
 class FetchFeeds:
     '''
@@ -140,13 +144,40 @@ class FetchFeeds:
         sorted_entries = sorted(a_feed['entries'],
             reverse = True, key=attrgetter('published_parsed'))
         ''' Merge sorted entries back into feed
-        # print (type (a_feed))
-        # print (type (sorted_entries))
+
         '''
         a_feed['entries'] = sorted_entries
-        # print (a_feed)
+
         return a_feed
+
+    def feedHandleFetchSort (numfeeds,mainconfigdata,reftime_unix):
+        ''' this idea of rolling up these calls might not be good'''
+        nf = numfeeds
+        rft =reftime_unix
     
+        feedURLs = [0]*nf
+        full_fd_content = [0]*nf
+        ent_fd  = [0]*nf
+        entries_per_feed =  [0]*nf
+        epf = entries_per_feed #?
+        uet = [0,0]*nf # updated entry times
+        queues = [0] * nf
+        feedURLs = FetchFeeds.find_feeds(mainconfigdata)
+        
+        newrYess = [0]*nf
+        for i in range (0,nf):
+            full_fd_content[i]= FetchFeeds.fetch_feed(feedURLs[i])
+            epf[i] = FetchFeeds.enumerate_feed_items(full_fd_content[i])
+            ent_fd[i] = FetchFeeds.sort_entries(full_fd_content[i])
+            
+            sortedFeedDict = {
+                'enumFeedItems': epf,
+                'sortedEntries': ent_fd
+            }
+            
+        return (sortedFeedDict) # return sorted feeds and their entries
+# end class
+
 class StateConfigInfo:
     def  __init__(self):
         self.nothing = 0
@@ -177,20 +208,21 @@ class StateConfigInfo:
             j= cf.close()
             return j
         
-#    def update (file2update_name, main_config_data):
 
     def read(filename):
         ''' read state file '''
         s_info = readStateConfig(filename)
         return (s_info)
           
-    def write_info (filename, data2write):
+    def write_info (stateoutfile_name, data2write):
         '''
         Write current state info out to file
         '''
-        
-        j = writeStateConfig (filename, data2write)
-        return j
+        with open(stateoutfile_name, 'w') as stateoutfile:
+            toml.dump(data2write, stateoutfile)
+            i=stateoutfile.close()
+        return (i)
+    
 
     def update_bsky_prev (info):
         '''
@@ -257,54 +289,83 @@ class StateConfigInfo:
     def update_entry_times (sorted_feeds,state_info):
         si = state_info
         sf = sorted_feeds
-        # print (type (si))
-        # print (si['FEEDS'][0])
+
         '''
         Takes a feeds that has been 
         sorted. Takes state info
         returns updated state info
         '''
-        # print (sf[0]['entries'][0])
-        # print (len(sf))
+
         j = len(sf)
-        newestEntry = oldestEntry= [0]*j
-        oeTime = neTime = [0]*j
-        neTime_iso = neTime_unix = [0]*j
-        oeTime_iso = oeTime_unix = [0]*j
-    
+        newestEntry = [0]*j
+        oldestEntry = [0]*j
+        oeTime =  [0]*j
+        neTime = [0]*j
+        neTime_iso =  [0]*j
+        neTime_unix = [0]*j
+        oeTime_iso =  [0]*j
+        oeTime_unix = [0]*j
+        
+                
         for i in range (0,j):
             fi = FetchFeeds.enumerate_feed_items(sf[i]) # number of feed entries
 
-            # print (fi)
-            newestEntry[i] = sf[i]['entries'][0]
-            oldestEntry[i] = sf[i]['entries'][fi-1]
+            newestEntry[i]  = sf[i]['entries'][0]
+            oldestEntry[i]  = sf[i]['entries'][fi-1]
 
             neTime[i] = newestEntry[i]['published_parsed']
             oeTime[i] = oldestEntry[i]['published_parsed']
-            # print (neTime[i])
-            # print (type(neTime[i]))
             
             neTime_iso[i] = tuple_time2iso (neTime[i])
             neTime_unix[i] = tuple_time2unix (neTime[i])
             oeTime_iso[i] = tuple_time2iso (oeTime[i])
             oeTime_unix[i] = tuple_time2unix (oeTime[i])
-            #  print (si)
+            
             si['FEEDS'][i]['newest_feed_item_unix'] = neTime_unix[i]
             si['FEEDS'][i]['newest_feed_item_iso'] = neTime_iso[i]
             si['FEEDS'][i]['oldest_feed_item_iso'] = oeTime_iso[i]
             si['FEEDS'][i]['oldest_feed_item_unix'] = oeTime_unix[i]
-        
+
+            
         return si
     
 
 
-# class FeedEntriesMash:
-#    def WhichEntries2Pub(reftime, feed):
-    
+class FeedEntriesMash:
+    def WhichEntries2Pub(reftime, sf):
+        '''Takes a reference time, in unix format'''
+        '''Second argument is a singular feed to loop through
+        and find entries that are later than the reftime.'''
         
+        # sf # Sorted Feeds = sf
+        sfl = len(sf)
+        fi = [0] * sfl # how many entries in a feed
+        pblsh_F = {
+            'PutEntryInQueue': bool(False)
+        }
+        pblsh_T = {
+            'PutEntryInQueue': bool(True)
+        }
 
+        for i in range (0,sfl):
+            # number of feed entries
+            fi[i] = FetchFeeds.enumerate_feed_items(sf[i]) 
+            # print (fi[i])
+
+        for i in range (0,sfl):
+            for j in range (0,fi[i]):
+                ptime = sf[i]['entries'][j]['published_parsed']
+                utime = tuple_time2unix(ptime)
+                if utime >= reftime:
+                     sf[i]['entries'][j].update(pblsh_T)
+                elif utime <= reftime:
+                    sf[i]['entries'][j].update(pblsh_F)
+                else:
+                    print ('we are lost')
+
+        return sf
     
-
+               
 
 # Smaller functions to read and write config info
 
@@ -324,14 +385,6 @@ def readStateConfig (stateconfigfile_name):
         # print (statetoml_in)
         stateconfigfile.close()
         return statetoml_in
-
-
-def writeStateConfig (stateoutfile_name, stateData2write):
-    with open(stateoutfile_name, 'w') as stateoutfile:
-        toml.dump(stateData2write, stateoutfile)
-        i=stateoutfile.close()
-    return (i)
-    
 
 
 
