@@ -9,13 +9,6 @@ with open(mainconfigfile_name, 'r') as mainconfigfile:
     toml_in = toml.load(mainconfigfile)
     mainconfigfile.close
 
-# print (toml_in)
-
-# outfile_name = './salt-main.toml'
-
-# with open(outfile_name, 'w') as outfile:
-#    toml.dump(toml_in, outfile)
-
 
 stateconfigfile_name = './salt-state.toml'
 with open (stateconfigfile_name, 'r') as stateconfigfile:

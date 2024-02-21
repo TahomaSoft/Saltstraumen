@@ -6,17 +6,17 @@ repost it on bluesky.
 """
 # import syslog
 from SaxeBlueskyPython.ticktocktime import unix_time_now
-import feedstructs
-from  heavy_lifting import MainConfigInfo, StateConfigInfo, FetchFeeds
-from  heavy_lifting import MainStateConsistency, FeedEntriesMash
-
+from feedstructs import post_constructor 
+from heavy_lifting import MainConfigInfo, StateConfigInfo, FetchFeeds
+from heavy_lifting import MainStateConsistency, FeedEntriesMash
+from heavy_lifting import MediaMassage
 from operator import attrgetter
 import sys
 import json
 
 
 # Open main config file
-maincf='salt-main.toml'
+maincf = 'salt-main.toml'
 statecf = 'salt-state.toml'
 
 mcinfo=MainConfigInfo.read(maincf)
@@ -37,6 +37,7 @@ feedData = [0] * nufeeds
 for i in range (0, nufeeds):
     feedData[i] = FetchFeeds.fetch_feed(alist[i])
 
+
 for i in range (0, nufeeds):
     feedData[i] = FetchFeeds.sort_entries(feedData[i])
 
@@ -49,14 +50,47 @@ for i in range (0,nufeeds):
 u_scinfo = StateConfigInfo.update_entry_times(feedData,scinfo)
 j = StateConfigInfo.write_info(statecf, u_scinfo)
 
-# reftime = 0 # jan 1, 1970
-reftime = unix_time_now()
+reftime = 0 # jan 1, 1970
+#reftime = unix_time_now()
 
 
 NeuFeedData= FeedEntriesMash.WhichEntries2Pub(reftime,feedData)
 
-print (json.dumps(NeuFeedData))
+# print (json.dumps(NeuFeedData))
+
+# find out how many articles are in the prelim queue
+# create structure to hold them
+# start processing article/entry by entry to put into new stack
+
+count =  FeedEntriesMash.ComputeNumOutbound (NeuFeedData)
+
+if count < 1:
+    print ('All done. Exiting')
+    exit()
+    
+elif count > 1:
+    keepgoing = bool(True)
+
+else:
+    print ('we are lost')
+    exit()
 
 
+# Create a structure to hold outbound queue
+
+
+    
+# Now clean the entries by simplifying and such
+
+feedIn = NeuFeedData
+
+# Posts4Out = post_constructor 
+# print (json.dumps(feedIn))
+
+CleanerFeed = FeedEntriesMash.Simplify (feedIn, count)
+
+print (json.dumps(CleanerFeed))
+# dirname = '/tmp/saltstraumen/mediaCache'
+# message = MediaMassage.createTmpDir(dirname)
 
 

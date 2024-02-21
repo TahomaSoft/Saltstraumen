@@ -2,21 +2,21 @@
 Name = "Erik at Artsocial.boston"
 Number = 1
 URL = "https://artsocial.boston/@erik.rss"
-feed_last_read_iso = "2024-02-19T03:47:54.160953+00:00"
-feed_last_read_unix = 1708314474.1609523
-feed_previous_last_read_unix = 1708314284.2263947
-feed_previous_last_read_iso = "2024-02-19T03:44:44.226395+00:00"
-newest_feed_item_unix = 1707682563
-newest_feed_item_iso = "2024-02-11T20:16:03+00:00"
-oldest_feed_item_unix = 1691519572
-oldest_feed_item_iso = "2023-08-08T18:32:52+00:00"
+feed_last_read_iso = "2024-02-21T03:45:09.694209+00:00"
+feed_last_read_unix = 1708487109.6942089
+feed_previous_last_read_unix = 1708486707.5086012
+feed_previous_last_read_iso = "2024-02-21T03:38:27.508601+00:00"
+newest_feed_item_unix = 1708476351
+newest_feed_item_iso = "2024-02-21T00:45:51+00:00"
+oldest_feed_item_unix = 1691715107
+oldest_feed_item_iso = "2023-08-11T00:51:47+00:00"
 
 [[FEEDS]]
 Name = "Erik at Puget.social"
 Number = 2
 URL = "https://artsocial.boston/@erik.rss"
-feed_last_read_iso = "2024-02-19T03:47:54.160964+00:00"
-feed_last_read_unix = 1708314474.1609638
+feed_last_read_iso = "2024-02-21T03:45:09.694220+00:00"
+feed_last_read_unix = 1708487109.6942203
 feed_previous_last_read_unix = 1707782935.669592
 feed_previous_last_read_iso = "2024-02-13T00:08:55.669580+00:00"
 newest_feed_item_unix = 1704036618

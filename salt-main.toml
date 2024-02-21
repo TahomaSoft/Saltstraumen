@@ -23,4 +23,4 @@ TimeJitter = 0
 Username = "pinky"
 App_passwd = "spit"
 Nickname = "nifty"
-
+DefaultSensitive = false

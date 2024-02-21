@@ -1,0 +1,13 @@
+Special handling needed for NWS feeds.
+
+If there is no alert, a feed will be pulled, but devoid of entries
+(and the 'entry key')
+
+This doesn't mix will with mastodon, where entries and the entry key
+are currently consistent.
+
+What will definitely break is attempting to write the time of the most
+recent post of an 'empty' post.
+
+
+
