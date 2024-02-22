@@ -17,9 +17,11 @@ import json
 
 # Open main config file
 maincf = 'salt-main.toml'
-statecf = 'salt-state.toml'
+# statecf = 'salt-state.toml'
+
 
 mcinfo=MainConfigInfo.read(maincf)
+statecf= (mcinfo['GENERAL']['Statefile'])
 scinfo = StateConfigInfo.read(statecf)
 
 numfeedState=StateConfigInfo.check_feed_nums (scinfo)
@@ -45,6 +47,8 @@ itemsPerFeed = [0] * nufeeds
 
 for i in range (0,nufeeds):
     itemsPerFeed[i] = FetchFeeds.enumerate_feed_items(feedData[i])
+
+# Note: rss feed from mastodon has only public feeds by design
 
 # Update state file with new info from feed entries (age)
 u_scinfo = StateConfigInfo.update_entry_times(feedData,scinfo)
@@ -84,13 +88,12 @@ else:
 
 feedIn = NeuFeedData
 
-# Posts4Out = post_constructor 
+
 # print (json.dumps(feedIn))
 
-CleanerFeed = FeedEntriesMash.Simplify (feedIn, count)
+# CleanerFeed = FeedEntriesMash.Simplify (feedIn, count)
 
-print (json.dumps(CleanerFeed))
-# dirname = '/tmp/saltstraumen/mediaCache'
-# message = MediaMassage.createTmpDir(dirname)
+# print (json.dumps(CleanerFeed))
+
 
 
