@@ -81,8 +81,10 @@ class MainStateConsistency:
     # End open_read_mconfig
     
 class MainConfigInfo:
+       
     ''' Class to manage the main config file and info'''
     def create (file2create_filename):
+        
         '''creates a new skeletal config file'''
         a = main_config_genInfo
         b = main_config_feedInfo
@@ -102,7 +104,8 @@ class MainConfigInfo:
             cf.write('\n')
             j = cf.close()
             return j
-
+        
+            
     def read (MAINconfigfile_name):
         '''Reads the existing main config file and returns
                       The config info 
@@ -113,7 +116,9 @@ class MainConfigInfo:
             
             mainconfigfile.close()
         return toml_in
-        
+    
+    def print (self):
+        print (self)     
     
     def check_feed_nums (Main_config_info):
         '''Read main config file and deduce number of feeds'''
@@ -281,6 +286,7 @@ class StateConfigInfo:
         info variable is an instance of the full state file info
         '''
         numfeeds =  StateConfigInfo.check_feed_nums (info)
+        
         for i in range (0, numfeeds):
             info['FEEDS'][i]['feed_previous_last_read_unix'] \
                 = info['FEEDS'][i]['feed_last_read_unix']
@@ -347,8 +353,9 @@ class StateConfigInfo:
 
 
 class FeedEntriesMash:
-    def WhichEntries2Pub(reftime, sf):
-        '''Takes a reference time, in unix format'''
+    def WhichEntries2Pub(reftimes, sf):
+        '''Takes a reference time set (size(sf) or size (reftimes), 
+        in unix format'''
         '''Second argument is a singular feed to loop through
         and find entries that are later than the reftime.'''
         
@@ -371,9 +378,9 @@ class FeedEntriesMash:
             for j in range (0,fi[i]):
                 ptime = sf[i]['entries'][j]['published_parsed']
                 utime = tuple_time2unix(ptime)
-                if utime >= reftime:
+                if utime >= reftimes[i]:
                      sf[i]['entries'][j].update(pblsh_T)
-                elif utime <= reftime:
+                elif utime <= reftimes[i]:
                     sf[i]['entries'][j].update(pblsh_F)
                 else:
                     print ('we are lost')
