@@ -55,13 +55,16 @@ for i in range (0,nufeeds):
 # Get the reference time to compare the last feed pulls too
 # In production, get that from the state file
 
-reftimes = [0] * nufeeds
+reftimes_unix = [0] * nufeeds
+reftimes_iso =  [0] * nufeeds
 
 for i in range (0,nufeeds):
-    reftimes[i] = scinfo['FEEDS'][i].get('feed_last_read_unix')
-
-# print (reftimes)
-
+    reftimes_unix[i] = scinfo['FEEDS'][i].get('feed_last_read_unix')
+    reftimes_iso[i] = scinfo['FEEDS'][i].get('feed_last_read_iso')
+    print (reftimes_unix[i])
+    print (reftimes_iso[i])
+    
+exit()
 # reftimes = [0,0] # jan 1, 1970
 now1 = unix_time_now()
 now2 = unix_time_now()
