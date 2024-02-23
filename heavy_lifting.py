@@ -292,7 +292,9 @@ class StateConfigInfo:
                 = info['FEEDS'][i]['feed_last_read_unix']
             info['FEEDS'][i]['feed_previous_last_read_iso'] \
                 = info['FEEDS'][i]['feed_last_read_iso']
-            return info
+        # end loop
+        
+        return info
 
     def update_feed_now (info):
         ''' Update timestamps of the feed read'''
@@ -305,7 +307,7 @@ class StateConfigInfo:
                 = unix_time_now()
             info['FEEDS'][i]['feed_last_read_iso'] \
                 = iso_time_now()
-        return (info)
+        return info
 
     def update_entry_times (sorted_feeds,state_info):
         si = state_info
@@ -604,7 +606,15 @@ class FeedEntriesMash:
         
         return x
 
+class FeedEntriesFix:
+    def __init__(self):
+        self.p2fix = post_constructor
 
+    def print (self):
+        print (self.p2fix)
+        
+    def echo (self):
+        return self.p2fix
     
 class MediaMassage:
     '''

@@ -2,23 +2,23 @@
 Name = "Erik at Artsocial.boston"
 Number = 1
 URL = "https://artsocial.boston/@erik.rss"
-feed_last_read_iso = "2024-02-23T13:06:01.155410+00:00"
-feed_last_read_unix = 1708693561.1554084
-feed_previous_last_read_unix = 1708649203.5376103
-feed_previous_last_read_iso = "2024-02-23T00:46:43.537612+00:00"
-newest_feed_item_unix = 1708648011
-newest_feed_item_iso = "2024-02-23T00:26:51+00:00"
-oldest_feed_item_unix = 1691715300
-oldest_feed_item_iso = "2023-08-11T00:55:00+00:00"
+feed_last_read_iso = "2024-02-23T19:16:18.704616+00:00"
+feed_last_read_unix = 1708715778.7046134
+feed_previous_last_read_unix = 1708715715.5540833
+feed_previous_last_read_iso = "2024-02-23T19:15:15.554086+00:00"
+newest_feed_item_unix = 1708715759
+newest_feed_item_iso = "2024-02-23T19:15:59+00:00"
+oldest_feed_item_unix = 1691718241
+oldest_feed_item_iso = "2023-08-11T01:44:01+00:00"
 
 [[FEEDS]]
 Name = "Erik at Puget.social"
 Number = 2
 URL = "https://artsocial.boston/@erik.rss"
-feed_last_read_iso = "2024-02-23T13:06:01.155424+00:00"
-feed_last_read_unix = 1708693561.1554236
-feed_previous_last_read_unix = 1707782935.669592
-feed_previous_last_read_iso = "2024-02-13T00:08:55.669580+00:00"
+feed_last_read_iso = "2024-02-23T19:16:18.704628+00:00"
+feed_last_read_unix = 1708715778.704628
+feed_previous_last_read_unix = 1708715715.5541
+feed_previous_last_read_iso = "2024-02-23T19:15:15.554100+00:00"
 newest_feed_item_unix = 1704036618
 newest_feed_item_iso = "2023-12-31T15:30:18+00:00"
 oldest_feed_item_unix = 1703114519
@@ -28,7 +28,7 @@ oldest_feed_item_iso = "2023-12-20T23:21:59+00:00"
 Title = "a feed set"
 
 [BSKY_INFO]
-previous_last_posted_unix = 1708198996.792862
-previous_last_posted_iso = "2024-02-17T19:43:16.792862+00:00"
-last_posted_unix = 1708198996.7928734
-last_posted_iso = "2024-02-17T19:43:16.792873+00:00"
+previous_last_posted_unix = 1708198996.7928734
+previous_last_posted_iso = "2024-02-17T19:43:16.792873+00:00"
+last_posted_unix = 1708715779.4027486
+last_posted_iso = "2024-02-23T19:16:19.402751+00:00"

@@ -29,10 +29,14 @@ class PostXwalk:
         self.bpost['repo'] = did
         return 
         
+    def addTextRaw (self,textString):
+        self.bpost['raw_text'] = textString
+        return
+    
     def addText (self,textString):
         self.bpost['record']['text'] = textString
         return
-
+    
     def stringsize (self):
         return len (self.bpost['record']['text'])
     
@@ -54,4 +58,24 @@ class PostXwalk:
     def json (self):
         return json.dumps(self.bpost)
 
+'''
+nope on this    
+class BskyPostFixup:
+    def __init__(self):
+        self.p2fix = basic_post_dict
+        
+    def ingest(self, intake):
+        p2pros = intake
+        self.p2fix = p2pros
+        return (p2pros)
     
+    def fixtags(self,intake):
+        return intake
+
+    def textlenCHK(self):
+        return
+    def cwCHK(self):
+        return
+    def compose
+    
+'''

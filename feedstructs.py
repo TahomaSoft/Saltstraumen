@@ -60,9 +60,8 @@ post_constructor = {
     ''' 
     Main data structure from fediverse posts
     Content warning is currently unused;
-
-
     '''
+
     'ELEMENTsequence':0,
     'original_url': 'long url from mastodon',
     'media_rating': 'nonadult, adult,...',
@@ -70,6 +69,7 @@ post_constructor = {
     'html_text':'Original string from _summary_ ',
     'html_text_sdetail':  'original string from _summary_detail_',
     'basic_text': 'string',
+    'raw_text2post' : 'string',
     'orig_post_time': 'convert to unixtime',
     'number_of_media': 'integer, 0-4 (hopefully)',
     'lang_of_post': 'string',
@@ -79,11 +79,14 @@ post_constructor = {
     'altTextSet': 'to be constructed from _content_ if present',
     'published_parsed': 'published parsed python',
     'tags': 'list of tags',
+    'fixed_tags': 'cleaned list of tags',
     'base_url': 'base location of feed',
     'content_warn': 'content_warning if any',
     'content_rating':'adult, not adult, etc',
     'sensitive_post': 'boolean, true or false',
     'post_privacy': 'reserved',
+    'contentWarn': 'reserved',
+    'textReady2Post': 'cleaned up text',
      
 }
 
