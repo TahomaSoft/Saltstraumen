@@ -81,6 +81,9 @@ scinfo = StateConfigInfo.update_feed_now(scinfo)
 u_scinfo = StateConfigInfo.update_entry_times(feedData,scinfo)
 j = StateConfigInfo.write_info(statecf, u_scinfo)
 
+leData = HolderFedFeed()
+leData.json()
+
 NeuFeedData= FeedEntriesMash.WhichEntries2Pub(reftimes,feedData)
 
 
@@ -103,9 +106,7 @@ else:
 
 FediP = FeedEntriesMash.Simplify (NeuFeedData, count)
 
-
-
-
+exit()
 
 Bcred = BskyCredentials()
 

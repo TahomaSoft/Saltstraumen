@@ -18,7 +18,6 @@ from feedstructs import post_constructor, post_media_item
 from feedstructs import post_altText_plus
 from SaxeBlueskyPython.ticktocktime import unix_time_now, iso_time_now
 from SaxeBlueskyPython.ticktocktime import tuple_time2iso, tuple_time2unix
-from FediFeedEntries import MiddleQueueEntry
 # Code block function to retrieve posts, sort, flag those that are newer
 
 
@@ -118,8 +117,8 @@ class MainConfigInfo:
             mainconfigfile.close()
         return toml_in
     
-    # def print (self):
-    #    print (self)     
+    def print (self):
+        print (self)     
     
     def check_feed_nums (Main_config_info):
         '''Read main config file and deduce number of feeds'''
@@ -352,7 +351,6 @@ class StateConfigInfo:
 
             
         return si
-
     
 
 
@@ -424,7 +422,7 @@ class FeedEntriesMash:
         # fI is feed in
         # count is how many entries in total to expect going out
         
-        P4t = [None]
+        P4t = []
         sfl = len(fI)
         ec = 0 
         
@@ -434,20 +432,14 @@ class FeedEntriesMash:
             #print (count,sfl,i,ec, entnum)
             for j in range(0,entnum):
                  if fI[i]['entries'][j]['PutEntryInQueue']== bool(True):
-                     # cleanerItem = FeedEntriesMash.Map4Simplify (fI[i]['entries'][j],ec)
-                     ingest_item = fI[i]['entries'][j]
-                     FFE = MiddleQueueEntry()
-                     
-                     cleanerItem = FFE.entryCreate(ingest_item,ec)
-                     FFE.json()
-
-
-                     # P4t.append(cleanerItem)
-                     ec = ec+1
+                    
+                    cleanerItem = FeedEntriesMash.Map4Simplify (fI[i]['entries'][j],ec)
+                    P4t.append(cleanerItem)
+                    ec = ec+1
                  elif fI[i]['entries'][j]['PutEntryInQueue']== bool(False):
                     ec = ec # no increment
                  else:
-                    print ('we are lost')
+                     print ('we are lost')
         return P4t
 
     def Map4Simplify(e,ec):

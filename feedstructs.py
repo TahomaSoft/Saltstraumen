@@ -56,13 +56,13 @@ bsky_post_metadata = {
     'last_posted_iso': 'iso time',
 }
 
-post_constructor = {
-    ''' 
+''' 
     Main data structure from fediverse posts
     Content warning is currently unused;
-    '''
+'''
 
-    'ELEMENTsequence':0,
+post_constructor = {
+    'ELEMENTsequence':'integer in sequence 0',
     'original_url': 'long url from mastodon',
     'media_rating': 'nonadult, adult,...',
     'rating': 'reserved',
@@ -86,8 +86,7 @@ post_constructor = {
     'sensitive_post': 'boolean, true or false',
     'post_privacy': 'reserved',
     'contentWarn': 'reserved',
-    'textReady2Post': 'cleaned up text',
-     
+    'textReady2Post': 'cleaned up text'
 }
 
 

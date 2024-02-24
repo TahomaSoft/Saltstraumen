@@ -18,7 +18,7 @@ from SaxeBlueskyPython.ticktocktime import iso_zulu_time_now
 from SaxeBlueskyPython.saxe_bluesky import BskyCredentials
 from SaxeBlueskyPython.saxe_bluesky import BskyFeed, BskyPosts, BskyStruct
 import json
-from FediFeedEntries import HolderFedFeed
+
 
 # Open main config file
 maincf = 'salt-main.toml'
@@ -31,7 +31,7 @@ scinfo = StateConfigInfo.read(statecf)
 
 # Check main config and state file agreement
 numfeedState=StateConfigInfo.check_feed_nums (scinfo)
-numfeeds = MainStateConsistency.feeds (maincf, statecf)
+nufeeds = MainStateConsistency.feeds (maincf, statecf)
 
 # Get the URLs to pull feeds. From Main Config File info
 
@@ -39,51 +39,38 @@ alist=FetchFeeds.find_feeds(mcfdata)
 
 # create structures to hold the feeds, fetch and sort
 
-feedData = [0] * numfeeds
-itemsPerFeed = [0] * numfeeds
+feedData = [0] * nufeeds
 
-for i in range (0, numfeeds):
+for i in range (0, nufeeds):
     feedData[i] = FetchFeeds.fetch_feed(alist[i])
-    feedData[i] = FetchFeeds.sort_entries(feedData[i])
-    itemsPerFeed[i] = FetchFeeds.enumerate_feed_items(feedData[i])
 
-flrtimes_unix = [0] * numfeeds
-flrtimes_iso =  [0] * numfeeds
-pflrtimes_u = [0] * numfeeds
-pflrtimes_i = [0] * numfeeds
+for i in range (0, nufeeds):
+    feedData[i] = FetchFeeds.sort_entries(feedData[i])
+
+itemsPerFeed = [0] * nufeeds
+
+for i in range (0,nufeeds):
+    itemsPerFeed[i] = FetchFeeds.enumerate_feed_items(feedData[i])
 
 # Get the reference time to compare the last feed pulls too
 # In production, get that from the state file
 
+reftimes_unix = [0] * nufeeds
+reftimes_iso =  [0] * nufeeds
 
-for i in range (0,numfeeds):
-    flrtimes_unix[i] = scinfo['FEEDS'][i]['feed_last_read_unix']
-    flrtimes_iso[i] = scinfo['FEEDS'][i]['feed_last_read_iso']
-
-    pflrtimes_u[i] = scinfo['FEEDS'][i]['feed_previous_last_read_unix']
-    pflrtimes_i[i] = scinfo['FEEDS'][i]['feed_previous_last_read_iso']
-
-
-
-# times for testing  
-
+for i in range (0,nufeeds):
+    reftimes_unix[i] = scinfo['FEEDS'][i].get('feed_last_read_unix')
+    reftimes_iso[i] = scinfo['FEEDS'][i].get('feed_last_read_iso')
+    print (reftimes_unix[i])
+    print (reftimes_iso[i])
+    
+exit()
 # reftimes = [0,0] # jan 1, 1970
-# now1 = unix_time_now()
-# now2 = unix_time_now()
+now1 = unix_time_now()
+now2 = unix_time_now()
 # reftimes = [now1,now2]
 
-'''
-print (pflrtimes_u)
-print (pflrtimes_i)
-
-
-print (json.dumps (scinfo['FEEDS'][0]['feed_last_read_iso']))
-print (json.dumps (scinfo['FEEDS'][1]['feed_last_read_iso']))
-print (json.dumps (scinfo['FEEDS'][0]['feed_previous_last_read_iso']))
-print (json.dumps (scinfo['FEEDS'][1]['feed_previous_last_read_iso']))
-'''
-
-
+    
 # Note: rss feed from mastodon has only public feeds by design
 
 # Update read times for feeds in state file
@@ -94,38 +81,8 @@ scinfo = StateConfigInfo.update_feed_now(scinfo)
 u_scinfo = StateConfigInfo.update_entry_times(feedData,scinfo)
 j = StateConfigInfo.write_info(statecf, u_scinfo)
 
-# print ("........")
-# print ("........")
-
-
-#print (pflrtimes_u)
-# print (pflrtimes_i)
-
-
-# print (json.dumps (scinfo['FEEDS'][0]['feed_last_read_iso']))
-# print (json.dumps (scinfo['FEEDS'][1]['feed_last_read_iso']))
-# print (json.dumps (scinfo['FEEDS'][0]['feed_previous_last_read_iso']))
-#print (json.dumps (scinfo['FEEDS'][1]['feed_previous_last_read_iso']))
-
-
-reftimes =  flrtimes_unix
-reftimes = [0,0]
-
-leData = HolderFedFeed(feedData)
-# leData.json()
-# print (leData.feedQ)
-
-# print (type(u_scinfo))
-
-# print (leData.checknumfeeds(u_scinfo))
-
-# print (leData.checknumfeeds_in())
-
-
-leData.sort_entries()
-print (leData.feedcounts())
-
-exit()
+leData = HolderFedFeed()
+leData.json()
 
 NeuFeedData= FeedEntriesMash.WhichEntries2Pub(reftimes,feedData)
 
@@ -136,20 +93,16 @@ NeuFeedData= FeedEntriesMash.WhichEntries2Pub(reftimes,feedData)
 
 count =  FeedEntriesMash.ComputeNumOutbound (NeuFeedData)
 
-
 if count < 1:
     print ('All done. Exiting')
     exit()
     
-elif count >= 1:
+elif count > 1:
     keepgoing = bool(True)
 
 else:
     print ('we are lost')
     exit()
-
-
-# print (json.dumps (NeuFeedData))
 
 FediP = FeedEntriesMash.Simplify (NeuFeedData, count)
 
@@ -176,6 +129,11 @@ creds = Bcred.show_creds()
 
 myPastPosts = BskyFeed.get_author_feed(creds, 20)
 
+# fred = BskyStruct()
+# sally = fred.INIT()
+# print (sally)
+
+# print (json.dumps(myPastPosts))
 bpost = PostXwalk()
 
 # bposts = [bpost] * count
@@ -190,17 +148,7 @@ for i in range (0,count):
 
     bpost.addText(FediP[i]['basic_text'])
     bpost.addTime()
-    # post2fix = BskyPostFixup.something
-    # p2f = bpost.echo()
-    #post2fix.ingest(p2f)
-    #post2fix.
     
     BskyPosts.post_simple_ready (bpost,sessT)
-# end loop
-
-u_scinfo = StateConfigInfo.update_bsky_prev (u_scinfo)
-uu_scinfo =  StateConfigInfo.update_bsky_now (u_scinfo)
-
-j = StateConfigInfo.write_info(statecf, uu_scinfo)
 
 
