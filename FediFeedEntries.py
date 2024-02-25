@@ -170,14 +170,7 @@ class BROKENMiddleQueueEntry:
             
         return f
 
-    def entrySetSensitive(self,rawpost):
-        placeholder = 1
-        # need content warning
-        # need to set sensitive_post flag as needed (true or false)
-            
-        # f['sensitive_post'] = FeedEntriesMash.Sensitive_Post_Detect(f)
-        return
-
+   
 class HolderFedFeed:
     def __init__(self,feeds):
         self.feeds = feeds
@@ -418,7 +411,20 @@ def entryCreate(rawpost,seqcount):
 
     CWinfo = addContentWarning(f['html_text'])
     f.update(CWinfo)
+
+    isSensitive = {'sensitive_post': 'tbd'}
+    j = entryCheckSensitive(f)
+    # print (j)
+    if j == bool(False):
+        isSensitive = {'sensitive_post': bool(False)}
+    elif j == bool(True):
+        isSensitive = {'sensitive_post': bool(True)}
+    else:
+        isSensitive = {'sensitive_post': 'weird'}
+        
+    f.update(isSensitive)
     
+        
     return f
 
 def entryAddBasic(rawpost):
@@ -532,3 +538,24 @@ def addContentWarning (origTxt):
     cw['basic_text_rev'] = cleanMainTxt
     CW.update (cw)
     return CW
+
+
+def entryCheckSensitive(cleanerPost):
+
+        f = cleanerPost
+        isSensitive = bool (False)
+                
+        if f['media_rating'] != 'nonadult':
+            isSensitive = bool (True)
+
+        if f['rating'] != 'nonadult':
+            isSensitive = bool (True)
+        
+        if f['content_warn'] != '':
+            isSensitive = bool (True)
+            
+        if f['contentWarn'] != '':
+            isSensitive = bool (True)
+
+        return isSensitive 
+

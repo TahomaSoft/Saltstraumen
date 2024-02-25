@@ -413,7 +413,7 @@ class FeedEntriesMash:
                     
         return ec
 
-    def Simplify (fI, count):
+    def DEADSimplify (fI, count):
         ''' Creates outbound structure
         Takes the coarse feedIn,
         creates simpler structure
@@ -450,7 +450,7 @@ class FeedEntriesMash:
                     print ('we are lost')
         return P4t
 
-    def Map4Simplify(e,ec):
+    def DEADMap4Simplify(e,ec):
         # f = post_constructor
         # f ={}
         f = post_constructor
@@ -534,7 +534,7 @@ class FeedEntriesMash:
         
         return f
 
-    def Sensitive_Post_Detect (thePost):
+    def DEADSensitive_Post_Detect (thePost):
         f = thePost
         isSensitive = bool (False)
         if f['media_rating'] != 'nonadult':
