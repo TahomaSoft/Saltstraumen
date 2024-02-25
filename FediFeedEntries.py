@@ -6,6 +6,26 @@ from SaxeBlueskyPython.ticktocktime import tuple_time2iso, tuple_time2unix
 import heavy_lifting
 from operator import attrgetter
 
+class MiddleQueue:
+    def __init__(self):
+        # joe = {}
+        # fred = [joe]  * numentries
+        self.fediqueue = [{}]
+        
+    
+    def insertr (self,entry):
+        print (entry)
+        print (type (entry))
+        print (type (self.fediqueue))
+        # self.fediqueue.append(entry)
+        # print (self.fediqueue)
+        return
+    
+    def qprint (self):
+        print (self.fediqueue)
+        
+    def json (self):
+        print (json.dumps(self.fediqueue))
 
 class MiddleQueueEntry:
     ''' works on a single entry'''
@@ -30,25 +50,43 @@ class MiddleQueueEntry:
         print ('jjjjj')
         return 
 
-    def entryCreate(self,rawpost,seqcount):
+    def entryCheck (self,rawpost):
+        e = rawpost
+        if e['PutEntryInQueue'] == bool(True):
+            returnval = bool(True)
+            
+        elif e['PutEntryInQueue'] == bool(False):
+            returnval = bool(False)
+        else:
+            print ('We are lost')
+
+        return returnval
+
+    def returnDict():
+        return post_constructor
+        
+    def entryCreate(self, rawpost,seqcount):
         '''Raw post is unprocessed entry pulled from Fediverse'''
         '''seqcount is sequence count to label the entry'''
         '''returns an refined fediverse post entry for more processing'''
         
-        f = self.fedipost
+        f = post_constructor
         e = rawpost
-        
+
+        # print (e)
         # These elements should always be present
         
         f['ELEMENTsequence'] = seqcount
         f['original_url'] = e['id']
         f['html_text'] = e['summary']
+        # self.fedipost = f
         return f
 
     def entryAddBasic(self,rawpost):
         h = html2text.HTML2Text()
         e = rawpost
         f = self.fedipost
+        origTxt = e['summary'] 
         
         tmp = h.handle(e['summary']) # remove html
         f['basic_text'] = tmp.strip() # remove new lines using strip
@@ -72,11 +110,12 @@ class MiddleQueueEntry:
             f['rating'] = 'nonadult'
             
         if e.get('tags') == None:
-            zeros = 0 # Do nothing
-
+            f['fixed_tags'] == None
+            
         elif e.get('tags') != None:
             f['tags'] = e['tags']
-
+            j = e['tags']
+            f['fixed_tags'] = entryFixTags(j)
         else:
             print ('we are lost')
 
@@ -87,7 +126,16 @@ class MiddleQueueEntry:
             f['alt_lang_post'] = sd['language']
             f['base_url'] = sd['base']
             f['html_text_sdetail'] = sd['value']
+
+        # check for content warning in original html_text
+        txtCWtpl = cw_check (origTxt)
+        contentWarn = txtCWtpl[0]
+        cleanMainTxt = txtCWtpl[1]
+        f['content_warn'] = contentWarn
+        f['contentWarn'] = contentWarn
+        f['basic_text_rev'] = cleanMainTxt
         return f
+    
 
     def entryAddImages(self,rawpost):
         f = self
@@ -133,7 +181,10 @@ class MiddleQueueEntry:
 class HolderFedFeed:
     def __init__(self,feeds):
         self.feeds = feeds
+        self.AmFeeds = feeds # Amended feed. simplify later
         self.feedQ = len (feeds)
+        self.counter = [0] * self.feedQ
+        self.UniFeed = []
         
     def json (self):
         print (json.dumps(self.feeds))
@@ -148,22 +199,30 @@ class HolderFedFeed:
     def checknumfeeds_in(self):
         j= len (self.feeds)
         return j
-
+    
+    def concatFeeds (self):
+        UniFeed = []
+        for i in self.AmFeeds:
+            # print (i)
+            UniFeed.append(i)
+            self.UniFeed = UniFeed
+        # print (self.UniFeed)
+        return UniFeed
+        
     def feedcounts(self):
         
         counter = [0] * self.feedQ
-        print (counter)
         i =0
-        print (self.feedQ)
+        
         for i in range (0, self.feedQ):
-            counter[i] = {
-                'feedN' : i,
-                'numE': i + 565
-            }
-            
-        # now put in real count of elements.
-        print (counter)
-        return 
+            str_tmp = self.feeds[i] 
+            j = len(str_tmp)
+            counter[i] = {'feedN': i,'numE': j}
+        # end for loop
+              
+        self.counter=counter
+        
+        return self.counter
                                             
     
     def sort_entries (self):
@@ -185,14 +244,55 @@ class HolderFedFeed:
 
     def exportFeeds (self):
         return self.feeds
+
+    def dorkcomputeTrue (self):
+        # Simiplify this amFeeds thing later
+        # using a copy after adding true/false pub info
+        # 'cause that step flattened the structure by accident
+        actr = 0
+        for i in range (0, self.feedQ):
+            z = self.counter[i]['numE']
+            for j in range (0,z):
+                if self.AmFeeds[i][j]['PutEntryInQueue'] == bool (True):
+                    actr = actr +1
+                elif self.AmFeeds[i][j]['PutEntryInQueue'] == bool (False):
+                    donothing = 1
+                else:
+                    print ('We are lost')
+        # end outer loop
+        self.numtrue = actr
+        return actr
+
+    def newQueue (self,entry):
+        self.UniFeed.append(entry)
+        # print (entry)
+        return
     
-       
+    def newQueueExgest (self,i):
+       return self.UniFeed[i]
+   
     
 class FedFeedEntry:
-    def __init__(self, fedientry):
+    def __init__(self):
+        self.fedientry = {}
+
+    def checkEntry2Pub (self,fedientry,reftime):
         self.fedientry = fedientry
         
-    def MarkEntry2Pub(self,reftime):
+        ptime = self.fedientry.get('published_parsed')
+        utime = tuple_time2unix(ptime)
+        
+        if utime >= reftime:
+            return bool(True)
+        elif utime <= reftime:
+            return bool (False)
+        else:
+            print ('we are lost')
+        return (-9)
+            
+    def MarkEntry2Pub(self,fedientry,reftime):
+        self.fedientry = fedientry
+        
         pblsh_F = {
             'PutEntryInQueue': bool(False)
         }
@@ -200,16 +300,16 @@ class FedFeedEntry:
             'PutEntryInQueue': bool(True)
         }
 
-        ptime = self.fedientry['published_parsed']
+        ptime = self.fedientry.get('published_parsed')
         utime = tuple_time2unix(ptime)
         
         if utime >= reftime:
-            self.update(pblsh_T)
+            self.fedientry.update(pblsh_T)
         elif utime <= reftime:
-            self.update(pblsh_F)
+            self.fedientry.update(pblsh_F)
         else:
             print ('we are lost')
-        return sf
+        return fedientry
     
     def ingest(self, fedpost):
         self.fedientry = fedpost
@@ -217,7 +317,69 @@ class FedFeedEntry:
 
     def json (self):
         print (json.dumps(self.fedientry))
+        # print (type(self.fedientry))
         return
 
     def exgest(self):
         return self.fedientry
+
+# End Classes
+
+def entryFixTags (tagstring):
+    '''mzonePost is output from entryAddBasic'''
+    ''' take tags and write fixed_tags'''
+    # print (tagstring)
+    ts =''
+    l = len (tagstring)
+    for i in range (0,l):
+        # print (tagstring[i])
+        j= tagstring[i]['term']
+        ts = ts +' ' + j
+        
+    fixedTag = ts
+    
+    return fixedTag
+            
+def cw_check (origTxt):
+    h = html2text.HTML2Text()
+    
+    '''
+    check for html string '<hr />'
+    indicates text left of it is a content warning
+    '''
+    if '<hr />' in origTxt:
+        # print ('DANGER DANGER DANGER \n \n ')
+        hrLoc=origTxt.find('<hr />')
+        # get substring up to that spot
+
+        cw_html =origTxt[0:hrLoc]# origTxt.slice(0,hrLoc,1)
+        # print (cw_html)
+        # then convert html to basic text
+        cw = h.handle(cw_html)
+        bodyHtxt = origTxt[hrLoc]
+        
+           
+    else:
+        cw = ''
+        bodyHtxt = origTxt
+        bodytxt = h.handle(bodyHtxt)
+        
+    if '<a class="mention hashtag"' in bodyHtxt:
+        jnkStrt = bodyHtxt.find('<a class="mention hashtag"')
+        jnkStp  = bodyHtxt.find('<span>') + 6  # count <span> too
+        bdyHcln = bodyHtxt[0:jnkStrt] + bodyHtxt[jnkStp:]
+        
+        if '<a class="mention hashtag"' in bdyHcln: # repeat
+            bodyHtxt = bdyHcln
+
+            jnkStrt = bodyHtxt.find('<a class="mention hashtag"')
+            jnkStp  = bodyHtxt.find('<span>') + 6  # count <span> too
+            bdyHcln = bodyHtxt[0:jnkStrt] + bodyHtxt[jnkStp:]
+        
+    #else:
+    bodyHcln = bodyHtxt
+    bodytxt = h.handle(bodyHcln)
+        
+    tupletext = (cw, bodytxt)
+    
+    return tupletext

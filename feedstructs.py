@@ -69,6 +69,7 @@ post_constructor = {
     'html_text':'Original string from _summary_ ',
     'html_text_sdetail':  'original string from _summary_detail_',
     'basic_text': 'string',
+    'basic_text_rev': 'revised version of basic text, after cw filtering',
     'raw_text2post' : 'string',
     'orig_post_time': 'convert to unixtime',
     'number_of_media': 'integer, 0-4 (hopefully)',

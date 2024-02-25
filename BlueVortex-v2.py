@@ -9,7 +9,7 @@ and post to BlueSky (SaxeBlueskyPython)
 '''
 
 from FediBskyXwalk import PostXwalk
-
+from feedstructs import post_constructor
 from heavy_lifting import MainConfigInfo, StateConfigInfo, FetchFeeds
 from heavy_lifting import MainStateConsistency, FeedEntriesMash
 from heavy_lifting import MediaMassage
@@ -18,7 +18,8 @@ from SaxeBlueskyPython.ticktocktime import iso_zulu_time_now
 from SaxeBlueskyPython.saxe_bluesky import BskyCredentials
 from SaxeBlueskyPython.saxe_bluesky import BskyFeed, BskyPosts, BskyStruct
 import json
-from FediFeedEntries import HolderFedFeed
+from FediFeedEntries import HolderFedFeed, FedFeedEntry
+from FediFeedEntries import MiddleQueue, MiddleQueueEntry
 
 # Open main config file
 maincf = 'salt-main.toml'
@@ -68,8 +69,8 @@ for i in range (0,numfeeds):
 # times for testing  
 
 # reftimes = [0,0] # jan 1, 1970
-# now1 = unix_time_now()
-# now2 = unix_time_now()
+now1 = unix_time_now()
+now2 = unix_time_now()
 # reftimes = [now1,now2]
 
 '''
@@ -108,7 +109,8 @@ j = StateConfigInfo.write_info(statecf, u_scinfo)
 #print (json.dumps (scinfo['FEEDS'][1]['feed_previous_last_read_iso']))
 
 
-reftimes =  flrtimes_unix
+#reftimes =  flrtimes_unix
+#reftimes = [now1,now2]
 reftimes = [0,0]
 
 leData = HolderFedFeed(feedData)
@@ -123,25 +125,34 @@ leData = HolderFedFeed(feedData)
 
 
 leData.sort_entries()
-print (leData.feedcounts())
+leData.feedcounts()
 
-exit()
-
-NeuFeedData= FeedEntriesMash.WhichEntries2Pub(reftimes,feedData)
-
-
-# find out how many articles are in the prelim queue
-# create structure to hold them
-# start processing article/entry by entry to put into new stack
-
-count =  FeedEntriesMash.ComputeNumOutbound (NeuFeedData)
+# loop through the feeds to check against reftime, and if pubable,
+# put into new unified raw queue
 
 
-if count < 1:
+y = leData.feedQ
+
+# print (leData.feeds)
+
+for i in range (0, y):
+    z = leData.counter[i]['numE']
+    for j in range (0,z):
+        lDe = leData.feeds[i][j]
+        e = FedFeedEntry()
+        # print (lDe)
+        tf = e.checkEntry2Pub (lDe,reftimes[i])
+        if tf == bool (True):
+            # print (e.exgest())
+            leData.newQueue(e.exgest())
+            
+        
+toDoE = len (leData.UniFeed)
+if toDoE < 1:
     print ('All done. Exiting')
     exit()
     
-elif count >= 1:
+elif toDoE >= 1:
     keepgoing = bool(True)
 
 else:
@@ -149,11 +160,53 @@ else:
     exit()
 
 
-# print (json.dumps (NeuFeedData))
+midQEntry = MiddleQueueEntry()
 
-FediP = FeedEntriesMash.Simplify (NeuFeedData, count)
+midQueue = [1]
+i=0
+
+t = leData.newQueueExgest(i)
+a =midQEntry.entryCreate (t,i)
+midQueue[0] = a
+j = dict(a)
+
+
+print (midQueue)
+
+i =1
+t = leData.newQueueExgest(i)
+a =midQEntry.entryCreate (t,i)
+midQueue.append(a)
+
+print (midQueue)
+
+# print (j)
+
+for i in range (1,toDoE):
+    t = leData.newQueueExgest(i)
+
+    a =midQEntry.entryCreate (t,i)
+    
+    # print (type(a))
+    # print (a)
+    # b = midQEntry.entryAddBasic (t)
+#     print (json.dumps(a))
+
+
+
+
+
 
 exit()
+# Need to add routine to fix tags, cw, etc.
+# need to chain in here adding images, sensitive    
+
+# print (midQueue.fediqueue)
+
+# midQueue.json()
+
+# start working with bsky rubrick
+count = len(midQueue.fediqueue)
 
 Bcred = BskyCredentials()
 
@@ -175,6 +228,8 @@ Bcred.start_session()
 creds = Bcred.show_creds()
 
 myPastPosts = BskyFeed.get_author_feed(creds, 20)
+print (creds)
+
 
 bpost = PostXwalk()
 
@@ -184,11 +239,18 @@ sessT = Bcred.get_sessT()
 myDID = Bcred.myDID()
 
 
+# print (len(midQueue.fediqueue))
+for i in midQueue.fediqueue:
+    print (i)
+    
+exit()
+
+
 for i in range (0,count):
-
+    
     bpost.addDID(myDID)
-
-    bpost.addText(FediP[i]['basic_text'])
+    mQe = midQueue.fediqueue[i]
+    bpost.addText(mQe['basic_text'])
     bpost.addTime()
     # post2fix = BskyPostFixup.something
     # p2f = bpost.echo()
