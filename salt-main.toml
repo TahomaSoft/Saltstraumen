@@ -21,6 +21,6 @@ TimeJitter = 0
 
 [BSKY_ACCOUNT]
 Username = "blog.tahoma.com"
-App_passwd = "vpqh-omt4-arnt-zm43"
+App_passwd = 
 Nickname = "nd"
 DefaultSensitive = false
