@@ -19,7 +19,7 @@ from SaxeBlueskyPython.saxe_bluesky import BskyCredentials
 from SaxeBlueskyPython.saxe_bluesky import BskyFeed, BskyPosts, BskyStruct
 import json
 from FediFeedEntries import HolderFedFeed, FedFeedEntry
-from FediFeedEntries import MiddleQueue, MiddleQueueEntry
+from FediFeedEntries import entryCreate
 
 # Open main config file
 maincf = 'salt-main.toml'
@@ -160,53 +160,40 @@ else:
     exit()
 
 
-midQEntry = MiddleQueueEntry()
 
-midQueue = [1]
-i=0
-
-t = leData.newQueueExgest(i)
-a =midQEntry.entryCreate (t,i)
-midQueue[0] = a
-j = dict(a)
+midQueue = []
 
 
-print (midQueue)
-
-i =1
-t = leData.newQueueExgest(i)
-a =midQEntry.entryCreate (t,i)
-midQueue.append(a)
-
-print (midQueue)
-
-# print (j)
-
-for i in range (1,toDoE):
+for i in range (0, toDoE):
     t = leData.newQueueExgest(i)
-
-    a =midQEntry.entryCreate (t,i)
+    a = entryCreate (t,i)
+    # b is for blobs
+    '''
+    if blobcheck == True:
+        b = blobadd (t)
+        a.update (b)
+    elif blobcheck != True:
+        DoNothing = 1
+    else:
+        print ('We are lost')
+    # Endf if
+    '''
+    midQueue.append (a)
     
-    # print (type(a))
-    # print (a)
-    # b = midQEntry.entryAddBasic (t)
-#     print (json.dumps(a))
 
 
-
-
-
-
+print (json.dumps(midQueue))
 exit()
-# Need to add routine to fix tags, cw, etc.
+# print ('\n\n\n')
+# print (midQueue[0])
+
+
 # need to chain in here adding images, sensitive    
 
-# print (midQueue.fediqueue)
 
-# midQueue.json()
 
 # start working with bsky rubrick
-count = len(midQueue.fediqueue)
+count = len(midQueue)
 
 Bcred = BskyCredentials()
 
@@ -228,7 +215,7 @@ Bcred.start_session()
 creds = Bcred.show_creds()
 
 myPastPosts = BskyFeed.get_author_feed(creds, 20)
-print (creds)
+# print (creds)
 
 
 bpost = PostXwalk()
@@ -239,23 +226,19 @@ sessT = Bcred.get_sessT()
 myDID = Bcred.myDID()
 
 
-# print (len(midQueue.fediqueue))
-for i in midQueue.fediqueue:
-    print (i)
+# print (len(midQueue))
+# for i in midQueue:
+#     print (i)
     
-exit()
 
 
-for i in range (0,count):
+
+for i in midQueue:
     
     bpost.addDID(myDID)
-    mQe = midQueue.fediqueue[i]
+    mQe = i
     bpost.addText(mQe['basic_text'])
     bpost.addTime()
-    # post2fix = BskyPostFixup.something
-    # p2f = bpost.echo()
-    #post2fix.ingest(p2f)
-    #post2fix.
     
     BskyPosts.post_simple_ready (bpost,sessT)
 # end loop

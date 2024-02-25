@@ -18,7 +18,7 @@ from feedstructs import post_constructor, post_media_item
 from feedstructs import post_altText_plus
 from SaxeBlueskyPython.ticktocktime import unix_time_now, iso_time_now
 from SaxeBlueskyPython.ticktocktime import tuple_time2iso, tuple_time2unix
-from FediFeedEntries import MiddleQueueEntry
+
 # Code block function to retrieve posts, sort, flag those that are newer
 
 
