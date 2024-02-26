@@ -1,12 +1,8 @@
-"""
-Feed info data structures
-"""
-
-
-
 '''
+Feed info data structures
 Data structure for main configuration elements
 '''
+
 
 simple_bsky_info = {
     'Username': 'A user Name',
@@ -56,7 +52,7 @@ bsky_post_metadata = {
     'last_posted_iso': 'iso time',
 }
 
-''' 
+'''
     Main data structure from fediverse posts
     Content warning is currently unused;
 '''
@@ -92,10 +88,14 @@ post_constructor = {
 
 
 post_altText_plus = {
-    'altText': 'alt text string for media',
-    'lang': 'post of language nested in _content_ ',
-    'base': 'base link to poster in _content_ ',
-    'value': 'the alt text for an image',
+    'altText': '',
+     # alt text string for media
+    'lang':'',
+    #'post of language nested in _content_ ',
+    'base':'',
+    # 'base link to poster in _content_ ',
+    'value':''
+    # 'the alt text for an image',
 }
 
 post_media_item = {
@@ -104,12 +104,13 @@ post_media_item = {
     'media_size_stated': 'fsize in bytes from fediverse rss post',
     'media_size_calculated': 'use system to find size',
     'medium_type': 'image,video,etc',
-    'localFilePath': 'file path and file name on local system'
+    'localFilePath': 'file path and file name on local system',
+    'alt Text': 'alt text string'
 
 }
 
 # media_array = [post_media_item]
-    
+
 '''
 post_content_warn = {
     'content_warn': 'content_warning if any',
@@ -118,4 +119,3 @@ post_content_warn = {
     'sensitive_media': 'boolean, true or false',
 }
 '''
-    

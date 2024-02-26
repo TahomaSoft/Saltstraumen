@@ -1,5 +1,6 @@
 # emacs files
 *~
 salt-main.*
+*.toml
 # Python puddles #
 __pycache__/

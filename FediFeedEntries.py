@@ -1,9 +1,9 @@
 # -*- mode: python; python-indent-offset: 4 -*-
 import html2text
 import json
-from feedstructs import post_constructor
+from feedstructs import post_constructor, post_media_item, post_altText_plus
 from SaxeBlueskyPython.ticktocktime import tuple_time2iso, tuple_time2unix
-import heavy_lifting
+from  heavy_lifting import FeedEntriesMash, MediaMassage
 from operator import attrgetter
 
 class BROKENMiddleQueue:
@@ -27,148 +27,39 @@ class BROKENMiddleQueue:
     def json (self):
         print (json.dumps(self.fediqueue))
 
-class BROKENMiddleQueueEntry:
-    ''' works on a single entry'''
-    ''' Is an interim step between what is pulled from fediverse'''
-    ''' and what goes for further transliteration or processing '''
-    ''' an entry is a single post'''
 
+def entryAddImages(self,rawpost):
+    f = self
+    e = rawpost
     
-    def __init__(self):
-        self.fedipost = {}
-        
-    def echo (self):
-        return self.fedipost
+    # subroutines for images and associated material here
+    # check to see if media attached
     
-    def print (self):
-        print (self.fedipost)
-        return
-
-    def json (self):
-        print ("llll")
-        print (json.dumps(self.fedipost))
-        print ('jjjjj')
-        return 
-
-    def entryCheck (self,rawpost):
-        e = rawpost
-        if e['PutEntryInQueue'] == bool(True):
-            returnval = bool(True)
+    if 'media_content' in e.keys(): # alternately,  e.get('media_content') != None:
+        num_media =  len (e['media_content'])
+        f['number_of_media'] = num_media
+        # media2attach = FeedEntriesMash.MediaContentAttach(e)
+        # f['media_array'] = media2attach
             
-        elif e['PutEntryInQueue'] == bool(False):
-            returnval = bool(False)
-        else:
-            print ('We are lost')
+    elif e.get('media_content') == None:
+        dosomething = bool (False)
+        # print ('no media_content')
+    else:            
+        print ('we are confused')
 
-        return returnval
-
-    def returnDict():
-        return post_constructor
-        
-    def entryCreate(self, rawpost,seqcount):
-        '''Raw post is unprocessed entry pulled from Fediverse'''
-        '''seqcount is sequence count to label the entry'''
-        '''returns an refined fediverse post entry for more processing'''
-        
-        f = post_constructor
-        e = rawpost
-
-        # print (e)
-        # These elements should always be present
-        
-        f['ELEMENTsequence'] = seqcount
-        f['original_url'] = e['id']
-        f['html_text'] = e['summary']
-        # self.fedipost = f
-        return f
-
-    def entryAddBasic(self,rawpost):
-        h = html2text.HTML2Text()
-        e = rawpost
-        f = self.fedipost
-        origTxt = e['summary'] 
-        
-        tmp = h.handle(e['summary']) # remove html
-        f['basic_text'] = tmp.strip() # remove new lines using strip
-        f['lang_of_post'] = e['summary_detail']['language'] # as of feb 2024, usually = none
-        f['base_url'] = e ['summary_detail']['base']
-        f['published_parsed'] = e['published_parsed']
-        f['orig_post_time'] = tuple_time2unix (e['published_parsed'])
-
-        # These elements are conditional; need to check and handle absent/present
-        # print (e.get('media_rating'))
-        if e.get('media_rating') != None:
-            f['media_rating'] = e['media_rating']['content']
-
-        elif e.get('media_rating') == None:
-            f['media_rating'] = 'nonadult'
-
-        if e.get('rating') != None:
-            f['rating'] = e['rating']
-
-        elif e.get('rating') == None:
-            f['rating'] = 'nonadult'
+    if 'content' in e.keys():
+        # alt_text_collection = FeedEntriesMash.MediaContentAttachAltText(e['content'])            
+        # f['altTextSet'] = alt_text_collection
+        donothingnow = bool(True)
             
-        if e.get('tags') == None:
-            f['fixed_tags'] == None
+    elif  e.get('content')  == None:
+        dosomething = bool(False)
+        # print ('no content')
+
+    else:            
+        print ('we are confused')
             
-        elif e.get('tags') != None:
-            f['tags'] = e['tags']
-            j = e['tags']
-            f['fixed_tags'] = entryFixTags(j)
-        else:
-            print ('we are lost')
-
-         # Get Summary detail
-        if 'summary_detail' in e.keys():
-            sd = e['summary_detail']
-            f['base_post_mime_t'] = sd['type']
-            f['alt_lang_post'] = sd['language']
-            f['base_url'] = sd['base']
-            f['html_text_sdetail'] = sd['value']
-
-        # check for content warning in original html_text
-        txtCWtpl = cw_check (origTxt)
-        contentWarn = txtCWtpl[0]
-        cleanMainTxt = txtCWtpl[1]
-        f['content_warn'] = contentWarn
-        f['contentWarn'] = contentWarn
-        f['basic_text_rev'] = cleanMainTxt
-        return f
-    
-
-    def entryAddImages(self,rawpost):
-        f = self
-        e = rawpost
-        
-        # subroutines for images and associated material here
-        # check to see if media attached
-
-        if 'media_content' in e.keys(): # alternately,  e.get('media_content') != None:
-            num_media =  len (e['media_content'])
-            f['number_of_media'] = num_media
-            # media2attach = FeedEntriesMash.MediaContentAttach(e)
-            # f['media_array'] = media2attach
-            
-        elif e.get('media_content') == None:
-            dosomething = bool (False)
-            # print ('no media_content')
-        else:            
-            print ('we are confused')
-
-        if 'content' in e.keys():
-            # alt_text_collection = FeedEntriesMash.MediaContentAttachAltText(e['content'])            
-            # f['altTextSet'] = alt_text_collection
-            donothingnow = bool(True)
-            
-        elif  e.get('content')  == None:
-            dosomething = bool(False)
-            # print ('no content')
-
-        else:            
-            print ('we are confused')
-            
-        return f
+    return f
 
    
 class HolderFedFeed:
@@ -423,7 +314,20 @@ def entryCreate(rawpost,seqcount):
         isSensitive = {'sensitive_post': 'weird'}
         
     f.update(isSensitive)
+    fixed_tags = f.get('fixed_tags')
+    main_text = f.get('basic_text_rev')
+    cw = f.get('contentWarn')
+    if cw == None:
+        cw = ''
+    if fixed_tags == None:
+        fixed_tags = ''
+    if main_text == None:
+        main_text = ' '
+        
+    textR2P = textTouchUp (main_text,cw,fixed_tags)
+    tR2P = {'textReady2Post': textR2P}
     
+    f.update (tR2P)
         
     return f
 
@@ -438,7 +342,8 @@ def entryAddBasic(rawpost):
         'lang_of_post': 'string',
         'base_url': 'base location of feed',
         'published_parsed': 'published parsed python',
-        'orig_post_time': 'convert to unixtime'
+        'orig_post_time': 'convert to unixtime',
+        'SetMediaElements': 'placeholder for media if present'
         }
     
     
@@ -480,6 +385,8 @@ def entryAddRatings (rawpost):
     elif e.get('rating') == None:
         r['rating'] = 'nonadult'
         MRat.update (r)
+
+        
     if e.get('tags') == None:
         ft['fixed_tags'] == None
         MRat.update (ft)
@@ -487,7 +394,9 @@ def entryAddRatings (rawpost):
         t['tags'] = e['tags']
         MRat.update(t)
         j = e['tags']
-        #ft['fixed_tags'] = entryFixTags(j)
+        ft['fixed_tags'] = entryFixTags(j)
+        
+        MRat.update (ft)
     else:
         print ('we are lost')
        
@@ -558,4 +467,110 @@ def entryCheckSensitive(cleanerPost):
             isSensitive = bool (True)
 
         return isSensitive 
+
+def textTouchUp (main_text,cw,fixed_tags):
+    rval = {'textReady2Post': 'cleaned up text'}
+    
+    mt = main_text
+    ft = fixed_tags
+    maxLen = 300
+
+    temp = mt + ' ' + ft
+    trim = temp[:maxLen]
+    
+    rval['textReady2Post'] = trim
+
+    return rval
+
+
+def MediaContentAttach (medElem):
+    '''For each element entry,determine if media is present and handle it.'''
+    ''' Needs to handle a media sets from 1 to ...'''
+    ''' Check for presense of media is needed before invoking this'''
+    ''' is working on the middle queue'''
+    numContent = len (medElem['media_content'])
+    medContent = medElem['media_content']
+    stru2ret = {'SetMediaElements':''}
+    innrLst = []
+    innrDict = {}
+
+    #print (numContent)
+    for i in range (0, numContent):
+        mediaInfo = MediaContentHandle (medContent[i])
+        innrDict.update (mediaInfo)
+        note = {'Entry':i+1, 'Of':numContent}
+        innrDict.update (note)
+        innrLst.append(innrDict)
+    stru2ret['SetMediaElements'] =innrLst
+    medElem.update(stru2ret)
+    # print (medElem)
+    return medElem
+ 
+
+def oolllddMediaContentAttach(e):
+    '''For each element entry,determine if media is present and handle it.
+    Passing the info out to other routines to finish creating the outbound queue
+    of reformatted fediverse elements '''
+    ''' takes as single argument the  '''
+    mce = len (e['media_content'])
+    m = e['media_content']
+    mediaE = post_media_item
+    media_array = {
+        'media_set':[]
+        }
+    
+    for j in range (0, mce):
+             
+        mediaI =  FeedEntriesMash.MediaContentHandle (m[j])
+        # print (mediaI)
+        medcont_e = dict(mediaI)
+        note = {'Entry':j+1, 'Of':mce}
+        medcont_.update (note)
+        media_array['media_set'].append (medcont_e)
+    # print (media_array)
+    # print (len (media_array))
+    return medcont
+
+def MediaContentHandle(MediaContentSet):
+    # x is revised media material
+    y = MediaContentSet
+
+    x = {
+        'media_url': y['url'],
+        'media_type': y['type'],
+        'media_size_stated': y['filesize'],
+        'media_size_calculated': 'reserved',
+        'medium_type': y['medium'],
+        'localFilePath': 'reserved',
+    }
+    
+    filename = MediaMassage.remoteImageGet(x['media_url'])
+    x['localFilePath'] = filename
+        
+    cmpFileSize = MediaMassage.CheckImageSize(filename)
+    x['media_size_calculated'] = cmpFileSize
+        
+        
+    return x
+
+    
+def GetAltText(e):
+    altTe = post_altText_plus
+    altTlst = []
+    contentAltT = e.get('content')
+    if contentAltT == None:
+        dozip = 1
+        return
+    else:
+        contloops = len (contentAltT)
+        for i in contentAltT:
+           altTe ['altText'] = i['type']
+           altTe ['lang'] = i['language']
+           altTe ['base'] = i['base']
+           altTe ['value'] = i['value']
+           altTlst.append (altTe)
+        
+    return
+    
+
 

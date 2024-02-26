@@ -7,7 +7,7 @@ First attempt to integrate saltstraumen and saxe-bluesky
 to read posts from a user's public Mastodon rss feed (saltstraumen),
 and post to BlueSky (SaxeBlueskyPython)
 '''
-
+import inspect
 from FediBskyXwalk import PostXwalk
 from feedstructs import post_constructor
 from heavy_lifting import MainConfigInfo, StateConfigInfo, FetchFeeds
@@ -19,7 +19,8 @@ from SaxeBlueskyPython.saxe_bluesky import BskyCredentials
 from SaxeBlueskyPython.saxe_bluesky import BskyFeed, BskyPosts, BskyStruct
 import json
 from FediFeedEntries import HolderFedFeed, FedFeedEntry
-from FediFeedEntries import entryCreate
+from FediFeedEntries import entryCreate, MediaContentAttach,GetAltText
+from SaxeBlueskyPython.saxeblueobjects import BskyPostPuck
 
 # Open main config file
 maincf = 'salt-main.toml'
@@ -160,6 +161,8 @@ else:
     exit()
 
 
+# leData.json()
+
 
 midQueue = []
 
@@ -167,28 +170,35 @@ midQueue = []
 for i in range (0, toDoE):
     t = leData.newQueueExgest(i)
     a = entryCreate (t,i)
-    # b is for blobs
-    '''
-    if blobcheck == True:
-        b = blobadd (t)
-        a.update (b)
-    elif blobcheck != True:
-        DoNothing = 1
-    else:
-        print ('We are lost')
-    # Endf if
-    '''
-    midQueue.append (a)
     
 
-
-print (json.dumps(midQueue))
-exit()
-# print ('\n\n\n')
-# print (midQueue[0])
-
-
 # need to chain in here adding images, sensitive    
+    # B is for blobs 
+
+    b = t.get('media_content')
+    
+    if b != None:
+        mca = MediaContentAttach(t)
+        # midQueue.append (mca)
+        
+        altText= GetAltText(t)
+        if not altText:
+            skip = 1
+        elif altText:
+          mca.append (altText)
+        else:
+            print ('We are confused')
+        
+    elif b== None:
+        noblobs = 1
+        mca = {'Media':'None'}
+    else:
+        print ('We are lost')
+    a.update(mca)
+    
+    midQueue.append (a)
+
+# print (json.dumps(midQueue))
 
 
 
@@ -231,17 +241,82 @@ myDID = Bcred.myDID()
 #     print (i)
     
 
-
+bskyQueue = []
 
 for i in midQueue:
+    # print (i, type(i))
     
     bpost.addDID(myDID)
     mQe = i
-    bpost.addText(mQe['basic_text'])
-    bpost.addTime()
+
     
-    BskyPosts.post_simple_ready (bpost,sessT)
+    
+    bpost.addText(mQe['textReady2Post'])
+    bpost.simple_p_map(mQe)
+    bpost.extendedF2Pmap(mQe)
+    
+    # bpost.addText('test\n')
+    
+    bpost.addTime()
+    # print (json.dumps(mQe))
+    # print (mQe.get('SetMediaElements'))
+               
+    if mQe.get('media_content') == None:
+        noBlobs = 'no blobs'
+        bpost.addBlobFlag(False)
+
+    elif mQe.get('media_content') != None:
+        bpost.addBlobFlag(True)
+        bpost.addBlobInfo(mQe)
+        # Check Sensitive
+        IsSen = bpost.checkSensitive()
+
+
+        
+    # Experimental 
+    #bskyQueueJ = json.dumps(bpost.echo())
+    #bskyQueueL = json.loads(bskyQueueJ)
+    #bskyQueue.append (bskyQueueL)
+
+    bPuck=BskyPostPuck()
+    #print (json.dumps(bskyQueue))
+
+    # Check for blobs
+    # if no blobs
+    #then
+    # BskyPosts.json()
+    # BskyPosts.post_simple_ready (bpost,sessT)
+
+    # print (bpost.checkBlobFlag())
+    if not bpost.checkBlobFlag():
+        bPuck.bDataIngest(bpost.bEcho(),Bcred.echo())
+        # print (bpost.bEcho())
+        # BskyPosts.post_simple_ready (bPuck.bEcho(),sessT)   
+        print ('simple')
+        
+    if bpost.checkBlobFlag():
+       blobpost = 'yes'
+       print ('blobly')
+       #num_blobs = bpost.blobPrep()
+       #bsky_link = blob_upload(blob_bytes, this_blob, bsky_creds)
+
+    # class testing
+    bPuck.echo ()
+    #for ty in inspect.getmembers(bPuck):
+        #print (ty)
+    
+    
+    # if blobs
+    # add blob info to bpost
+    # upload blobs
+    # send post with blobs
+       
+    
 # end loop
+
+# bPuck.start_session()
+bPuck.session_refresh()
+bPuck.post_simple_ready()
 
 u_scinfo = StateConfigInfo.update_bsky_prev (u_scinfo)
 uu_scinfo =  StateConfigInfo.update_bsky_now (u_scinfo)

@@ -38,7 +38,7 @@ class MainStateConsistency:
         '''
         Open both the main and state config files
         from file names and check to see if feeds are consistent.
-        If not consistent, throw an error and quit 
+        If not consistent, throw an error and quit
         Suggest in error message to recreate state file config
         using class/routine StateConfigInfo.create
         and editing as needed
@@ -62,7 +62,7 @@ class MainStateConsistency:
             # return 1
             raise Exception('Config and State File feed mismatch')
 
-    
+
         elif f_mci == f_sci:
             return f_mci
 
@@ -77,15 +77,15 @@ class MainStateConsistency:
             'main_config':main_config,
             'state_config':state_config,
         }
-        
+
         return (configs)
     # End open_read_mconfig
-    
+
 class MainConfigInfo:
-       
+
     ''' Class to manage the main config file and info'''
     def create (file2create_filename):
-        
+
         '''creates a new skeletal config file'''
         a = main_config_genInfo
         b = main_config_feedInfo
@@ -105,22 +105,22 @@ class MainConfigInfo:
             cf.write('\n')
             j = cf.close()
             return j
-        
-            
+
+
     def read (MAINconfigfile_name):
         '''Reads the existing main config file and returns
-                      The config info 
+                      The config info
         '''
 
         with open(MAINconfigfile_name, 'r') as mainconfigfile:
             toml_in = toml.load(mainconfigfile)
-            
+
             mainconfigfile.close()
         return toml_in
-    
+
     # def print (self):
-    #    print (self)     
-    
+    #    print (self)
+
     def check_feed_nums (Main_config_info):
         '''Read main config file and deduce number of feeds'''
         '''Main config file checking'''
@@ -130,8 +130,8 @@ class MainConfigInfo:
         '''
         j = len(Main_config_info['FEEDS'])
         return j
-    
-   
+
+
 
 class FetchFeeds:
     '''
@@ -150,12 +150,12 @@ class FetchFeeds:
         '''fetch a feed'''
         feed = feedparser.parse(URL)
         return feed
-    
+
     def enumerate_feed_items (feed):
         '''Describe how many entries are in a feed'''
         its = len (feed['entries'])
         return its
-   
+
     def sort_entries (a_feed):
         '''sort one feed'''
         sorted_entries = sorted(a_feed['entries'],
@@ -171,7 +171,7 @@ class FetchFeeds:
         ''' this idea of rolling up these calls might not be good'''
         nf = numfeeds
         rft =reftime_unix
-    
+
         feedURLs = [0]*nf
         full_fd_content = [0]*nf
         ent_fd  = [0]*nf
@@ -180,25 +180,25 @@ class FetchFeeds:
         uet = [0,0]*nf # updated entry times
         queues = [0] * nf
         feedURLs = FetchFeeds.find_feeds(mainconfigdata)
-        
+
         newrYess = [0]*nf
         for i in range (0,nf):
             full_fd_content[i]= FetchFeeds.fetch_feed(feedURLs[i])
             epf[i] = FetchFeeds.enumerate_feed_items(full_fd_content[i])
             ent_fd[i] = FetchFeeds.sort_entries(full_fd_content[i])
-            
+
             sortedFeedDict = {
                 'enumFeedItems': epf,
                 'sortedEntries': ent_fd
             }
-            
+
         return (sortedFeedDict) # return sorted feeds and their entries
 # end class
 
 class StateConfigInfo:
     def  __init__(self):
         self.nothing = 0
-        
+
     ''' Class to manage the state file and info'''
     def create (file2create_filename, NFeeds=1):
         '''creates a new skeletal state file'''
@@ -224,7 +224,7 @@ class StateConfigInfo:
             cf.write('\n')
             j= cf.close()
             return j
-        
+
 
     def read(filename):
         ''' read state file '''
@@ -234,7 +234,7 @@ class StateConfigInfo:
             stateconfigfile.close()
         return statetoml_in
 
-          
+
     def write_info (stateoutfile_name, data2write):
         '''
         Write current state info out to file
@@ -243,7 +243,7 @@ class StateConfigInfo:
             toml.dump(data2write, stateoutfile)
             i=stateoutfile.close()
         return (i)
-    
+
 
     def update_bsky_prev (info):
         '''
@@ -254,12 +254,12 @@ class StateConfigInfo:
         '''
         info variable is an instance of the full state file info
         '''
-        
+
         info['BSKY_INFO']['previous_last_posted_unix'] \
             = info['BSKY_INFO'].get('last_posted_unix')
         info['BSKY_INFO']['previous_last_posted_iso'] \
             = info['BSKY_INFO']['last_posted_iso']
-                        
+
         return info
 
     def update_bsky_now (info):
@@ -280,21 +280,21 @@ class StateConfigInfo:
         '''
         j = len(info['FEEDS'])
         return j
-        
+
     def update_feed_prev (info):
         ''' Update timestamps of the feed read'''
         '''
         info variable is an instance of the full state file info
         '''
         numfeeds =  StateConfigInfo.check_feed_nums (info)
-        
+
         for i in range (0, numfeeds):
             info['FEEDS'][i]['feed_previous_last_read_unix'] \
                 = info['FEEDS'][i]['feed_last_read_unix']
             info['FEEDS'][i]['feed_previous_last_read_iso'] \
                 = info['FEEDS'][i]['feed_last_read_iso']
         # end loop
-        
+
         return info
 
     def update_feed_now (info):
@@ -315,7 +315,7 @@ class StateConfigInfo:
         sf = sorted_feeds
 
         '''
-        Takes a feeds that has been 
+        Takes a feeds that has been
         sorted. Takes state info
         returns updated state info
         '''
@@ -329,8 +329,8 @@ class StateConfigInfo:
         neTime_unix = [0]*j
         oeTime_iso =  [0]*j
         oeTime_unix = [0]*j
-        
-                
+
+
         for i in range (0,j):
             fi = FetchFeeds.enumerate_feed_items(sf[i]) # number of feed entries
 
@@ -339,30 +339,30 @@ class StateConfigInfo:
 
             neTime[i] = newestEntry[i]['published_parsed']
             oeTime[i] = oldestEntry[i]['published_parsed']
-            
+
             neTime_iso[i] = tuple_time2iso (neTime[i])
             neTime_unix[i] = tuple_time2unix (neTime[i])
             oeTime_iso[i] = tuple_time2iso (oeTime[i])
             oeTime_unix[i] = tuple_time2unix (oeTime[i])
-            
+
             si['FEEDS'][i]['newest_feed_item_unix'] = neTime_unix[i]
             si['FEEDS'][i]['newest_feed_item_iso'] = neTime_iso[i]
             si['FEEDS'][i]['oldest_feed_item_iso'] = oeTime_iso[i]
             si['FEEDS'][i]['oldest_feed_item_unix'] = oeTime_unix[i]
 
-            
+
         return si
 
-    
+
 
 
 class FeedEntriesMash:
-    def WhichEntries2Pub(reftimes, sf):
-        '''Takes a reference time set (size(sf) or size (reftimes), 
+    def DELETEMabyeWhichEntries2Pub(reftimes, sf):
+        '''Takes a reference time set (size(sf) or size (reftimes),
         in unix format'''
         '''Second argument is a singular feed to loop through
         and find entries that are later than the reftime.'''
-        
+
         # sf # Sorted Feeds = sf
         sfl = len(sf)
         fi = [0] * sfl # how many entries in a feed
@@ -375,7 +375,7 @@ class FeedEntriesMash:
 
         for i in range (0,sfl):
             # number of feed entries
-            fi[i] = FetchFeeds.enumerate_feed_items(sf[i]) 
+            fi[i] = FetchFeeds.enumerate_feed_items(sf[i])
             # print (fi[i])
 
         for i in range (0,sfl):
@@ -391,15 +391,15 @@ class FeedEntriesMash:
 
         return sf
 
-    def ComputeNumOutbound(f2e):
+    def DElComputeNumOutbound(f2e):
         '''Compute size of structure to hold all feed elements to be processed
         further; outbound process step one
         '''
         # f2e = feed2examine
         sfl = len(f2e)
-        
-        ec = 0 
-        
+
+        ec = 0
+
         for i in range (0, sfl):
             entnum = len (f2e[i]['entries'])
             # print (sfl, entnum)
@@ -410,7 +410,7 @@ class FeedEntriesMash:
                     ec = ec # no increment
                 else:
                     print ('we are lost')
-                    
+
         return ec
 
     def DEADSimplify (fI, count):
@@ -420,15 +420,15 @@ class FeedEntriesMash:
         count is number of articles to put in outbound structure
         returns outbound structure
         '''
-        # P4t = Posts4Out 
+        # P4t = Posts4Out
         # fI is feed in
         # count is how many entries in total to expect going out
-        
+
         P4t = [None]
         sfl = len(fI)
-        ec = 0 
-        
-                
+        ec = 0
+
+
         for i in range (0, sfl):
             entnum = len (fI[i]['entries'])
             #print (count,sfl,i,ec, entnum)
@@ -437,7 +437,7 @@ class FeedEntriesMash:
                      # cleanerItem = FeedEntriesMash.Map4Simplify (fI[i]['entries'][j],ec)
                      ingest_item = fI[i]['entries'][j]
                      FFE = MiddleQueueEntry()
-                     
+
                      cleanerItem = FFE.entryCreate(ingest_item,ec)
                      FFE.json()
 
@@ -456,14 +456,14 @@ class FeedEntriesMash:
         f = post_constructor
         h = html2text.HTML2Text()
         # These elements should always be present
-        
+
         f['ELEMENTsequence'] = 0 + ec
         f['original_url'] = e['id']
         f['html_text'] = e['summary']
-       
+
 
         tmp = h.handle(e['summary']) # remove html
-                
+
         f['basic_text'] = tmp.strip() # remove new lines using strip
         f['lang_of_post'] = e['summary_detail']['language'] # as of feb 2024, usually = none
         f['base_url'] = e ['summary_detail']['base']
@@ -483,7 +483,7 @@ class FeedEntriesMash:
 
         elif e.get('rating') == None:
             f['rating'] = 'nonadult'
-            
+
         if e.get('tags') == None:
             zeros = 0 # Do nothing
 
@@ -500,7 +500,7 @@ class FeedEntriesMash:
             f['alt_lang_post'] = sd['language']
             f['base_url'] = sd['base']
             f['html_text_sdetail'] = sd['value']
-            
+
         # subroutines for images and associated material here
         # check to see if media attached
 
@@ -509,29 +509,29 @@ class FeedEntriesMash:
             f['number_of_media'] = num_media
             media2attach = FeedEntriesMash.MediaContentAttach(e)
             f['media_array'] = media2attach
-            
+
         elif e.get('media_content') == None:
             dosomething = bool (False)
             # print ('no media_content')
-        else:            
+        else:
             print ('we are confused')
 
         if 'content' in e.keys():
-            alt_text_collection = FeedEntriesMash.MediaContentAttachAltText(e['content'])            
+            alt_text_collection = FeedEntriesMash.MediaContentAttachAltText(e['content'])
             f['altTextSet'] = alt_text_collection
 
         elif  e.get('content')  == None:
             dosomething = bool(False)
             # print ('no content')
 
-        else:            
+        else:
             print ('we are confused')
-            
+
         # need content warning
         # need to set sensitive_post flag as needed (true or false)
-            
+
         # f['sensitive_post'] = FeedEntriesMash.Sensitive_Post_Detect(f)
-        
+
         return f
 
     def DEADSensitive_Post_Detect (thePost):
@@ -542,20 +542,20 @@ class FeedEntriesMash:
 
         if f['rating'] != 'nonadult':
             isSensitive = bool (True)
-        
+
         return isSensitive # boolean
 
-    
-    def MediaContentAttach(e):
+
+    def DELETEMediaContentAttach(e):
         '''For each element entry,determine if media is present and handle it.
         Passing the info out to other routines to finish creating the outbound queue
         of reformatted fediverse elements
         '''
-        ''' takes as single argument the 
+        ''' takes as single argument the
         '''
         mce = len (e['media_content'])
-        mediaE = post_media_item 
-                        
+        mediaE = post_media_item
+
         for i in range (0, mce):
             '''
             Loop for the 'media_content' part
@@ -563,24 +563,24 @@ class FeedEntriesMash:
             medsubset = e['media_content'][i] # one set of media info
             mediaI =  FeedEntriesMash.MediaContentHandle (medsubset)
             medcont = dict(mediaI)
-                        
+
         else:
             donothing = True
-            
-                
-        
+
+
+
         return  medcont
 
-    def MediaContentAttachAltText(contentAltT):
+    def DELETEMediaContentAttachAltText(contentAltT):
         contloops = len (contentAltT)
-        
+
         c_type =  [0] * contloops
         c_lang =  [0] * contloops
         c_base =  [0] * contloops
         c_value = [0] * contloops
-        
+
         for i in range (0,contloops):
-            # print 
+            # print
             c_type[i]=contentAltT[i]['type']
             c_lang[i]=contentAltT[i]['language']
             c_base[i]=contentAltT[i]['base']
@@ -592,13 +592,14 @@ class FeedEntriesMash:
             post_altText_plus['value'] = c_value
 
             altText_set = dict(post_altText_plus)
-        
-            
+
+
         return altText_set
 
-    def MediaContentHandle(MediaContentSet):
+    def ddddMediaContentHandle(MediaContentSet):
         # x is revised media material
         y = MediaContentSet
+
         x = {
             'media_url': y['url'],
             'media_type': y['type'],
@@ -610,11 +611,11 @@ class FeedEntriesMash:
 
         filename = MediaMassage.remoteImageGet(x['media_url'])
         x['localFilePath'] = filename
-        
+
         cmpFileSize = MediaMassage.CheckImageSize(filename)
         x['media_size_calculated'] = cmpFileSize
-        
-        
+
+
         return x
 
 class FeedEntriesFix:
@@ -623,10 +624,10 @@ class FeedEntriesFix:
 
     def print (self):
         print (self.p2fix)
-        
+
     def echo (self):
         return self.p2fix
-    
+
 class MediaMassage:
     '''
     Fetch actual images from fediverse posts to place into outgoing
@@ -637,21 +638,19 @@ class MediaMassage:
             return j
         elif os.path.exists(dirname):
             donothing = bool (True)
-            
-        return 
-    
+
+        return
+
     def remoteImageGet(url):
         with urllib.request.urlopen(url,data=None) as response:
             with tempfile.NamedTemporaryFile(delete=False) as tmp_filename:
                 shutil.copyfileobj(response, tmp_filename)
-        
+
         return tmp_filename.name
-    
+
 
 
     def CheckImageSize(filename):
         file_stats = os.stat(filename)
         filesize = file_stats.st_size
         return filesize
-    
-
