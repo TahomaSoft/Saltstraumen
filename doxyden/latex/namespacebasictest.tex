@@ -1,0 +1,184 @@
+\hypertarget{namespacebasictest}{}\doxysection{basictest Namespace Reference}
+\label{namespacebasictest}\index{basictest@{basictest}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{namespacebasictest_a0c90b1ad776bd3a8fb7497f8f67f1b65}{configfile\+\_\+name}} = \textquotesingle{}./salt-\/main.\+toml\textquotesingle{}
+\item 
+\mbox{\hyperlink{namespacebasictest_aa5d32da3d998bd14b456e119ad1fbd42}{main\+\_\+config}} = read\+Main\+Config(\mbox{\hyperlink{namespacebasictest_a0c90b1ad776bd3a8fb7497f8f67f1b65}{configfile\+\_\+name}})
+\item 
+\mbox{\hyperlink{namespacebasictest_a01a95296c099a7dce8fbbefcb2e6618d}{statefile\+\_\+name}} = \mbox{\hyperlink{namespacebasictest_aa5d32da3d998bd14b456e119ad1fbd42}{main\+\_\+config}}\mbox{[}\textquotesingle{}GENERAL\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}statefile\textquotesingle{}\mbox{]}
+\item 
+\mbox{\hyperlink{namespacebasictest_a749feac8c63ebef400f12de22f0639ce}{state\+\_\+config}} = read\+State\+Config(\mbox{\hyperlink{namespacebasictest_a01a95296c099a7dce8fbbefcb2e6618d}{statefile\+\_\+name}})
+\item 
+\mbox{\hyperlink{namespacebasictest_a95e718fa11b732b7c0c6c120213912d5}{now\+\_\+unix}} = time.\+time()
+\item 
+\mbox{\hyperlink{namespacebasictest_a5965ffb5a75b7eb1049971fdc3f1d918}{now\+\_\+iso}} = datetime.\+now(timezone.\+utc).isoformat()
+\item 
+\mbox{\hyperlink{namespacebasictest_a561da30793bc1421a0126da7923c75c3}{lastread\+\_\+iso}} = \mbox{\hyperlink{namespacebasictest_a749feac8c63ebef400f12de22f0639ce}{state\+\_\+config}}\mbox{[}\textquotesingle{}FEED\+\_\+1\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}feed\+\_\+last\+\_\+read\+\_\+iso\textquotesingle{}\mbox{]}
+\item 
+\mbox{\hyperlink{namespacebasictest_ac59b953d8b201b6888a5d0179f51871f}{lastread\+\_\+unix}} = time.\+strptime(\mbox{\hyperlink{namespacebasictest_a561da30793bc1421a0126da7923c75c3}{lastread\+\_\+iso}}, \char`\"{}\%Y-\/\%m-\/\%dT\%H\+:\%M\+:\%S.\%f\%z\char`\"{})
+\item 
+\mbox{\hyperlink{namespacebasictest_a797f6902d5fcfea2d9f1fc490902d14c}{feed1\+\_\+url}} = \mbox{\hyperlink{namespacebasictest_aa5d32da3d998bd14b456e119ad1fbd42}{main\+\_\+config}}\mbox{[}\textquotesingle{}FEED\+\_\+1\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}URL\textquotesingle{}\mbox{]}
+\item 
+\mbox{\hyperlink{namespacebasictest_acb1c39ea2f34d36c7aa7433edb69d851}{feed1}} = feedparser.\+parse(\mbox{\hyperlink{namespacebasictest_a797f6902d5fcfea2d9f1fc490902d14c}{feed1\+\_\+url}})
+\item 
+\mbox{\hyperlink{namespacebasictest_ac204032c37bd781eb5d836d2f6dacc3d}{items\+\_\+retrieved}} = len(\mbox{\hyperlink{namespacebasictest_acb1c39ea2f34d36c7aa7433edb69d851}{feed1}}\mbox{[}\textquotesingle{}entries\textquotesingle{}\mbox{]})
+\item 
+\mbox{\hyperlink{namespacebasictest_a714c24353e18377e2248884881aec8ee}{entries\+\_\+retrieved}} = \mbox{\hyperlink{namespacebasictest_acb1c39ea2f34d36c7aa7433edb69d851}{feed1}}\mbox{[}\textquotesingle{}entries\textquotesingle{}\mbox{]}
+\item 
+\mbox{\hyperlink{namespacebasictest_a392330cc42044321f631af9fd4fff06e}{sorted\+\_\+entries}} = sorted(\mbox{\hyperlink{namespacebasictest_a714c24353e18377e2248884881aec8ee}{entries\+\_\+retrieved}}, reverse = True, key=attrgetter(\textquotesingle{}published\+\_\+parsed\textquotesingle{}))
+\item 
+list \mbox{\hyperlink{namespacebasictest_a65765a0d3e53df55c94ab0ab98efd44d}{boolean\+\_\+list}} = \mbox{[}None\mbox{]} $\ast$ \mbox{\hyperlink{namespacebasictest_ac204032c37bd781eb5d836d2f6dacc3d}{items\+\_\+retrieved}}
+\item 
+list \mbox{\hyperlink{namespacebasictest_aea15486a1c941d00a5a01d9514bb5a64}{publish\+\_\+dates}} = \mbox{[}None\mbox{]} $\ast$ \mbox{\hyperlink{namespacebasictest_ac204032c37bd781eb5d836d2f6dacc3d}{items\+\_\+retrieved}}
+\item 
+\mbox{\hyperlink{namespacebasictest_a250243b251ded15b62a8f40c6efcbadb}{compare\+\_\+date\+\_\+unix}} = unix\+\_\+time\+\_\+now()
+\item 
+\mbox{\hyperlink{namespacebasictest_af8e198fa3561df38c3d6362e256fa16d}{most\+\_\+recent}} = \mbox{\hyperlink{namespacebasictest_a714c24353e18377e2248884881aec8ee}{entries\+\_\+retrieved}}\mbox{[}0\mbox{]}
+\item 
+\mbox{\hyperlink{namespacebasictest_a05327e52a29ea81de74c95db471dc214}{oldest}} = \mbox{\hyperlink{namespacebasictest_a714c24353e18377e2248884881aec8ee}{entries\+\_\+retrieved}}\mbox{[}\mbox{\hyperlink{namespacebasictest_ac204032c37bd781eb5d836d2f6dacc3d}{items\+\_\+retrieved}}-\/1\mbox{]}
+\item 
+\mbox{\hyperlink{namespacebasictest_a5bf1a86d7e2290ff9bcd58420eeaa99d}{python\+\_\+time}} = \mbox{\hyperlink{namespacebasictest_af8e198fa3561df38c3d6362e256fa16d}{most\+\_\+recent}}\mbox{[}\textquotesingle{}published\+\_\+parsed\textquotesingle{}\mbox{]}
+\item 
+\mbox{\hyperlink{namespacebasictest_a8e17f8fdd48fc21b6512d2cdcab55b1d}{s}} = \mbox{\hyperlink{namespacebasictest_a5bf1a86d7e2290ff9bcd58420eeaa99d}{python\+\_\+time}}
+\item 
+\mbox{\hyperlink{namespacebasictest_aeac1bd19bf5b05e219502121e8c8acfa}{dt}} = datetime($\ast$\mbox{\hyperlink{namespacebasictest_a8e17f8fdd48fc21b6512d2cdcab55b1d}{s}}\mbox{[}\+:6\mbox{]}, tzinfo=timezone.\+utc)
+\item 
+\mbox{\hyperlink{namespacebasictest_a8be3172b53557c17965354d5814e58ba}{rtime}} = calendar.\+timegm(\mbox{\hyperlink{namespacebasictest_a8e17f8fdd48fc21b6512d2cdcab55b1d}{s}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespacebasictest_a65765a0d3e53df55c94ab0ab98efd44d}\label{namespacebasictest_a65765a0d3e53df55c94ab0ab98efd44d}} 
+\index{basictest@{basictest}!boolean\_list@{boolean\_list}}
+\index{boolean\_list@{boolean\_list}!basictest@{basictest}}
+\doxysubsubsection{\texorpdfstring{boolean\_list}{boolean\_list}}
+{\footnotesize\ttfamily list basictest.\+boolean\+\_\+list = \mbox{[}None\mbox{]} $\ast$ \mbox{\hyperlink{namespacebasictest_ac204032c37bd781eb5d836d2f6dacc3d}{items\+\_\+retrieved}}}
+
+\mbox{\Hypertarget{namespacebasictest_a250243b251ded15b62a8f40c6efcbadb}\label{namespacebasictest_a250243b251ded15b62a8f40c6efcbadb}} 
+\index{basictest@{basictest}!compare\_date\_unix@{compare\_date\_unix}}
+\index{compare\_date\_unix@{compare\_date\_unix}!basictest@{basictest}}
+\doxysubsubsection{\texorpdfstring{compare\_date\_unix}{compare\_date\_unix}}
+{\footnotesize\ttfamily basictest.\+compare\+\_\+date\+\_\+unix = unix\+\_\+time\+\_\+now()}
+
+\mbox{\Hypertarget{namespacebasictest_a0c90b1ad776bd3a8fb7497f8f67f1b65}\label{namespacebasictest_a0c90b1ad776bd3a8fb7497f8f67f1b65}} 
+\index{basictest@{basictest}!configfile\_name@{configfile\_name}}
+\index{configfile\_name@{configfile\_name}!basictest@{basictest}}
+\doxysubsubsection{\texorpdfstring{configfile\_name}{configfile\_name}}
+{\footnotesize\ttfamily string basictest.\+configfile\+\_\+name = \textquotesingle{}./salt-\/main.\+toml\textquotesingle{}}
+
+\mbox{\Hypertarget{namespacebasictest_aeac1bd19bf5b05e219502121e8c8acfa}\label{namespacebasictest_aeac1bd19bf5b05e219502121e8c8acfa}} 
+\index{basictest@{basictest}!dt@{dt}}
+\index{dt@{dt}!basictest@{basictest}}
+\doxysubsubsection{\texorpdfstring{dt}{dt}}
+{\footnotesize\ttfamily basictest.\+dt = datetime($\ast$\mbox{\hyperlink{namespacebasictest_a8e17f8fdd48fc21b6512d2cdcab55b1d}{s}}\mbox{[}\+:6\mbox{]}, tzinfo=timezone.\+utc)}
+
+\mbox{\Hypertarget{namespacebasictest_a714c24353e18377e2248884881aec8ee}\label{namespacebasictest_a714c24353e18377e2248884881aec8ee}} 
+\index{basictest@{basictest}!entries\_retrieved@{entries\_retrieved}}
+\index{entries\_retrieved@{entries\_retrieved}!basictest@{basictest}}
+\doxysubsubsection{\texorpdfstring{entries\_retrieved}{entries\_retrieved}}
+{\footnotesize\ttfamily basictest.\+entries\+\_\+retrieved = \mbox{\hyperlink{namespacebasictest_acb1c39ea2f34d36c7aa7433edb69d851}{feed1}}\mbox{[}\textquotesingle{}entries\textquotesingle{}\mbox{]}}
+
+\mbox{\Hypertarget{namespacebasictest_acb1c39ea2f34d36c7aa7433edb69d851}\label{namespacebasictest_acb1c39ea2f34d36c7aa7433edb69d851}} 
+\index{basictest@{basictest}!feed1@{feed1}}
+\index{feed1@{feed1}!basictest@{basictest}}
+\doxysubsubsection{\texorpdfstring{feed1}{feed1}}
+{\footnotesize\ttfamily basictest.\+feed1 = feedparser.\+parse(\mbox{\hyperlink{namespacebasictest_a797f6902d5fcfea2d9f1fc490902d14c}{feed1\+\_\+url}})}
+
+\mbox{\Hypertarget{namespacebasictest_a797f6902d5fcfea2d9f1fc490902d14c}\label{namespacebasictest_a797f6902d5fcfea2d9f1fc490902d14c}} 
+\index{basictest@{basictest}!feed1\_url@{feed1\_url}}
+\index{feed1\_url@{feed1\_url}!basictest@{basictest}}
+\doxysubsubsection{\texorpdfstring{feed1\_url}{feed1\_url}}
+{\footnotesize\ttfamily basictest.\+feed1\+\_\+url = \mbox{\hyperlink{namespacebasictest_aa5d32da3d998bd14b456e119ad1fbd42}{main\+\_\+config}}\mbox{[}\textquotesingle{}FEED\+\_\+1\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}URL\textquotesingle{}\mbox{]}}
+
+\mbox{\Hypertarget{namespacebasictest_ac204032c37bd781eb5d836d2f6dacc3d}\label{namespacebasictest_ac204032c37bd781eb5d836d2f6dacc3d}} 
+\index{basictest@{basictest}!items\_retrieved@{items\_retrieved}}
+\index{items\_retrieved@{items\_retrieved}!basictest@{basictest}}
+\doxysubsubsection{\texorpdfstring{items\_retrieved}{items\_retrieved}}
+{\footnotesize\ttfamily basictest.\+items\+\_\+retrieved = len(\mbox{\hyperlink{namespacebasictest_acb1c39ea2f34d36c7aa7433edb69d851}{feed1}}\mbox{[}\textquotesingle{}entries\textquotesingle{}\mbox{]})}
+
+\mbox{\Hypertarget{namespacebasictest_a561da30793bc1421a0126da7923c75c3}\label{namespacebasictest_a561da30793bc1421a0126da7923c75c3}} 
+\index{basictest@{basictest}!lastread\_iso@{lastread\_iso}}
+\index{lastread\_iso@{lastread\_iso}!basictest@{basictest}}
+\doxysubsubsection{\texorpdfstring{lastread\_iso}{lastread\_iso}}
+{\footnotesize\ttfamily basictest.\+lastread\+\_\+iso = \mbox{\hyperlink{namespacebasictest_a749feac8c63ebef400f12de22f0639ce}{state\+\_\+config}}\mbox{[}\textquotesingle{}FEED\+\_\+1\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}feed\+\_\+last\+\_\+read\+\_\+iso\textquotesingle{}\mbox{]}}
+
+\mbox{\Hypertarget{namespacebasictest_ac59b953d8b201b6888a5d0179f51871f}\label{namespacebasictest_ac59b953d8b201b6888a5d0179f51871f}} 
+\index{basictest@{basictest}!lastread\_unix@{lastread\_unix}}
+\index{lastread\_unix@{lastread\_unix}!basictest@{basictest}}
+\doxysubsubsection{\texorpdfstring{lastread\_unix}{lastread\_unix}}
+{\footnotesize\ttfamily basictest.\+lastread\+\_\+unix = time.\+strptime(\mbox{\hyperlink{namespacebasictest_a561da30793bc1421a0126da7923c75c3}{lastread\+\_\+iso}}, \char`\"{}\%Y-\/\%m-\/\%dT\%H\+:\%M\+:\%S.\%f\%z\char`\"{})}
+
+\mbox{\Hypertarget{namespacebasictest_aa5d32da3d998bd14b456e119ad1fbd42}\label{namespacebasictest_aa5d32da3d998bd14b456e119ad1fbd42}} 
+\index{basictest@{basictest}!main\_config@{main\_config}}
+\index{main\_config@{main\_config}!basictest@{basictest}}
+\doxysubsubsection{\texorpdfstring{main\_config}{main\_config}}
+{\footnotesize\ttfamily basictest.\+main\+\_\+config = read\+Main\+Config(\mbox{\hyperlink{namespacebasictest_a0c90b1ad776bd3a8fb7497f8f67f1b65}{configfile\+\_\+name}})}
+
+\mbox{\Hypertarget{namespacebasictest_af8e198fa3561df38c3d6362e256fa16d}\label{namespacebasictest_af8e198fa3561df38c3d6362e256fa16d}} 
+\index{basictest@{basictest}!most\_recent@{most\_recent}}
+\index{most\_recent@{most\_recent}!basictest@{basictest}}
+\doxysubsubsection{\texorpdfstring{most\_recent}{most\_recent}}
+{\footnotesize\ttfamily basictest.\+most\+\_\+recent = \mbox{\hyperlink{namespacebasictest_a714c24353e18377e2248884881aec8ee}{entries\+\_\+retrieved}}\mbox{[}0\mbox{]}}
+
+\mbox{\Hypertarget{namespacebasictest_a5965ffb5a75b7eb1049971fdc3f1d918}\label{namespacebasictest_a5965ffb5a75b7eb1049971fdc3f1d918}} 
+\index{basictest@{basictest}!now\_iso@{now\_iso}}
+\index{now\_iso@{now\_iso}!basictest@{basictest}}
+\doxysubsubsection{\texorpdfstring{now\_iso}{now\_iso}}
+{\footnotesize\ttfamily basictest.\+now\+\_\+iso = datetime.\+now(timezone.\+utc).isoformat()}
+
+\mbox{\Hypertarget{namespacebasictest_a95e718fa11b732b7c0c6c120213912d5}\label{namespacebasictest_a95e718fa11b732b7c0c6c120213912d5}} 
+\index{basictest@{basictest}!now\_unix@{now\_unix}}
+\index{now\_unix@{now\_unix}!basictest@{basictest}}
+\doxysubsubsection{\texorpdfstring{now\_unix}{now\_unix}}
+{\footnotesize\ttfamily basictest.\+now\+\_\+unix = time.\+time()}
+
+\mbox{\Hypertarget{namespacebasictest_a05327e52a29ea81de74c95db471dc214}\label{namespacebasictest_a05327e52a29ea81de74c95db471dc214}} 
+\index{basictest@{basictest}!oldest@{oldest}}
+\index{oldest@{oldest}!basictest@{basictest}}
+\doxysubsubsection{\texorpdfstring{oldest}{oldest}}
+{\footnotesize\ttfamily basictest.\+oldest = \mbox{\hyperlink{namespacebasictest_a714c24353e18377e2248884881aec8ee}{entries\+\_\+retrieved}}\mbox{[}\mbox{\hyperlink{namespacebasictest_ac204032c37bd781eb5d836d2f6dacc3d}{items\+\_\+retrieved}}-\/1\mbox{]}}
+
+\mbox{\Hypertarget{namespacebasictest_aea15486a1c941d00a5a01d9514bb5a64}\label{namespacebasictest_aea15486a1c941d00a5a01d9514bb5a64}} 
+\index{basictest@{basictest}!publish\_dates@{publish\_dates}}
+\index{publish\_dates@{publish\_dates}!basictest@{basictest}}
+\doxysubsubsection{\texorpdfstring{publish\_dates}{publish\_dates}}
+{\footnotesize\ttfamily list basictest.\+publish\+\_\+dates = \mbox{[}None\mbox{]} $\ast$ \mbox{\hyperlink{namespacebasictest_ac204032c37bd781eb5d836d2f6dacc3d}{items\+\_\+retrieved}}}
+
+\mbox{\Hypertarget{namespacebasictest_a5bf1a86d7e2290ff9bcd58420eeaa99d}\label{namespacebasictest_a5bf1a86d7e2290ff9bcd58420eeaa99d}} 
+\index{basictest@{basictest}!python\_time@{python\_time}}
+\index{python\_time@{python\_time}!basictest@{basictest}}
+\doxysubsubsection{\texorpdfstring{python\_time}{python\_time}}
+{\footnotesize\ttfamily basictest.\+python\+\_\+time = \mbox{\hyperlink{namespacebasictest_af8e198fa3561df38c3d6362e256fa16d}{most\+\_\+recent}}\mbox{[}\textquotesingle{}published\+\_\+parsed\textquotesingle{}\mbox{]}}
+
+\mbox{\Hypertarget{namespacebasictest_a8be3172b53557c17965354d5814e58ba}\label{namespacebasictest_a8be3172b53557c17965354d5814e58ba}} 
+\index{basictest@{basictest}!rtime@{rtime}}
+\index{rtime@{rtime}!basictest@{basictest}}
+\doxysubsubsection{\texorpdfstring{rtime}{rtime}}
+{\footnotesize\ttfamily basictest.\+rtime = calendar.\+timegm(\mbox{\hyperlink{namespacebasictest_a8e17f8fdd48fc21b6512d2cdcab55b1d}{s}})}
+
+\mbox{\Hypertarget{namespacebasictest_a8e17f8fdd48fc21b6512d2cdcab55b1d}\label{namespacebasictest_a8e17f8fdd48fc21b6512d2cdcab55b1d}} 
+\index{basictest@{basictest}!s@{s}}
+\index{s@{s}!basictest@{basictest}}
+\doxysubsubsection{\texorpdfstring{s}{s}}
+{\footnotesize\ttfamily basictest.\+s = \mbox{\hyperlink{namespacebasictest_a5bf1a86d7e2290ff9bcd58420eeaa99d}{python\+\_\+time}}}
+
+\mbox{\Hypertarget{namespacebasictest_a392330cc42044321f631af9fd4fff06e}\label{namespacebasictest_a392330cc42044321f631af9fd4fff06e}} 
+\index{basictest@{basictest}!sorted\_entries@{sorted\_entries}}
+\index{sorted\_entries@{sorted\_entries}!basictest@{basictest}}
+\doxysubsubsection{\texorpdfstring{sorted\_entries}{sorted\_entries}}
+{\footnotesize\ttfamily basictest.\+sorted\+\_\+entries = sorted(\mbox{\hyperlink{namespacebasictest_a714c24353e18377e2248884881aec8ee}{entries\+\_\+retrieved}}, reverse = True, key=attrgetter(\textquotesingle{}published\+\_\+parsed\textquotesingle{}))}
+
+\mbox{\Hypertarget{namespacebasictest_a749feac8c63ebef400f12de22f0639ce}\label{namespacebasictest_a749feac8c63ebef400f12de22f0639ce}} 
+\index{basictest@{basictest}!state\_config@{state\_config}}
+\index{state\_config@{state\_config}!basictest@{basictest}}
+\doxysubsubsection{\texorpdfstring{state\_config}{state\_config}}
+{\footnotesize\ttfamily basictest.\+state\+\_\+config = read\+State\+Config(\mbox{\hyperlink{namespacebasictest_a01a95296c099a7dce8fbbefcb2e6618d}{statefile\+\_\+name}})}
+
+\mbox{\Hypertarget{namespacebasictest_a01a95296c099a7dce8fbbefcb2e6618d}\label{namespacebasictest_a01a95296c099a7dce8fbbefcb2e6618d}} 
+\index{basictest@{basictest}!statefile\_name@{statefile\_name}}
+\index{statefile\_name@{statefile\_name}!basictest@{basictest}}
+\doxysubsubsection{\texorpdfstring{statefile\_name}{statefile\_name}}
+{\footnotesize\ttfamily basictest.\+statefile\+\_\+name = \mbox{\hyperlink{namespacebasictest_aa5d32da3d998bd14b456e119ad1fbd42}{main\+\_\+config}}\mbox{[}\textquotesingle{}GENERAL\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}statefile\textquotesingle{}\mbox{]}}
+

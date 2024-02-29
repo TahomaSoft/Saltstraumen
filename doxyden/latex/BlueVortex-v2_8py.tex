@@ -1,0 +1,110 @@
+\hypertarget{BlueVortex-v2_8py}{}\doxysection{Blue\+Vortex-\/v2.py File Reference}
+\label{BlueVortex-v2_8py}\index{BlueVortex-\/v2.py@{BlueVortex-\/v2.py}}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceBlueVortex-v2}{Blue\+Vortex-\/v2}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{namespaceBlueVortex-v2_a9ba8696a3fb36223f8fc4caa33897441}{Blue\+Vortex-\/v2.\+maincf}} = \textquotesingle{}salt-\/main.\+toml\textquotesingle{}
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_a28e925378807b54d5d55905fe2050e25}{Blue\+Vortex-\/v2.\+mcfdata}} = Main\+Config\+Info.\+read(maincf)
+\item 
+tuple \mbox{\hyperlink{namespaceBlueVortex-v2_af049f558eef473167462d2743faff160}{Blue\+Vortex-\/v2.\+statecf}} = (mcfdata\mbox{[}\textquotesingle{}GENERAL\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}Statefile\textquotesingle{}\mbox{]})
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_aef26d5fbfd906329e0058c123603ce26}{Blue\+Vortex-\/v2.\+scinfo}} = State\+Config\+Info.\+read(statecf)
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_a719266e922cfdc898d7df6db8c301255}{Blue\+Vortex-\/v2.\+numfeed\+State}} = State\+Config\+Info.\+check\+\_\+feed\+\_\+nums (scinfo)
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_a3edac1bece65f2d5cc3ad7a57dfead6d}{Blue\+Vortex-\/v2.\+numfeeds}} = Main\+State\+Consistency.\+feeds (maincf, statecf)
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_a572f30be755bed8bbf67daccad61294c}{Blue\+Vortex-\/v2.\+alist}} = Fetch\+Feeds.\+find\+\_\+feeds(mcfdata)
+\item 
+list \mbox{\hyperlink{namespaceBlueVortex-v2_aa4c630f512477788f17551b78b4e72b1}{Blue\+Vortex-\/v2.\+feed\+Data}} = \mbox{[}0\mbox{]} $\ast$ numfeeds
+\item 
+list \mbox{\hyperlink{namespaceBlueVortex-v2_a93d8db86fc1ee2c5eb7dcee61bc27a6b}{Blue\+Vortex-\/v2.\+items\+Per\+Feed}} = \mbox{[}0\mbox{]} $\ast$ numfeeds
+\item 
+list \mbox{\hyperlink{namespaceBlueVortex-v2_a13283b5c8508075040b0f419a9c7cbfe}{Blue\+Vortex-\/v2.\+flrtimes\+\_\+unix}} = \mbox{[}0\mbox{]} $\ast$ numfeeds
+\item 
+list \mbox{\hyperlink{namespaceBlueVortex-v2_a7522644a4f262c46df5d0c9f477bd451}{Blue\+Vortex-\/v2.\+flrtimes\+\_\+iso}} = \mbox{[}0\mbox{]} $\ast$ numfeeds
+\item 
+list \mbox{\hyperlink{namespaceBlueVortex-v2_a17ab853a39b5124f7f5b7458a79c588c}{Blue\+Vortex-\/v2.\+pflrtimes\+\_\+u}} = \mbox{[}0\mbox{]} $\ast$ numfeeds
+\item 
+list \mbox{\hyperlink{namespaceBlueVortex-v2_aae203be8b647c867088bc7de2d94a143}{Blue\+Vortex-\/v2.\+pflrtimes\+\_\+i}} = \mbox{[}0\mbox{]} $\ast$ numfeeds
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_a0833ffb563c3f2a49b7ae6add1386de5}{Blue\+Vortex-\/v2.\+now1}} = unix\+\_\+time\+\_\+now()
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_aca5f6aed74b5d12c75afcdca78bbc144}{Blue\+Vortex-\/v2.\+now2}} = unix\+\_\+time\+\_\+now()
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_a134f688a4a8e4d4a3cd111ddf5633bb3}{Blue\+Vortex-\/v2.\+u\+\_\+scinfo}} = State\+Config\+Info.\+update\+\_\+entry\+\_\+times(feed\+Data,scinfo)
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_ac2af725423d08a2ac79c9ead8e98deeb}{Blue\+Vortex-\/v2.\+j}} = State\+Config\+Info.\+write\+\_\+info(statecf, u\+\_\+scinfo)
+\item 
+list \mbox{\hyperlink{namespaceBlueVortex-v2_a599692fb167db9d4a1127b8e8d32ef99}{Blue\+Vortex-\/v2.\+reftimes}} = \mbox{[}0,0\mbox{]}
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_a28afd1d59cac9693a4aa25b50b806f9f}{Blue\+Vortex-\/v2.\+le\+Data}} = Holder\+Fed\+Feed(feed\+Data)
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_ab24c6ef97a9548365683540e67d052f2}{Blue\+Vortex-\/v2.\+y}} = le\+Data.\+feedQ
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_af936fbb44b0df4bee0bbdc7179bef534}{Blue\+Vortex-\/v2.\+z}} = le\+Data.\+counter\mbox{[}i\mbox{]}\mbox{[}\textquotesingle{}numE\textquotesingle{}\mbox{]}
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_a040ecaf1198337818a2b6492b3a91a35}{Blue\+Vortex-\/v2.\+l\+De}} = le\+Data.\+feeds\mbox{[}i\mbox{]}\mbox{[}j\mbox{]}
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_a52cbabb46d6e2d4a0cfe96b57dfa8ec7}{Blue\+Vortex-\/v2.\+e}} = Fed\+Feed\+Entry()
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_a33438ebffeab32b3edd4fb7b257e2d18}{Blue\+Vortex-\/v2.\+tf}} = e.\+check\+Entry2\+Pub (l\+De,reftimes\mbox{[}i\mbox{]})
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_a4c22caf7ff1caa5daef8e20c9fa69a4e}{Blue\+Vortex-\/v2.\+to\+DoE}} = len (le\+Data.\+Uni\+Feed)
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_ab85da6138c078fc63a9249efd55aca43}{Blue\+Vortex-\/v2.\+keepgoing}} = bool(True)
+\item 
+list \mbox{\hyperlink{namespaceBlueVortex-v2_a8c2f5e84c0d741f73948d7628ece29a0}{Blue\+Vortex-\/v2.\+mid\+Queue}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_a00faaf54b88923f4cd56e482fc031996}{Blue\+Vortex-\/v2.\+t}} = le\+Data.\+new\+Queue\+Exgest(i)
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_a27f0781de5b28a8913646e9c4c0e75a7}{Blue\+Vortex-\/v2.\+a}} = entry\+Create (t,i)
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_ab2837b32cf83fbab1da155fd217decf8}{Blue\+Vortex-\/v2.\+b}} = t.\+get(\textquotesingle{}media\+\_\+content\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_ac375cbed3ff63565552b15d30392ef89}{Blue\+Vortex-\/v2.\+mca}} = Media\+Content\+Attach(t)
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_ae67834793e0730049a3be9531a7305a8}{Blue\+Vortex-\/v2.\+alt\+Text}} = Get\+Alt\+Text(t)
+\item 
+int \mbox{\hyperlink{namespaceBlueVortex-v2_a3a6a5e3df29d5b4667e6b865181592e3}{Blue\+Vortex-\/v2.\+skip}} = 1
+\item 
+int \mbox{\hyperlink{namespaceBlueVortex-v2_a25a06ea6bf2a1691f650dd5e1d7fee29}{Blue\+Vortex-\/v2.\+noblobs}} = 1
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_a0e61e45804b26eb1db3974cf92ffdc19}{Blue\+Vortex-\/v2.\+count}} = len(mid\+Queue)
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_ac4245583193bbadec5c559834130f4ff}{Blue\+Vortex-\/v2.\+Bcred}} = Bsky\+Credentials()
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_a24ff4ab57dbb28311238ef7951d3ddf8}{Blue\+Vortex-\/v2.\+acct\+\_\+name}} = mcfdata\mbox{[}\textquotesingle{}BSKY\+\_\+\+ACCOUNT\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}Username\textquotesingle{}\mbox{]}
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_acaaa6a6f59bdc93a075f08d58970f71a}{Blue\+Vortex-\/v2.\+app\+Pass}} = mcfdata\mbox{[}\textquotesingle{}BSKY\+\_\+\+ACCOUNT\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}App\+\_\+passwd\textquotesingle{}\mbox{]}
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_a9ec0909430369c92205dc5e8691ec383}{Blue\+Vortex-\/v2.\+creds}} = Bcred.\+show\+\_\+creds()
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_aa8d70786c7592a070ef5981c05918699}{Blue\+Vortex-\/v2.\+my\+Past\+Posts}} = Bsky\+Feed.\+get\+\_\+author\+\_\+feed(creds, 20)
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_a20b268733844ba330237f1cb3b4d4742}{Blue\+Vortex-\/v2.\+bpost}} = Post\+Xwalk()
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_abeb8eb0ce02b33d6ed59ecf843ddbf2a}{Blue\+Vortex-\/v2.\+sessT}} = Bcred.\+get\+\_\+sessT()
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_a391c9ca823faff3aa34590846bc75fc8}{Blue\+Vortex-\/v2.\+my\+DID}} = Bcred.\+my\+DID()
+\item 
+list \mbox{\hyperlink{namespaceBlueVortex-v2_a6aceb66e602bce1404753c31a7345588}{Blue\+Vortex-\/v2.\+bsky\+Queue}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_aa582fd35196385535b934efab9672dba}{Blue\+Vortex-\/v2.\+m\+Qe}} = i
+\item 
+string \mbox{\hyperlink{namespaceBlueVortex-v2_aebdcffddbc60b7630a7b88a7160d5bce}{Blue\+Vortex-\/v2.\+no\+Blobs}} = \textquotesingle{}no blobs\textquotesingle{}
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_a46bc26e245488f2c99ead7c43481b5a3}{Blue\+Vortex-\/v2.\+Is\+Sen}} = bpost.\+check\+Sensitive()
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_a8f68d24ec6030cadf7413c2fe5d5b6f4}{Blue\+Vortex-\/v2.\+b\+Puck}} = Bsky\+Post\+Puck()
+\item 
+string \mbox{\hyperlink{namespaceBlueVortex-v2_a23e3f3a8d926d8e95d391102d7cf2142}{Blue\+Vortex-\/v2.\+blobpost}} = \textquotesingle{}yes\textquotesingle{}
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_a153dcca7b2b8e32589b602796ff0f973}{Blue\+Vortex-\/v2.\+uu\+\_\+scinfo}} = State\+Config\+Info.\+update\+\_\+bsky\+\_\+now (u\+\_\+scinfo)
+\end{DoxyCompactItemize}

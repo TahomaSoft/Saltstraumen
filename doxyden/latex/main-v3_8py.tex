@@ -1,0 +1,46 @@
+\hypertarget{main-v3_8py}{}\doxysection{main-\/v3.py File Reference}
+\label{main-v3_8py}\index{main-\/v3.py@{main-\/v3.py}}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacemain-v3}{main-\/v3}}
+\item 
+ \mbox{\hyperlink{namespacemain}{main}}
+\begin{DoxyCompactList}\small\item\em -\/v1 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{namespacemain-v3_a7802b8d00c8d2250eb7e9d48df697e6d}{main-\/v3.\+maincf}} = \textquotesingle{}salt-\/main.\+toml\textquotesingle{}
+\item 
+\mbox{\hyperlink{namespacemain-v3_ace36c38f9f8ed3de120581350ef26f7e}{main-\/v3.\+mcinfo}} = Main\+Config\+Info.\+read(maincf)
+\item 
+tuple \mbox{\hyperlink{namespacemain-v3_a1831f28157aee44f5a32e9e31c93b675}{main-\/v3.\+statecf}} = (mcinfo\mbox{[}\textquotesingle{}GENERAL\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}Statefile\textquotesingle{}\mbox{]})
+\item 
+\mbox{\hyperlink{namespacemain-v3_a00658d183564bb98660cbba0eb03825f}{main-\/v3.\+scinfo}} = State\+Config\+Info.\+read(statecf)
+\item 
+\mbox{\hyperlink{namespacemain-v3_a2317764c221fa366d11cf5ce71e08f99}{main-\/v3.\+numfeed\+State}} = State\+Config\+Info.\+check\+\_\+feed\+\_\+nums (scinfo)
+\item 
+\mbox{\hyperlink{namespacemain-v3_a7a7a4843c53163bd40842a3c5427dc9a}{main-\/v3.\+checkmainfeeds}} = Main\+Config\+Info.\+check\+\_\+feed\+\_\+nums(mcinfo)
+\item 
+\mbox{\hyperlink{namespacemain-v3_a4e37b3dba99934522c99cac3dc37f6ee}{main-\/v3.\+nufeeds}} = Main\+State\+Consistency.\+feeds (maincf, statecf)
+\item 
+\mbox{\hyperlink{namespacemain-v3_aad162b0985a963940a1c4d5a90df870b}{main-\/v3.\+alist}} = Fetch\+Feeds.\+find\+\_\+feeds(mcinfo)
+\item 
+list \mbox{\hyperlink{namespacemain-v3_aee42a299bb3547f86b3853d1e4b111f2}{main-\/v3.\+feed\+Data}} = \mbox{[}0\mbox{]} $\ast$ nufeeds
+\item 
+list \mbox{\hyperlink{namespacemain-v3_afe94ec7848d1167f4a2b04f29a37b98b}{main-\/v3.\+items\+Per\+Feed}} = \mbox{[}0\mbox{]} $\ast$ nufeeds
+\item 
+\mbox{\hyperlink{namespacemain-v3_ab7a66727b863d845f058b669a1cf3740}{main-\/v3.\+u\+\_\+scinfo}} = State\+Config\+Info.\+update\+\_\+entry\+\_\+times(feed\+Data,scinfo)
+\item 
+\mbox{\hyperlink{namespacemain-v3_a27e02062c553b14fe5b11323f2079db7}{main-\/v3.\+j}} = State\+Config\+Info.\+write\+\_\+info(statecf, u\+\_\+scinfo)
+\item 
+int \mbox{\hyperlink{namespacemain-v3_a60a6d6a429840ce379a59aed3674ae0f}{main-\/v3.\+reftime}} = 0
+\item 
+\mbox{\hyperlink{namespacemain-v3_afb1e5218031cd076aab7da2d0e89b095}{main-\/v3.\+Neu\+Feed\+Data}} = Feed\+Entries\+Mash.\+Which\+Entries2\+Pub(reftime,feed\+Data)
+\item 
+\mbox{\hyperlink{namespacemain-v3_acbfdab2c265165b4765a316120a1e79b}{main-\/v3.\+count}} = Feed\+Entries\+Mash.\+Compute\+Num\+Outbound (Neu\+Feed\+Data)
+\item 
+\mbox{\hyperlink{namespacemain-v3_a5a93d69a0798595ddde85b74fc8fd3ba}{main-\/v3.\+keepgoing}} = bool(True)
+\item 
+\mbox{\hyperlink{namespacemain-v3_aaae3d741149e0b737082f5eec9ac9fca}{main-\/v3.\+feed\+In}} = Neu\+Feed\+Data
+\end{DoxyCompactItemize}

@@ -1,0 +1,54 @@
+\hypertarget{basictest_8py}{}\doxysection{basictest.\+py File Reference}
+\label{basictest_8py}\index{basictest.py@{basictest.py}}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacebasictest}{basictest}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{namespacebasictest_a0c90b1ad776bd3a8fb7497f8f67f1b65}{basictest.\+configfile\+\_\+name}} = \textquotesingle{}./salt-\/main.\+toml\textquotesingle{}
+\item 
+\mbox{\hyperlink{namespacebasictest_aa5d32da3d998bd14b456e119ad1fbd42}{basictest.\+main\+\_\+config}} = read\+Main\+Config(configfile\+\_\+name)
+\item 
+\mbox{\hyperlink{namespacebasictest_a01a95296c099a7dce8fbbefcb2e6618d}{basictest.\+statefile\+\_\+name}} = main\+\_\+config\mbox{[}\textquotesingle{}GENERAL\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}statefile\textquotesingle{}\mbox{]}
+\item 
+\mbox{\hyperlink{namespacebasictest_a749feac8c63ebef400f12de22f0639ce}{basictest.\+state\+\_\+config}} = read\+State\+Config(statefile\+\_\+name)
+\item 
+\mbox{\hyperlink{namespacebasictest_a95e718fa11b732b7c0c6c120213912d5}{basictest.\+now\+\_\+unix}} = time.\+time()
+\item 
+\mbox{\hyperlink{namespacebasictest_a5965ffb5a75b7eb1049971fdc3f1d918}{basictest.\+now\+\_\+iso}} = datetime.\+now(timezone.\+utc).isoformat()
+\item 
+\mbox{\hyperlink{namespacebasictest_a561da30793bc1421a0126da7923c75c3}{basictest.\+lastread\+\_\+iso}} = state\+\_\+config\mbox{[}\textquotesingle{}FEED\+\_\+1\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}feed\+\_\+last\+\_\+read\+\_\+iso\textquotesingle{}\mbox{]}
+\item 
+\mbox{\hyperlink{namespacebasictest_ac59b953d8b201b6888a5d0179f51871f}{basictest.\+lastread\+\_\+unix}} = time.\+strptime(lastread\+\_\+iso, \char`\"{}\%Y-\/\%m-\/\%dT\%H\+:\%M\+:\%S.\%f\%z\char`\"{})
+\item 
+\mbox{\hyperlink{namespacebasictest_a797f6902d5fcfea2d9f1fc490902d14c}{basictest.\+feed1\+\_\+url}} = main\+\_\+config\mbox{[}\textquotesingle{}FEED\+\_\+1\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}URL\textquotesingle{}\mbox{]}
+\item 
+\mbox{\hyperlink{namespacebasictest_acb1c39ea2f34d36c7aa7433edb69d851}{basictest.\+feed1}} = feedparser.\+parse(feed1\+\_\+url)
+\item 
+\mbox{\hyperlink{namespacebasictest_ac204032c37bd781eb5d836d2f6dacc3d}{basictest.\+items\+\_\+retrieved}} = len(feed1\mbox{[}\textquotesingle{}entries\textquotesingle{}\mbox{]})
+\item 
+\mbox{\hyperlink{namespacebasictest_a714c24353e18377e2248884881aec8ee}{basictest.\+entries\+\_\+retrieved}} = feed1\mbox{[}\textquotesingle{}entries\textquotesingle{}\mbox{]}
+\item 
+\mbox{\hyperlink{namespacebasictest_a392330cc42044321f631af9fd4fff06e}{basictest.\+sorted\+\_\+entries}} = sorted(entries\+\_\+retrieved, reverse = True, key=attrgetter(\textquotesingle{}published\+\_\+parsed\textquotesingle{}))
+\item 
+list \mbox{\hyperlink{namespacebasictest_a65765a0d3e53df55c94ab0ab98efd44d}{basictest.\+boolean\+\_\+list}} = \mbox{[}None\mbox{]} $\ast$ items\+\_\+retrieved
+\item 
+list \mbox{\hyperlink{namespacebasictest_aea15486a1c941d00a5a01d9514bb5a64}{basictest.\+publish\+\_\+dates}} = \mbox{[}None\mbox{]} $\ast$ items\+\_\+retrieved
+\item 
+\mbox{\hyperlink{namespacebasictest_a250243b251ded15b62a8f40c6efcbadb}{basictest.\+compare\+\_\+date\+\_\+unix}} = unix\+\_\+time\+\_\+now()
+\item 
+\mbox{\hyperlink{namespacebasictest_af8e198fa3561df38c3d6362e256fa16d}{basictest.\+most\+\_\+recent}} = entries\+\_\+retrieved\mbox{[}0\mbox{]}
+\item 
+\mbox{\hyperlink{namespacebasictest_a05327e52a29ea81de74c95db471dc214}{basictest.\+oldest}} = entries\+\_\+retrieved\mbox{[}items\+\_\+retrieved-\/1\mbox{]}
+\item 
+\mbox{\hyperlink{namespacebasictest_a5bf1a86d7e2290ff9bcd58420eeaa99d}{basictest.\+python\+\_\+time}} = most\+\_\+recent\mbox{[}\textquotesingle{}published\+\_\+parsed\textquotesingle{}\mbox{]}
+\item 
+\mbox{\hyperlink{namespacebasictest_a8e17f8fdd48fc21b6512d2cdcab55b1d}{basictest.\+s}} = python\+\_\+time
+\item 
+\mbox{\hyperlink{namespacebasictest_aeac1bd19bf5b05e219502121e8c8acfa}{basictest.\+dt}} = datetime($\ast$s\mbox{[}\+:6\mbox{]}, tzinfo=timezone.\+utc)
+\item 
+\mbox{\hyperlink{namespacebasictest_a8be3172b53557c17965354d5814e58ba}{basictest.\+rtime}} = calendar.\+timegm(s)
+\end{DoxyCompactItemize}

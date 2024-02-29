@@ -1,18 +1,14 @@
 #!/usr/bin/python3
-import calendar
-import toml
-import time
-from operator import attrgetter
-from datetime import date, datetime, timezone
-from configswork import readMainConfig, readStateConfig, writeStateConfig
-import feedparser
-import ticktocktime
-from ticktocktime import tuple_time2unix,unix_time_now
+
+from config_feed_objsmeth import MainConfigInfo, StateConfigInfo,chk_main_state
+
+
+
 
 # this is the main program
 
 configfile_name = './salt-main.toml'
-# statefile_name = './salt-state.toml'
+statefile_name = './salt-state.toml'
 
 # Open the main and state config files, read, get data, and close the files
 # proper handling of time formats will be needed.
@@ -22,12 +18,38 @@ configfile_name = './salt-main.toml'
 # everything here in unix time, and convert as needed.
 
 
-main_config = readMainConfig(configfile_name)
+main_config =  MainConfigInfo()
+main_config.read(configfile_name)
 
 
-statefile_name = main_config['GENERAL']['statefile']
-state_config = readStateConfig(statefile_name)
+# MainConfigInfo.create ('dork.toml',3)
+# StateConfigInfo.create ('dorkmork.toml',4)
 
+# fred = chk_main_state ('salt-main.toml', 'salt-state.toml')
+
+# print (fred)
+
+# print (main_config)
+
+
+
+# statefile_name = main_config['GENERAL']['Statefile']
+q = main_config.state_fname()
+
+
+state_config = StateConfigInfo()
+
+state_config.read(statefile_name)
+
+print (state_config)
+# state_config = readStateConfig(statefile_name)
+
+f = state_config.check_feed_num()
+
+print (f)
+
+
+exit() 
 now_unix = time.time()
 now_iso  = datetime.now(timezone.utc).isoformat()
 lastread_iso = state_config['FEED_1']['feed_last_read_iso']

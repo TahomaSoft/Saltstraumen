@@ -1,0 +1,135 @@
+\hypertarget{classconfig__feed__objsmeth_1_1StateConfigInfo}{}\doxysection{config\+\_\+feed\+\_\+objsmeth.\+State\+Config\+Info Class Reference}
+\label{classconfig__feed__objsmeth_1_1StateConfigInfo}\index{config\_feed\_objsmeth.StateConfigInfo@{config\_feed\_objsmeth.StateConfigInfo}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classconfig__feed__objsmeth_1_1StateConfigInfo_a50adc2aca75db8b0adc33f7bf78b63c5}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, file2create\+\_\+filename=\textquotesingle{}salt-\/state.\+toml\textquotesingle{}, n\+\_\+feeds=1)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classconfig__feed__objsmeth_1_1StateConfigInfo_a79123865045d268293f19fad3a7be503}{create}} (file2create\+\_\+filename=\textquotesingle{}salt-\/state.\+toml\textquotesingle{}, n\+\_\+feeds=1)
+\item 
+def \mbox{\hyperlink{classconfig__feed__objsmeth_1_1StateConfigInfo_a7e1c34ede95c836d7781cf81536a59fd}{read}} (filename)
+\item 
+def \mbox{\hyperlink{classconfig__feed__objsmeth_1_1StateConfigInfo_ad17dc98baba90a95b79f87fb018fb324}{write\+\_\+info}} (stateoutfile\+\_\+name, data2write)
+\item 
+def \mbox{\hyperlink{classconfig__feed__objsmeth_1_1StateConfigInfo_a2d13e2d8fdd4497b4c20c2d6e4a99cda}{update\+\_\+bsky\+\_\+prev}} (info)
+\item 
+def \mbox{\hyperlink{classconfig__feed__objsmeth_1_1StateConfigInfo_a10509ca1e82477e64b17ca338e022f7b}{update\+\_\+bsky\+\_\+now}} (info)
+\item 
+def \mbox{\hyperlink{classconfig__feed__objsmeth_1_1StateConfigInfo_a3b97db416cc3f3674336907620f37f67}{check\+\_\+feed\+\_\+nums}} (info)
+\item 
+def \mbox{\hyperlink{classconfig__feed__objsmeth_1_1StateConfigInfo_a207ea688176cf4bef51086e33c33173e}{update\+\_\+feed\+\_\+prev}} (info)
+\item 
+def \mbox{\hyperlink{classconfig__feed__objsmeth_1_1StateConfigInfo_aa9c11d88538409295bf7ede9b333e588}{update\+\_\+feed\+\_\+now}} (info)
+\item 
+def \mbox{\hyperlink{classconfig__feed__objsmeth_1_1StateConfigInfo_ae4188e31ad6db13d0a4bb152937d74ba}{update\+\_\+entry\+\_\+times}} (sorted\+\_\+feeds, state\+\_\+info)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb} Class to manage the state file and info
+** Needs more detail on what to write out **
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classconfig__feed__objsmeth_1_1StateConfigInfo_a50adc2aca75db8b0adc33f7bf78b63c5}\label{classconfig__feed__objsmeth_1_1StateConfigInfo_a50adc2aca75db8b0adc33f7bf78b63c5}} 
+\index{config\_feed\_objsmeth.StateConfigInfo@{config\_feed\_objsmeth.StateConfigInfo}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!config\_feed\_objsmeth.StateConfigInfo@{config\_feed\_objsmeth.StateConfigInfo}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def config\+\_\+feed\+\_\+objsmeth.\+State\+Config\+Info.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{file2create\+\_\+filename = {\ttfamily \textquotesingle{}salt-\/state.toml\textquotesingle{}},  }\item[{}]{n\+\_\+feeds = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classconfig__feed__objsmeth_1_1StateConfigInfo_a3b97db416cc3f3674336907620f37f67}\label{classconfig__feed__objsmeth_1_1StateConfigInfo_a3b97db416cc3f3674336907620f37f67}} 
+\index{config\_feed\_objsmeth.StateConfigInfo@{config\_feed\_objsmeth.StateConfigInfo}!check\_feed\_nums@{check\_feed\_nums}}
+\index{check\_feed\_nums@{check\_feed\_nums}!config\_feed\_objsmeth.StateConfigInfo@{config\_feed\_objsmeth.StateConfigInfo}}
+\doxysubsubsection{\texorpdfstring{check\_feed\_nums()}{check\_feed\_nums()}}
+{\footnotesize\ttfamily def config\+\_\+feed\+\_\+objsmeth.\+State\+Config\+Info.\+check\+\_\+feed\+\_\+nums (\begin{DoxyParamCaption}\item[{}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}Checks feed numbers in STATE file
+info variable is an instance of the full state file info
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classconfig__feed__objsmeth_1_1StateConfigInfo_a79123865045d268293f19fad3a7be503}\label{classconfig__feed__objsmeth_1_1StateConfigInfo_a79123865045d268293f19fad3a7be503}} 
+\index{config\_feed\_objsmeth.StateConfigInfo@{config\_feed\_objsmeth.StateConfigInfo}!create@{create}}
+\index{create@{create}!config\_feed\_objsmeth.StateConfigInfo@{config\_feed\_objsmeth.StateConfigInfo}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily def config\+\_\+feed\+\_\+objsmeth.\+State\+Config\+Info.\+create (\begin{DoxyParamCaption}\item[{}]{file2create\+\_\+filename = {\ttfamily \textquotesingle{}salt-\/state.toml\textquotesingle{}},  }\item[{}]{n\+\_\+feeds = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}creates a new skeletal state file
+with NFeeds number of feeds
+** Needs more detail on what to write out **
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classconfig__feed__objsmeth_1_1StateConfigInfo_a7e1c34ede95c836d7781cf81536a59fd}\label{classconfig__feed__objsmeth_1_1StateConfigInfo_a7e1c34ede95c836d7781cf81536a59fd}} 
+\index{config\_feed\_objsmeth.StateConfigInfo@{config\_feed\_objsmeth.StateConfigInfo}!read@{read}}
+\index{read@{read}!config\_feed\_objsmeth.StateConfigInfo@{config\_feed\_objsmeth.StateConfigInfo}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily def config\+\_\+feed\+\_\+objsmeth.\+State\+Config\+Info.\+read (\begin{DoxyParamCaption}\item[{}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb} read state file \end{DoxyVerb}
+ \mbox{\Hypertarget{classconfig__feed__objsmeth_1_1StateConfigInfo_a10509ca1e82477e64b17ca338e022f7b}\label{classconfig__feed__objsmeth_1_1StateConfigInfo_a10509ca1e82477e64b17ca338e022f7b}} 
+\index{config\_feed\_objsmeth.StateConfigInfo@{config\_feed\_objsmeth.StateConfigInfo}!update\_bsky\_now@{update\_bsky\_now}}
+\index{update\_bsky\_now@{update\_bsky\_now}!config\_feed\_objsmeth.StateConfigInfo@{config\_feed\_objsmeth.StateConfigInfo}}
+\doxysubsubsection{\texorpdfstring{update\_bsky\_now()}{update\_bsky\_now()}}
+{\footnotesize\ttfamily def config\+\_\+feed\+\_\+objsmeth.\+State\+Config\+Info.\+update\+\_\+bsky\+\_\+now (\begin{DoxyParamCaption}\item[{}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb} updates post times for bsky
+    info variable is an instance of the full state file info
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classconfig__feed__objsmeth_1_1StateConfigInfo_a2d13e2d8fdd4497b4c20c2d6e4a99cda}\label{classconfig__feed__objsmeth_1_1StateConfigInfo_a2d13e2d8fdd4497b4c20c2d6e4a99cda}} 
+\index{config\_feed\_objsmeth.StateConfigInfo@{config\_feed\_objsmeth.StateConfigInfo}!update\_bsky\_prev@{update\_bsky\_prev}}
+\index{update\_bsky\_prev@{update\_bsky\_prev}!config\_feed\_objsmeth.StateConfigInfo@{config\_feed\_objsmeth.StateConfigInfo}}
+\doxysubsubsection{\texorpdfstring{update\_bsky\_prev()}{update\_bsky\_prev()}}
+{\footnotesize\ttfamily def config\+\_\+feed\+\_\+objsmeth.\+State\+Config\+Info.\+update\+\_\+bsky\+\_\+prev (\begin{DoxyParamCaption}\item[{}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}takes  dict for the state file bsky info,
+updates previous last post date/times
+returns it.
+
+info variable is an instance of the full state file info
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classconfig__feed__objsmeth_1_1StateConfigInfo_ae4188e31ad6db13d0a4bb152937d74ba}\label{classconfig__feed__objsmeth_1_1StateConfigInfo_ae4188e31ad6db13d0a4bb152937d74ba}} 
+\index{config\_feed\_objsmeth.StateConfigInfo@{config\_feed\_objsmeth.StateConfigInfo}!update\_entry\_times@{update\_entry\_times}}
+\index{update\_entry\_times@{update\_entry\_times}!config\_feed\_objsmeth.StateConfigInfo@{config\_feed\_objsmeth.StateConfigInfo}}
+\doxysubsubsection{\texorpdfstring{update\_entry\_times()}{update\_entry\_times()}}
+{\footnotesize\ttfamily def config\+\_\+feed\+\_\+objsmeth.\+State\+Config\+Info.\+update\+\_\+entry\+\_\+times (\begin{DoxyParamCaption}\item[{}]{sorted\+\_\+feeds,  }\item[{}]{state\+\_\+info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb} update info
+Takes a feeds that has been sorted. Takes state info
+returns updated state info
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classconfig__feed__objsmeth_1_1StateConfigInfo_aa9c11d88538409295bf7ede9b333e588}\label{classconfig__feed__objsmeth_1_1StateConfigInfo_aa9c11d88538409295bf7ede9b333e588}} 
+\index{config\_feed\_objsmeth.StateConfigInfo@{config\_feed\_objsmeth.StateConfigInfo}!update\_feed\_now@{update\_feed\_now}}
+\index{update\_feed\_now@{update\_feed\_now}!config\_feed\_objsmeth.StateConfigInfo@{config\_feed\_objsmeth.StateConfigInfo}}
+\doxysubsubsection{\texorpdfstring{update\_feed\_now()}{update\_feed\_now()}}
+{\footnotesize\ttfamily def config\+\_\+feed\+\_\+objsmeth.\+State\+Config\+Info.\+update\+\_\+feed\+\_\+now (\begin{DoxyParamCaption}\item[{}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb} Update timestamps of the feed read
+ info variable is an instance of the full state file info
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classconfig__feed__objsmeth_1_1StateConfigInfo_a207ea688176cf4bef51086e33c33173e}\label{classconfig__feed__objsmeth_1_1StateConfigInfo_a207ea688176cf4bef51086e33c33173e}} 
+\index{config\_feed\_objsmeth.StateConfigInfo@{config\_feed\_objsmeth.StateConfigInfo}!update\_feed\_prev@{update\_feed\_prev}}
+\index{update\_feed\_prev@{update\_feed\_prev}!config\_feed\_objsmeth.StateConfigInfo@{config\_feed\_objsmeth.StateConfigInfo}}
+\doxysubsubsection{\texorpdfstring{update\_feed\_prev()}{update\_feed\_prev()}}
+{\footnotesize\ttfamily def config\+\_\+feed\+\_\+objsmeth.\+State\+Config\+Info.\+update\+\_\+feed\+\_\+prev (\begin{DoxyParamCaption}\item[{}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb} Update timestamps of the feed read
+
+info variable is an instance of the full state file info
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classconfig__feed__objsmeth_1_1StateConfigInfo_ad17dc98baba90a95b79f87fb018fb324}\label{classconfig__feed__objsmeth_1_1StateConfigInfo_ad17dc98baba90a95b79f87fb018fb324}} 
+\index{config\_feed\_objsmeth.StateConfigInfo@{config\_feed\_objsmeth.StateConfigInfo}!write\_info@{write\_info}}
+\index{write\_info@{write\_info}!config\_feed\_objsmeth.StateConfigInfo@{config\_feed\_objsmeth.StateConfigInfo}}
+\doxysubsubsection{\texorpdfstring{write\_info()}{write\_info()}}
+{\footnotesize\ttfamily def config\+\_\+feed\+\_\+objsmeth.\+State\+Config\+Info.\+write\+\_\+info (\begin{DoxyParamCaption}\item[{}]{stateoutfile\+\_\+name,  }\item[{}]{data2write }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}Write current state info out to file
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{config__feed__objsmeth_8py}{config\+\_\+feed\+\_\+objsmeth.\+py}}\end{DoxyCompactItemize}

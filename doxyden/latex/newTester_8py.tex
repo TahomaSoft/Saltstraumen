@@ -1,0 +1,38 @@
+\hypertarget{newTester_8py}{}\doxysection{new\+Tester.\+py File Reference}
+\label{newTester_8py}\index{newTester.py@{newTester.py}}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacenewTester}{new\+Tester}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{namespacenewTester_ab511ae641e6e596a605d95bf3387c224}{new\+Tester.\+maincf}} = \textquotesingle{}salt-\/main.\+toml\textquotesingle{}
+\item 
+\mbox{\hyperlink{namespacenewTester_adce215b1758a8573a5e9597dd2049715}{new\+Tester.\+mcfdata}} = Main\+Config\+Info.\+read(maincf)
+\item 
+tuple \mbox{\hyperlink{namespacenewTester_a7214f84f0c08c04c1fe9fc5f31ec75d7}{new\+Tester.\+statecf}} = (mcfdata\mbox{[}\textquotesingle{}GENERAL\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}Statefile\textquotesingle{}\mbox{]})
+\item 
+\mbox{\hyperlink{namespacenewTester_a585ef193098c5d8c6e29334342d448b1}{new\+Tester.\+scinfo}} = State\+Config\+Info.\+read(statecf)
+\item 
+\mbox{\hyperlink{namespacenewTester_ab3f74427395032c3220ce71486fb145c}{new\+Tester.\+numfeed\+State}} = State\+Config\+Info.\+check\+\_\+feed\+\_\+nums (scinfo)
+\item 
+\mbox{\hyperlink{namespacenewTester_addfff5be850674fb6b8ef3efa6b639c3}{new\+Tester.\+numfeeds}} = Main\+State\+Consistency.\+feeds (maincf, statecf)
+\item 
+\mbox{\hyperlink{namespacenewTester_a3ce9e82aade0a553deba79f768094a91}{new\+Tester.\+Bcred}} = Bsky\+Credentials()
+\item 
+\mbox{\hyperlink{namespacenewTester_a7fa33e2bf1125ffc601a5541393c7ab5}{new\+Tester.\+acct\+\_\+name}} = mcfdata\mbox{[}\textquotesingle{}BSKY\+\_\+\+ACCOUNT\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}Username\textquotesingle{}\mbox{]}
+\item 
+\mbox{\hyperlink{namespacenewTester_a31efa0e88b13c9c9415f59653d600214}{new\+Tester.\+app\+Pass}} = mcfdata\mbox{[}\textquotesingle{}BSKY\+\_\+\+ACCOUNT\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}App\+\_\+passwd\textquotesingle{}\mbox{]}
+\item 
+\mbox{\hyperlink{namespacenewTester_aa3056b0171b9bdd233f96c071c80a463}{new\+Tester.\+creds}} = Bcred.\+show\+\_\+creds()
+\item 
+\mbox{\hyperlink{namespacenewTester_a313318e2956978d163b70bcdab747f9e}{new\+Tester.\+my\+Past\+Posts}} = Bsky\+Feed.\+get\+\_\+author\+\_\+feed(creds, 2)
+\item 
+\mbox{\hyperlink{namespacenewTester_a0a04717828698c310f1404b5d0e9b97f}{new\+Tester.\+j}} = Bcred.\+show\+\_\+creds()
+\item 
+\mbox{\hyperlink{namespacenewTester_a7f3c6eddde30fd8463d7764e946793b0}{new\+Tester.\+Bsky\+Test}} = Bsky\+Post\+Puck()
+\item 
+\mbox{\hyperlink{namespacenewTester_a4455de17fe0132467584a95893df9a1d}{new\+Tester.\+sessT}} = Bsky\+Test.\+get\+\_\+sessT()
+\end{DoxyCompactItemize}

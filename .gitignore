@@ -4,3 +4,9 @@ salt-main.*
 *.toml
 # Python puddles #
 __pycache__/
+*.py.lint
+_build/
+make.bat
+Makefile
+index.*
+*.rst

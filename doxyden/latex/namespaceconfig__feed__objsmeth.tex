@@ -1,0 +1,88 @@
+\hypertarget{namespaceconfig__feed__objsmeth}{}\doxysection{config\+\_\+feed\+\_\+objsmeth Namespace Reference}
+\label{namespaceconfig__feed__objsmeth}\index{config\_feed\_objsmeth@{config\_feed\_objsmeth}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classconfig__feed__objsmeth_1_1MainConfigInfo}{Main\+Config\+Info}}
+\item 
+class \mbox{\hyperlink{classconfig__feed__objsmeth_1_1StateConfigInfo}{State\+Config\+Info}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespaceconfig__feed__objsmeth_a306e8f5a189673754e2974bf7da71b5a}{chk\+\_\+main\+\_\+state}} (mainconfigfilename, stateconfigfilename)
+\item 
+def \mbox{\hyperlink{namespaceconfig__feed__objsmeth_a5de96150f6597697ad6432e0571d3041}{open\+\_\+read\+\_\+mconfig}} (mainconfigfile\+\_\+name)
+\item 
+def \mbox{\hyperlink{namespaceconfig__feed__objsmeth_a8989730d7596189d6d6a6adb182ecdfb}{find\+\_\+feeds}} (Main\+\_\+config\+\_\+info)
+\item 
+def \mbox{\hyperlink{namespaceconfig__feed__objsmeth_ad508f9b181fb95a33b3a113a15007cd3}{fetch\+\_\+feed}} (URL)
+\item 
+def \mbox{\hyperlink{namespaceconfig__feed__objsmeth_adf13e73ef0daadf2766a9b27790f7dae}{enumerate\+\_\+feed\+\_\+items}} (feed)
+\item 
+def \mbox{\hyperlink{namespaceconfig__feed__objsmeth_a3ad97bae11b0b5bd4480518b84f61124}{sort\+\_\+entries}} (a\+\_\+feed)
+\item 
+def \mbox{\hyperlink{namespaceconfig__feed__objsmeth_a21345a7f87509198b67f58ca24957b81}{feed\+Handle\+Fetch\+Sort}} (numfeeds, mainconfigdata, reftime\+\_\+unix)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespaceconfig__feed__objsmeth_a306e8f5a189673754e2974bf7da71b5a}\label{namespaceconfig__feed__objsmeth_a306e8f5a189673754e2974bf7da71b5a}} 
+\index{config\_feed\_objsmeth@{config\_feed\_objsmeth}!chk\_main\_state@{chk\_main\_state}}
+\index{chk\_main\_state@{chk\_main\_state}!config\_feed\_objsmeth@{config\_feed\_objsmeth}}
+\doxysubsubsection{\texorpdfstring{chk\_main\_state()}{chk\_main\_state()}}
+{\footnotesize\ttfamily def config\+\_\+feed\+\_\+objsmeth.\+chk\+\_\+main\+\_\+state (\begin{DoxyParamCaption}\item[{}]{mainconfigfilename,  }\item[{}]{stateconfigfilename }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Open both the main and state config files
+from file names and check to see if feeds are consistent.
+If not consistent, throw an error and quit
+Suggest in error message to recreate state file config
+using class/routine StateConfigInfo.create
+and editing as needed
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceconfig__feed__objsmeth_adf13e73ef0daadf2766a9b27790f7dae}\label{namespaceconfig__feed__objsmeth_adf13e73ef0daadf2766a9b27790f7dae}} 
+\index{config\_feed\_objsmeth@{config\_feed\_objsmeth}!enumerate\_feed\_items@{enumerate\_feed\_items}}
+\index{enumerate\_feed\_items@{enumerate\_feed\_items}!config\_feed\_objsmeth@{config\_feed\_objsmeth}}
+\doxysubsubsection{\texorpdfstring{enumerate\_feed\_items()}{enumerate\_feed\_items()}}
+{\footnotesize\ttfamily def config\+\_\+feed\+\_\+objsmeth.\+enumerate\+\_\+feed\+\_\+items (\begin{DoxyParamCaption}\item[{}]{feed }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Describe how many entries are in a feed\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceconfig__feed__objsmeth_a21345a7f87509198b67f58ca24957b81}\label{namespaceconfig__feed__objsmeth_a21345a7f87509198b67f58ca24957b81}} 
+\index{config\_feed\_objsmeth@{config\_feed\_objsmeth}!feedHandleFetchSort@{feedHandleFetchSort}}
+\index{feedHandleFetchSort@{feedHandleFetchSort}!config\_feed\_objsmeth@{config\_feed\_objsmeth}}
+\doxysubsubsection{\texorpdfstring{feedHandleFetchSort()}{feedHandleFetchSort()}}
+{\footnotesize\ttfamily def config\+\_\+feed\+\_\+objsmeth.\+feed\+Handle\+Fetch\+Sort (\begin{DoxyParamCaption}\item[{}]{numfeeds,  }\item[{}]{mainconfigdata,  }\item[{}]{reftime\+\_\+unix }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} this idea of rolling up these calls might not be good\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceconfig__feed__objsmeth_ad508f9b181fb95a33b3a113a15007cd3}\label{namespaceconfig__feed__objsmeth_ad508f9b181fb95a33b3a113a15007cd3}} 
+\index{config\_feed\_objsmeth@{config\_feed\_objsmeth}!fetch\_feed@{fetch\_feed}}
+\index{fetch\_feed@{fetch\_feed}!config\_feed\_objsmeth@{config\_feed\_objsmeth}}
+\doxysubsubsection{\texorpdfstring{fetch\_feed()}{fetch\_feed()}}
+{\footnotesize\ttfamily def config\+\_\+feed\+\_\+objsmeth.\+fetch\+\_\+feed (\begin{DoxyParamCaption}\item[{}]{URL }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}fetch a feed\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceconfig__feed__objsmeth_a8989730d7596189d6d6a6adb182ecdfb}\label{namespaceconfig__feed__objsmeth_a8989730d7596189d6d6a6adb182ecdfb}} 
+\index{config\_feed\_objsmeth@{config\_feed\_objsmeth}!find\_feeds@{find\_feeds}}
+\index{find\_feeds@{find\_feeds}!config\_feed\_objsmeth@{config\_feed\_objsmeth}}
+\doxysubsubsection{\texorpdfstring{find\_feeds()}{find\_feeds()}}
+{\footnotesize\ttfamily def config\+\_\+feed\+\_\+objsmeth.\+find\+\_\+feeds (\begin{DoxyParamCaption}\item[{}]{Main\+\_\+config\+\_\+info }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a small structure with the feed URLs\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceconfig__feed__objsmeth_a5de96150f6597697ad6432e0571d3041}\label{namespaceconfig__feed__objsmeth_a5de96150f6597697ad6432e0571d3041}} 
+\index{config\_feed\_objsmeth@{config\_feed\_objsmeth}!open\_read\_mconfig@{open\_read\_mconfig}}
+\index{open\_read\_mconfig@{open\_read\_mconfig}!config\_feed\_objsmeth@{config\_feed\_objsmeth}}
+\doxysubsubsection{\texorpdfstring{open\_read\_mconfig()}{open\_read\_mconfig()}}
+{\footnotesize\ttfamily def config\+\_\+feed\+\_\+objsmeth.\+open\+\_\+read\+\_\+mconfig (\begin{DoxyParamCaption}\item[{}]{mainconfigfile\+\_\+name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function to read main config file\end{DoxyVerb}
+
+
+\begin{DoxyVerb} And open state file based on info in main config file\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceconfig__feed__objsmeth_a3ad97bae11b0b5bd4480518b84f61124}\label{namespaceconfig__feed__objsmeth_a3ad97bae11b0b5bd4480518b84f61124}} 
+\index{config\_feed\_objsmeth@{config\_feed\_objsmeth}!sort\_entries@{sort\_entries}}
+\index{sort\_entries@{sort\_entries}!config\_feed\_objsmeth@{config\_feed\_objsmeth}}
+\doxysubsubsection{\texorpdfstring{sort\_entries()}{sort\_entries()}}
+{\footnotesize\ttfamily def config\+\_\+feed\+\_\+objsmeth.\+sort\+\_\+entries (\begin{DoxyParamCaption}\item[{}]{a\+\_\+feed }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}sort one feed\end{DoxyVerb}
+ 

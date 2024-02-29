@@ -1,0 +1,96 @@
+\hypertarget{namespacemain-v1}{}\doxysection{main-\/v1 Namespace Reference}
+\label{namespacemain-v1}\index{main-\/v1@{main-\/v1}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacemain-v1_adf732744cdebd9bbde01710d4ad751ac}{rval}} = \mbox{\hyperlink{classheavy__lifting_1_1StateConfigInfo_a09fa49f4c87183579c3589135e5b5e57}{State\+Config\+Info.\+create}}(\textquotesingle{}foo.\+toml\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespacemain-v1_a697e4503d165117017718442bab3df7c}{t}} = \mbox{\hyperlink{classheavy__lifting_1_1MainConfigInfo_a26e0281d5806d3c7f4b3a5025cc34d6f}{Main\+Config\+Info.\+read}}(\textquotesingle{}salt-\/main.\+toml\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespacemain-v1_a6dc230c1d9086b2b50d343c71654b7c1}{x}} = \mbox{\hyperlink{classheavy__lifting_1_1StateConfigInfo_a6aaf9f508d8135e8c5fd61444c0ade48}{State\+Config\+Info.\+read}}(\textquotesingle{}salt-\/state.\+toml\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespacemain-v1_a8d7951699fe8690413fe784921207cde}{z}} = \mbox{\hyperlink{classheavy__lifting_1_1StateConfigInfo_a2503d24ec6cfacbb7c29254ce91d7375}{State\+Config\+Info.\+check\+\_\+feed\+\_\+nums}}(\mbox{\hyperlink{namespacemain-v1_a6dc230c1d9086b2b50d343c71654b7c1}{x}})
+\item 
+\mbox{\hyperlink{namespacemain-v1_ab85621e32b12db45d70c68cd60803df3}{hmf}} = Fetch\+Feeds.\+check\+\_\+feed\+\_\+nums(\mbox{\hyperlink{namespacemain-v1_a697e4503d165117017718442bab3df7c}{t}})
+\item 
+list \mbox{\hyperlink{namespacemain-v1_aec3a40f6f9e43b658332180108c377a9}{feed\+URLs}} = \mbox{[}0\mbox{]}$\ast$ \mbox{\hyperlink{namespacemain-v1_ab85621e32b12db45d70c68cd60803df3}{hmf}}
+\item 
+list \mbox{\hyperlink{namespacemain-v1_a710f4bc72304cd17353ed5a694d68923}{fd\+\_\+content}} = \mbox{[}0\mbox{]}$\ast$ \mbox{\hyperlink{namespacemain-v1_ab85621e32b12db45d70c68cd60803df3}{hmf}}
+\item 
+\mbox{\hyperlink{namespacemain-v1_a778cfdbeb3305d62f25cb07550ceccc9}{j}} = \mbox{\hyperlink{classheavy__lifting_1_1FetchFeeds_a6a9bd3ce110fcf699f3d2d5d50ff61c7}{Fetch\+Feeds.\+enumerate\+\_\+feed\+\_\+items}}(feed\mbox{[}i\mbox{]})
+\item 
+\mbox{\hyperlink{namespacemain-v1_a14f94813de7ebe0b6374f01663ee8640}{a}} = \mbox{\hyperlink{classheavy__lifting_1_1StateConfigInfo_a1e4e4c2e9da8410d52c910790f1e5e2a}{State\+Config\+Info.\+write\+\_\+info}}(\textquotesingle{}salt-\/statetest.\+toml\textquotesingle{},\mbox{\hyperlink{namespacemain-v1_a6dc230c1d9086b2b50d343c71654b7c1}{x}})
+\item 
+string \mbox{\hyperlink{namespacemain-v1_a24210e8111638f268b51f5eb581af53c}{configfile\+Name}} = \textquotesingle{}./salt-\/main.\+toml\textquotesingle{}
+\item 
+\mbox{\hyperlink{namespacemain-v1_ab59ce90ef99702f057cd0bbeb7b8134a}{config\+Dets}} = open\+\_\+read\+\_\+config(\mbox{\hyperlink{namespacemain-v1_a24210e8111638f268b51f5eb581af53c}{configfile\+Name}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespacemain-v1_a14f94813de7ebe0b6374f01663ee8640}\label{namespacemain-v1_a14f94813de7ebe0b6374f01663ee8640}} 
+\index{main-\/v1@{main-\/v1}!a@{a}}
+\index{a@{a}!main-\/v1@{main-\/v1}}
+\doxysubsubsection{\texorpdfstring{a}{a}}
+{\footnotesize\ttfamily main-\/v1.\+a = \mbox{\hyperlink{classheavy__lifting_1_1StateConfigInfo_a1e4e4c2e9da8410d52c910790f1e5e2a}{State\+Config\+Info.\+write\+\_\+info}}(\textquotesingle{}salt-\/statetest.\+toml\textquotesingle{},\mbox{\hyperlink{namespacemain-v1_a6dc230c1d9086b2b50d343c71654b7c1}{x}})}
+
+\mbox{\Hypertarget{namespacemain-v1_ab59ce90ef99702f057cd0bbeb7b8134a}\label{namespacemain-v1_ab59ce90ef99702f057cd0bbeb7b8134a}} 
+\index{main-\/v1@{main-\/v1}!configDets@{configDets}}
+\index{configDets@{configDets}!main-\/v1@{main-\/v1}}
+\doxysubsubsection{\texorpdfstring{configDets}{configDets}}
+{\footnotesize\ttfamily main-\/v1.\+config\+Dets = open\+\_\+read\+\_\+config(\mbox{\hyperlink{namespacemain-v1_a24210e8111638f268b51f5eb581af53c}{configfile\+Name}})}
+
+\mbox{\Hypertarget{namespacemain-v1_a24210e8111638f268b51f5eb581af53c}\label{namespacemain-v1_a24210e8111638f268b51f5eb581af53c}} 
+\index{main-\/v1@{main-\/v1}!configfileName@{configfileName}}
+\index{configfileName@{configfileName}!main-\/v1@{main-\/v1}}
+\doxysubsubsection{\texorpdfstring{configfileName}{configfileName}}
+{\footnotesize\ttfamily string main-\/v1.\+configfile\+Name = \textquotesingle{}./salt-\/main.\+toml\textquotesingle{}}
+
+\mbox{\Hypertarget{namespacemain-v1_a710f4bc72304cd17353ed5a694d68923}\label{namespacemain-v1_a710f4bc72304cd17353ed5a694d68923}} 
+\index{main-\/v1@{main-\/v1}!fd\_content@{fd\_content}}
+\index{fd\_content@{fd\_content}!main-\/v1@{main-\/v1}}
+\doxysubsubsection{\texorpdfstring{fd\_content}{fd\_content}}
+{\footnotesize\ttfamily list main-\/v1.\+fd\+\_\+content = \mbox{[}0\mbox{]}$\ast$ \mbox{\hyperlink{namespacemain-v1_ab85621e32b12db45d70c68cd60803df3}{hmf}}}
+
+\mbox{\Hypertarget{namespacemain-v1_aec3a40f6f9e43b658332180108c377a9}\label{namespacemain-v1_aec3a40f6f9e43b658332180108c377a9}} 
+\index{main-\/v1@{main-\/v1}!feedURLs@{feedURLs}}
+\index{feedURLs@{feedURLs}!main-\/v1@{main-\/v1}}
+\doxysubsubsection{\texorpdfstring{feedURLs}{feedURLs}}
+{\footnotesize\ttfamily main-\/v1.\+feed\+URLs = \mbox{[}0\mbox{]}$\ast$ \mbox{\hyperlink{namespacemain-v1_ab85621e32b12db45d70c68cd60803df3}{hmf}}}
+
+\mbox{\Hypertarget{namespacemain-v1_ab85621e32b12db45d70c68cd60803df3}\label{namespacemain-v1_ab85621e32b12db45d70c68cd60803df3}} 
+\index{main-\/v1@{main-\/v1}!hmf@{hmf}}
+\index{hmf@{hmf}!main-\/v1@{main-\/v1}}
+\doxysubsubsection{\texorpdfstring{hmf}{hmf}}
+{\footnotesize\ttfamily main-\/v1.\+hmf = Fetch\+Feeds.\+check\+\_\+feed\+\_\+nums(\mbox{\hyperlink{namespacemain-v1_a697e4503d165117017718442bab3df7c}{t}})}
+
+\mbox{\Hypertarget{namespacemain-v1_a778cfdbeb3305d62f25cb07550ceccc9}\label{namespacemain-v1_a778cfdbeb3305d62f25cb07550ceccc9}} 
+\index{main-\/v1@{main-\/v1}!j@{j}}
+\index{j@{j}!main-\/v1@{main-\/v1}}
+\doxysubsubsection{\texorpdfstring{j}{j}}
+{\footnotesize\ttfamily main-\/v1.\+j = \mbox{\hyperlink{classheavy__lifting_1_1FetchFeeds_a6a9bd3ce110fcf699f3d2d5d50ff61c7}{Fetch\+Feeds.\+enumerate\+\_\+feed\+\_\+items}}(feed\mbox{[}i\mbox{]})}
+
+\mbox{\Hypertarget{namespacemain-v1_adf732744cdebd9bbde01710d4ad751ac}\label{namespacemain-v1_adf732744cdebd9bbde01710d4ad751ac}} 
+\index{main-\/v1@{main-\/v1}!rval@{rval}}
+\index{rval@{rval}!main-\/v1@{main-\/v1}}
+\doxysubsubsection{\texorpdfstring{rval}{rval}}
+{\footnotesize\ttfamily main-\/v1.\+rval = \mbox{\hyperlink{classheavy__lifting_1_1StateConfigInfo_a09fa49f4c87183579c3589135e5b5e57}{State\+Config\+Info.\+create}}(\textquotesingle{}foo.\+toml\textquotesingle{})}
+
+\mbox{\Hypertarget{namespacemain-v1_a697e4503d165117017718442bab3df7c}\label{namespacemain-v1_a697e4503d165117017718442bab3df7c}} 
+\index{main-\/v1@{main-\/v1}!t@{t}}
+\index{t@{t}!main-\/v1@{main-\/v1}}
+\doxysubsubsection{\texorpdfstring{t}{t}}
+{\footnotesize\ttfamily main-\/v1.\+t = \mbox{\hyperlink{classheavy__lifting_1_1MainConfigInfo_a26e0281d5806d3c7f4b3a5025cc34d6f}{Main\+Config\+Info.\+read}}(\textquotesingle{}salt-\/main.\+toml\textquotesingle{})}
+
+\mbox{\Hypertarget{namespacemain-v1_a6dc230c1d9086b2b50d343c71654b7c1}\label{namespacemain-v1_a6dc230c1d9086b2b50d343c71654b7c1}} 
+\index{main-\/v1@{main-\/v1}!x@{x}}
+\index{x@{x}!main-\/v1@{main-\/v1}}
+\doxysubsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily main-\/v1.\+x = \mbox{\hyperlink{classheavy__lifting_1_1StateConfigInfo_a6aaf9f508d8135e8c5fd61444c0ade48}{State\+Config\+Info.\+read}}(\textquotesingle{}salt-\/state.\+toml\textquotesingle{})}
+
+\mbox{\Hypertarget{namespacemain-v1_a8d7951699fe8690413fe784921207cde}\label{namespacemain-v1_a8d7951699fe8690413fe784921207cde}} 
+\index{main-\/v1@{main-\/v1}!z@{z}}
+\index{z@{z}!main-\/v1@{main-\/v1}}
+\doxysubsubsection{\texorpdfstring{z}{z}}
+{\footnotesize\ttfamily main-\/v1.\+z = \mbox{\hyperlink{classheavy__lifting_1_1StateConfigInfo_a2503d24ec6cfacbb7c29254ce91d7375}{State\+Config\+Info.\+check\+\_\+feed\+\_\+nums}}(\mbox{\hyperlink{namespacemain-v1_a6dc230c1d9086b2b50d343c71654b7c1}{x}})}
+
