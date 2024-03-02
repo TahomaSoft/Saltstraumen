@@ -14,7 +14,7 @@ class FirstFediQueue:
         self.num_entries_feed = []
         self.sorted_feeds = copy.deepcopy(feedset)
         self.marked_feed_entries2pub = []
-        
+
     def print_feeds (self):
         ''' print my feeds'''
         print (self.feeds)
@@ -29,12 +29,12 @@ class FirstFediQueue:
         ''' print feeds as json'''
         print (json.dumps(self.feeds))
         return
-    
+
     def json_sorted_feeds(self):
         ''' print feeds as json'''
         print (json.dumps(self.sorted_feeds))
         return
-    
+
     def json_marked_queue(self):
         ''' print marked feed'''
         print (json.dumps(self.marked_feed_entries2pub))
@@ -46,12 +46,12 @@ class FirstFediQueue:
         self.num_feeds = num_feeds
 
         return num_feeds
-    
+
     def enumerate_feed_items (self):
         '''Describe how many entries are in each feed'''
 
         feeds = self.num_feeds
-        
+
         for i in range (0, feeds):
             # print (self.feeds[i]['entries'])
             # len (self.feeds[i]['entries'])
@@ -64,7 +64,7 @@ class FirstFediQueue:
         '''sort feeds, one at a time
         '''
         fl = self.num_feeds
-        
+
         for i in range (0,fl):
             sorted_f = \
                 sorted(self.feeds[i]['entries'], reverse = True, \
@@ -73,35 +73,36 @@ class FirstFediQueue:
         # End for loop
 
         #self.sorted_feeds = sorted_feeds_by_time
-        
+
         return self.sorted_feeds
 
     def mark_entries4pub (self,reftimes):
         '''docstring mark for pub, put into unified queue
         '''
-        
+
         pblsh_F = {
             'PutEntryInQueue': bool(False)
         }
         pblsh_T = {
             'PutEntryInQueue': bool(True)
         }
-        
+
         fl = self.num_feeds
         nef = self.num_entries_feed
         for i in range (0,fl):
             for j in range (0,nef[i]):
                 fedientry = self.sorted_feeds[i]['entries'][j]
-                
+
                 if check_entry2pub(fedientry,reftimes[i]) == bool (True):
                     fedientry.update(pblsh_T)
+                    self.marked_feed_entries2pub.append(fedientry)
 
                 elif check_entry2pub(fedientry,reftimes[i]) == bool(False):
                     fedientry.update(pblsh_F)
                 # End If
-                
-                self.marked_feed_entries2pub.append(fedientry)
+
+
             # end inner loop
         # End outer loop
-            
+
         return

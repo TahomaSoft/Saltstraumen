@@ -4,7 +4,9 @@ from config_feed_objsmeth import MainConfigInfo, StateConfigInfo,chk_main_state
 from config_feed_objsmeth import fetch_feed #, enumerate_feed_items
 from FediQueueObjects import FirstFediQueue
 from FediXbSky import BasicBlueskyQueue
-
+from SaxeBlueskyPython.saxe_bluesky import BskyCredentials
+from SaxeBlueskyPython.saxeblueobjects import SimplePostQueue
+from SaxeBlueskyPython.ticktocktime import unix_time_now, bsky_time_now
 
 # this is the main program
 
@@ -69,10 +71,10 @@ fqueue_1.sort_entries()
 
 state_config.update_entry_times(fqueue_1.sorted_feeds,j)
 
-refimes = 0
+
 
 reftimes = state_config.get_ref_times()
-
+reftimes = (0,0) # for testing
 
 
 state_config.write_state()
@@ -86,6 +88,37 @@ fqueue_1.mark_entries4pub(reftimes)
 #    print (json.dumps(i))
 
 Bsky_1 = BasicBlueskyQueue(fqueue_1.marked_feed_entries2pub)
-Bsky_1.json()
+# Bsky_1.json()
 
 
+
+
+Bsky_1.first_clean()
+# Bsky_1.json_firstpassq()
+
+Bcred = BskyCredentials()
+
+# print (mcfdata['BSKY_ACCOUNT'])
+acct_name =main_config.config_data['BSKY_ACCOUNT']['Username']
+
+
+Bcred.set_handle (acct_name)
+
+
+
+appPass = main_config.config_data['BSKY_ACCOUNT']['App_passwd']
+
+Bcred.get_did ()
+Bcred.set_appPW (appPass)
+Bcred.start_session()
+sessT = Bcred.get_sessT()
+
+myDID = Bcred.myDID()
+
+spq = SimplePostQueue(Bcred.echo())
+for i in Bsky_1.first_pass_queue:
+    spq.item_add(i)
+
+
+
+spq.json_queue()

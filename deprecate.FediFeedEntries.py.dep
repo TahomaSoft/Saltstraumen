@@ -209,7 +209,7 @@ class MIGRATEDFedFeedEntry:
 
 # End Classes
 
-def entryFixTags (tagstring):
+def migratedentryFixTags (tagstring):
     '''mzonePost is output from entryAddBasic'''
     ''' take tags and write fixed_tags'''
     # print (tagstring)
@@ -224,7 +224,7 @@ def entryFixTags (tagstring):
     
     return fixedTag
             
-def cw_check (origTxt):
+def migratedcw_check (origTxt):
     h = html2text.HTML2Text()
     
     '''
@@ -331,7 +331,7 @@ def entryCreate(rawpost,seqcount):
         
     return f
 
-def entryAddBasic(rawpost):
+def MIGRATEDentryAddBasic(rawpost):
     h = html2text.HTML2Text()
     e = rawpost
     
@@ -357,7 +357,7 @@ def entryAddBasic(rawpost):
     return g
 
 
-def entryAddRatings (rawpost):
+def MigrateddddentryAddRatings (rawpost):
     #  These elements are conditional; need to check and handle absent/present'''
     e = rawpost
     MRat = {}

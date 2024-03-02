@@ -1,0 +1,674 @@
+[
+  {
+    "orig_text": "<p>Was able to cough it out eventually.</p>",
+    "basic_text": "Was able to cough it out eventually.",
+    "lang_of_post": null,
+    "base_url": "https://artsocial.boston/@erik.rss",
+    "published_parsed": [
+      2024,
+      2,
+      23,
+      19,
+      15,
+      59,
+      4,
+      54,
+      0
+    ],
+    "orig_post_time": 1708715759,
+    "SetMediaElements": "placeholder for media if present",
+    "media_rating": "nonadult",
+    "rating": "nonadult",
+    "fixed_tags": "",
+    "content_warn": "",
+    "basic_text_rev": "Was able to cough it out eventually.\n\n",
+    "sensitive_post": false
+  },
+  {
+    "orig_text": "<p>Inhaling part of snorkel mouthpiece is no fun.</p>",
+    "basic_text": "Inhaling part of snorkel mouthpiece is no fun.",
+    "lang_of_post": null,
+    "base_url": "https://artsocial.boston/@erik.rss",
+    "published_parsed": [
+      2024,
+      2,
+      23,
+      19,
+      8,
+      57,
+      4,
+      54,
+      0
+    ],
+    "orig_post_time": 1708715337,
+    "SetMediaElements": "placeholder for media if present",
+    "media_rating": "nonadult",
+    "rating": "nonadult",
+    "fixed_tags": "",
+    "content_warn": "",
+    "basic_text_rev": "Inhaling part of snorkel mouthpiece is no fun.\n\n",
+    "sensitive_post": false
+  },
+  {
+    "orig_text": "<p>This is a test.</p><p><a class=\"mention hashtag\" href=\"https://artsocial.boston/tags/Testing\" rel=\"tag\">#<span>Testing</span></a> <a class=\"mention hashtag\" href=\"https://artsocial.boston/tags/python\" rel=\"tag\">#<span>python</span></a></p>",
+    "basic_text": "This is a test.\n\n[#Testing](https://artsocial.boston/tags/Testing)\n[#python](https://artsocial.boston/tags/python)",
+    "lang_of_post": null,
+    "base_url": "https://artsocial.boston/@erik.rss",
+    "published_parsed": [
+      2024,
+      2,
+      23,
+      0,
+      26,
+      51,
+      4,
+      54,
+      0
+    ],
+    "orig_post_time": 1708648011,
+    "SetMediaElements": "placeholder for media if present",
+    "media_rating": "nonadult",
+    "rating": "nonadult",
+    "tags": [
+      {
+        "term": "testing",
+        "scheme": null,
+        "label": null
+      },
+      {
+        "term": "Python",
+        "scheme": null,
+        "label": null
+      }
+    ],
+    "fixed_tags": " testing Python",
+    "content_warn": "",
+    "basic_text_rev": "This is a test.\n\n[#Testing](https://artsocial.boston/tags/Testing)\n[#python](https://artsocial.boston/tags/python)\n\n",
+    "sensitive_post": false
+  },
+  {
+    "orig_text": "<p>content warning test</p><hr /><p>this is a test</p>",
+    "basic_text": "content warning test\n\n* * *\n\nthis is a test",
+    "lang_of_post": null,
+    "base_url": "https://artsocial.boston/@erik.rss",
+    "published_parsed": [
+      2024,
+      2,
+      21,
+      0,
+      45,
+      51,
+      2,
+      52,
+      0
+    ],
+    "orig_post_time": 1708476351,
+    "SetMediaElements": "placeholder for media if present",
+    "media_rating": "nonadult",
+    "rating": "nonadult",
+    "fixed_tags": "",
+    "content_warn": "content warning test\n\n",
+    "basic_text_rev": "\n\n* * *\n\nthis is a test\n\n",
+    "sensitive_post": true
+  },
+  {
+    "orig_text": "<p>This is a test.</p><hr /><p>This is a test</p>",
+    "basic_text": "This is a test.\n\n* * *\n\nThis is a test",
+    "lang_of_post": null,
+    "base_url": "https://artsocial.boston/@erik.rss",
+    "published_parsed": [
+      2024,
+      2,
+      21,
+      0,
+      23,
+      46,
+      2,
+      52,
+      0
+    ],
+    "orig_post_time": 1708475026,
+    "SetMediaElements": "placeholder for media if present",
+    "media_rating": "nonadult",
+    "rating": "nonadult",
+    "fixed_tags": "",
+    "content_warn": "This is a test.\n\n",
+    "basic_text_rev": "\n\n* * *\n\nThis is a test\n\n",
+    "sensitive_post": true
+  },
+  {
+    "orig_text": "<p>This is a test</p>",
+    "basic_text": "This is a test",
+    "lang_of_post": null,
+    "base_url": "https://artsocial.boston/@erik.rss",
+    "published_parsed": [
+      2024,
+      2,
+      20,
+      1,
+      3,
+      50,
+      1,
+      51,
+      0
+    ],
+    "orig_post_time": 1708391030,
+    "SetMediaElements": "placeholder for media if present",
+    "media_rating": "nonadult",
+    "rating": "nonadult",
+    "fixed_tags": "",
+    "content_warn": "",
+    "basic_text_rev": "This is a test\n\n",
+    "sensitive_post": false
+  },
+  {
+    "orig_text": "<p>My latest art creation.</p>",
+    "basic_text": "My latest art creation.",
+    "lang_of_post": null,
+    "base_url": "https://artsocial.boston/@erik.rss",
+    "published_parsed": [
+      2024,
+      2,
+      11,
+      20,
+      16,
+      3,
+      6,
+      42,
+      0
+    ],
+    "orig_post_time": 1707682563,
+    "SetMediaElements": "placeholder for media if present",
+    "media_rating": "nonadult",
+    "rating": "nonadult",
+    "fixed_tags": "",
+    "content_warn": "",
+    "basic_text_rev": "My latest art creation.\n\n",
+    "sensitive_post": false
+  },
+  {
+    "orig_text": "<p><a class=\"mention hashtag\" href=\"https://artsocial.boston/tags/doublerainbow\" rel=\"tag\">#<span>doublerainbow</span></a> <a class=\"mention hashtag\" href=\"https://artsocial.boston/tags/photography\" rel=\"tag\">#<span>photography</span></a></p>",
+    "basic_text": "[#doublerainbow](https://artsocial.boston/tags/doublerainbow)\n[#photography](https://artsocial.boston/tags/photography)",
+    "lang_of_post": null,
+    "base_url": "https://artsocial.boston/@erik.rss",
+    "published_parsed": [
+      2024,
+      1,
+      13,
+      21,
+      49,
+      41,
+      5,
+      13,
+      0
+    ],
+    "orig_post_time": 1705182581,
+    "SetMediaElements": "placeholder for media if present",
+    "media_rating": "nonadult",
+    "rating": "nonadult",
+    "tags": [
+      {
+        "term": "doublerainbow",
+        "scheme": null,
+        "label": null
+      },
+      {
+        "term": "photography",
+        "scheme": null,
+        "label": null
+      }
+    ],
+    "fixed_tags": " doublerainbow photography",
+    "content_warn": "",
+    "basic_text_rev": "[#doublerainbow](https://artsocial.boston/tags/doublerainbow)\n[#photography](https://artsocial.boston/tags/photography)\n\n",
+    "sensitive_post": false
+  },
+  {
+    "orig_text": "<p>Wham!</p>",
+    "basic_text": "Wham!",
+    "lang_of_post": null,
+    "base_url": "https://artsocial.boston/@erik.rss",
+    "published_parsed": [
+      2024,
+      1,
+      13,
+      20,
+      43,
+      50,
+      5,
+      13,
+      0
+    ],
+    "orig_post_time": 1705178630,
+    "SetMediaElements": "placeholder for media if present",
+    "media_rating": "nonadult",
+    "rating": "nonadult",
+    "fixed_tags": "",
+    "content_warn": "",
+    "basic_text_rev": "Wham!\n\n",
+    "sensitive_post": false
+  },
+  {
+    "orig_text": "<p>Another for <a class=\"mention hashtag\" href=\"https://artsocial.boston/tags/Fensterfreitag\" rel=\"tag\">#<span>Fensterfreitag</span></a> with a loose definition of “fenster (window).</p>",
+    "basic_text": "Another for [#Fensterfreitag](https://artsocial.boston/tags/Fensterfreitag)\nwith a loose definition of “fenster (window).",
+    "lang_of_post": null,
+    "base_url": "https://artsocial.boston/@erik.rss",
+    "published_parsed": [
+      2023,
+      12,
+      23,
+      1,
+      8,
+      10,
+      5,
+      357,
+      0
+    ],
+    "orig_post_time": 1703293690,
+    "SetMediaElements": "placeholder for media if present",
+    "media_rating": "nonadult",
+    "rating": "nonadult",
+    "tags": [
+      {
+        "term": "Fensterfreitag",
+        "scheme": null,
+        "label": null
+      }
+    ],
+    "fixed_tags": " Fensterfreitag",
+    "content_warn": "",
+    "basic_text_rev": "Another for [#Fensterfreitag](https://artsocial.boston/tags/Fensterfreitag)\nwith a loose definition of “fenster (window).\n\n",
+    "sensitive_post": false
+  },
+  {
+    "orig_text": "<p>Variation on <a class=\"mention hashtag\" href=\"https://artsocial.boston/tags/Fensterfreitag\" rel=\"tag\">#<span>Fensterfreitag</span></a> </p><p>A leaf on colorful substrate in a window box.</p>",
+    "basic_text": "Variation on [#Fensterfreitag](https://artsocial.boston/tags/Fensterfreitag)\n\nA leaf on colorful substrate in a window box.",
+    "lang_of_post": null,
+    "base_url": "https://artsocial.boston/@erik.rss",
+    "published_parsed": [
+      2023,
+      12,
+      16,
+      1,
+      37,
+      31,
+      5,
+      350,
+      0
+    ],
+    "orig_post_time": 1702690651,
+    "SetMediaElements": "placeholder for media if present",
+    "media_rating": "nonadult",
+    "rating": "nonadult",
+    "tags": [
+      {
+        "term": "Fensterfreitag",
+        "scheme": null,
+        "label": null
+      }
+    ],
+    "fixed_tags": " Fensterfreitag",
+    "content_warn": "",
+    "basic_text_rev": "Variation on [#Fensterfreitag](https://artsocial.boston/tags/Fensterfreitag)\n\nA leaf on colorful substrate in a window box.\n\n",
+    "sensitive_post": false
+  },
+  {
+    "orig_text": "<p>Found this label today on some equipment owned by the State of Massachusetts. </p><p>Very well put!</p>",
+    "basic_text": "Found this label today on some equipment owned by the State of Massachusetts.\n\nVery well put!",
+    "lang_of_post": null,
+    "base_url": "https://artsocial.boston/@erik.rss",
+    "published_parsed": [
+      2023,
+      12,
+      16,
+      1,
+      20,
+      16,
+      5,
+      350,
+      0
+    ],
+    "orig_post_time": 1702689616,
+    "SetMediaElements": "placeholder for media if present",
+    "media_rating": "nonadult",
+    "rating": "nonadult",
+    "fixed_tags": "",
+    "content_warn": "",
+    "basic_text_rev": "Found this label today on some equipment owned by the State of Massachusetts.\n\nVery well put!\n\n",
+    "sensitive_post": false
+  },
+  {
+    "orig_text": "<p>Beautiful bread boule</p>",
+    "basic_text": "Beautiful bread boule",
+    "lang_of_post": null,
+    "base_url": "https://artsocial.boston/@erik.rss",
+    "published_parsed": [
+      2023,
+      11,
+      5,
+      14,
+      51,
+      13,
+      6,
+      309,
+      0
+    ],
+    "orig_post_time": 1699195873,
+    "SetMediaElements": "placeholder for media if present",
+    "media_rating": "nonadult",
+    "rating": "nonadult",
+    "fixed_tags": "",
+    "content_warn": "",
+    "basic_text_rev": "Beautiful bread boule\n\n",
+    "sensitive_post": false
+  },
+  {
+    "orig_text": "<p>Post upgrade test post</p>",
+    "basic_text": "Post upgrade test post",
+    "lang_of_post": null,
+    "base_url": "https://artsocial.boston/@erik.rss",
+    "published_parsed": [
+      2023,
+      9,
+      23,
+      19,
+      40,
+      23,
+      5,
+      266,
+      0
+    ],
+    "orig_post_time": 1695498023,
+    "SetMediaElements": "placeholder for media if present",
+    "media_rating": "nonadult",
+    "rating": "nonadult",
+    "fixed_tags": "",
+    "content_warn": "",
+    "basic_text_rev": "Post upgrade test post\n\n",
+    "sensitive_post": false
+  },
+  {
+    "orig_text": "<p>A little nocturnal photo</p>",
+    "basic_text": "A little nocturnal photo",
+    "lang_of_post": null,
+    "base_url": "https://artsocial.boston/@erik.rss",
+    "published_parsed": [
+      2023,
+      9,
+      17,
+      5,
+      28,
+      29,
+      6,
+      260,
+      0
+    ],
+    "orig_post_time": 1694928509,
+    "SetMediaElements": "placeholder for media if present",
+    "media_rating": "nonadult",
+    "rating": "nonadult",
+    "fixed_tags": "",
+    "content_warn": "",
+    "basic_text_rev": "A little nocturnal photo\n\n",
+    "sensitive_post": false
+  },
+  {
+    "orig_text": "<p>Interesting crop factor Mastodon applies....</p>",
+    "basic_text": "Interesting crop factor Mastodon applies....",
+    "lang_of_post": null,
+    "base_url": "https://artsocial.boston/@erik.rss",
+    "published_parsed": [
+      2023,
+      8,
+      25,
+      22,
+      24,
+      8,
+      4,
+      237,
+      0
+    ],
+    "orig_post_time": 1693002248,
+    "SetMediaElements": "placeholder for media if present",
+    "media_rating": "nonadult",
+    "rating": "nonadult",
+    "fixed_tags": "",
+    "content_warn": "",
+    "basic_text_rev": "Interesting crop factor Mastodon applies....\n\n",
+    "sensitive_post": false
+  },
+  {
+    "orig_text": "<p>Trying out a new restaurant</p>",
+    "basic_text": "Trying out a new restaurant",
+    "lang_of_post": null,
+    "base_url": "https://artsocial.boston/@erik.rss",
+    "published_parsed": [
+      2023,
+      8,
+      22,
+      23,
+      47,
+      23,
+      1,
+      234,
+      0
+    ],
+    "orig_post_time": 1692748043,
+    "SetMediaElements": "placeholder for media if present",
+    "media_rating": "nonadult",
+    "rating": "nonadult",
+    "fixed_tags": "",
+    "content_warn": "",
+    "basic_text_rev": "Trying out a new restaurant\n\n",
+    "sensitive_post": false
+  },
+  {
+    "orig_text": "<p>Cool! Saw this ad on the MBTA today.</p><p><a href=\"https://home.capeannmuseum.org/edward-hopper/\" rel=\"nofollow noopener noreferrer\" target=\"_blank\"><span class=\"invisible\">https://</span><span class=\"ellipsis\">home.capeannmuseum.org/edward-</span><span class=\"invisible\">hopper/</span></a></p>",
+    "basic_text": "Cool! Saw this ad on the MBTA today.\n\n[https://home.capeannmuseum.org/edward-\nhopper/](https://home.capeannmuseum.org/edward-hopper/)",
+    "lang_of_post": null,
+    "base_url": "https://artsocial.boston/@erik.rss",
+    "published_parsed": [
+      2023,
+      8,
+      16,
+      13,
+      57,
+      41,
+      2,
+      228,
+      0
+    ],
+    "orig_post_time": 1692194261,
+    "SetMediaElements": "placeholder for media if present",
+    "media_rating": "nonadult",
+    "rating": "nonadult",
+    "fixed_tags": "",
+    "content_warn": "",
+    "basic_text_rev": "Cool! Saw this ad on the MBTA today.\n\n[https://home.capeannmuseum.org/edward-\nhopper/](https://home.capeannmuseum.org/edward-hopper/)\n\n",
+    "sensitive_post": false
+  },
+  {
+    "orig_text": "<p>A mooving piece of art!</p>",
+    "basic_text": "A mooving piece of art!",
+    "lang_of_post": null,
+    "base_url": "https://artsocial.boston/@erik.rss",
+    "published_parsed": [
+      2023,
+      8,
+      16,
+      13,
+      46,
+      23,
+      2,
+      228,
+      0
+    ],
+    "orig_post_time": 1692193583,
+    "SetMediaElements": "placeholder for media if present",
+    "media_rating": "nonadult",
+    "rating": "nonadult",
+    "fixed_tags": "",
+    "content_warn": "",
+    "basic_text_rev": "A mooving piece of art!\n\n",
+    "sensitive_post": false
+  },
+  {
+    "orig_text": "<p>Dear Deer:</p>",
+    "basic_text": "Dear Deer:",
+    "lang_of_post": null,
+    "base_url": "https://artsocial.boston/@erik.rss",
+    "published_parsed": [
+      2023,
+      8,
+      11,
+      1,
+      44,
+      1,
+      4,
+      223,
+      0
+    ],
+    "orig_post_time": 1691718241,
+    "SetMediaElements": "placeholder for media if present",
+    "media_rating": "nonadult",
+    "rating": "nonadult",
+    "fixed_tags": "",
+    "content_warn": "",
+    "basic_text_rev": "Dear Deer:\n\n",
+    "sensitive_post": false
+  },
+  {
+    "orig_text": "<p>Disco</p><hr /><p>Forget partying like it’s 1999; I’m celebrating like it’s December 31, 1979!<br /><a class=\"mention hashtag\" href=\"https://puget.social/tags/RetroMusic\" rel=\"tag\">#<span>RetroMusic</span></a> <a class=\"mention hashtag\" href=\"https://puget.social/tags/Disco\" rel=\"tag\">#<span>Disco</span></a> <a class=\"mention hashtag\" href=\"https://puget.social/tags/1970s\" rel=\"tag\">#<span>1970s</span></a> <a class=\"mention hashtag\" href=\"https://puget.social/tags/NYE\" rel=\"tag\">#<span>NYE</span></a> <a class=\"mention hashtag\" href=\"https://puget.social/tags/happynewyear\" rel=\"tag\">#<span>happynewyear</span></a></p>",
+    "basic_text": "Disco\n\n* * *\n\nForget partying like it’s 1999; I’m celebrating like it’s December 31, 1979!  \n[#RetroMusic](https://puget.social/tags/RetroMusic)\n[#Disco](https://puget.social/tags/Disco)\n[#1970s](https://puget.social/tags/1970s)\n[#NYE](https://puget.social/tags/NYE)\n[#happynewyear](https://puget.social/tags/happynewyear)",
+    "lang_of_post": null,
+    "base_url": "https://puget.social/@erik.rss",
+    "published_parsed": [
+      2023,
+      12,
+      31,
+      15,
+      30,
+      18,
+      6,
+      365,
+      0
+    ],
+    "orig_post_time": 1704036618,
+    "SetMediaElements": "placeholder for media if present",
+    "media_rating": "adult",
+    "rating": "adult",
+    "tags": [
+      {
+        "term": "RetroMusic",
+        "scheme": null,
+        "label": null
+      },
+      {
+        "term": "disco",
+        "scheme": null,
+        "label": null
+      },
+      {
+        "term": "1970s",
+        "scheme": null,
+        "label": null
+      },
+      {
+        "term": "nye",
+        "scheme": null,
+        "label": null
+      },
+      {
+        "term": "happynewyear",
+        "scheme": null,
+        "label": null
+      }
+    ],
+    "fixed_tags": " RetroMusic disco 1970s nye happynewyear",
+    "content_warn": "Disco\n\n",
+    "basic_text_rev": "\n\n* * *\n\nForget partying like it’s 1999; I’m celebrating like it’s December 31, 1979!  \n[#RetroMusic](https://puget.social/tags/RetroMusic)\n[#Disco](https://puget.social/tags/Disco)\n[#1970s](https://puget.social/tags/1970s)\n[#NYE](https://puget.social/tags/NYE)\n[#happynewyear](https://puget.social/tags/happynewyear)\n\n",
+    "sensitive_post": true
+  },
+  {
+    "orig_text": "<p>The world.</p>",
+    "basic_text": "The world.",
+    "lang_of_post": null,
+    "base_url": "https://puget.social/@erik.rss",
+    "published_parsed": [
+      2023,
+      12,
+      23,
+      0,
+      0,
+      43,
+      5,
+      357,
+      0
+    ],
+    "orig_post_time": 1703289643,
+    "SetMediaElements": "placeholder for media if present",
+    "media_rating": "nonadult",
+    "rating": "nonadult",
+    "fixed_tags": "",
+    "content_warn": "",
+    "basic_text_rev": "The world.\n\n",
+    "sensitive_post": false
+  },
+  {
+    "orig_text": "<p>Acceptable <a class=\"mention hashtag\" href=\"https://puget.social/tags/UrbanRenewal\" rel=\"tag\">#<span>UrbanRenewal</span></a></p>",
+    "basic_text": "Acceptable [#UrbanRenewal](https://puget.social/tags/UrbanRenewal)",
+    "lang_of_post": null,
+    "base_url": "https://puget.social/@erik.rss",
+    "published_parsed": [
+      2023,
+      12,
+      22,
+      17,
+      52,
+      2,
+      4,
+      356,
+      0
+    ],
+    "orig_post_time": 1703267522,
+    "SetMediaElements": "placeholder for media if present",
+    "media_rating": "nonadult",
+    "rating": "nonadult",
+    "tags": [
+      {
+        "term": "UrbanRenewal",
+        "scheme": null,
+        "label": null
+      }
+    ],
+    "fixed_tags": " UrbanRenewal",
+    "content_warn": "",
+    "basic_text_rev": "Acceptable [#UrbanRenewal](https://puget.social/tags/UrbanRenewal)\n\n",
+    "sensitive_post": false
+  },
+  {
+    "orig_text": "<p>my friend's new consulting company:<br />Ernstees.com</p>",
+    "basic_text": "my friend's new consulting company:  \nErnstees.com",
+    "lang_of_post": null,
+    "base_url": "https://puget.social/@erik.rss",
+    "published_parsed": [
+      2023,
+      12,
+      20,
+      23,
+      21,
+      59,
+      2,
+      354,
+      0
+    ],
+    "orig_post_time": 1703114519,
+    "SetMediaElements": "placeholder for media if present",
+    "media_rating": "nonadult",
+    "rating": "nonadult",
+    "fixed_tags": "",
+    "content_warn": "",
+    "basic_text_rev": "my friend's new consulting company:  \nErnstees.com\n\n",
+    "sensitive_post": false
+  }
+]
