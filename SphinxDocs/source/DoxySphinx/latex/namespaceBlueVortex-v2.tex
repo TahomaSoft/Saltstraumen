@@ -1,0 +1,408 @@
+\hypertarget{namespaceBlueVortex-v2}{}\doxysection{Blue\+Vortex-\/v2 Namespace Reference}
+\label{namespaceBlueVortex-v2}\index{BlueVortex-\/v2@{BlueVortex-\/v2}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{namespaceBlueVortex-v2_a9ba8696a3fb36223f8fc4caa33897441}{maincf}} = \textquotesingle{}salt-\/main.\+toml\textquotesingle{}
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_a28e925378807b54d5d55905fe2050e25}{mcfdata}} = \mbox{\hyperlink{classheavy__lifting_1_1MainConfigInfo_a26e0281d5806d3c7f4b3a5025cc34d6f}{Main\+Config\+Info.\+read}}(\mbox{\hyperlink{namespaceBlueVortex-v2_a9ba8696a3fb36223f8fc4caa33897441}{maincf}})
+\item 
+tuple \mbox{\hyperlink{namespaceBlueVortex-v2_af049f558eef473167462d2743faff160}{statecf}} = (\mbox{\hyperlink{namespaceBlueVortex-v2_a28e925378807b54d5d55905fe2050e25}{mcfdata}}\mbox{[}\textquotesingle{}GENERAL\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}Statefile\textquotesingle{}\mbox{]})
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_aef26d5fbfd906329e0058c123603ce26}{scinfo}} = \mbox{\hyperlink{classheavy__lifting_1_1StateConfigInfo_a6aaf9f508d8135e8c5fd61444c0ade48}{State\+Config\+Info.\+read}}(\mbox{\hyperlink{namespaceBlueVortex-v2_af049f558eef473167462d2743faff160}{statecf}})
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_a719266e922cfdc898d7df6db8c301255}{numfeed\+State}} = \mbox{\hyperlink{classheavy__lifting_1_1StateConfigInfo_a2503d24ec6cfacbb7c29254ce91d7375}{State\+Config\+Info.\+check\+\_\+feed\+\_\+nums}} (\mbox{\hyperlink{namespaceBlueVortex-v2_aef26d5fbfd906329e0058c123603ce26}{scinfo}})
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_a3edac1bece65f2d5cc3ad7a57dfead6d}{numfeeds}} = \mbox{\hyperlink{classheavy__lifting_1_1MainStateConsistency_aebdbb0ea8e19527f5a3b70824ea02edf}{Main\+State\+Consistency.\+feeds}} (\mbox{\hyperlink{namespaceBlueVortex-v2_a9ba8696a3fb36223f8fc4caa33897441}{maincf}}, \mbox{\hyperlink{namespaceBlueVortex-v2_af049f558eef473167462d2743faff160}{statecf}})
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_a572f30be755bed8bbf67daccad61294c}{alist}} = \mbox{\hyperlink{classheavy__lifting_1_1FetchFeeds_ad863a397a953473c4d7938237d13bfe1}{Fetch\+Feeds.\+find\+\_\+feeds}}(\mbox{\hyperlink{namespaceBlueVortex-v2_a28e925378807b54d5d55905fe2050e25}{mcfdata}})
+\item 
+list \mbox{\hyperlink{namespaceBlueVortex-v2_aa4c630f512477788f17551b78b4e72b1}{feed\+Data}} = \mbox{[}0\mbox{]} $\ast$ \mbox{\hyperlink{namespaceBlueVortex-v2_a3edac1bece65f2d5cc3ad7a57dfead6d}{numfeeds}}
+\item 
+list \mbox{\hyperlink{namespaceBlueVortex-v2_a93d8db86fc1ee2c5eb7dcee61bc27a6b}{items\+Per\+Feed}} = \mbox{[}0\mbox{]} $\ast$ \mbox{\hyperlink{namespaceBlueVortex-v2_a3edac1bece65f2d5cc3ad7a57dfead6d}{numfeeds}}
+\item 
+list \mbox{\hyperlink{namespaceBlueVortex-v2_a13283b5c8508075040b0f419a9c7cbfe}{flrtimes\+\_\+unix}} = \mbox{[}0\mbox{]} $\ast$ \mbox{\hyperlink{namespaceBlueVortex-v2_a3edac1bece65f2d5cc3ad7a57dfead6d}{numfeeds}}
+\item 
+list \mbox{\hyperlink{namespaceBlueVortex-v2_a7522644a4f262c46df5d0c9f477bd451}{flrtimes\+\_\+iso}} = \mbox{[}0\mbox{]} $\ast$ \mbox{\hyperlink{namespaceBlueVortex-v2_a3edac1bece65f2d5cc3ad7a57dfead6d}{numfeeds}}
+\item 
+list \mbox{\hyperlink{namespaceBlueVortex-v2_a17ab853a39b5124f7f5b7458a79c588c}{pflrtimes\+\_\+u}} = \mbox{[}0\mbox{]} $\ast$ \mbox{\hyperlink{namespaceBlueVortex-v2_a3edac1bece65f2d5cc3ad7a57dfead6d}{numfeeds}}
+\item 
+list \mbox{\hyperlink{namespaceBlueVortex-v2_aae203be8b647c867088bc7de2d94a143}{pflrtimes\+\_\+i}} = \mbox{[}0\mbox{]} $\ast$ \mbox{\hyperlink{namespaceBlueVortex-v2_a3edac1bece65f2d5cc3ad7a57dfead6d}{numfeeds}}
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_a0833ffb563c3f2a49b7ae6add1386de5}{now1}} = unix\+\_\+time\+\_\+now()
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_aca5f6aed74b5d12c75afcdca78bbc144}{now2}} = unix\+\_\+time\+\_\+now()
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_a134f688a4a8e4d4a3cd111ddf5633bb3}{u\+\_\+scinfo}} = \mbox{\hyperlink{classheavy__lifting_1_1StateConfigInfo_af1ca2b3c52875d4528ac74eafc346863}{State\+Config\+Info.\+update\+\_\+entry\+\_\+times}}(\mbox{\hyperlink{namespaceBlueVortex-v2_aa4c630f512477788f17551b78b4e72b1}{feed\+Data}},\mbox{\hyperlink{namespaceBlueVortex-v2_aef26d5fbfd906329e0058c123603ce26}{scinfo}})
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_ac2af725423d08a2ac79c9ead8e98deeb}{j}} = \mbox{\hyperlink{classheavy__lifting_1_1StateConfigInfo_a1e4e4c2e9da8410d52c910790f1e5e2a}{State\+Config\+Info.\+write\+\_\+info}}(\mbox{\hyperlink{namespaceBlueVortex-v2_af049f558eef473167462d2743faff160}{statecf}}, \mbox{\hyperlink{namespaceBlueVortex-v2_a134f688a4a8e4d4a3cd111ddf5633bb3}{u\+\_\+scinfo}})
+\item 
+list \mbox{\hyperlink{namespaceBlueVortex-v2_a599692fb167db9d4a1127b8e8d32ef99}{reftimes}} = \mbox{[}0,0\mbox{]}
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_a28afd1d59cac9693a4aa25b50b806f9f}{le\+Data}} = \mbox{\hyperlink{classFediFeedEntries_1_1HolderFedFeed}{Holder\+Fed\+Feed}}(\mbox{\hyperlink{namespaceBlueVortex-v2_aa4c630f512477788f17551b78b4e72b1}{feed\+Data}})
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_ab24c6ef97a9548365683540e67d052f2}{y}} = le\+Data.\+feedQ
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_af936fbb44b0df4bee0bbdc7179bef534}{z}} = le\+Data.\+counter\mbox{[}i\mbox{]}\mbox{[}\textquotesingle{}numE\textquotesingle{}\mbox{]}
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_a040ecaf1198337818a2b6492b3a91a35}{l\+De}} = le\+Data.\+feeds\mbox{[}i\mbox{]}\mbox{[}\mbox{\hyperlink{namespaceBlueVortex-v2_ac2af725423d08a2ac79c9ead8e98deeb}{j}}\mbox{]}
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_a52cbabb46d6e2d4a0cfe96b57dfa8ec7}{e}} = \mbox{\hyperlink{classFediFeedEntries_1_1FedFeedEntry}{Fed\+Feed\+Entry}}()
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_a33438ebffeab32b3edd4fb7b257e2d18}{tf}} = e.\+check\+Entry2\+Pub (\mbox{\hyperlink{namespaceBlueVortex-v2_a040ecaf1198337818a2b6492b3a91a35}{l\+De}},\mbox{\hyperlink{namespaceBlueVortex-v2_a599692fb167db9d4a1127b8e8d32ef99}{reftimes}}\mbox{[}i\mbox{]})
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_a4c22caf7ff1caa5daef8e20c9fa69a4e}{to\+DoE}} = len (le\+Data.\+Uni\+Feed)
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_ab85da6138c078fc63a9249efd55aca43}{keepgoing}} = bool(True)
+\item 
+list \mbox{\hyperlink{namespaceBlueVortex-v2_a8c2f5e84c0d741f73948d7628ece29a0}{mid\+Queue}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_a00faaf54b88923f4cd56e482fc031996}{t}} = le\+Data.\+new\+Queue\+Exgest(i)
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_a27f0781de5b28a8913646e9c4c0e75a7}{a}} = entry\+Create (\mbox{\hyperlink{namespaceBlueVortex-v2_a00faaf54b88923f4cd56e482fc031996}{t}},i)
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_ab2837b32cf83fbab1da155fd217decf8}{b}} = t.\+get(\textquotesingle{}media\+\_\+content\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_ac375cbed3ff63565552b15d30392ef89}{mca}} = Media\+Content\+Attach(\mbox{\hyperlink{namespaceBlueVortex-v2_a00faaf54b88923f4cd56e482fc031996}{t}})
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_ae67834793e0730049a3be9531a7305a8}{alt\+Text}} = Get\+Alt\+Text(\mbox{\hyperlink{namespaceBlueVortex-v2_a00faaf54b88923f4cd56e482fc031996}{t}})
+\item 
+int \mbox{\hyperlink{namespaceBlueVortex-v2_a3a6a5e3df29d5b4667e6b865181592e3}{skip}} = 1
+\item 
+int \mbox{\hyperlink{namespaceBlueVortex-v2_a25a06ea6bf2a1691f650dd5e1d7fee29}{noblobs}} = 1
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_a0e61e45804b26eb1db3974cf92ffdc19}{count}} = len(\mbox{\hyperlink{namespaceBlueVortex-v2_a8c2f5e84c0d741f73948d7628ece29a0}{mid\+Queue}})
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_ac4245583193bbadec5c559834130f4ff}{Bcred}} = Bsky\+Credentials()
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_a24ff4ab57dbb28311238ef7951d3ddf8}{acct\+\_\+name}} = \mbox{\hyperlink{namespaceBlueVortex-v2_a28e925378807b54d5d55905fe2050e25}{mcfdata}}\mbox{[}\textquotesingle{}BSKY\+\_\+\+ACCOUNT\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}Username\textquotesingle{}\mbox{]}
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_acaaa6a6f59bdc93a075f08d58970f71a}{app\+Pass}} = \mbox{\hyperlink{namespaceBlueVortex-v2_a28e925378807b54d5d55905fe2050e25}{mcfdata}}\mbox{[}\textquotesingle{}BSKY\+\_\+\+ACCOUNT\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}App\+\_\+passwd\textquotesingle{}\mbox{]}
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_a9ec0909430369c92205dc5e8691ec383}{creds}} = Bcred.\+show\+\_\+creds()
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_aa8d70786c7592a070ef5981c05918699}{my\+Past\+Posts}} = Bsky\+Feed.\+get\+\_\+author\+\_\+feed(\mbox{\hyperlink{namespaceBlueVortex-v2_a9ec0909430369c92205dc5e8691ec383}{creds}}, 20)
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_a20b268733844ba330237f1cb3b4d4742}{bpost}} = \mbox{\hyperlink{classFediBskyXwalk_1_1PostXwalk}{Post\+Xwalk}}()
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_abeb8eb0ce02b33d6ed59ecf843ddbf2a}{sessT}} = Bcred.\+get\+\_\+sessT()
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_a391c9ca823faff3aa34590846bc75fc8}{my\+DID}} = Bcred.\+my\+DID()
+\item 
+list \mbox{\hyperlink{namespaceBlueVortex-v2_a6aceb66e602bce1404753c31a7345588}{bsky\+Queue}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_aa582fd35196385535b934efab9672dba}{m\+Qe}} = i
+\item 
+string \mbox{\hyperlink{namespaceBlueVortex-v2_aebdcffddbc60b7630a7b88a7160d5bce}{no\+Blobs}} = \textquotesingle{}no blobs\textquotesingle{}
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_a46bc26e245488f2c99ead7c43481b5a3}{Is\+Sen}} = bpost.\+check\+Sensitive()
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_a8f68d24ec6030cadf7413c2fe5d5b6f4}{b\+Puck}} = Bsky\+Post\+Puck()
+\item 
+string \mbox{\hyperlink{namespaceBlueVortex-v2_a23e3f3a8d926d8e95d391102d7cf2142}{blobpost}} = \textquotesingle{}yes\textquotesingle{}
+\item 
+\mbox{\hyperlink{namespaceBlueVortex-v2_a153dcca7b2b8e32589b602796ff0f973}{uu\+\_\+scinfo}} = \mbox{\hyperlink{classheavy__lifting_1_1StateConfigInfo_a8b423b53ecf2315b1862a269ba677759}{State\+Config\+Info.\+update\+\_\+bsky\+\_\+now}} (\mbox{\hyperlink{namespaceBlueVortex-v2_a134f688a4a8e4d4a3cd111ddf5633bb3}{u\+\_\+scinfo}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespaceBlueVortex-v2_a27f0781de5b28a8913646e9c4c0e75a7}\label{namespaceBlueVortex-v2_a27f0781de5b28a8913646e9c4c0e75a7}} 
+\index{BlueVortex-\/v2@{BlueVortex-\/v2}!a@{a}}
+\index{a@{a}!BlueVortex-\/v2@{BlueVortex-\/v2}}
+\doxysubsubsection{\texorpdfstring{a}{a}}
+{\footnotesize\ttfamily Blue\+Vortex-\/v2.\+a = entry\+Create (\mbox{\hyperlink{namespaceBlueVortex-v2_a00faaf54b88923f4cd56e482fc031996}{t}},i)}
+
+\mbox{\Hypertarget{namespaceBlueVortex-v2_a24ff4ab57dbb28311238ef7951d3ddf8}\label{namespaceBlueVortex-v2_a24ff4ab57dbb28311238ef7951d3ddf8}} 
+\index{BlueVortex-\/v2@{BlueVortex-\/v2}!acct\_name@{acct\_name}}
+\index{acct\_name@{acct\_name}!BlueVortex-\/v2@{BlueVortex-\/v2}}
+\doxysubsubsection{\texorpdfstring{acct\_name}{acct\_name}}
+{\footnotesize\ttfamily Blue\+Vortex-\/v2.\+acct\+\_\+name = \mbox{\hyperlink{namespaceBlueVortex-v2_a28e925378807b54d5d55905fe2050e25}{mcfdata}}\mbox{[}\textquotesingle{}BSKY\+\_\+\+ACCOUNT\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}Username\textquotesingle{}\mbox{]}}
+
+\mbox{\Hypertarget{namespaceBlueVortex-v2_a572f30be755bed8bbf67daccad61294c}\label{namespaceBlueVortex-v2_a572f30be755bed8bbf67daccad61294c}} 
+\index{BlueVortex-\/v2@{BlueVortex-\/v2}!alist@{alist}}
+\index{alist@{alist}!BlueVortex-\/v2@{BlueVortex-\/v2}}
+\doxysubsubsection{\texorpdfstring{alist}{alist}}
+{\footnotesize\ttfamily Blue\+Vortex-\/v2.\+alist = \mbox{\hyperlink{classheavy__lifting_1_1FetchFeeds_ad863a397a953473c4d7938237d13bfe1}{Fetch\+Feeds.\+find\+\_\+feeds}}(\mbox{\hyperlink{namespaceBlueVortex-v2_a28e925378807b54d5d55905fe2050e25}{mcfdata}})}
+
+\mbox{\Hypertarget{namespaceBlueVortex-v2_ae67834793e0730049a3be9531a7305a8}\label{namespaceBlueVortex-v2_ae67834793e0730049a3be9531a7305a8}} 
+\index{BlueVortex-\/v2@{BlueVortex-\/v2}!altText@{altText}}
+\index{altText@{altText}!BlueVortex-\/v2@{BlueVortex-\/v2}}
+\doxysubsubsection{\texorpdfstring{altText}{altText}}
+{\footnotesize\ttfamily Blue\+Vortex-\/v2.\+alt\+Text = Get\+Alt\+Text(\mbox{\hyperlink{namespaceBlueVortex-v2_a00faaf54b88923f4cd56e482fc031996}{t}})}
+
+\mbox{\Hypertarget{namespaceBlueVortex-v2_acaaa6a6f59bdc93a075f08d58970f71a}\label{namespaceBlueVortex-v2_acaaa6a6f59bdc93a075f08d58970f71a}} 
+\index{BlueVortex-\/v2@{BlueVortex-\/v2}!appPass@{appPass}}
+\index{appPass@{appPass}!BlueVortex-\/v2@{BlueVortex-\/v2}}
+\doxysubsubsection{\texorpdfstring{appPass}{appPass}}
+{\footnotesize\ttfamily Blue\+Vortex-\/v2.\+app\+Pass = \mbox{\hyperlink{namespaceBlueVortex-v2_a28e925378807b54d5d55905fe2050e25}{mcfdata}}\mbox{[}\textquotesingle{}BSKY\+\_\+\+ACCOUNT\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}App\+\_\+passwd\textquotesingle{}\mbox{]}}
+
+\mbox{\Hypertarget{namespaceBlueVortex-v2_ab2837b32cf83fbab1da155fd217decf8}\label{namespaceBlueVortex-v2_ab2837b32cf83fbab1da155fd217decf8}} 
+\index{BlueVortex-\/v2@{BlueVortex-\/v2}!b@{b}}
+\index{b@{b}!BlueVortex-\/v2@{BlueVortex-\/v2}}
+\doxysubsubsection{\texorpdfstring{b}{b}}
+{\footnotesize\ttfamily Blue\+Vortex-\/v2.\+b = t.\+get(\textquotesingle{}media\+\_\+content\textquotesingle{})}
+
+\mbox{\Hypertarget{namespaceBlueVortex-v2_ac4245583193bbadec5c559834130f4ff}\label{namespaceBlueVortex-v2_ac4245583193bbadec5c559834130f4ff}} 
+\index{BlueVortex-\/v2@{BlueVortex-\/v2}!Bcred@{Bcred}}
+\index{Bcred@{Bcred}!BlueVortex-\/v2@{BlueVortex-\/v2}}
+\doxysubsubsection{\texorpdfstring{Bcred}{Bcred}}
+{\footnotesize\ttfamily Blue\+Vortex-\/v2.\+Bcred = Bsky\+Credentials()}
+
+\mbox{\Hypertarget{namespaceBlueVortex-v2_a23e3f3a8d926d8e95d391102d7cf2142}\label{namespaceBlueVortex-v2_a23e3f3a8d926d8e95d391102d7cf2142}} 
+\index{BlueVortex-\/v2@{BlueVortex-\/v2}!blobpost@{blobpost}}
+\index{blobpost@{blobpost}!BlueVortex-\/v2@{BlueVortex-\/v2}}
+\doxysubsubsection{\texorpdfstring{blobpost}{blobpost}}
+{\footnotesize\ttfamily string Blue\+Vortex-\/v2.\+blobpost = \textquotesingle{}yes\textquotesingle{}}
+
+\mbox{\Hypertarget{namespaceBlueVortex-v2_a20b268733844ba330237f1cb3b4d4742}\label{namespaceBlueVortex-v2_a20b268733844ba330237f1cb3b4d4742}} 
+\index{BlueVortex-\/v2@{BlueVortex-\/v2}!bpost@{bpost}}
+\index{bpost@{bpost}!BlueVortex-\/v2@{BlueVortex-\/v2}}
+\doxysubsubsection{\texorpdfstring{bpost}{bpost}}
+{\footnotesize\ttfamily Blue\+Vortex-\/v2.\+bpost = \mbox{\hyperlink{classFediBskyXwalk_1_1PostXwalk}{Post\+Xwalk}}()}
+
+\mbox{\Hypertarget{namespaceBlueVortex-v2_a8f68d24ec6030cadf7413c2fe5d5b6f4}\label{namespaceBlueVortex-v2_a8f68d24ec6030cadf7413c2fe5d5b6f4}} 
+\index{BlueVortex-\/v2@{BlueVortex-\/v2}!bPuck@{bPuck}}
+\index{bPuck@{bPuck}!BlueVortex-\/v2@{BlueVortex-\/v2}}
+\doxysubsubsection{\texorpdfstring{bPuck}{bPuck}}
+{\footnotesize\ttfamily Blue\+Vortex-\/v2.\+b\+Puck = Bsky\+Post\+Puck()}
+
+\mbox{\Hypertarget{namespaceBlueVortex-v2_a6aceb66e602bce1404753c31a7345588}\label{namespaceBlueVortex-v2_a6aceb66e602bce1404753c31a7345588}} 
+\index{BlueVortex-\/v2@{BlueVortex-\/v2}!bskyQueue@{bskyQueue}}
+\index{bskyQueue@{bskyQueue}!BlueVortex-\/v2@{BlueVortex-\/v2}}
+\doxysubsubsection{\texorpdfstring{bskyQueue}{bskyQueue}}
+{\footnotesize\ttfamily list Blue\+Vortex-\/v2.\+bsky\+Queue = \mbox{[}$\,$\mbox{]}}
+
+\mbox{\Hypertarget{namespaceBlueVortex-v2_a0e61e45804b26eb1db3974cf92ffdc19}\label{namespaceBlueVortex-v2_a0e61e45804b26eb1db3974cf92ffdc19}} 
+\index{BlueVortex-\/v2@{BlueVortex-\/v2}!count@{count}}
+\index{count@{count}!BlueVortex-\/v2@{BlueVortex-\/v2}}
+\doxysubsubsection{\texorpdfstring{count}{count}}
+{\footnotesize\ttfamily Blue\+Vortex-\/v2.\+count = len(\mbox{\hyperlink{namespaceBlueVortex-v2_a8c2f5e84c0d741f73948d7628ece29a0}{mid\+Queue}})}
+
+\mbox{\Hypertarget{namespaceBlueVortex-v2_a9ec0909430369c92205dc5e8691ec383}\label{namespaceBlueVortex-v2_a9ec0909430369c92205dc5e8691ec383}} 
+\index{BlueVortex-\/v2@{BlueVortex-\/v2}!creds@{creds}}
+\index{creds@{creds}!BlueVortex-\/v2@{BlueVortex-\/v2}}
+\doxysubsubsection{\texorpdfstring{creds}{creds}}
+{\footnotesize\ttfamily Blue\+Vortex-\/v2.\+creds = Bcred.\+show\+\_\+creds()}
+
+\mbox{\Hypertarget{namespaceBlueVortex-v2_a52cbabb46d6e2d4a0cfe96b57dfa8ec7}\label{namespaceBlueVortex-v2_a52cbabb46d6e2d4a0cfe96b57dfa8ec7}} 
+\index{BlueVortex-\/v2@{BlueVortex-\/v2}!e@{e}}
+\index{e@{e}!BlueVortex-\/v2@{BlueVortex-\/v2}}
+\doxysubsubsection{\texorpdfstring{e}{e}}
+{\footnotesize\ttfamily Blue\+Vortex-\/v2.\+e = \mbox{\hyperlink{classFediFeedEntries_1_1FedFeedEntry}{Fed\+Feed\+Entry}}()}
+
+\mbox{\Hypertarget{namespaceBlueVortex-v2_aa4c630f512477788f17551b78b4e72b1}\label{namespaceBlueVortex-v2_aa4c630f512477788f17551b78b4e72b1}} 
+\index{BlueVortex-\/v2@{BlueVortex-\/v2}!feedData@{feedData}}
+\index{feedData@{feedData}!BlueVortex-\/v2@{BlueVortex-\/v2}}
+\doxysubsubsection{\texorpdfstring{feedData}{feedData}}
+{\footnotesize\ttfamily list Blue\+Vortex-\/v2.\+feed\+Data = \mbox{[}0\mbox{]} $\ast$ \mbox{\hyperlink{namespaceBlueVortex-v2_a3edac1bece65f2d5cc3ad7a57dfead6d}{numfeeds}}}
+
+\mbox{\Hypertarget{namespaceBlueVortex-v2_a7522644a4f262c46df5d0c9f477bd451}\label{namespaceBlueVortex-v2_a7522644a4f262c46df5d0c9f477bd451}} 
+\index{BlueVortex-\/v2@{BlueVortex-\/v2}!flrtimes\_iso@{flrtimes\_iso}}
+\index{flrtimes\_iso@{flrtimes\_iso}!BlueVortex-\/v2@{BlueVortex-\/v2}}
+\doxysubsubsection{\texorpdfstring{flrtimes\_iso}{flrtimes\_iso}}
+{\footnotesize\ttfamily list Blue\+Vortex-\/v2.\+flrtimes\+\_\+iso = \mbox{[}0\mbox{]} $\ast$ \mbox{\hyperlink{namespaceBlueVortex-v2_a3edac1bece65f2d5cc3ad7a57dfead6d}{numfeeds}}}
+
+\mbox{\Hypertarget{namespaceBlueVortex-v2_a13283b5c8508075040b0f419a9c7cbfe}\label{namespaceBlueVortex-v2_a13283b5c8508075040b0f419a9c7cbfe}} 
+\index{BlueVortex-\/v2@{BlueVortex-\/v2}!flrtimes\_unix@{flrtimes\_unix}}
+\index{flrtimes\_unix@{flrtimes\_unix}!BlueVortex-\/v2@{BlueVortex-\/v2}}
+\doxysubsubsection{\texorpdfstring{flrtimes\_unix}{flrtimes\_unix}}
+{\footnotesize\ttfamily list Blue\+Vortex-\/v2.\+flrtimes\+\_\+unix = \mbox{[}0\mbox{]} $\ast$ \mbox{\hyperlink{namespaceBlueVortex-v2_a3edac1bece65f2d5cc3ad7a57dfead6d}{numfeeds}}}
+
+\mbox{\Hypertarget{namespaceBlueVortex-v2_a46bc26e245488f2c99ead7c43481b5a3}\label{namespaceBlueVortex-v2_a46bc26e245488f2c99ead7c43481b5a3}} 
+\index{BlueVortex-\/v2@{BlueVortex-\/v2}!IsSen@{IsSen}}
+\index{IsSen@{IsSen}!BlueVortex-\/v2@{BlueVortex-\/v2}}
+\doxysubsubsection{\texorpdfstring{IsSen}{IsSen}}
+{\footnotesize\ttfamily Blue\+Vortex-\/v2.\+Is\+Sen = bpost.\+check\+Sensitive()}
+
+\mbox{\Hypertarget{namespaceBlueVortex-v2_a93d8db86fc1ee2c5eb7dcee61bc27a6b}\label{namespaceBlueVortex-v2_a93d8db86fc1ee2c5eb7dcee61bc27a6b}} 
+\index{BlueVortex-\/v2@{BlueVortex-\/v2}!itemsPerFeed@{itemsPerFeed}}
+\index{itemsPerFeed@{itemsPerFeed}!BlueVortex-\/v2@{BlueVortex-\/v2}}
+\doxysubsubsection{\texorpdfstring{itemsPerFeed}{itemsPerFeed}}
+{\footnotesize\ttfamily list Blue\+Vortex-\/v2.\+items\+Per\+Feed = \mbox{[}0\mbox{]} $\ast$ \mbox{\hyperlink{namespaceBlueVortex-v2_a3edac1bece65f2d5cc3ad7a57dfead6d}{numfeeds}}}
+
+\mbox{\Hypertarget{namespaceBlueVortex-v2_ac2af725423d08a2ac79c9ead8e98deeb}\label{namespaceBlueVortex-v2_ac2af725423d08a2ac79c9ead8e98deeb}} 
+\index{BlueVortex-\/v2@{BlueVortex-\/v2}!j@{j}}
+\index{j@{j}!BlueVortex-\/v2@{BlueVortex-\/v2}}
+\doxysubsubsection{\texorpdfstring{j}{j}}
+{\footnotesize\ttfamily Blue\+Vortex-\/v2.\+j = \mbox{\hyperlink{classheavy__lifting_1_1StateConfigInfo_a1e4e4c2e9da8410d52c910790f1e5e2a}{State\+Config\+Info.\+write\+\_\+info}}(\mbox{\hyperlink{namespaceBlueVortex-v2_af049f558eef473167462d2743faff160}{statecf}}, \mbox{\hyperlink{namespaceBlueVortex-v2_a134f688a4a8e4d4a3cd111ddf5633bb3}{u\+\_\+scinfo}})}
+
+\mbox{\Hypertarget{namespaceBlueVortex-v2_ab85da6138c078fc63a9249efd55aca43}\label{namespaceBlueVortex-v2_ab85da6138c078fc63a9249efd55aca43}} 
+\index{BlueVortex-\/v2@{BlueVortex-\/v2}!keepgoing@{keepgoing}}
+\index{keepgoing@{keepgoing}!BlueVortex-\/v2@{BlueVortex-\/v2}}
+\doxysubsubsection{\texorpdfstring{keepgoing}{keepgoing}}
+{\footnotesize\ttfamily Blue\+Vortex-\/v2.\+keepgoing = bool(True)}
+
+\mbox{\Hypertarget{namespaceBlueVortex-v2_a040ecaf1198337818a2b6492b3a91a35}\label{namespaceBlueVortex-v2_a040ecaf1198337818a2b6492b3a91a35}} 
+\index{BlueVortex-\/v2@{BlueVortex-\/v2}!lDe@{lDe}}
+\index{lDe@{lDe}!BlueVortex-\/v2@{BlueVortex-\/v2}}
+\doxysubsubsection{\texorpdfstring{lDe}{lDe}}
+{\footnotesize\ttfamily Blue\+Vortex-\/v2.\+l\+De = le\+Data.\+feeds\mbox{[}i\mbox{]}\mbox{[}\mbox{\hyperlink{namespaceBlueVortex-v2_ac2af725423d08a2ac79c9ead8e98deeb}{j}}\mbox{]}}
+
+\mbox{\Hypertarget{namespaceBlueVortex-v2_a28afd1d59cac9693a4aa25b50b806f9f}\label{namespaceBlueVortex-v2_a28afd1d59cac9693a4aa25b50b806f9f}} 
+\index{BlueVortex-\/v2@{BlueVortex-\/v2}!leData@{leData}}
+\index{leData@{leData}!BlueVortex-\/v2@{BlueVortex-\/v2}}
+\doxysubsubsection{\texorpdfstring{leData}{leData}}
+{\footnotesize\ttfamily Blue\+Vortex-\/v2.\+le\+Data = \mbox{\hyperlink{classFediFeedEntries_1_1HolderFedFeed}{Holder\+Fed\+Feed}}(\mbox{\hyperlink{namespaceBlueVortex-v2_aa4c630f512477788f17551b78b4e72b1}{feed\+Data}})}
+
+\mbox{\Hypertarget{namespaceBlueVortex-v2_a9ba8696a3fb36223f8fc4caa33897441}\label{namespaceBlueVortex-v2_a9ba8696a3fb36223f8fc4caa33897441}} 
+\index{BlueVortex-\/v2@{BlueVortex-\/v2}!maincf@{maincf}}
+\index{maincf@{maincf}!BlueVortex-\/v2@{BlueVortex-\/v2}}
+\doxysubsubsection{\texorpdfstring{maincf}{maincf}}
+{\footnotesize\ttfamily string Blue\+Vortex-\/v2.\+maincf = \textquotesingle{}salt-\/main.\+toml\textquotesingle{}}
+
+\mbox{\Hypertarget{namespaceBlueVortex-v2_ac375cbed3ff63565552b15d30392ef89}\label{namespaceBlueVortex-v2_ac375cbed3ff63565552b15d30392ef89}} 
+\index{BlueVortex-\/v2@{BlueVortex-\/v2}!mca@{mca}}
+\index{mca@{mca}!BlueVortex-\/v2@{BlueVortex-\/v2}}
+\doxysubsubsection{\texorpdfstring{mca}{mca}}
+{\footnotesize\ttfamily dictionary Blue\+Vortex-\/v2.\+mca = Media\+Content\+Attach(\mbox{\hyperlink{namespaceBlueVortex-v2_a00faaf54b88923f4cd56e482fc031996}{t}})}
+
+\mbox{\Hypertarget{namespaceBlueVortex-v2_a28e925378807b54d5d55905fe2050e25}\label{namespaceBlueVortex-v2_a28e925378807b54d5d55905fe2050e25}} 
+\index{BlueVortex-\/v2@{BlueVortex-\/v2}!mcfdata@{mcfdata}}
+\index{mcfdata@{mcfdata}!BlueVortex-\/v2@{BlueVortex-\/v2}}
+\doxysubsubsection{\texorpdfstring{mcfdata}{mcfdata}}
+{\footnotesize\ttfamily Blue\+Vortex-\/v2.\+mcfdata = \mbox{\hyperlink{classheavy__lifting_1_1MainConfigInfo_a26e0281d5806d3c7f4b3a5025cc34d6f}{Main\+Config\+Info.\+read}}(\mbox{\hyperlink{namespaceBlueVortex-v2_a9ba8696a3fb36223f8fc4caa33897441}{maincf}})}
+
+\mbox{\Hypertarget{namespaceBlueVortex-v2_a8c2f5e84c0d741f73948d7628ece29a0}\label{namespaceBlueVortex-v2_a8c2f5e84c0d741f73948d7628ece29a0}} 
+\index{BlueVortex-\/v2@{BlueVortex-\/v2}!midQueue@{midQueue}}
+\index{midQueue@{midQueue}!BlueVortex-\/v2@{BlueVortex-\/v2}}
+\doxysubsubsection{\texorpdfstring{midQueue}{midQueue}}
+{\footnotesize\ttfamily list Blue\+Vortex-\/v2.\+mid\+Queue = \mbox{[}$\,$\mbox{]}}
+
+\mbox{\Hypertarget{namespaceBlueVortex-v2_aa582fd35196385535b934efab9672dba}\label{namespaceBlueVortex-v2_aa582fd35196385535b934efab9672dba}} 
+\index{BlueVortex-\/v2@{BlueVortex-\/v2}!mQe@{mQe}}
+\index{mQe@{mQe}!BlueVortex-\/v2@{BlueVortex-\/v2}}
+\doxysubsubsection{\texorpdfstring{mQe}{mQe}}
+{\footnotesize\ttfamily Blue\+Vortex-\/v2.\+m\+Qe = i}
+
+\mbox{\Hypertarget{namespaceBlueVortex-v2_a391c9ca823faff3aa34590846bc75fc8}\label{namespaceBlueVortex-v2_a391c9ca823faff3aa34590846bc75fc8}} 
+\index{BlueVortex-\/v2@{BlueVortex-\/v2}!myDID@{myDID}}
+\index{myDID@{myDID}!BlueVortex-\/v2@{BlueVortex-\/v2}}
+\doxysubsubsection{\texorpdfstring{myDID}{myDID}}
+{\footnotesize\ttfamily Blue\+Vortex-\/v2.\+my\+DID = Bcred.\+my\+DID()}
+
+\mbox{\Hypertarget{namespaceBlueVortex-v2_aa8d70786c7592a070ef5981c05918699}\label{namespaceBlueVortex-v2_aa8d70786c7592a070ef5981c05918699}} 
+\index{BlueVortex-\/v2@{BlueVortex-\/v2}!myPastPosts@{myPastPosts}}
+\index{myPastPosts@{myPastPosts}!BlueVortex-\/v2@{BlueVortex-\/v2}}
+\doxysubsubsection{\texorpdfstring{myPastPosts}{myPastPosts}}
+{\footnotesize\ttfamily Blue\+Vortex-\/v2.\+my\+Past\+Posts = Bsky\+Feed.\+get\+\_\+author\+\_\+feed(\mbox{\hyperlink{namespaceBlueVortex-v2_a9ec0909430369c92205dc5e8691ec383}{creds}}, 20)}
+
+\mbox{\Hypertarget{namespaceBlueVortex-v2_a25a06ea6bf2a1691f650dd5e1d7fee29}\label{namespaceBlueVortex-v2_a25a06ea6bf2a1691f650dd5e1d7fee29}} 
+\index{BlueVortex-\/v2@{BlueVortex-\/v2}!noblobs@{noblobs}}
+\index{noblobs@{noblobs}!BlueVortex-\/v2@{BlueVortex-\/v2}}
+\doxysubsubsection{\texorpdfstring{noblobs}{noblobs}}
+{\footnotesize\ttfamily int Blue\+Vortex-\/v2.\+noblobs = 1}
+
+\mbox{\Hypertarget{namespaceBlueVortex-v2_aebdcffddbc60b7630a7b88a7160d5bce}\label{namespaceBlueVortex-v2_aebdcffddbc60b7630a7b88a7160d5bce}} 
+\index{BlueVortex-\/v2@{BlueVortex-\/v2}!noBlobs@{noBlobs}}
+\index{noBlobs@{noBlobs}!BlueVortex-\/v2@{BlueVortex-\/v2}}
+\doxysubsubsection{\texorpdfstring{noBlobs}{noBlobs}}
+{\footnotesize\ttfamily string Blue\+Vortex-\/v2.\+no\+Blobs = \textquotesingle{}no blobs\textquotesingle{}}
+
+\mbox{\Hypertarget{namespaceBlueVortex-v2_a0833ffb563c3f2a49b7ae6add1386de5}\label{namespaceBlueVortex-v2_a0833ffb563c3f2a49b7ae6add1386de5}} 
+\index{BlueVortex-\/v2@{BlueVortex-\/v2}!now1@{now1}}
+\index{now1@{now1}!BlueVortex-\/v2@{BlueVortex-\/v2}}
+\doxysubsubsection{\texorpdfstring{now1}{now1}}
+{\footnotesize\ttfamily Blue\+Vortex-\/v2.\+now1 = unix\+\_\+time\+\_\+now()}
+
+\mbox{\Hypertarget{namespaceBlueVortex-v2_aca5f6aed74b5d12c75afcdca78bbc144}\label{namespaceBlueVortex-v2_aca5f6aed74b5d12c75afcdca78bbc144}} 
+\index{BlueVortex-\/v2@{BlueVortex-\/v2}!now2@{now2}}
+\index{now2@{now2}!BlueVortex-\/v2@{BlueVortex-\/v2}}
+\doxysubsubsection{\texorpdfstring{now2}{now2}}
+{\footnotesize\ttfamily Blue\+Vortex-\/v2.\+now2 = unix\+\_\+time\+\_\+now()}
+
+\mbox{\Hypertarget{namespaceBlueVortex-v2_a3edac1bece65f2d5cc3ad7a57dfead6d}\label{namespaceBlueVortex-v2_a3edac1bece65f2d5cc3ad7a57dfead6d}} 
+\index{BlueVortex-\/v2@{BlueVortex-\/v2}!numfeeds@{numfeeds}}
+\index{numfeeds@{numfeeds}!BlueVortex-\/v2@{BlueVortex-\/v2}}
+\doxysubsubsection{\texorpdfstring{numfeeds}{numfeeds}}
+{\footnotesize\ttfamily Blue\+Vortex-\/v2.\+numfeeds = \mbox{\hyperlink{classheavy__lifting_1_1MainStateConsistency_aebdbb0ea8e19527f5a3b70824ea02edf}{Main\+State\+Consistency.\+feeds}} (\mbox{\hyperlink{namespaceBlueVortex-v2_a9ba8696a3fb36223f8fc4caa33897441}{maincf}}, \mbox{\hyperlink{namespaceBlueVortex-v2_af049f558eef473167462d2743faff160}{statecf}})}
+
+\mbox{\Hypertarget{namespaceBlueVortex-v2_a719266e922cfdc898d7df6db8c301255}\label{namespaceBlueVortex-v2_a719266e922cfdc898d7df6db8c301255}} 
+\index{BlueVortex-\/v2@{BlueVortex-\/v2}!numfeedState@{numfeedState}}
+\index{numfeedState@{numfeedState}!BlueVortex-\/v2@{BlueVortex-\/v2}}
+\doxysubsubsection{\texorpdfstring{numfeedState}{numfeedState}}
+{\footnotesize\ttfamily Blue\+Vortex-\/v2.\+numfeed\+State = \mbox{\hyperlink{classheavy__lifting_1_1StateConfigInfo_a2503d24ec6cfacbb7c29254ce91d7375}{State\+Config\+Info.\+check\+\_\+feed\+\_\+nums}} (\mbox{\hyperlink{namespaceBlueVortex-v2_aef26d5fbfd906329e0058c123603ce26}{scinfo}})}
+
+\mbox{\Hypertarget{namespaceBlueVortex-v2_aae203be8b647c867088bc7de2d94a143}\label{namespaceBlueVortex-v2_aae203be8b647c867088bc7de2d94a143}} 
+\index{BlueVortex-\/v2@{BlueVortex-\/v2}!pflrtimes\_i@{pflrtimes\_i}}
+\index{pflrtimes\_i@{pflrtimes\_i}!BlueVortex-\/v2@{BlueVortex-\/v2}}
+\doxysubsubsection{\texorpdfstring{pflrtimes\_i}{pflrtimes\_i}}
+{\footnotesize\ttfamily list Blue\+Vortex-\/v2.\+pflrtimes\+\_\+i = \mbox{[}0\mbox{]} $\ast$ \mbox{\hyperlink{namespaceBlueVortex-v2_a3edac1bece65f2d5cc3ad7a57dfead6d}{numfeeds}}}
+
+\mbox{\Hypertarget{namespaceBlueVortex-v2_a17ab853a39b5124f7f5b7458a79c588c}\label{namespaceBlueVortex-v2_a17ab853a39b5124f7f5b7458a79c588c}} 
+\index{BlueVortex-\/v2@{BlueVortex-\/v2}!pflrtimes\_u@{pflrtimes\_u}}
+\index{pflrtimes\_u@{pflrtimes\_u}!BlueVortex-\/v2@{BlueVortex-\/v2}}
+\doxysubsubsection{\texorpdfstring{pflrtimes\_u}{pflrtimes\_u}}
+{\footnotesize\ttfamily list Blue\+Vortex-\/v2.\+pflrtimes\+\_\+u = \mbox{[}0\mbox{]} $\ast$ \mbox{\hyperlink{namespaceBlueVortex-v2_a3edac1bece65f2d5cc3ad7a57dfead6d}{numfeeds}}}
+
+\mbox{\Hypertarget{namespaceBlueVortex-v2_a599692fb167db9d4a1127b8e8d32ef99}\label{namespaceBlueVortex-v2_a599692fb167db9d4a1127b8e8d32ef99}} 
+\index{BlueVortex-\/v2@{BlueVortex-\/v2}!reftimes@{reftimes}}
+\index{reftimes@{reftimes}!BlueVortex-\/v2@{BlueVortex-\/v2}}
+\doxysubsubsection{\texorpdfstring{reftimes}{reftimes}}
+{\footnotesize\ttfamily list Blue\+Vortex-\/v2.\+reftimes = \mbox{[}0,0\mbox{]}}
+
+\mbox{\Hypertarget{namespaceBlueVortex-v2_aef26d5fbfd906329e0058c123603ce26}\label{namespaceBlueVortex-v2_aef26d5fbfd906329e0058c123603ce26}} 
+\index{BlueVortex-\/v2@{BlueVortex-\/v2}!scinfo@{scinfo}}
+\index{scinfo@{scinfo}!BlueVortex-\/v2@{BlueVortex-\/v2}}
+\doxysubsubsection{\texorpdfstring{scinfo}{scinfo}}
+{\footnotesize\ttfamily Blue\+Vortex-\/v2.\+scinfo = \mbox{\hyperlink{classheavy__lifting_1_1StateConfigInfo_a6aaf9f508d8135e8c5fd61444c0ade48}{State\+Config\+Info.\+read}}(\mbox{\hyperlink{namespaceBlueVortex-v2_af049f558eef473167462d2743faff160}{statecf}})}
+
+\mbox{\Hypertarget{namespaceBlueVortex-v2_abeb8eb0ce02b33d6ed59ecf843ddbf2a}\label{namespaceBlueVortex-v2_abeb8eb0ce02b33d6ed59ecf843ddbf2a}} 
+\index{BlueVortex-\/v2@{BlueVortex-\/v2}!sessT@{sessT}}
+\index{sessT@{sessT}!BlueVortex-\/v2@{BlueVortex-\/v2}}
+\doxysubsubsection{\texorpdfstring{sessT}{sessT}}
+{\footnotesize\ttfamily Blue\+Vortex-\/v2.\+sessT = Bcred.\+get\+\_\+sessT()}
+
+\mbox{\Hypertarget{namespaceBlueVortex-v2_a3a6a5e3df29d5b4667e6b865181592e3}\label{namespaceBlueVortex-v2_a3a6a5e3df29d5b4667e6b865181592e3}} 
+\index{BlueVortex-\/v2@{BlueVortex-\/v2}!skip@{skip}}
+\index{skip@{skip}!BlueVortex-\/v2@{BlueVortex-\/v2}}
+\doxysubsubsection{\texorpdfstring{skip}{skip}}
+{\footnotesize\ttfamily int Blue\+Vortex-\/v2.\+skip = 1}
+
+\mbox{\Hypertarget{namespaceBlueVortex-v2_af049f558eef473167462d2743faff160}\label{namespaceBlueVortex-v2_af049f558eef473167462d2743faff160}} 
+\index{BlueVortex-\/v2@{BlueVortex-\/v2}!statecf@{statecf}}
+\index{statecf@{statecf}!BlueVortex-\/v2@{BlueVortex-\/v2}}
+\doxysubsubsection{\texorpdfstring{statecf}{statecf}}
+{\footnotesize\ttfamily tuple Blue\+Vortex-\/v2.\+statecf = (\mbox{\hyperlink{namespaceBlueVortex-v2_a28e925378807b54d5d55905fe2050e25}{mcfdata}}\mbox{[}\textquotesingle{}GENERAL\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}Statefile\textquotesingle{}\mbox{]})}
+
+\mbox{\Hypertarget{namespaceBlueVortex-v2_a00faaf54b88923f4cd56e482fc031996}\label{namespaceBlueVortex-v2_a00faaf54b88923f4cd56e482fc031996}} 
+\index{BlueVortex-\/v2@{BlueVortex-\/v2}!t@{t}}
+\index{t@{t}!BlueVortex-\/v2@{BlueVortex-\/v2}}
+\doxysubsubsection{\texorpdfstring{t}{t}}
+{\footnotesize\ttfamily Blue\+Vortex-\/v2.\+t = le\+Data.\+new\+Queue\+Exgest(i)}
+
+\mbox{\Hypertarget{namespaceBlueVortex-v2_a33438ebffeab32b3edd4fb7b257e2d18}\label{namespaceBlueVortex-v2_a33438ebffeab32b3edd4fb7b257e2d18}} 
+\index{BlueVortex-\/v2@{BlueVortex-\/v2}!tf@{tf}}
+\index{tf@{tf}!BlueVortex-\/v2@{BlueVortex-\/v2}}
+\doxysubsubsection{\texorpdfstring{tf}{tf}}
+{\footnotesize\ttfamily Blue\+Vortex-\/v2.\+tf = e.\+check\+Entry2\+Pub (\mbox{\hyperlink{namespaceBlueVortex-v2_a040ecaf1198337818a2b6492b3a91a35}{l\+De}},\mbox{\hyperlink{namespaceBlueVortex-v2_a599692fb167db9d4a1127b8e8d32ef99}{reftimes}}\mbox{[}i\mbox{]})}
+
+\mbox{\Hypertarget{namespaceBlueVortex-v2_a4c22caf7ff1caa5daef8e20c9fa69a4e}\label{namespaceBlueVortex-v2_a4c22caf7ff1caa5daef8e20c9fa69a4e}} 
+\index{BlueVortex-\/v2@{BlueVortex-\/v2}!toDoE@{toDoE}}
+\index{toDoE@{toDoE}!BlueVortex-\/v2@{BlueVortex-\/v2}}
+\doxysubsubsection{\texorpdfstring{toDoE}{toDoE}}
+{\footnotesize\ttfamily Blue\+Vortex-\/v2.\+to\+DoE = len (le\+Data.\+Uni\+Feed)}
+
+\mbox{\Hypertarget{namespaceBlueVortex-v2_a134f688a4a8e4d4a3cd111ddf5633bb3}\label{namespaceBlueVortex-v2_a134f688a4a8e4d4a3cd111ddf5633bb3}} 
+\index{BlueVortex-\/v2@{BlueVortex-\/v2}!u\_scinfo@{u\_scinfo}}
+\index{u\_scinfo@{u\_scinfo}!BlueVortex-\/v2@{BlueVortex-\/v2}}
+\doxysubsubsection{\texorpdfstring{u\_scinfo}{u\_scinfo}}
+{\footnotesize\ttfamily Blue\+Vortex-\/v2.\+u\+\_\+scinfo = \mbox{\hyperlink{classheavy__lifting_1_1StateConfigInfo_af1ca2b3c52875d4528ac74eafc346863}{State\+Config\+Info.\+update\+\_\+entry\+\_\+times}}(\mbox{\hyperlink{namespaceBlueVortex-v2_aa4c630f512477788f17551b78b4e72b1}{feed\+Data}},\mbox{\hyperlink{namespaceBlueVortex-v2_aef26d5fbfd906329e0058c123603ce26}{scinfo}})}
+
+\mbox{\Hypertarget{namespaceBlueVortex-v2_a153dcca7b2b8e32589b602796ff0f973}\label{namespaceBlueVortex-v2_a153dcca7b2b8e32589b602796ff0f973}} 
+\index{BlueVortex-\/v2@{BlueVortex-\/v2}!uu\_scinfo@{uu\_scinfo}}
+\index{uu\_scinfo@{uu\_scinfo}!BlueVortex-\/v2@{BlueVortex-\/v2}}
+\doxysubsubsection{\texorpdfstring{uu\_scinfo}{uu\_scinfo}}
+{\footnotesize\ttfamily Blue\+Vortex-\/v2.\+uu\+\_\+scinfo = \mbox{\hyperlink{classheavy__lifting_1_1StateConfigInfo_a8b423b53ecf2315b1862a269ba677759}{State\+Config\+Info.\+update\+\_\+bsky\+\_\+now}} (\mbox{\hyperlink{namespaceBlueVortex-v2_a134f688a4a8e4d4a3cd111ddf5633bb3}{u\+\_\+scinfo}})}
+
+\mbox{\Hypertarget{namespaceBlueVortex-v2_ab24c6ef97a9548365683540e67d052f2}\label{namespaceBlueVortex-v2_ab24c6ef97a9548365683540e67d052f2}} 
+\index{BlueVortex-\/v2@{BlueVortex-\/v2}!y@{y}}
+\index{y@{y}!BlueVortex-\/v2@{BlueVortex-\/v2}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily Blue\+Vortex-\/v2.\+y = le\+Data.\+feedQ}
+
+\mbox{\Hypertarget{namespaceBlueVortex-v2_af936fbb44b0df4bee0bbdc7179bef534}\label{namespaceBlueVortex-v2_af936fbb44b0df4bee0bbdc7179bef534}} 
+\index{BlueVortex-\/v2@{BlueVortex-\/v2}!z@{z}}
+\index{z@{z}!BlueVortex-\/v2@{BlueVortex-\/v2}}
+\doxysubsubsection{\texorpdfstring{z}{z}}
+{\footnotesize\ttfamily Blue\+Vortex-\/v2.\+z = le\+Data.\+counter\mbox{[}i\mbox{]}\mbox{[}\textquotesingle{}numE\textquotesingle{}\mbox{]}}
+

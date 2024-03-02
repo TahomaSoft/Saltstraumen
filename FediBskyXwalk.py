@@ -4,7 +4,7 @@ from SaxeBlueskyPython.ticktocktime import bsky_time_now
 from SaxeBlueskyPython.saxe_bluesky import  basic_post_dict
 import json
 
-class PostXwalk:
+class DEPRECATEDPostXwalk:
     def __init__(self):
         
         self.bpost = basic_post_dict

@@ -1,0 +1,158 @@
+\hypertarget{namespaceoops}{}\doxysection{oops Namespace Reference}
+\label{namespaceoops}\index{oops@{oops}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{namespaceoops_ae79274bec18b1602ce4e5484db354f25}{maincf}} = \textquotesingle{}salt-\/main.\+toml\textquotesingle{}
+\item 
+\mbox{\hyperlink{namespaceoops_a23eef02f128c1abfe3aa9f1ec9b80c62}{mcinfo}} = \mbox{\hyperlink{classheavy__lifting_1_1MainConfigInfo_a26e0281d5806d3c7f4b3a5025cc34d6f}{Main\+Config\+Info.\+read}}(\mbox{\hyperlink{namespaceoops_ae79274bec18b1602ce4e5484db354f25}{maincf}})
+\item 
+tuple \mbox{\hyperlink{namespaceoops_a43560dd7e6d54dfdaea216fcee70a272}{statecf}} = (\mbox{\hyperlink{namespaceoops_a23eef02f128c1abfe3aa9f1ec9b80c62}{mcinfo}}\mbox{[}\textquotesingle{}GENERAL\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}Statefile\textquotesingle{}\mbox{]})
+\item 
+\mbox{\hyperlink{namespaceoops_a6354d1dc35a976b31586d7e280035635}{fred}} = \mbox{\hyperlink{classheavy__lifting_1_1StateConfigInfo_a09fa49f4c87183579c3589135e5b5e57}{State\+Config\+Info.\+create}}(\mbox{\hyperlink{namespaceoops_a43560dd7e6d54dfdaea216fcee70a272}{statecf}}, NFeeds=2)
+\item 
+\mbox{\hyperlink{namespaceoops_aa5ef1d080c35020878370ac3afb95984}{scinfo}} = \mbox{\hyperlink{classheavy__lifting_1_1StateConfigInfo_a6aaf9f508d8135e8c5fd61444c0ade48}{State\+Config\+Info.\+read}}(\mbox{\hyperlink{namespaceoops_a43560dd7e6d54dfdaea216fcee70a272}{statecf}})
+\item 
+\mbox{\hyperlink{namespaceoops_abe3b41a0019f07c6a18d918031512c28}{numfeed\+State}} = \mbox{\hyperlink{classheavy__lifting_1_1StateConfigInfo_a2503d24ec6cfacbb7c29254ce91d7375}{State\+Config\+Info.\+check\+\_\+feed\+\_\+nums}} (\mbox{\hyperlink{namespaceoops_aa5ef1d080c35020878370ac3afb95984}{scinfo}})
+\item 
+\mbox{\hyperlink{namespaceoops_aab8babe326954f3abd08d369490ea6ea}{checkmainfeeds}} = \mbox{\hyperlink{classheavy__lifting_1_1MainConfigInfo_aed3c1a6e6e69c8850bba01ee81bf3b3f}{Main\+Config\+Info.\+check\+\_\+feed\+\_\+nums}}(\mbox{\hyperlink{namespaceoops_a23eef02f128c1abfe3aa9f1ec9b80c62}{mcinfo}})
+\item 
+\mbox{\hyperlink{namespaceoops_a25cb489d29da4a03b1ea07bd7e2fb818}{nufeeds}} = \mbox{\hyperlink{classheavy__lifting_1_1MainStateConsistency_aebdbb0ea8e19527f5a3b70824ea02edf}{Main\+State\+Consistency.\+feeds}} (\mbox{\hyperlink{namespaceoops_ae79274bec18b1602ce4e5484db354f25}{maincf}}, \mbox{\hyperlink{namespaceoops_a43560dd7e6d54dfdaea216fcee70a272}{statecf}})
+\item 
+\mbox{\hyperlink{namespaceoops_ac0468d9cebcfcc2e94780553efc4263a}{alist}} = \mbox{\hyperlink{classheavy__lifting_1_1FetchFeeds_ad863a397a953473c4d7938237d13bfe1}{Fetch\+Feeds.\+find\+\_\+feeds}}(\mbox{\hyperlink{namespaceoops_a23eef02f128c1abfe3aa9f1ec9b80c62}{mcinfo}})
+\item 
+list \mbox{\hyperlink{namespaceoops_af1eba611185f69ff9f692d6132f9603a}{feed\+Data}} = \mbox{[}0\mbox{]} $\ast$ \mbox{\hyperlink{namespaceoops_a25cb489d29da4a03b1ea07bd7e2fb818}{nufeeds}}
+\item 
+list \mbox{\hyperlink{namespaceoops_ad88503eb0c4869959d2f809af48672d3}{items\+Per\+Feed}} = \mbox{[}0\mbox{]} $\ast$ \mbox{\hyperlink{namespaceoops_a25cb489d29da4a03b1ea07bd7e2fb818}{nufeeds}}
+\item 
+\mbox{\hyperlink{namespaceoops_a648847cbfa1543751bf22ae49ae99756}{u\+\_\+scinfo}} = \mbox{\hyperlink{classheavy__lifting_1_1StateConfigInfo_af1ca2b3c52875d4528ac74eafc346863}{State\+Config\+Info.\+update\+\_\+entry\+\_\+times}}(\mbox{\hyperlink{namespaceoops_af1eba611185f69ff9f692d6132f9603a}{feed\+Data}},\mbox{\hyperlink{namespaceoops_aa5ef1d080c35020878370ac3afb95984}{scinfo}})
+\item 
+\mbox{\hyperlink{namespaceoops_ac2cc4a8cdbb87f156b47c3b092547da6}{j}} = \mbox{\hyperlink{classheavy__lifting_1_1StateConfigInfo_a1e4e4c2e9da8410d52c910790f1e5e2a}{State\+Config\+Info.\+write\+\_\+info}}(\mbox{\hyperlink{namespaceoops_a43560dd7e6d54dfdaea216fcee70a272}{statecf}}, \mbox{\hyperlink{namespaceoops_a648847cbfa1543751bf22ae49ae99756}{u\+\_\+scinfo}})
+\item 
+int \mbox{\hyperlink{namespaceoops_aaa418ba24f459271cc803588b22ce4e9}{reftime}} = 0
+\item 
+\mbox{\hyperlink{namespaceoops_a75035c15da3e8ee89dbb3b7e8a5afbae}{Neu\+Feed\+Data}} = Feed\+Entries\+Mash.\+Which\+Entries2\+Pub(\mbox{\hyperlink{namespaceoops_aaa418ba24f459271cc803588b22ce4e9}{reftime}},\mbox{\hyperlink{namespaceoops_af1eba611185f69ff9f692d6132f9603a}{feed\+Data}})
+\item 
+\mbox{\hyperlink{namespaceoops_a4e7a5e50bec0eb0550a27725cafe8cfa}{count}} = Feed\+Entries\+Mash.\+Compute\+Num\+Outbound (\mbox{\hyperlink{namespaceoops_a75035c15da3e8ee89dbb3b7e8a5afbae}{Neu\+Feed\+Data}})
+\item 
+\mbox{\hyperlink{namespaceoops_ab1780847af714e9926afdbaf1606a0b9}{keepgoing}} = bool(True)
+\item 
+\mbox{\hyperlink{namespaceoops_a5472a1058b694393b02345dcedb7240a}{feed\+In}} = \mbox{\hyperlink{namespaceoops_a75035c15da3e8ee89dbb3b7e8a5afbae}{Neu\+Feed\+Data}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Goal for this test module is to pull in one post from mastodon and
+repost it on bluesky.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespaceoops_ac0468d9cebcfcc2e94780553efc4263a}\label{namespaceoops_ac0468d9cebcfcc2e94780553efc4263a}} 
+\index{oops@{oops}!alist@{alist}}
+\index{alist@{alist}!oops@{oops}}
+\doxysubsubsection{\texorpdfstring{alist}{alist}}
+{\footnotesize\ttfamily oops.\+alist = \mbox{\hyperlink{classheavy__lifting_1_1FetchFeeds_ad863a397a953473c4d7938237d13bfe1}{Fetch\+Feeds.\+find\+\_\+feeds}}(\mbox{\hyperlink{namespaceoops_a23eef02f128c1abfe3aa9f1ec9b80c62}{mcinfo}})}
+
+\mbox{\Hypertarget{namespaceoops_aab8babe326954f3abd08d369490ea6ea}\label{namespaceoops_aab8babe326954f3abd08d369490ea6ea}} 
+\index{oops@{oops}!checkmainfeeds@{checkmainfeeds}}
+\index{checkmainfeeds@{checkmainfeeds}!oops@{oops}}
+\doxysubsubsection{\texorpdfstring{checkmainfeeds}{checkmainfeeds}}
+{\footnotesize\ttfamily oops.\+checkmainfeeds = \mbox{\hyperlink{classheavy__lifting_1_1MainConfigInfo_aed3c1a6e6e69c8850bba01ee81bf3b3f}{Main\+Config\+Info.\+check\+\_\+feed\+\_\+nums}}(\mbox{\hyperlink{namespaceoops_a23eef02f128c1abfe3aa9f1ec9b80c62}{mcinfo}})}
+
+\mbox{\Hypertarget{namespaceoops_a4e7a5e50bec0eb0550a27725cafe8cfa}\label{namespaceoops_a4e7a5e50bec0eb0550a27725cafe8cfa}} 
+\index{oops@{oops}!count@{count}}
+\index{count@{count}!oops@{oops}}
+\doxysubsubsection{\texorpdfstring{count}{count}}
+{\footnotesize\ttfamily oops.\+count = Feed\+Entries\+Mash.\+Compute\+Num\+Outbound (\mbox{\hyperlink{namespaceoops_a75035c15da3e8ee89dbb3b7e8a5afbae}{Neu\+Feed\+Data}})}
+
+\mbox{\Hypertarget{namespaceoops_af1eba611185f69ff9f692d6132f9603a}\label{namespaceoops_af1eba611185f69ff9f692d6132f9603a}} 
+\index{oops@{oops}!feedData@{feedData}}
+\index{feedData@{feedData}!oops@{oops}}
+\doxysubsubsection{\texorpdfstring{feedData}{feedData}}
+{\footnotesize\ttfamily list oops.\+feed\+Data = \mbox{[}0\mbox{]} $\ast$ \mbox{\hyperlink{namespaceoops_a25cb489d29da4a03b1ea07bd7e2fb818}{nufeeds}}}
+
+\mbox{\Hypertarget{namespaceoops_a5472a1058b694393b02345dcedb7240a}\label{namespaceoops_a5472a1058b694393b02345dcedb7240a}} 
+\index{oops@{oops}!feedIn@{feedIn}}
+\index{feedIn@{feedIn}!oops@{oops}}
+\doxysubsubsection{\texorpdfstring{feedIn}{feedIn}}
+{\footnotesize\ttfamily oops.\+feed\+In = \mbox{\hyperlink{namespaceoops_a75035c15da3e8ee89dbb3b7e8a5afbae}{Neu\+Feed\+Data}}}
+
+\mbox{\Hypertarget{namespaceoops_a6354d1dc35a976b31586d7e280035635}\label{namespaceoops_a6354d1dc35a976b31586d7e280035635}} 
+\index{oops@{oops}!fred@{fred}}
+\index{fred@{fred}!oops@{oops}}
+\doxysubsubsection{\texorpdfstring{fred}{fred}}
+{\footnotesize\ttfamily oops.\+fred = \mbox{\hyperlink{classheavy__lifting_1_1StateConfigInfo_a09fa49f4c87183579c3589135e5b5e57}{State\+Config\+Info.\+create}}(\mbox{\hyperlink{namespaceoops_a43560dd7e6d54dfdaea216fcee70a272}{statecf}}, NFeeds=2)}
+
+\mbox{\Hypertarget{namespaceoops_ad88503eb0c4869959d2f809af48672d3}\label{namespaceoops_ad88503eb0c4869959d2f809af48672d3}} 
+\index{oops@{oops}!itemsPerFeed@{itemsPerFeed}}
+\index{itemsPerFeed@{itemsPerFeed}!oops@{oops}}
+\doxysubsubsection{\texorpdfstring{itemsPerFeed}{itemsPerFeed}}
+{\footnotesize\ttfamily list oops.\+items\+Per\+Feed = \mbox{[}0\mbox{]} $\ast$ \mbox{\hyperlink{namespaceoops_a25cb489d29da4a03b1ea07bd7e2fb818}{nufeeds}}}
+
+\mbox{\Hypertarget{namespaceoops_ac2cc4a8cdbb87f156b47c3b092547da6}\label{namespaceoops_ac2cc4a8cdbb87f156b47c3b092547da6}} 
+\index{oops@{oops}!j@{j}}
+\index{j@{j}!oops@{oops}}
+\doxysubsubsection{\texorpdfstring{j}{j}}
+{\footnotesize\ttfamily oops.\+j = \mbox{\hyperlink{classheavy__lifting_1_1StateConfigInfo_a1e4e4c2e9da8410d52c910790f1e5e2a}{State\+Config\+Info.\+write\+\_\+info}}(\mbox{\hyperlink{namespaceoops_a43560dd7e6d54dfdaea216fcee70a272}{statecf}}, \mbox{\hyperlink{namespaceoops_a648847cbfa1543751bf22ae49ae99756}{u\+\_\+scinfo}})}
+
+\mbox{\Hypertarget{namespaceoops_ab1780847af714e9926afdbaf1606a0b9}\label{namespaceoops_ab1780847af714e9926afdbaf1606a0b9}} 
+\index{oops@{oops}!keepgoing@{keepgoing}}
+\index{keepgoing@{keepgoing}!oops@{oops}}
+\doxysubsubsection{\texorpdfstring{keepgoing}{keepgoing}}
+{\footnotesize\ttfamily oops.\+keepgoing = bool(True)}
+
+\mbox{\Hypertarget{namespaceoops_ae79274bec18b1602ce4e5484db354f25}\label{namespaceoops_ae79274bec18b1602ce4e5484db354f25}} 
+\index{oops@{oops}!maincf@{maincf}}
+\index{maincf@{maincf}!oops@{oops}}
+\doxysubsubsection{\texorpdfstring{maincf}{maincf}}
+{\footnotesize\ttfamily string oops.\+maincf = \textquotesingle{}salt-\/main.\+toml\textquotesingle{}}
+
+\mbox{\Hypertarget{namespaceoops_a23eef02f128c1abfe3aa9f1ec9b80c62}\label{namespaceoops_a23eef02f128c1abfe3aa9f1ec9b80c62}} 
+\index{oops@{oops}!mcinfo@{mcinfo}}
+\index{mcinfo@{mcinfo}!oops@{oops}}
+\doxysubsubsection{\texorpdfstring{mcinfo}{mcinfo}}
+{\footnotesize\ttfamily oops.\+mcinfo = \mbox{\hyperlink{classheavy__lifting_1_1MainConfigInfo_a26e0281d5806d3c7f4b3a5025cc34d6f}{Main\+Config\+Info.\+read}}(\mbox{\hyperlink{namespaceoops_ae79274bec18b1602ce4e5484db354f25}{maincf}})}
+
+\mbox{\Hypertarget{namespaceoops_a75035c15da3e8ee89dbb3b7e8a5afbae}\label{namespaceoops_a75035c15da3e8ee89dbb3b7e8a5afbae}} 
+\index{oops@{oops}!NeuFeedData@{NeuFeedData}}
+\index{NeuFeedData@{NeuFeedData}!oops@{oops}}
+\doxysubsubsection{\texorpdfstring{NeuFeedData}{NeuFeedData}}
+{\footnotesize\ttfamily oops.\+Neu\+Feed\+Data = Feed\+Entries\+Mash.\+Which\+Entries2\+Pub(\mbox{\hyperlink{namespaceoops_aaa418ba24f459271cc803588b22ce4e9}{reftime}},\mbox{\hyperlink{namespaceoops_af1eba611185f69ff9f692d6132f9603a}{feed\+Data}})}
+
+\mbox{\Hypertarget{namespaceoops_a25cb489d29da4a03b1ea07bd7e2fb818}\label{namespaceoops_a25cb489d29da4a03b1ea07bd7e2fb818}} 
+\index{oops@{oops}!nufeeds@{nufeeds}}
+\index{nufeeds@{nufeeds}!oops@{oops}}
+\doxysubsubsection{\texorpdfstring{nufeeds}{nufeeds}}
+{\footnotesize\ttfamily oops.\+nufeeds = \mbox{\hyperlink{classheavy__lifting_1_1MainStateConsistency_aebdbb0ea8e19527f5a3b70824ea02edf}{Main\+State\+Consistency.\+feeds}} (\mbox{\hyperlink{namespaceoops_ae79274bec18b1602ce4e5484db354f25}{maincf}}, \mbox{\hyperlink{namespaceoops_a43560dd7e6d54dfdaea216fcee70a272}{statecf}})}
+
+\mbox{\Hypertarget{namespaceoops_abe3b41a0019f07c6a18d918031512c28}\label{namespaceoops_abe3b41a0019f07c6a18d918031512c28}} 
+\index{oops@{oops}!numfeedState@{numfeedState}}
+\index{numfeedState@{numfeedState}!oops@{oops}}
+\doxysubsubsection{\texorpdfstring{numfeedState}{numfeedState}}
+{\footnotesize\ttfamily oops.\+numfeed\+State = \mbox{\hyperlink{classheavy__lifting_1_1StateConfigInfo_a2503d24ec6cfacbb7c29254ce91d7375}{State\+Config\+Info.\+check\+\_\+feed\+\_\+nums}} (\mbox{\hyperlink{namespaceoops_aa5ef1d080c35020878370ac3afb95984}{scinfo}})}
+
+\mbox{\Hypertarget{namespaceoops_aaa418ba24f459271cc803588b22ce4e9}\label{namespaceoops_aaa418ba24f459271cc803588b22ce4e9}} 
+\index{oops@{oops}!reftime@{reftime}}
+\index{reftime@{reftime}!oops@{oops}}
+\doxysubsubsection{\texorpdfstring{reftime}{reftime}}
+{\footnotesize\ttfamily int oops.\+reftime = 0}
+
+\mbox{\Hypertarget{namespaceoops_aa5ef1d080c35020878370ac3afb95984}\label{namespaceoops_aa5ef1d080c35020878370ac3afb95984}} 
+\index{oops@{oops}!scinfo@{scinfo}}
+\index{scinfo@{scinfo}!oops@{oops}}
+\doxysubsubsection{\texorpdfstring{scinfo}{scinfo}}
+{\footnotesize\ttfamily oops.\+scinfo = \mbox{\hyperlink{classheavy__lifting_1_1StateConfigInfo_a6aaf9f508d8135e8c5fd61444c0ade48}{State\+Config\+Info.\+read}}(\mbox{\hyperlink{namespaceoops_a43560dd7e6d54dfdaea216fcee70a272}{statecf}})}
+
+\mbox{\Hypertarget{namespaceoops_a43560dd7e6d54dfdaea216fcee70a272}\label{namespaceoops_a43560dd7e6d54dfdaea216fcee70a272}} 
+\index{oops@{oops}!statecf@{statecf}}
+\index{statecf@{statecf}!oops@{oops}}
+\doxysubsubsection{\texorpdfstring{statecf}{statecf}}
+{\footnotesize\ttfamily tuple oops.\+statecf = (\mbox{\hyperlink{namespaceoops_a23eef02f128c1abfe3aa9f1ec9b80c62}{mcinfo}}\mbox{[}\textquotesingle{}GENERAL\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}Statefile\textquotesingle{}\mbox{]})}
+
+\mbox{\Hypertarget{namespaceoops_a648847cbfa1543751bf22ae49ae99756}\label{namespaceoops_a648847cbfa1543751bf22ae49ae99756}} 
+\index{oops@{oops}!u\_scinfo@{u\_scinfo}}
+\index{u\_scinfo@{u\_scinfo}!oops@{oops}}
+\doxysubsubsection{\texorpdfstring{u\_scinfo}{u\_scinfo}}
+{\footnotesize\ttfamily oops.\+u\+\_\+scinfo = \mbox{\hyperlink{classheavy__lifting_1_1StateConfigInfo_af1ca2b3c52875d4528ac74eafc346863}{State\+Config\+Info.\+update\+\_\+entry\+\_\+times}}(\mbox{\hyperlink{namespaceoops_af1eba611185f69ff9f692d6132f9603a}{feed\+Data}},\mbox{\hyperlink{namespaceoops_aa5ef1d080c35020878370ac3afb95984}{scinfo}})}
+

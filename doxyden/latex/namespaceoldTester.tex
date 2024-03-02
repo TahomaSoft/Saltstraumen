@@ -1,0 +1,120 @@
+\hypertarget{namespaceoldTester}{}\doxysection{old\+Tester Namespace Reference}
+\label{namespaceoldTester}\index{oldTester@{oldTester}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{namespaceoldTester_a4bb2a055fbe19a469e2b4f0329306c8a}{maincf}} = \textquotesingle{}salt-\/main.\+toml\textquotesingle{}
+\item 
+\mbox{\hyperlink{namespaceoldTester_a8d27d8db42b98e4feec3a58da0bc6858}{mcfdata}} = \mbox{\hyperlink{classheavy__lifting_1_1MainConfigInfo_a26e0281d5806d3c7f4b3a5025cc34d6f}{Main\+Config\+Info.\+read}}(\mbox{\hyperlink{namespaceoldTester_a4bb2a055fbe19a469e2b4f0329306c8a}{maincf}})
+\item 
+tuple \mbox{\hyperlink{namespaceoldTester_a79d2e6dcf92fc3a016f3cda5222b32f8}{statecf}} = (\mbox{\hyperlink{namespaceoldTester_a8d27d8db42b98e4feec3a58da0bc6858}{mcfdata}}\mbox{[}\textquotesingle{}GENERAL\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}Statefile\textquotesingle{}\mbox{]})
+\item 
+\mbox{\hyperlink{namespaceoldTester_a28cdaaf7ba878506085302cb68728e70}{scinfo}} = \mbox{\hyperlink{classheavy__lifting_1_1StateConfigInfo_a6aaf9f508d8135e8c5fd61444c0ade48}{State\+Config\+Info.\+read}}(\mbox{\hyperlink{namespaceoldTester_a79d2e6dcf92fc3a016f3cda5222b32f8}{statecf}})
+\item 
+\mbox{\hyperlink{namespaceoldTester_acaadec7b772bf2e919f3adebe0925b52}{numfeed\+State}} = \mbox{\hyperlink{classheavy__lifting_1_1StateConfigInfo_a2503d24ec6cfacbb7c29254ce91d7375}{State\+Config\+Info.\+check\+\_\+feed\+\_\+nums}} (\mbox{\hyperlink{namespaceoldTester_a28cdaaf7ba878506085302cb68728e70}{scinfo}})
+\item 
+\mbox{\hyperlink{namespaceoldTester_ab2b7eb4f3c9b71da37c917930501297e}{numfeeds}} = \mbox{\hyperlink{classheavy__lifting_1_1MainStateConsistency_aebdbb0ea8e19527f5a3b70824ea02edf}{Main\+State\+Consistency.\+feeds}} (\mbox{\hyperlink{namespaceoldTester_a4bb2a055fbe19a469e2b4f0329306c8a}{maincf}}, \mbox{\hyperlink{namespaceoldTester_a79d2e6dcf92fc3a016f3cda5222b32f8}{statecf}})
+\item 
+\mbox{\hyperlink{namespaceoldTester_aa2c46622d7a242c8ab3888b20e2d6d29}{Bcred}} = Bsky\+Credentials()
+\item 
+\mbox{\hyperlink{namespaceoldTester_aafc131c84e742ee23eeef30b7bca5f2d}{acct\+\_\+name}} = \mbox{\hyperlink{namespaceoldTester_a8d27d8db42b98e4feec3a58da0bc6858}{mcfdata}}\mbox{[}\textquotesingle{}BSKY\+\_\+\+ACCOUNT\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}Username\textquotesingle{}\mbox{]}
+\item 
+\mbox{\hyperlink{namespaceoldTester_ac1cfd47d95f0cf0760b3c4e88fcbcf3e}{app\+Pass}} = \mbox{\hyperlink{namespaceoldTester_a8d27d8db42b98e4feec3a58da0bc6858}{mcfdata}}\mbox{[}\textquotesingle{}BSKY\+\_\+\+ACCOUNT\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}App\+\_\+passwd\textquotesingle{}\mbox{]}
+\item 
+\mbox{\hyperlink{namespaceoldTester_aa7ab5062bb3c5bfd9f360f644582e1c2}{creds}} = Bcred.\+show\+\_\+creds()
+\item 
+\mbox{\hyperlink{namespaceoldTester_a5217ed40b812c3e3e26256a1df24e193}{my\+Past\+Posts}} = Bsky\+Feed.\+get\+\_\+author\+\_\+feed(\mbox{\hyperlink{namespaceoldTester_aa7ab5062bb3c5bfd9f360f644582e1c2}{creds}}, 2)
+\item 
+\mbox{\hyperlink{namespaceoldTester_abe0ca98d1872fdbd9a9b29e2aa66d896}{j}} = Bcred.\+show\+\_\+creds()
+\item 
+\mbox{\hyperlink{namespaceoldTester_ad84cbacf0e9fa4db00f5b1f2e87f3b26}{Bsky\+Test}} = Bsky\+Post\+Puck()
+\item 
+\mbox{\hyperlink{namespaceoldTester_aef878d37154f13c99919d8f79a75f8d3}{sessT}} = Bsky\+Test.\+get\+\_\+sessT()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespaceoldTester_aafc131c84e742ee23eeef30b7bca5f2d}\label{namespaceoldTester_aafc131c84e742ee23eeef30b7bca5f2d}} 
+\index{oldTester@{oldTester}!acct\_name@{acct\_name}}
+\index{acct\_name@{acct\_name}!oldTester@{oldTester}}
+\doxysubsubsection{\texorpdfstring{acct\_name}{acct\_name}}
+{\footnotesize\ttfamily old\+Tester.\+acct\+\_\+name = \mbox{\hyperlink{namespaceoldTester_a8d27d8db42b98e4feec3a58da0bc6858}{mcfdata}}\mbox{[}\textquotesingle{}BSKY\+\_\+\+ACCOUNT\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}Username\textquotesingle{}\mbox{]}}
+
+\mbox{\Hypertarget{namespaceoldTester_ac1cfd47d95f0cf0760b3c4e88fcbcf3e}\label{namespaceoldTester_ac1cfd47d95f0cf0760b3c4e88fcbcf3e}} 
+\index{oldTester@{oldTester}!appPass@{appPass}}
+\index{appPass@{appPass}!oldTester@{oldTester}}
+\doxysubsubsection{\texorpdfstring{appPass}{appPass}}
+{\footnotesize\ttfamily old\+Tester.\+app\+Pass = \mbox{\hyperlink{namespaceoldTester_a8d27d8db42b98e4feec3a58da0bc6858}{mcfdata}}\mbox{[}\textquotesingle{}BSKY\+\_\+\+ACCOUNT\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}App\+\_\+passwd\textquotesingle{}\mbox{]}}
+
+\mbox{\Hypertarget{namespaceoldTester_aa2c46622d7a242c8ab3888b20e2d6d29}\label{namespaceoldTester_aa2c46622d7a242c8ab3888b20e2d6d29}} 
+\index{oldTester@{oldTester}!Bcred@{Bcred}}
+\index{Bcred@{Bcred}!oldTester@{oldTester}}
+\doxysubsubsection{\texorpdfstring{Bcred}{Bcred}}
+{\footnotesize\ttfamily old\+Tester.\+Bcred = Bsky\+Credentials()}
+
+\mbox{\Hypertarget{namespaceoldTester_ad84cbacf0e9fa4db00f5b1f2e87f3b26}\label{namespaceoldTester_ad84cbacf0e9fa4db00f5b1f2e87f3b26}} 
+\index{oldTester@{oldTester}!BskyTest@{BskyTest}}
+\index{BskyTest@{BskyTest}!oldTester@{oldTester}}
+\doxysubsubsection{\texorpdfstring{BskyTest}{BskyTest}}
+{\footnotesize\ttfamily old\+Tester.\+Bsky\+Test = Bsky\+Post\+Puck()}
+
+\mbox{\Hypertarget{namespaceoldTester_aa7ab5062bb3c5bfd9f360f644582e1c2}\label{namespaceoldTester_aa7ab5062bb3c5bfd9f360f644582e1c2}} 
+\index{oldTester@{oldTester}!creds@{creds}}
+\index{creds@{creds}!oldTester@{oldTester}}
+\doxysubsubsection{\texorpdfstring{creds}{creds}}
+{\footnotesize\ttfamily old\+Tester.\+creds = Bcred.\+show\+\_\+creds()}
+
+\mbox{\Hypertarget{namespaceoldTester_abe0ca98d1872fdbd9a9b29e2aa66d896}\label{namespaceoldTester_abe0ca98d1872fdbd9a9b29e2aa66d896}} 
+\index{oldTester@{oldTester}!j@{j}}
+\index{j@{j}!oldTester@{oldTester}}
+\doxysubsubsection{\texorpdfstring{j}{j}}
+{\footnotesize\ttfamily old\+Tester.\+j = Bcred.\+show\+\_\+creds()}
+
+\mbox{\Hypertarget{namespaceoldTester_a4bb2a055fbe19a469e2b4f0329306c8a}\label{namespaceoldTester_a4bb2a055fbe19a469e2b4f0329306c8a}} 
+\index{oldTester@{oldTester}!maincf@{maincf}}
+\index{maincf@{maincf}!oldTester@{oldTester}}
+\doxysubsubsection{\texorpdfstring{maincf}{maincf}}
+{\footnotesize\ttfamily string old\+Tester.\+maincf = \textquotesingle{}salt-\/main.\+toml\textquotesingle{}}
+
+\mbox{\Hypertarget{namespaceoldTester_a8d27d8db42b98e4feec3a58da0bc6858}\label{namespaceoldTester_a8d27d8db42b98e4feec3a58da0bc6858}} 
+\index{oldTester@{oldTester}!mcfdata@{mcfdata}}
+\index{mcfdata@{mcfdata}!oldTester@{oldTester}}
+\doxysubsubsection{\texorpdfstring{mcfdata}{mcfdata}}
+{\footnotesize\ttfamily old\+Tester.\+mcfdata = \mbox{\hyperlink{classheavy__lifting_1_1MainConfigInfo_a26e0281d5806d3c7f4b3a5025cc34d6f}{Main\+Config\+Info.\+read}}(\mbox{\hyperlink{namespaceoldTester_a4bb2a055fbe19a469e2b4f0329306c8a}{maincf}})}
+
+\mbox{\Hypertarget{namespaceoldTester_a5217ed40b812c3e3e26256a1df24e193}\label{namespaceoldTester_a5217ed40b812c3e3e26256a1df24e193}} 
+\index{oldTester@{oldTester}!myPastPosts@{myPastPosts}}
+\index{myPastPosts@{myPastPosts}!oldTester@{oldTester}}
+\doxysubsubsection{\texorpdfstring{myPastPosts}{myPastPosts}}
+{\footnotesize\ttfamily old\+Tester.\+my\+Past\+Posts = Bsky\+Feed.\+get\+\_\+author\+\_\+feed(\mbox{\hyperlink{namespaceoldTester_aa7ab5062bb3c5bfd9f360f644582e1c2}{creds}}, 2)}
+
+\mbox{\Hypertarget{namespaceoldTester_ab2b7eb4f3c9b71da37c917930501297e}\label{namespaceoldTester_ab2b7eb4f3c9b71da37c917930501297e}} 
+\index{oldTester@{oldTester}!numfeeds@{numfeeds}}
+\index{numfeeds@{numfeeds}!oldTester@{oldTester}}
+\doxysubsubsection{\texorpdfstring{numfeeds}{numfeeds}}
+{\footnotesize\ttfamily old\+Tester.\+numfeeds = \mbox{\hyperlink{classheavy__lifting_1_1MainStateConsistency_aebdbb0ea8e19527f5a3b70824ea02edf}{Main\+State\+Consistency.\+feeds}} (\mbox{\hyperlink{namespaceoldTester_a4bb2a055fbe19a469e2b4f0329306c8a}{maincf}}, \mbox{\hyperlink{namespaceoldTester_a79d2e6dcf92fc3a016f3cda5222b32f8}{statecf}})}
+
+\mbox{\Hypertarget{namespaceoldTester_acaadec7b772bf2e919f3adebe0925b52}\label{namespaceoldTester_acaadec7b772bf2e919f3adebe0925b52}} 
+\index{oldTester@{oldTester}!numfeedState@{numfeedState}}
+\index{numfeedState@{numfeedState}!oldTester@{oldTester}}
+\doxysubsubsection{\texorpdfstring{numfeedState}{numfeedState}}
+{\footnotesize\ttfamily old\+Tester.\+numfeed\+State = \mbox{\hyperlink{classheavy__lifting_1_1StateConfigInfo_a2503d24ec6cfacbb7c29254ce91d7375}{State\+Config\+Info.\+check\+\_\+feed\+\_\+nums}} (\mbox{\hyperlink{namespaceoldTester_a28cdaaf7ba878506085302cb68728e70}{scinfo}})}
+
+\mbox{\Hypertarget{namespaceoldTester_a28cdaaf7ba878506085302cb68728e70}\label{namespaceoldTester_a28cdaaf7ba878506085302cb68728e70}} 
+\index{oldTester@{oldTester}!scinfo@{scinfo}}
+\index{scinfo@{scinfo}!oldTester@{oldTester}}
+\doxysubsubsection{\texorpdfstring{scinfo}{scinfo}}
+{\footnotesize\ttfamily old\+Tester.\+scinfo = \mbox{\hyperlink{classheavy__lifting_1_1StateConfigInfo_a6aaf9f508d8135e8c5fd61444c0ade48}{State\+Config\+Info.\+read}}(\mbox{\hyperlink{namespaceoldTester_a79d2e6dcf92fc3a016f3cda5222b32f8}{statecf}})}
+
+\mbox{\Hypertarget{namespaceoldTester_aef878d37154f13c99919d8f79a75f8d3}\label{namespaceoldTester_aef878d37154f13c99919d8f79a75f8d3}} 
+\index{oldTester@{oldTester}!sessT@{sessT}}
+\index{sessT@{sessT}!oldTester@{oldTester}}
+\doxysubsubsection{\texorpdfstring{sessT}{sessT}}
+{\footnotesize\ttfamily old\+Tester.\+sessT = Bsky\+Test.\+get\+\_\+sessT()}
+
+\mbox{\Hypertarget{namespaceoldTester_a79d2e6dcf92fc3a016f3cda5222b32f8}\label{namespaceoldTester_a79d2e6dcf92fc3a016f3cda5222b32f8}} 
+\index{oldTester@{oldTester}!statecf@{statecf}}
+\index{statecf@{statecf}!oldTester@{oldTester}}
+\doxysubsubsection{\texorpdfstring{statecf}{statecf}}
+{\footnotesize\ttfamily tuple old\+Tester.\+statecf = (\mbox{\hyperlink{namespaceoldTester_a8d27d8db42b98e4feec3a58da0bc6858}{mcfdata}}\mbox{[}\textquotesingle{}GENERAL\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}Statefile\textquotesingle{}\mbox{]})}
+

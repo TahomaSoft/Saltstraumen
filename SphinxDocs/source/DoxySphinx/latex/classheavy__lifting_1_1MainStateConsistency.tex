@@ -1,0 +1,48 @@
+\hypertarget{classheavy__lifting_1_1MainStateConsistency}{}\doxysection{heavy\+\_\+lifting.\+Main\+State\+Consistency Class Reference}
+\label{classheavy__lifting_1_1MainStateConsistency}\index{heavy\_lifting.MainStateConsistency@{heavy\_lifting.MainStateConsistency}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classheavy__lifting_1_1MainStateConsistency_aebdbb0ea8e19527f5a3b70824ea02edf}{feeds}} (mainconfigfilename, stateconfigfilename)
+\item 
+def \mbox{\hyperlink{classheavy__lifting_1_1MainStateConsistency_a6e4fd545390df730ce6b27ee62106164}{open\+\_\+read\+\_\+mconfig}} (mainconfigfile\+\_\+name)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb} Check to be sure both state files have right amount of feeds
+Other consistency checks:
+* feed url consistent
+* feed names consistent
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classheavy__lifting_1_1MainStateConsistency_aebdbb0ea8e19527f5a3b70824ea02edf}\label{classheavy__lifting_1_1MainStateConsistency_aebdbb0ea8e19527f5a3b70824ea02edf}} 
+\index{heavy\_lifting.MainStateConsistency@{heavy\_lifting.MainStateConsistency}!feeds@{feeds}}
+\index{feeds@{feeds}!heavy\_lifting.MainStateConsistency@{heavy\_lifting.MainStateConsistency}}
+\doxysubsubsection{\texorpdfstring{feeds()}{feeds()}}
+{\footnotesize\ttfamily def heavy\+\_\+lifting.\+Main\+State\+Consistency.\+feeds (\begin{DoxyParamCaption}\item[{}]{mainconfigfilename,  }\item[{}]{stateconfigfilename }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Open both the main and state config files
+from file names and check to see if feeds are consistent.
+If not consistent, throw an error and quit
+Suggest in error message to recreate state file config
+using class/routine StateConfigInfo.create
+and editing as needed
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classheavy__lifting_1_1MainStateConsistency_a6e4fd545390df730ce6b27ee62106164}\label{classheavy__lifting_1_1MainStateConsistency_a6e4fd545390df730ce6b27ee62106164}} 
+\index{heavy\_lifting.MainStateConsistency@{heavy\_lifting.MainStateConsistency}!open\_read\_mconfig@{open\_read\_mconfig}}
+\index{open\_read\_mconfig@{open\_read\_mconfig}!heavy\_lifting.MainStateConsistency@{heavy\_lifting.MainStateConsistency}}
+\doxysubsubsection{\texorpdfstring{open\_read\_mconfig()}{open\_read\_mconfig()}}
+{\footnotesize\ttfamily def heavy\+\_\+lifting.\+Main\+State\+Consistency.\+open\+\_\+read\+\_\+mconfig (\begin{DoxyParamCaption}\item[{}]{mainconfigfile\+\_\+name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function to read main config file\end{DoxyVerb}
+
+
+\begin{DoxyVerb} And open state file based on info in main config file\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{heavy__lifting_8py}{heavy\+\_\+lifting.\+py}}\end{DoxyCompactItemize}

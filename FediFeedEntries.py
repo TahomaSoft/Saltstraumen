@@ -156,7 +156,7 @@ class HolderFedFeed:
        return self.UniFeed[i]
    
     
-class FedFeedEntry:
+class MIGRATEDFedFeedEntry:
     def __init__(self):
         self.fedientry = {}
 

@@ -1,0 +1,112 @@
+\hypertarget{namespacetimerTest}{}\doxysection{timer\+Test Namespace Reference}
+\label{namespacetimerTest}\index{timerTest@{timerTest}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{namespacetimerTest_a4f62776f37c4ddf895796a3e708f6fc6}{maincf}} = \textquotesingle{}salt-\/main.\+toml\textquotesingle{}
+\item 
+\mbox{\hyperlink{namespacetimerTest_acc2c22868c09c3dce6c367e3866f49ee}{mcfdata}} = \mbox{\hyperlink{classheavy__lifting_1_1MainConfigInfo_a26e0281d5806d3c7f4b3a5025cc34d6f}{Main\+Config\+Info.\+read}}(\mbox{\hyperlink{namespacetimerTest_a4f62776f37c4ddf895796a3e708f6fc6}{maincf}})
+\item 
+tuple \mbox{\hyperlink{namespacetimerTest_a3ce08df9ee246b5055134a15274ce724}{statecf}} = (\mbox{\hyperlink{namespacetimerTest_acc2c22868c09c3dce6c367e3866f49ee}{mcfdata}}\mbox{[}\textquotesingle{}GENERAL\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}Statefile\textquotesingle{}\mbox{]})
+\item 
+\mbox{\hyperlink{namespacetimerTest_a6adff4dc044960bc8a595a0e198c3112}{scinfo}} = \mbox{\hyperlink{classheavy__lifting_1_1StateConfigInfo_a6aaf9f508d8135e8c5fd61444c0ade48}{State\+Config\+Info.\+read}}(\mbox{\hyperlink{namespacetimerTest_a3ce08df9ee246b5055134a15274ce724}{statecf}})
+\item 
+\mbox{\hyperlink{namespacetimerTest_addf8fed8be9ecdc6b107983cc1eac036}{numfeed\+State}} = \mbox{\hyperlink{classheavy__lifting_1_1StateConfigInfo_a2503d24ec6cfacbb7c29254ce91d7375}{State\+Config\+Info.\+check\+\_\+feed\+\_\+nums}} (\mbox{\hyperlink{namespacetimerTest_a6adff4dc044960bc8a595a0e198c3112}{scinfo}})
+\item 
+\mbox{\hyperlink{namespacetimerTest_a36a55e7e60db88b18d74fb58e7f75252}{numfeeds}} = \mbox{\hyperlink{classheavy__lifting_1_1MainStateConsistency_aebdbb0ea8e19527f5a3b70824ea02edf}{Main\+State\+Consistency.\+feeds}} (\mbox{\hyperlink{namespacetimerTest_a4f62776f37c4ddf895796a3e708f6fc6}{maincf}}, \mbox{\hyperlink{namespacetimerTest_a3ce08df9ee246b5055134a15274ce724}{statecf}})
+\item 
+\mbox{\hyperlink{namespacetimerTest_a8c3fc7d4cb680ddb8013ab7b5420a0bd}{alist}} = \mbox{\hyperlink{classheavy__lifting_1_1FetchFeeds_ad863a397a953473c4d7938237d13bfe1}{Fetch\+Feeds.\+find\+\_\+feeds}}(\mbox{\hyperlink{namespacetimerTest_acc2c22868c09c3dce6c367e3866f49ee}{mcfdata}})
+\item 
+list \mbox{\hyperlink{namespacetimerTest_a88f54f80220a487bded642cfa40596a8}{feed\+Data}} = \mbox{[}0\mbox{]} $\ast$ \mbox{\hyperlink{namespacetimerTest_a36a55e7e60db88b18d74fb58e7f75252}{numfeeds}}
+\item 
+list \mbox{\hyperlink{namespacetimerTest_a8cd7f2b1b31d00def22cc9210c43131e}{items\+Per\+Feed}} = \mbox{[}0\mbox{]} $\ast$ \mbox{\hyperlink{namespacetimerTest_a36a55e7e60db88b18d74fb58e7f75252}{numfeeds}}
+\item 
+list \mbox{\hyperlink{namespacetimerTest_aae87631381fdb8e226adceb26836b913}{flrtimes\+\_\+unix}} = \mbox{[}0\mbox{]} $\ast$ \mbox{\hyperlink{namespacetimerTest_a36a55e7e60db88b18d74fb58e7f75252}{numfeeds}}
+\item 
+list \mbox{\hyperlink{namespacetimerTest_aa7025aff137008ae3a1c5b349099e5b8}{flrtimes\+\_\+iso}} = \mbox{[}0\mbox{]} $\ast$ \mbox{\hyperlink{namespacetimerTest_a36a55e7e60db88b18d74fb58e7f75252}{numfeeds}}
+\item 
+list \mbox{\hyperlink{namespacetimerTest_aae8bb6a58cae44e8439b8a2701b3d2e8}{pflrtimes\+\_\+u}} = \mbox{[}0\mbox{]} $\ast$ \mbox{\hyperlink{namespacetimerTest_a36a55e7e60db88b18d74fb58e7f75252}{numfeeds}}
+\item 
+list \mbox{\hyperlink{namespacetimerTest_a8928ef42944e5930bdf5c5b22cafc137}{pflrtimes\+\_\+i}} = \mbox{[}0\mbox{]} $\ast$ \mbox{\hyperlink{namespacetimerTest_a36a55e7e60db88b18d74fb58e7f75252}{numfeeds}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespacetimerTest_a8c3fc7d4cb680ddb8013ab7b5420a0bd}\label{namespacetimerTest_a8c3fc7d4cb680ddb8013ab7b5420a0bd}} 
+\index{timerTest@{timerTest}!alist@{alist}}
+\index{alist@{alist}!timerTest@{timerTest}}
+\doxysubsubsection{\texorpdfstring{alist}{alist}}
+{\footnotesize\ttfamily timer\+Test.\+alist = \mbox{\hyperlink{classheavy__lifting_1_1FetchFeeds_ad863a397a953473c4d7938237d13bfe1}{Fetch\+Feeds.\+find\+\_\+feeds}}(\mbox{\hyperlink{namespacetimerTest_acc2c22868c09c3dce6c367e3866f49ee}{mcfdata}})}
+
+\mbox{\Hypertarget{namespacetimerTest_a88f54f80220a487bded642cfa40596a8}\label{namespacetimerTest_a88f54f80220a487bded642cfa40596a8}} 
+\index{timerTest@{timerTest}!feedData@{feedData}}
+\index{feedData@{feedData}!timerTest@{timerTest}}
+\doxysubsubsection{\texorpdfstring{feedData}{feedData}}
+{\footnotesize\ttfamily list timer\+Test.\+feed\+Data = \mbox{[}0\mbox{]} $\ast$ \mbox{\hyperlink{namespacetimerTest_a36a55e7e60db88b18d74fb58e7f75252}{numfeeds}}}
+
+\mbox{\Hypertarget{namespacetimerTest_aa7025aff137008ae3a1c5b349099e5b8}\label{namespacetimerTest_aa7025aff137008ae3a1c5b349099e5b8}} 
+\index{timerTest@{timerTest}!flrtimes\_iso@{flrtimes\_iso}}
+\index{flrtimes\_iso@{flrtimes\_iso}!timerTest@{timerTest}}
+\doxysubsubsection{\texorpdfstring{flrtimes\_iso}{flrtimes\_iso}}
+{\footnotesize\ttfamily list timer\+Test.\+flrtimes\+\_\+iso = \mbox{[}0\mbox{]} $\ast$ \mbox{\hyperlink{namespacetimerTest_a36a55e7e60db88b18d74fb58e7f75252}{numfeeds}}}
+
+\mbox{\Hypertarget{namespacetimerTest_aae87631381fdb8e226adceb26836b913}\label{namespacetimerTest_aae87631381fdb8e226adceb26836b913}} 
+\index{timerTest@{timerTest}!flrtimes\_unix@{flrtimes\_unix}}
+\index{flrtimes\_unix@{flrtimes\_unix}!timerTest@{timerTest}}
+\doxysubsubsection{\texorpdfstring{flrtimes\_unix}{flrtimes\_unix}}
+{\footnotesize\ttfamily list timer\+Test.\+flrtimes\+\_\+unix = \mbox{[}0\mbox{]} $\ast$ \mbox{\hyperlink{namespacetimerTest_a36a55e7e60db88b18d74fb58e7f75252}{numfeeds}}}
+
+\mbox{\Hypertarget{namespacetimerTest_a8cd7f2b1b31d00def22cc9210c43131e}\label{namespacetimerTest_a8cd7f2b1b31d00def22cc9210c43131e}} 
+\index{timerTest@{timerTest}!itemsPerFeed@{itemsPerFeed}}
+\index{itemsPerFeed@{itemsPerFeed}!timerTest@{timerTest}}
+\doxysubsubsection{\texorpdfstring{itemsPerFeed}{itemsPerFeed}}
+{\footnotesize\ttfamily list timer\+Test.\+items\+Per\+Feed = \mbox{[}0\mbox{]} $\ast$ \mbox{\hyperlink{namespacetimerTest_a36a55e7e60db88b18d74fb58e7f75252}{numfeeds}}}
+
+\mbox{\Hypertarget{namespacetimerTest_a4f62776f37c4ddf895796a3e708f6fc6}\label{namespacetimerTest_a4f62776f37c4ddf895796a3e708f6fc6}} 
+\index{timerTest@{timerTest}!maincf@{maincf}}
+\index{maincf@{maincf}!timerTest@{timerTest}}
+\doxysubsubsection{\texorpdfstring{maincf}{maincf}}
+{\footnotesize\ttfamily string timer\+Test.\+maincf = \textquotesingle{}salt-\/main.\+toml\textquotesingle{}}
+
+\mbox{\Hypertarget{namespacetimerTest_acc2c22868c09c3dce6c367e3866f49ee}\label{namespacetimerTest_acc2c22868c09c3dce6c367e3866f49ee}} 
+\index{timerTest@{timerTest}!mcfdata@{mcfdata}}
+\index{mcfdata@{mcfdata}!timerTest@{timerTest}}
+\doxysubsubsection{\texorpdfstring{mcfdata}{mcfdata}}
+{\footnotesize\ttfamily timer\+Test.\+mcfdata = \mbox{\hyperlink{classheavy__lifting_1_1MainConfigInfo_a26e0281d5806d3c7f4b3a5025cc34d6f}{Main\+Config\+Info.\+read}}(\mbox{\hyperlink{namespacetimerTest_a4f62776f37c4ddf895796a3e708f6fc6}{maincf}})}
+
+\mbox{\Hypertarget{namespacetimerTest_a36a55e7e60db88b18d74fb58e7f75252}\label{namespacetimerTest_a36a55e7e60db88b18d74fb58e7f75252}} 
+\index{timerTest@{timerTest}!numfeeds@{numfeeds}}
+\index{numfeeds@{numfeeds}!timerTest@{timerTest}}
+\doxysubsubsection{\texorpdfstring{numfeeds}{numfeeds}}
+{\footnotesize\ttfamily timer\+Test.\+numfeeds = \mbox{\hyperlink{classheavy__lifting_1_1MainStateConsistency_aebdbb0ea8e19527f5a3b70824ea02edf}{Main\+State\+Consistency.\+feeds}} (\mbox{\hyperlink{namespacetimerTest_a4f62776f37c4ddf895796a3e708f6fc6}{maincf}}, \mbox{\hyperlink{namespacetimerTest_a3ce08df9ee246b5055134a15274ce724}{statecf}})}
+
+\mbox{\Hypertarget{namespacetimerTest_addf8fed8be9ecdc6b107983cc1eac036}\label{namespacetimerTest_addf8fed8be9ecdc6b107983cc1eac036}} 
+\index{timerTest@{timerTest}!numfeedState@{numfeedState}}
+\index{numfeedState@{numfeedState}!timerTest@{timerTest}}
+\doxysubsubsection{\texorpdfstring{numfeedState}{numfeedState}}
+{\footnotesize\ttfamily timer\+Test.\+numfeed\+State = \mbox{\hyperlink{classheavy__lifting_1_1StateConfigInfo_a2503d24ec6cfacbb7c29254ce91d7375}{State\+Config\+Info.\+check\+\_\+feed\+\_\+nums}} (\mbox{\hyperlink{namespacetimerTest_a6adff4dc044960bc8a595a0e198c3112}{scinfo}})}
+
+\mbox{\Hypertarget{namespacetimerTest_a8928ef42944e5930bdf5c5b22cafc137}\label{namespacetimerTest_a8928ef42944e5930bdf5c5b22cafc137}} 
+\index{timerTest@{timerTest}!pflrtimes\_i@{pflrtimes\_i}}
+\index{pflrtimes\_i@{pflrtimes\_i}!timerTest@{timerTest}}
+\doxysubsubsection{\texorpdfstring{pflrtimes\_i}{pflrtimes\_i}}
+{\footnotesize\ttfamily list timer\+Test.\+pflrtimes\+\_\+i = \mbox{[}0\mbox{]} $\ast$ \mbox{\hyperlink{namespacetimerTest_a36a55e7e60db88b18d74fb58e7f75252}{numfeeds}}}
+
+\mbox{\Hypertarget{namespacetimerTest_aae8bb6a58cae44e8439b8a2701b3d2e8}\label{namespacetimerTest_aae8bb6a58cae44e8439b8a2701b3d2e8}} 
+\index{timerTest@{timerTest}!pflrtimes\_u@{pflrtimes\_u}}
+\index{pflrtimes\_u@{pflrtimes\_u}!timerTest@{timerTest}}
+\doxysubsubsection{\texorpdfstring{pflrtimes\_u}{pflrtimes\_u}}
+{\footnotesize\ttfamily list timer\+Test.\+pflrtimes\+\_\+u = \mbox{[}0\mbox{]} $\ast$ \mbox{\hyperlink{namespacetimerTest_a36a55e7e60db88b18d74fb58e7f75252}{numfeeds}}}
+
+\mbox{\Hypertarget{namespacetimerTest_a6adff4dc044960bc8a595a0e198c3112}\label{namespacetimerTest_a6adff4dc044960bc8a595a0e198c3112}} 
+\index{timerTest@{timerTest}!scinfo@{scinfo}}
+\index{scinfo@{scinfo}!timerTest@{timerTest}}
+\doxysubsubsection{\texorpdfstring{scinfo}{scinfo}}
+{\footnotesize\ttfamily timer\+Test.\+scinfo = \mbox{\hyperlink{classheavy__lifting_1_1StateConfigInfo_a6aaf9f508d8135e8c5fd61444c0ade48}{State\+Config\+Info.\+read}}(\mbox{\hyperlink{namespacetimerTest_a3ce08df9ee246b5055134a15274ce724}{statecf}})}
+
+\mbox{\Hypertarget{namespacetimerTest_a3ce08df9ee246b5055134a15274ce724}\label{namespacetimerTest_a3ce08df9ee246b5055134a15274ce724}} 
+\index{timerTest@{timerTest}!statecf@{statecf}}
+\index{statecf@{statecf}!timerTest@{timerTest}}
+\doxysubsubsection{\texorpdfstring{statecf}{statecf}}
+{\footnotesize\ttfamily tuple timer\+Test.\+statecf = (\mbox{\hyperlink{namespacetimerTest_acc2c22868c09c3dce6c367e3866f49ee}{mcfdata}}\mbox{[}\textquotesingle{}GENERAL\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}Statefile\textquotesingle{}\mbox{]})}
+

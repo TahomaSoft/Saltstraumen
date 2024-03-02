@@ -1,0 +1,983 @@
+\begin{theindex}
+
+  \item {\_\_init\_\_}
+    \subitem {classfoo.A}, \hyperpage{51}
+    \subitem {classfoo.B}, \hyperpage{53}
+    \subitem {config\_feed\_objsmeth.MainConfigInfo}, \hyperpage{65}
+    \subitem {config\_feed\_objsmeth.StateConfigInfo}, \hyperpage{75}
+    \subitem {FediBskyXwalk.PostXwalk}, \hyperpage{71}
+    \subitem {FediFeedEntries.BROKENMiddleQueue}, \hyperpage{54}
+    \subitem {FediFeedEntries.FedFeedEntry}, \hyperpage{55}
+    \subitem {FediFeedEntries.HolderFedFeed}, \hyperpage{62}
+    \subitem {heavy\_lifting.FeedEntriesFix}, \hyperpage{57}
+    \subitem {heavy\_lifting.StateConfigInfo}, \hyperpage{78}
+
+  \indexspace
+
+  \item {a}
+    \subitem {BlueVortex-\/v2}, \hyperpage{17}
+    \subitem {classfoo}, \hyperpage{24}
+    \subitem {main-\/v1}, \hyperpage{35}
+  \item {acct\_name}
+    \subitem {BlueVortex-\/v2}, \hyperpage{17}
+    \subitem {oldTester}, \hyperpage{42}
+  \item {addBlobFlag}
+    \subitem {FediBskyXwalk.PostXwalk}, \hyperpage{71}
+  \item {addBlobInfo}
+    \subitem {FediBskyXwalk.PostXwalk}, \hyperpage{71}
+  \item {addContentWarning}
+    \subitem {FediFeedEntries}, \hyperpage{28}
+  \item {addDID}
+    \subitem {FediBskyXwalk.PostXwalk}, \hyperpage{71}
+  \item {addSummaryDetail}
+    \subitem {FediFeedEntries}, \hyperpage{28}
+    \subitem {temphold}, \hyperpage{47}
+  \item {addText}
+    \subitem {FediBskyXwalk.PostXwalk}, \hyperpage{71}
+  \item {addTextRaw}
+    \subitem {FediBskyXwalk.PostXwalk}, \hyperpage{72}
+  \item {addTime}
+    \subitem {FediBskyXwalk.PostXwalk}, \hyperpage{72}
+  \item {alist}
+    \subitem {BlueVortex-\/v2}, \hyperpage{17}
+    \subitem {main-\/v3}, \hyperpage{39}
+    \subitem {oops}, \hyperpage{44}
+    \subitem {timerTest}, \hyperpage{47}
+  \item {altText}
+    \subitem {BlueVortex-\/v2}, \hyperpage{17}
+  \item {AmFeeds}
+    \subitem {FediFeedEntries.HolderFedFeed}, \hyperpage{64}
+  \item {animal}
+    \subitem {arraytest}, \hyperpage{11}
+  \item {appPass}
+    \subitem {BlueVortex-\/v2}, \hyperpage{18}
+    \subitem {oldTester}, \hyperpage{42}
+  \item {arraytest}, \hyperpage{11}
+    \subitem {animal}, \hyperpage{11}
+    \subitem {barnyard}, \hyperpage{11}
+    \subitem {build}, \hyperpage{11}
+    \subitem {person}, \hyperpage{12}
+    \subitem {SubSystem}, \hyperpage{12}
+  \item {arraytest.py}, \hyperpage{81}
+
+  \indexspace
+
+  \item {b}
+    \subitem {BlueVortex-\/v2}, \hyperpage{18}
+    \subitem {classfoo}, \hyperpage{24}
+  \item {barnyard}
+    \subitem {arraytest}, \hyperpage{11}
+  \item {basictest}, \hyperpage{12}
+    \subitem {boolean\_list}, \hyperpage{13}
+    \subitem {compare\_date\_unix}, \hyperpage{13}
+    \subitem {configfile\_name}, \hyperpage{13}
+    \subitem {dt}, \hyperpage{13}
+    \subitem {entries\_retrieved}, \hyperpage{13}
+    \subitem {f}, \hyperpage{14}
+    \subitem {feed1}, \hyperpage{14}
+    \subitem {feed1\_url}, \hyperpage{14}
+    \subitem {items\_retrieved}, \hyperpage{14}
+    \subitem {lastread\_iso}, \hyperpage{14}
+    \subitem {lastread\_unix}, \hyperpage{14}
+    \subitem {main\_config}, \hyperpage{14}
+    \subitem {most\_recent}, \hyperpage{14}
+    \subitem {now\_iso}, \hyperpage{15}
+    \subitem {now\_unix}, \hyperpage{15}
+    \subitem {oldest}, \hyperpage{15}
+    \subitem {publish\_dates}, \hyperpage{15}
+    \subitem {python\_time}, \hyperpage{15}
+    \subitem {q}, \hyperpage{15}
+    \subitem {rtime}, \hyperpage{15}
+    \subitem {s}, \hyperpage{15}
+    \subitem {sorted\_entries}, \hyperpage{16}
+    \subitem {state\_config}, \hyperpage{16}
+    \subitem {statefile\_name}, \hyperpage{16}
+  \item {basictest.py}, \hyperpage{81}
+  \item {Bcred}
+    \subitem {BlueVortex-\/v2}, \hyperpage{18}
+    \subitem {oldTester}, \hyperpage{42}
+  \item {bEcho}
+    \subitem {FediBskyXwalk.PostXwalk}, \hyperpage{72}
+  \item {blobinfos}
+    \subitem {FediBskyXwalk.PostXwalk}, \hyperpage{74}
+  \item {blobpost}
+    \subitem {BlueVortex-\/v2}, \hyperpage{18}
+  \item {BlueVortex-\/v2}, \hyperpage{16}
+    \subitem {a}, \hyperpage{17}
+    \subitem {acct\_name}, \hyperpage{17}
+    \subitem {alist}, \hyperpage{17}
+    \subitem {altText}, \hyperpage{17}
+    \subitem {appPass}, \hyperpage{18}
+    \subitem {b}, \hyperpage{18}
+    \subitem {Bcred}, \hyperpage{18}
+    \subitem {blobpost}, \hyperpage{18}
+    \subitem {bpost}, \hyperpage{18}
+    \subitem {bPuck}, \hyperpage{18}
+    \subitem {bskyQueue}, \hyperpage{18}
+    \subitem {count}, \hyperpage{18}
+    \subitem {creds}, \hyperpage{19}
+    \subitem {e}, \hyperpage{19}
+    \subitem {feedData}, \hyperpage{19}
+    \subitem {flrtimes\_iso}, \hyperpage{19}
+    \subitem {flrtimes\_unix}, \hyperpage{19}
+    \subitem {IsSen}, \hyperpage{19}
+    \subitem {itemsPerFeed}, \hyperpage{19}
+    \subitem {j}, \hyperpage{19}
+    \subitem {keepgoing}, \hyperpage{20}
+    \subitem {lDe}, \hyperpage{20}
+    \subitem {leData}, \hyperpage{20}
+    \subitem {maincf}, \hyperpage{20}
+    \subitem {mca}, \hyperpage{20}
+    \subitem {mcfdata}, \hyperpage{20}
+    \subitem {midQueue}, \hyperpage{20}
+    \subitem {mQe}, \hyperpage{20}
+    \subitem {myDID}, \hyperpage{21}
+    \subitem {myPastPosts}, \hyperpage{21}
+    \subitem {noBlobs}, \hyperpage{21}
+    \subitem {noblobs}, \hyperpage{21}
+    \subitem {now1}, \hyperpage{21}
+    \subitem {now2}, \hyperpage{21}
+    \subitem {numfeeds}, \hyperpage{21}
+    \subitem {numfeedState}, \hyperpage{21}
+    \subitem {pflrtimes\_i}, \hyperpage{22}
+    \subitem {pflrtimes\_u}, \hyperpage{22}
+    \subitem {reftimes}, \hyperpage{22}
+    \subitem {scinfo}, \hyperpage{22}
+    \subitem {sessT}, \hyperpage{22}
+    \subitem {skip}, \hyperpage{22}
+    \subitem {statecf}, \hyperpage{22}
+    \subitem {t}, \hyperpage{22}
+    \subitem {tf}, \hyperpage{23}
+    \subitem {toDoE}, \hyperpage{23}
+    \subitem {u\_scinfo}, \hyperpage{23}
+    \subitem {uu\_scinfo}, \hyperpage{23}
+    \subitem {y}, \hyperpage{23}
+    \subitem {z}, \hyperpage{23}
+  \item {BlueVortex-\/v2.py}, \hyperpage{82}
+  \item {boolean\_list}
+    \subitem {basictest}, \hyperpage{13}
+  \item {bpost}
+    \subitem {BlueVortex-\/v2}, \hyperpage{18}
+    \subitem {FediBskyXwalk.PostXwalk}, \hyperpage{74}
+  \item {bPuck}
+    \subitem {BlueVortex-\/v2}, \hyperpage{18}
+  \item {bsky\_post\_metadata}
+    \subitem {feedstructs}, \hyperpage{32}
+  \item {bskyQueue}
+    \subitem {BlueVortex-\/v2}, \hyperpage{18}
+  \item {BskyTest}
+    \subitem {oldTester}, \hyperpage{42}
+  \item {build}
+    \subitem {arraytest}, \hyperpage{11}
+
+  \indexspace
+
+  \item {check\_feed\_num}
+    \subitem {config\_feed\_objsmeth.StateConfigInfo}, \hyperpage{75}
+  \item {check\_feed\_nums}
+    \subitem {config\_feed\_objsmeth.MainConfigInfo}, \hyperpage{65}
+    \subitem {heavy\_lifting.MainConfigInfo}, \hyperpage{67}
+    \subitem {heavy\_lifting.StateConfigInfo}, \hyperpage{78}
+  \item {checkBlobFlag}
+    \subitem {FediBskyXwalk.PostXwalk}, \hyperpage{72}
+  \item {checkEntry2Pub}
+    \subitem {FediFeedEntries.FedFeedEntry}, \hyperpage{55}
+  \item {CheckImageSize}
+    \subitem {heavy\_lifting.MediaMassage}, \hyperpage{70}
+  \item {checkmainfeeds}
+    \subitem {main-\/v3}, \hyperpage{39}
+    \subitem {oops}, \hyperpage{44}
+  \item {checknumfeeds\_ex}
+    \subitem {FediFeedEntries.HolderFedFeed}, \hyperpage{62}
+  \item {checknumfeeds\_in}
+    \subitem {FediFeedEntries.HolderFedFeed}, \hyperpage{62}
+  \item {checkSensitive}
+    \subitem {FediBskyXwalk.PostXwalk}, \hyperpage{72}
+  \item {chk\_main\_state}
+    \subitem {config\_feed\_objsmeth}, \hyperpage{24}
+  \item {classfoo}, \hyperpage{23}
+    \subitem {a}, \hyperpage{24}
+    \subitem {b}, \hyperpage{24}
+  \item {classfoo.A}, \hyperpage{51}
+    \subitem {\_\_init\_\_}, \hyperpage{51}
+    \subitem {print}, \hyperpage{52}
+    \subitem {value}, \hyperpage{52}
+    \subitem {value2}, \hyperpage{52}
+  \item {classfoo.B}, \hyperpage{53}
+    \subitem {\_\_init\_\_}, \hyperpage{53}
+  \item {classfoo.py}, \hyperpage{83}
+  \item {compare\_date\_unix}
+    \subitem {basictest}, \hyperpage{13}
+  \item {concatFeeds}
+    \subitem {FediFeedEntries.HolderFedFeed}, \hyperpage{62}
+  \item {config\_data}
+    \subitem {config\_feed\_objsmeth.MainConfigInfo}, \hyperpage{67}
+  \item {config\_feed\_objsmeth}, \hyperpage{24}
+    \subitem {chk\_main\_state}, \hyperpage{24}
+    \subitem {enumerate\_feed\_items}, \hyperpage{25}
+    \subitem {feedHandleFetchSort}, \hyperpage{25}
+    \subitem {fetch\_feed}, \hyperpage{25}
+    \subitem {find\_feeds}, \hyperpage{25}
+    \subitem {open\_read\_mconfig}, \hyperpage{26}
+    \subitem {sort\_entries}, \hyperpage{26}
+  \item {config\_feed\_objsmeth.MainConfigInfo}, \hyperpage{65}
+    \subitem {\_\_init\_\_}, \hyperpage{65}
+    \subitem {check\_feed\_nums}, \hyperpage{65}
+    \subitem {config\_data}, \hyperpage{67}
+    \subitem {create}, \hyperpage{66}
+    \subitem {file\_name}, \hyperpage{67}
+    \subitem {read}, \hyperpage{66}
+    \subitem {state\_file}, \hyperpage{67}
+    \subitem {state\_fname}, \hyperpage{66}
+    \subitem {write}, \hyperpage{66}
+  \item {config\_feed\_objsmeth.py}, \hyperpage{83}
+  \item {config\_feed\_objsmeth.StateConfigInfo}, \hyperpage{74}
+    \subitem {\_\_init\_\_}, \hyperpage{75}
+    \subitem {check\_feed\_num}, \hyperpage{75}
+    \subitem {create}, \hyperpage{75}
+    \subitem {filename}, \hyperpage{77}
+    \subitem {read}, \hyperpage{75}
+    \subitem {state}, \hyperpage{77}
+    \subitem {update\_bsky\_now}, \hyperpage{76}
+    \subitem {update\_bsky\_prev}, \hyperpage{76}
+    \subitem {update\_entry\_times}, \hyperpage{76}
+    \subitem {update\_feed\_now}, \hyperpage{76}
+    \subitem {update\_feed\_prev}, \hyperpage{76}
+    \subitem {write\_info}, \hyperpage{77}
+  \item {configDets}
+    \subitem {main-\/v1}, \hyperpage{35}
+  \item {configfile\_name}
+    \subitem {basictest}, \hyperpage{13}
+  \item {configfileName}
+    \subitem {main-\/v1}, \hyperpage{35}
+  \item {configread}, \hyperpage{26}
+    \subitem {mainconfigfile\_name}, \hyperpage{26}
+    \subitem {now\_iso}, \hyperpage{27}
+    \subitem {now\_unix}, \hyperpage{27}
+    \subitem {stateconfigfile\_name}, \hyperpage{27}
+    \subitem {stateoutfile\_name}, \hyperpage{27}
+    \subitem {statetoml\_in}, \hyperpage{27}
+    \subitem {toml\_in}, \hyperpage{27}
+  \item {configread.py}, \hyperpage{84}
+  \item {count}
+    \subitem {BlueVortex-\/v2}, \hyperpage{18}
+    \subitem {main-\/v3}, \hyperpage{39}
+    \subitem {oops}, \hyperpage{44}
+  \item {counter}
+    \subitem {FediFeedEntries.HolderFedFeed}, \hyperpage{64}
+  \item {create}
+    \subitem {config\_feed\_objsmeth.MainConfigInfo}, \hyperpage{66}
+    \subitem {config\_feed\_objsmeth.StateConfigInfo}, \hyperpage{75}
+    \subitem {heavy\_lifting.MainConfigInfo}, \hyperpage{68}
+    \subitem {heavy\_lifting.StateConfigInfo}, \hyperpage{78}
+  \item {createTmpDir}
+    \subitem {heavy\_lifting.MediaMassage}, \hyperpage{70}
+  \item {creds}
+    \subitem {BlueVortex-\/v2}, \hyperpage{19}
+    \subitem {oldTester}, \hyperpage{42}
+  \item {cw\_check}
+    \subitem {FediFeedEntries}, \hyperpage{28}
+
+  \indexspace
+
+  \item {ddddMediaContentHandle}
+    \subitem {heavy\_lifting.FeedEntriesMash}, \hyperpage{58}
+  \item {DEADMap4Simplify}
+    \subitem {heavy\_lifting.FeedEntriesMash}, \hyperpage{58}
+  \item {DEADSensitive\_Post\_Detect}
+    \subitem {heavy\_lifting.FeedEntriesMash}, \hyperpage{58}
+  \item {DEADSimplify}
+    \subitem {heavy\_lifting.FeedEntriesMash}, \hyperpage{58}
+  \item {DEELETEdorkcomputeTrue}
+    \subitem {FediFeedEntries.HolderFedFeed}, \hyperpage{62}
+  \item {DElComputeNumOutbound}
+    \subitem {heavy\_lifting.FeedEntriesMash}, \hyperpage{59}
+  \item {DELETEMabyeWhichEntries2Pub}
+    \subitem {heavy\_lifting.FeedEntriesMash}, \hyperpage{59}
+  \item {DELETEMediaContentAttach}
+    \subitem {heavy\_lifting.FeedEntriesMash}, \hyperpage{59}
+  \item {DELETEMediaContentAttachAltText}
+    \subitem {heavy\_lifting.FeedEntriesMash}, \hyperpage{59}
+  \item {dt}
+    \subitem {basictest}, \hyperpage{13}
+
+  \indexspace
+
+  \item {e}
+    \subitem {BlueVortex-\/v2}, \hyperpage{19}
+  \item {echo}
+    \subitem {FediBskyXwalk.PostXwalk}, \hyperpage{72}
+    \subitem {heavy\_lifting.FeedEntriesFix}, \hyperpage{57}
+  \item {entries\_retrieved}
+    \subitem {basictest}, \hyperpage{13}
+  \item {entryAddBasic}
+    \subitem {FediFeedEntries}, \hyperpage{29}
+  \item {entryAddImages}
+    \subitem {FediFeedEntries}, \hyperpage{29}
+  \item {entryAddRatings}
+    \subitem {FediFeedEntries}, \hyperpage{29}
+    \subitem {temphold}, \hyperpage{47}
+  \item {entryCheckSensitive}
+    \subitem {FediFeedEntries}, \hyperpage{29}
+  \item {entryCreate}
+    \subitem {FediFeedEntries}, \hyperpage{29}
+  \item {entryFixTags}
+    \subitem {FediFeedEntries}, \hyperpage{29}
+  \item {enumerate\_feed\_items}
+    \subitem {config\_feed\_objsmeth}, \hyperpage{25}
+    \subitem {heavy\_lifting.FetchFeeds}, \hyperpage{60}
+  \item {enumFeedItems}
+    \subitem {main-\/v2}, \hyperpage{37}
+  \item {exgest}
+    \subitem {FediFeedEntries.FedFeedEntry}, \hyperpage{56}
+    \subitem {FediFeedEntries.HolderFedFeed}, \hyperpage{63}
+  \item {exportFeeds}
+    \subitem {FediFeedEntries.HolderFedFeed}, \hyperpage{63}
+  \item {extendedF2Pmap}
+    \subitem {FediBskyXwalk.PostXwalk}, \hyperpage{72}
+
+  \indexspace
+
+  \item {f}
+    \subitem {basictest}, \hyperpage{14}
+  \item {fd\_content}
+    \subitem {main-\/v1}, \hyperpage{35}
+  \item {FediBskyXwalk}, \hyperpage{27}
+  \item {FediBskyXwalk.PostXwalk}, \hyperpage{70}
+    \subitem {\_\_init\_\_}, \hyperpage{71}
+    \subitem {addBlobFlag}, \hyperpage{71}
+    \subitem {addBlobInfo}, \hyperpage{71}
+    \subitem {addDID}, \hyperpage{71}
+    \subitem {addText}, \hyperpage{71}
+    \subitem {addTextRaw}, \hyperpage{72}
+    \subitem {addTime}, \hyperpage{72}
+    \subitem {bEcho}, \hyperpage{72}
+    \subitem {blobinfos}, \hyperpage{74}
+    \subitem {bpost}, \hyperpage{74}
+    \subitem {checkBlobFlag}, \hyperpage{72}
+    \subitem {checkSensitive}, \hyperpage{72}
+    \subitem {echo}, \hyperpage{72}
+    \subitem {extendedF2Pmap}, \hyperpage{72}
+    \subitem {ignore}, \hyperpage{73}
+    \subitem {json}, \hyperpage{73}
+    \subitem {mapper\_main}, \hyperpage{73}
+    \subitem {print}, \hyperpage{73}
+    \subitem {simple\_p\_map}, \hyperpage{73}
+    \subitem {stringsize}, \hyperpage{73}
+  \item {FediBskyXwalk.py}, \hyperpage{84}
+  \item {fedientry}
+    \subitem {FediFeedEntries.FedFeedEntry}, \hyperpage{56}
+  \item {FediEntryObjects}, \hyperpage{28}
+  \item {FediEntryObjects.py}, \hyperpage{84}
+  \item {FediFeedEntries}, \hyperpage{28}
+    \subitem {addContentWarning}, \hyperpage{28}
+    \subitem {addSummaryDetail}, \hyperpage{28}
+    \subitem {cw\_check}, \hyperpage{28}
+    \subitem {entryAddBasic}, \hyperpage{29}
+    \subitem {entryAddImages}, \hyperpage{29}
+    \subitem {entryAddRatings}, \hyperpage{29}
+    \subitem {entryCheckSensitive}, \hyperpage{29}
+    \subitem {entryCreate}, \hyperpage{29}
+    \subitem {entryFixTags}, \hyperpage{29}
+    \subitem {GetAltText}, \hyperpage{30}
+    \subitem {MediaContentAttach}, \hyperpage{30}
+    \subitem {MediaContentHandle}, \hyperpage{30}
+    \subitem {oolllddMediaContentAttach}, \hyperpage{30}
+    \subitem {textTouchUp}, \hyperpage{31}
+  \item {FediFeedEntries.BROKENMiddleQueue}, \hyperpage{54}
+    \subitem {\_\_init\_\_}, \hyperpage{54}
+    \subitem {fediqueue}, \hyperpage{55}
+    \subitem {insertr}, \hyperpage{54}
+    \subitem {json}, \hyperpage{54}
+    \subitem {qprint}, \hyperpage{54}
+  \item {FediFeedEntries.FedFeedEntry}, \hyperpage{55}
+    \subitem {\_\_init\_\_}, \hyperpage{55}
+    \subitem {checkEntry2Pub}, \hyperpage{55}
+    \subitem {exgest}, \hyperpage{56}
+    \subitem {fedientry}, \hyperpage{56}
+    \subitem {ingest}, \hyperpage{56}
+    \subitem {json}, \hyperpage{56}
+    \subitem {MarkEntry2Pub}, \hyperpage{56}
+  \item {FediFeedEntries.HolderFedFeed}, \hyperpage{61}
+    \subitem {\_\_init\_\_}, \hyperpage{62}
+    \subitem {AmFeeds}, \hyperpage{64}
+    \subitem {checknumfeeds\_ex}, \hyperpage{62}
+    \subitem {checknumfeeds\_in}, \hyperpage{62}
+    \subitem {concatFeeds}, \hyperpage{62}
+    \subitem {counter}, \hyperpage{64}
+    \subitem {DEELETEdorkcomputeTrue}, \hyperpage{62}
+    \subitem {exgest}, \hyperpage{63}
+    \subitem {exportFeeds}, \hyperpage{63}
+    \subitem {feedcounts}, \hyperpage{63}
+    \subitem {feedQ}, \hyperpage{64}
+    \subitem {feeds}, \hyperpage{64}
+    \subitem {json}, \hyperpage{63}
+    \subitem {newQueue}, \hyperpage{63}
+    \subitem {newQueueExgest}, \hyperpage{63}
+    \subitem {numtrue}, \hyperpage{64}
+    \subitem {sort\_entries}, \hyperpage{63}
+    \subitem {UniFeed}, \hyperpage{64}
+  \item {FediFeedEntries.py}, \hyperpage{85}
+  \item {fediqueue}
+    \subitem {FediFeedEntries.BROKENMiddleQueue}, \hyperpage{55}
+  \item {FediQueueObjects}, \hyperpage{31}
+  \item {FediQueueObjects.py}, \hyperpage{85}
+  \item {FediStructsMisc}, \hyperpage{31}
+  \item {FediStructsMisc.py}, \hyperpage{85}
+  \item {FediXbSky}, \hyperpage{31}
+  \item {FediXbSky.py}, \hyperpage{85}
+  \item {feed1}
+    \subitem {basictest}, \hyperpage{14}
+  \item {feed1\_url}
+    \subitem {basictest}, \hyperpage{14}
+  \item {feed\_metadata}
+    \subitem {feedstructs}, \hyperpage{32}
+  \item {feedcounts}
+    \subitem {FediFeedEntries.HolderFedFeed}, \hyperpage{63}
+  \item {feedData}
+    \subitem {BlueVortex-\/v2}, \hyperpage{19}
+    \subitem {main-\/v3}, \hyperpage{39}
+    \subitem {oops}, \hyperpage{44}
+    \subitem {timerTest}, \hyperpage{47}
+  \item {feedHandleFetchSort}
+    \subitem {config\_feed\_objsmeth}, \hyperpage{25}
+    \subitem {heavy\_lifting.FetchFeeds}, \hyperpage{60}
+  \item {feedIn}
+    \subitem {main-\/v3}, \hyperpage{40}
+    \subitem {oops}, \hyperpage{45}
+  \item {feedQ}
+    \subitem {FediFeedEntries.HolderFedFeed}, \hyperpage{64}
+  \item {feeds}
+    \subitem {FediFeedEntries.HolderFedFeed}, \hyperpage{64}
+    \subitem {heavy\_lifting.MainStateConsistency}, \hyperpage{69}
+  \item {feedstructs}, \hyperpage{31}
+    \subitem {bsky\_post\_metadata}, \hyperpage{32}
+    \subitem {feed\_metadata}, \hyperpage{32}
+    \subitem {main\_config\_feedInfo}, \hyperpage{32}
+    \subitem {main\_config\_genInfo}, \hyperpage{32}
+    \subitem {post\_altText\_plus}, \hyperpage{32}
+    \subitem {post\_constructor}, \hyperpage{33}
+    \subitem {post\_media\_item}, \hyperpage{33}
+    \subitem {simple\_bsky\_info}, \hyperpage{33}
+    \subitem {state\_config\_genInfo}, \hyperpage{34}
+  \item {feedstructs.py}, \hyperpage{86}
+  \item {feedURLs}
+    \subitem {main-\/v1}, \hyperpage{35}
+    \subitem {main-\/v2}, \hyperpage{37}
+  \item {fetch\_feed}
+    \subitem {config\_feed\_objsmeth}, \hyperpage{25}
+    \subitem {heavy\_lifting.FetchFeeds}, \hyperpage{60}
+  \item {file\_name}
+    \subitem {config\_feed\_objsmeth.MainConfigInfo}, \hyperpage{67}
+  \item {filename}
+    \subitem {config\_feed\_objsmeth.StateConfigInfo}, \hyperpage{77}
+  \item {find\_feeds}
+    \subitem {config\_feed\_objsmeth}, \hyperpage{25}
+    \subitem {heavy\_lifting.FetchFeeds}, \hyperpage{61}
+  \item {flrtimes\_iso}
+    \subitem {BlueVortex-\/v2}, \hyperpage{19}
+    \subitem {timerTest}, \hyperpage{48}
+  \item {flrtimes\_unix}
+    \subitem {BlueVortex-\/v2}, \hyperpage{19}
+    \subitem {timerTest}, \hyperpage{48}
+  \item {foo}
+    \subitem {main-\/v2}, \hyperpage{37}
+  \item {fred}
+    \subitem {oops}, \hyperpage{45}
+
+  \indexspace
+
+  \item {GetAltText}
+    \subitem {FediFeedEntries}, \hyperpage{30}
+
+  \indexspace
+
+  \item {heavy\_lifting}, \hyperpage{34}
+  \item {heavy\_lifting.FeedEntriesFix}, \hyperpage{57}
+    \subitem {\_\_init\_\_}, \hyperpage{57}
+    \subitem {echo}, \hyperpage{57}
+    \subitem {p2fix}, \hyperpage{57}
+    \subitem {print}, \hyperpage{57}
+  \item {heavy\_lifting.FeedEntriesMash}, \hyperpage{58}
+    \subitem {ddddMediaContentHandle}, \hyperpage{58}
+    \subitem {DEADMap4Simplify}, \hyperpage{58}
+    \subitem {DEADSensitive\_Post\_Detect}, \hyperpage{58}
+    \subitem {DEADSimplify}, \hyperpage{58}
+    \subitem {DElComputeNumOutbound}, \hyperpage{59}
+    \subitem {DELETEMabyeWhichEntries2Pub}, \hyperpage{59}
+    \subitem {DELETEMediaContentAttach}, \hyperpage{59}
+    \subitem {DELETEMediaContentAttachAltText}, \hyperpage{59}
+  \item {heavy\_lifting.FetchFeeds}, \hyperpage{60}
+    \subitem {enumerate\_feed\_items}, \hyperpage{60}
+    \subitem {feedHandleFetchSort}, \hyperpage{60}
+    \subitem {fetch\_feed}, \hyperpage{60}
+    \subitem {find\_feeds}, \hyperpage{61}
+    \subitem {sort\_entries}, \hyperpage{61}
+  \item {heavy\_lifting.MainConfigInfo}, \hyperpage{67}
+    \subitem {check\_feed\_nums}, \hyperpage{67}
+    \subitem {create}, \hyperpage{68}
+    \subitem {read}, \hyperpage{68}
+  \item {heavy\_lifting.MainStateConsistency}, \hyperpage{68}
+    \subitem {feeds}, \hyperpage{69}
+    \subitem {open\_read\_mconfig}, \hyperpage{69}
+  \item {heavy\_lifting.MediaMassage}, \hyperpage{69}
+    \subitem {CheckImageSize}, \hyperpage{70}
+    \subitem {createTmpDir}, \hyperpage{70}
+    \subitem {remoteImageGet}, \hyperpage{70}
+  \item {heavy\_lifting.py}, \hyperpage{86}
+  \item {heavy\_lifting.StateConfigInfo}, \hyperpage{77}
+    \subitem {\_\_init\_\_}, \hyperpage{78}
+    \subitem {check\_feed\_nums}, \hyperpage{78}
+    \subitem {create}, \hyperpage{78}
+    \subitem {nothing}, \hyperpage{80}
+    \subitem {read}, \hyperpage{78}
+    \subitem {update\_bsky\_now}, \hyperpage{78}
+    \subitem {update\_bsky\_prev}, \hyperpage{79}
+    \subitem {update\_entry\_times}, \hyperpage{79}
+    \subitem {update\_feed\_now}, \hyperpage{79}
+    \subitem {update\_feed\_prev}, \hyperpage{79}
+    \subitem {write\_info}, \hyperpage{80}
+  \item {hmf}
+    \subitem {main-\/v1}, \hyperpage{36}
+
+  \indexspace
+
+  \item {ignore}
+    \subitem {FediBskyXwalk.PostXwalk}, \hyperpage{73}
+  \item {ingest}
+    \subitem {FediFeedEntries.FedFeedEntry}, \hyperpage{56}
+  \item {insertr}
+    \subitem {FediFeedEntries.BROKENMiddleQueue}, \hyperpage{54}
+  \item {IsSen}
+    \subitem {BlueVortex-\/v2}, \hyperpage{19}
+  \item {items\_retrieved}
+    \subitem {basictest}, \hyperpage{14}
+  \item {itemsPerFeed}
+    \subitem {BlueVortex-\/v2}, \hyperpage{19}
+    \subitem {main-\/v3}, \hyperpage{40}
+    \subitem {oops}, \hyperpage{45}
+    \subitem {timerTest}, \hyperpage{48}
+
+  \indexspace
+
+  \item {j}
+    \subitem {BlueVortex-\/v2}, \hyperpage{19}
+    \subitem {main-\/v1}, \hyperpage{36}
+    \subitem {main-\/v3}, \hyperpage{40}
+    \subitem {oldTester}, \hyperpage{42}
+    \subitem {oops}, \hyperpage{45}
+  \item {json}
+    \subitem {FediBskyXwalk.PostXwalk}, \hyperpage{73}
+    \subitem {FediFeedEntries.BROKENMiddleQueue}, \hyperpage{54}
+    \subitem {FediFeedEntries.FedFeedEntry}, \hyperpage{56}
+    \subitem {FediFeedEntries.HolderFedFeed}, \hyperpage{63}
+
+  \indexspace
+
+  \item {keepgoing}
+    \subitem {BlueVortex-\/v2}, \hyperpage{20}
+    \subitem {main-\/v3}, \hyperpage{40}
+    \subitem {oops}, \hyperpage{45}
+
+  \indexspace
+
+  \item {lastread\_iso}
+    \subitem {basictest}, \hyperpage{14}
+  \item {lastread\_unix}
+    \subitem {basictest}, \hyperpage{14}
+  \item {lDe}
+    \subitem {BlueVortex-\/v2}, \hyperpage{20}
+  \item {leData}
+    \subitem {BlueVortex-\/v2}, \hyperpage{20}
+
+  \indexspace
+
+  \item {main}, \hyperpage{34}
+  \item {main-\/v1}, \hyperpage{35}
+    \subitem {a}, \hyperpage{35}
+    \subitem {configDets}, \hyperpage{35}
+    \subitem {configfileName}, \hyperpage{35}
+    \subitem {fd\_content}, \hyperpage{35}
+    \subitem {feedURLs}, \hyperpage{35}
+    \subitem {hmf}, \hyperpage{36}
+    \subitem {j}, \hyperpage{36}
+    \subitem {rval}, \hyperpage{36}
+    \subitem {t}, \hyperpage{36}
+    \subitem {x}, \hyperpage{36}
+    \subitem {z}, \hyperpage{36}
+  \item {main-\/v1.py}, \hyperpage{86}
+  \item {main-\/v2}, \hyperpage{37}
+    \subitem {enumFeedItems}, \hyperpage{37}
+    \subitem {feedURLs}, \hyperpage{37}
+    \subitem {foo}, \hyperpage{37}
+    \subitem {numfeeds}, \hyperpage{37}
+    \subitem {reftime\_unix}, \hyperpage{37}
+    \subitem {rval}, \hyperpage{38}
+    \subitem {sortedEntries}, \hyperpage{38}
+    \subitem {sortedFeedDict}, \hyperpage{38}
+    \subitem {t}, \hyperpage{38}
+    \subitem {uet}, \hyperpage{38}
+    \subitem {x}, \hyperpage{38}
+    \subitem {z}, \hyperpage{38}
+  \item {main-\/v2.py}, \hyperpage{87}
+  \item {main-\/v3}, \hyperpage{39}
+    \subitem {alist}, \hyperpage{39}
+    \subitem {checkmainfeeds}, \hyperpage{39}
+    \subitem {count}, \hyperpage{39}
+    \subitem {feedData}, \hyperpage{39}
+    \subitem {feedIn}, \hyperpage{40}
+    \subitem {itemsPerFeed}, \hyperpage{40}
+    \subitem {j}, \hyperpage{40}
+    \subitem {keepgoing}, \hyperpage{40}
+    \subitem {maincf}, \hyperpage{40}
+    \subitem {mcinfo}, \hyperpage{40}
+    \subitem {NeuFeedData}, \hyperpage{40}
+    \subitem {nufeeds}, \hyperpage{40}
+    \subitem {numfeedState}, \hyperpage{41}
+    \subitem {reftime}, \hyperpage{41}
+    \subitem {scinfo}, \hyperpage{41}
+    \subitem {statecf}, \hyperpage{41}
+    \subitem {u\_scinfo}, \hyperpage{41}
+  \item {main-\/v3.py}, \hyperpage{87}
+  \item {main\_config}
+    \subitem {basictest}, \hyperpage{14}
+  \item {main\_config\_feedInfo}
+    \subitem {feedstructs}, \hyperpage{32}
+  \item {main\_config\_genInfo}
+    \subitem {feedstructs}, \hyperpage{32}
+  \item {maincf}
+    \subitem {BlueVortex-\/v2}, \hyperpage{20}
+    \subitem {main-\/v3}, \hyperpage{40}
+    \subitem {oldTester}, \hyperpage{42}
+    \subitem {oops}, \hyperpage{45}
+    \subitem {timerTest}, \hyperpage{48}
+  \item {mainconfigfile\_name}
+    \subitem {configread}, \hyperpage{26}
+  \item {mapper\_main}
+    \subitem {FediBskyXwalk.PostXwalk}, \hyperpage{73}
+  \item {MarkEntry2Pub}
+    \subitem {FediFeedEntries.FedFeedEntry}, \hyperpage{56}
+  \item {mca}
+    \subitem {BlueVortex-\/v2}, \hyperpage{20}
+  \item {mcfdata}
+    \subitem {BlueVortex-\/v2}, \hyperpage{20}
+    \subitem {oldTester}, \hyperpage{42}
+    \subitem {timerTest}, \hyperpage{48}
+  \item {mcinfo}
+    \subitem {main-\/v3}, \hyperpage{40}
+    \subitem {oops}, \hyperpage{45}
+  \item {MediaContentAttach}
+    \subitem {FediFeedEntries}, \hyperpage{30}
+  \item {MediaContentHandle}
+    \subitem {FediFeedEntries}, \hyperpage{30}
+  \item {midQueue}
+    \subitem {BlueVortex-\/v2}, \hyperpage{20}
+  \item {most\_recent}
+    \subitem {basictest}, \hyperpage{14}
+  \item {mQe}
+    \subitem {BlueVortex-\/v2}, \hyperpage{20}
+  \item {myDID}
+    \subitem {BlueVortex-\/v2}, \hyperpage{21}
+  \item {myPastPosts}
+    \subitem {BlueVortex-\/v2}, \hyperpage{21}
+    \subitem {oldTester}, \hyperpage{43}
+
+  \indexspace
+
+  \item {NeuFeedData}
+    \subitem {main-\/v3}, \hyperpage{40}
+    \subitem {oops}, \hyperpage{45}
+  \item {newQueue}
+    \subitem {FediFeedEntries.HolderFedFeed}, \hyperpage{63}
+  \item {newQueueExgest}
+    \subitem {FediFeedEntries.HolderFedFeed}, \hyperpage{63}
+  \item {noBlobs}
+    \subitem {BlueVortex-\/v2}, \hyperpage{21}
+  \item {noblobs}
+    \subitem {BlueVortex-\/v2}, \hyperpage{21}
+  \item {nothing}
+    \subitem {heavy\_lifting.StateConfigInfo}, \hyperpage{80}
+  \item {now1}
+    \subitem {BlueVortex-\/v2}, \hyperpage{21}
+  \item {now2}
+    \subitem {BlueVortex-\/v2}, \hyperpage{21}
+  \item {now\_iso}
+    \subitem {basictest}, \hyperpage{15}
+    \subitem {configread}, \hyperpage{27}
+  \item {now\_unix}
+    \subitem {basictest}, \hyperpage{15}
+    \subitem {configread}, \hyperpage{27}
+  \item {nufeeds}
+    \subitem {main-\/v3}, \hyperpage{40}
+    \subitem {oops}, \hyperpage{46}
+  \item {numfeeds}
+    \subitem {BlueVortex-\/v2}, \hyperpage{21}
+    \subitem {main-\/v2}, \hyperpage{37}
+    \subitem {oldTester}, \hyperpage{43}
+    \subitem {timerTest}, \hyperpage{48}
+  \item {numfeedState}
+    \subitem {BlueVortex-\/v2}, \hyperpage{21}
+    \subitem {main-\/v3}, \hyperpage{41}
+    \subitem {oldTester}, \hyperpage{43}
+    \subitem {oops}, \hyperpage{46}
+    \subitem {timerTest}, \hyperpage{48}
+  \item {numtrue}
+    \subitem {FediFeedEntries.HolderFedFeed}, \hyperpage{64}
+
+  \indexspace
+
+  \item {oldest}
+    \subitem {basictest}, \hyperpage{15}
+  \item {oldTester}, \hyperpage{41}
+    \subitem {acct\_name}, \hyperpage{42}
+    \subitem {appPass}, \hyperpage{42}
+    \subitem {Bcred}, \hyperpage{42}
+    \subitem {BskyTest}, \hyperpage{42}
+    \subitem {creds}, \hyperpage{42}
+    \subitem {j}, \hyperpage{42}
+    \subitem {maincf}, \hyperpage{42}
+    \subitem {mcfdata}, \hyperpage{42}
+    \subitem {myPastPosts}, \hyperpage{43}
+    \subitem {numfeeds}, \hyperpage{43}
+    \subitem {numfeedState}, \hyperpage{43}
+    \subitem {scinfo}, \hyperpage{43}
+    \subitem {sessT}, \hyperpage{43}
+    \subitem {statecf}, \hyperpage{43}
+  \item {oldTester.py}, \hyperpage{88}
+  \item {oolllddMediaContentAttach}
+    \subitem {FediFeedEntries}, \hyperpage{30}
+  \item {oops}, \hyperpage{44}
+    \subitem {alist}, \hyperpage{44}
+    \subitem {checkmainfeeds}, \hyperpage{44}
+    \subitem {count}, \hyperpage{44}
+    \subitem {feedData}, \hyperpage{44}
+    \subitem {feedIn}, \hyperpage{45}
+    \subitem {fred}, \hyperpage{45}
+    \subitem {itemsPerFeed}, \hyperpage{45}
+    \subitem {j}, \hyperpage{45}
+    \subitem {keepgoing}, \hyperpage{45}
+    \subitem {maincf}, \hyperpage{45}
+    \subitem {mcinfo}, \hyperpage{45}
+    \subitem {NeuFeedData}, \hyperpage{45}
+    \subitem {nufeeds}, \hyperpage{46}
+    \subitem {numfeedState}, \hyperpage{46}
+    \subitem {reftime}, \hyperpage{46}
+    \subitem {scinfo}, \hyperpage{46}
+    \subitem {statecf}, \hyperpage{46}
+    \subitem {u\_scinfo}, \hyperpage{46}
+  \item {oops.py}, \hyperpage{88}
+  \item {open\_read\_mconfig}
+    \subitem {config\_feed\_objsmeth}, \hyperpage{26}
+    \subitem {heavy\_lifting.MainStateConsistency}, \hyperpage{69}
+
+  \indexspace
+
+  \item {p2fix}
+    \subitem {heavy\_lifting.FeedEntriesFix}, \hyperpage{57}
+  \item {person}
+    \subitem {arraytest}, \hyperpage{12}
+  \item {pflrtimes\_i}
+    \subitem {BlueVortex-\/v2}, \hyperpage{22}
+    \subitem {timerTest}, \hyperpage{48}
+  \item {pflrtimes\_u}
+    \subitem {BlueVortex-\/v2}, \hyperpage{22}
+    \subitem {timerTest}, \hyperpage{49}
+  \item {post\_altText\_plus}
+    \subitem {feedstructs}, \hyperpage{32}
+  \item {post\_constructor}
+    \subitem {feedstructs}, \hyperpage{33}
+  \item {post\_media\_item}
+    \subitem {feedstructs}, \hyperpage{33}
+  \item {print}
+    \subitem {classfoo.A}, \hyperpage{52}
+    \subitem {FediBskyXwalk.PostXwalk}, \hyperpage{73}
+    \subitem {heavy\_lifting.FeedEntriesFix}, \hyperpage{57}
+  \item {publish\_dates}
+    \subitem {basictest}, \hyperpage{15}
+  \item {python\_time}
+    \subitem {basictest}, \hyperpage{15}
+
+  \indexspace
+
+  \item {q}
+    \subitem {basictest}, \hyperpage{15}
+  \item {qprint}
+    \subitem {FediFeedEntries.BROKENMiddleQueue}, \hyperpage{54}
+
+  \indexspace
+
+  \item {read}
+    \subitem {config\_feed\_objsmeth.MainConfigInfo}, \hyperpage{66}
+    \subitem {config\_feed\_objsmeth.StateConfigInfo}, \hyperpage{75}
+    \subitem {heavy\_lifting.MainConfigInfo}, \hyperpage{68}
+    \subitem {heavy\_lifting.StateConfigInfo}, \hyperpage{78}
+  \item {README.md}, \hyperpage{89}
+  \item {reftime}
+    \subitem {main-\/v3}, \hyperpage{41}
+    \subitem {oops}, \hyperpage{46}
+  \item {reftime\_unix}
+    \subitem {main-\/v2}, \hyperpage{37}
+  \item {reftimes}
+    \subitem {BlueVortex-\/v2}, \hyperpage{22}
+  \item {remoteImageGet}
+    \subitem {heavy\_lifting.MediaMassage}, \hyperpage{70}
+  \item {rtime}
+    \subitem {basictest}, \hyperpage{15}
+  \item {rval}
+    \subitem {main-\/v1}, \hyperpage{36}
+    \subitem {main-\/v2}, \hyperpage{38}
+
+  \indexspace
+
+  \item {s}
+    \subitem {basictest}, \hyperpage{15}
+  \item {scinfo}
+    \subitem {BlueVortex-\/v2}, \hyperpage{22}
+    \subitem {main-\/v3}, \hyperpage{41}
+    \subitem {oldTester}, \hyperpage{43}
+    \subitem {oops}, \hyperpage{46}
+    \subitem {timerTest}, \hyperpage{49}
+  \item {sessT}
+    \subitem {BlueVortex-\/v2}, \hyperpage{22}
+    \subitem {oldTester}, \hyperpage{43}
+  \item {simple\_bsky\_info}
+    \subitem {feedstructs}, \hyperpage{33}
+  \item {simple\_p\_map}
+    \subitem {FediBskyXwalk.PostXwalk}, \hyperpage{73}
+  \item {skip}
+    \subitem {BlueVortex-\/v2}, \hyperpage{22}
+  \item {sort\_entries}
+    \subitem {config\_feed\_objsmeth}, \hyperpage{26}
+    \subitem {FediFeedEntries.HolderFedFeed}, \hyperpage{63}
+    \subitem {heavy\_lifting.FetchFeeds}, \hyperpage{61}
+  \item {sorted\_entries}
+    \subitem {basictest}, \hyperpage{16}
+  \item {sortedEntries}
+    \subitem {main-\/v2}, \hyperpage{38}
+  \item {sortedFeedDict}
+    \subitem {main-\/v2}, \hyperpage{38}
+  \item {state}
+    \subitem {config\_feed\_objsmeth.StateConfigInfo}, \hyperpage{77}
+  \item {state\_config}
+    \subitem {basictest}, \hyperpage{16}
+  \item {state\_config\_genInfo}
+    \subitem {feedstructs}, \hyperpage{34}
+  \item {state\_file}
+    \subitem {config\_feed\_objsmeth.MainConfigInfo}, \hyperpage{67}
+  \item {state\_fname}
+    \subitem {config\_feed\_objsmeth.MainConfigInfo}, \hyperpage{66}
+  \item {statecf}
+    \subitem {BlueVortex-\/v2}, \hyperpage{22}
+    \subitem {main-\/v3}, \hyperpage{41}
+    \subitem {oldTester}, \hyperpage{43}
+    \subitem {oops}, \hyperpage{46}
+    \subitem {timerTest}, \hyperpage{49}
+  \item {stateconfigfile\_name}
+    \subitem {configread}, \hyperpage{27}
+  \item {statefile\_name}
+    \subitem {basictest}, \hyperpage{16}
+  \item {stateoutfile\_name}
+    \subitem {configread}, \hyperpage{27}
+  \item {statetoml\_in}
+    \subitem {configread}, \hyperpage{27}
+  \item {stringsize}
+    \subitem {FediBskyXwalk.PostXwalk}, \hyperpage{73}
+  \item {SubSystem}
+    \subitem {arraytest}, \hyperpage{12}
+
+  \indexspace
+
+  \item {t}
+    \subitem {BlueVortex-\/v2}, \hyperpage{22}
+    \subitem {main-\/v1}, \hyperpage{36}
+    \subitem {main-\/v2}, \hyperpage{38}
+  \item {temphold}, \hyperpage{46}
+    \subitem {addSummaryDetail}, \hyperpage{47}
+    \subitem {entryAddRatings}, \hyperpage{47}
+  \item {temphold.py}, \hyperpage{89}
+  \item {textTouchUp}
+    \subitem {FediFeedEntries}, \hyperpage{31}
+  \item {tf}
+    \subitem {BlueVortex-\/v2}, \hyperpage{23}
+  \item {timerTest}, \hyperpage{47}
+    \subitem {alist}, \hyperpage{47}
+    \subitem {feedData}, \hyperpage{47}
+    \subitem {flrtimes\_iso}, \hyperpage{48}
+    \subitem {flrtimes\_unix}, \hyperpage{48}
+    \subitem {itemsPerFeed}, \hyperpage{48}
+    \subitem {maincf}, \hyperpage{48}
+    \subitem {mcfdata}, \hyperpage{48}
+    \subitem {numfeeds}, \hyperpage{48}
+    \subitem {numfeedState}, \hyperpage{48}
+    \subitem {pflrtimes\_i}, \hyperpage{48}
+    \subitem {pflrtimes\_u}, \hyperpage{49}
+    \subitem {scinfo}, \hyperpage{49}
+    \subitem {statecf}, \hyperpage{49}
+  \item {timerTest.py}, \hyperpage{89}
+  \item {toDoE}
+    \subitem {BlueVortex-\/v2}, \hyperpage{23}
+  \item {toml\_in}
+    \subitem {configread}, \hyperpage{27}
+
+  \indexspace
+
+  \item {u\_scinfo}
+    \subitem {BlueVortex-\/v2}, \hyperpage{23}
+    \subitem {main-\/v3}, \hyperpage{41}
+    \subitem {oops}, \hyperpage{46}
+  \item {uet}
+    \subitem {main-\/v2}, \hyperpage{38}
+  \item {UniFeed}
+    \subitem {FediFeedEntries.HolderFedFeed}, \hyperpage{64}
+  \item {update\_bsky\_now}
+    \subitem {config\_feed\_objsmeth.StateConfigInfo}, \hyperpage{76}
+    \subitem {heavy\_lifting.StateConfigInfo}, \hyperpage{78}
+  \item {update\_bsky\_prev}
+    \subitem {config\_feed\_objsmeth.StateConfigInfo}, \hyperpage{76}
+    \subitem {heavy\_lifting.StateConfigInfo}, \hyperpage{79}
+  \item {update\_entry\_times}
+    \subitem {config\_feed\_objsmeth.StateConfigInfo}, \hyperpage{76}
+    \subitem {heavy\_lifting.StateConfigInfo}, \hyperpage{79}
+  \item {update\_feed\_now}
+    \subitem {config\_feed\_objsmeth.StateConfigInfo}, \hyperpage{76}
+    \subitem {heavy\_lifting.StateConfigInfo}, \hyperpage{79}
+  \item {update\_feed\_prev}
+    \subitem {config\_feed\_objsmeth.StateConfigInfo}, \hyperpage{76}
+    \subitem {heavy\_lifting.StateConfigInfo}, \hyperpage{79}
+  \item {uu\_scinfo}
+    \subitem {BlueVortex-\/v2}, \hyperpage{23}
+
+  \indexspace
+
+  \item {value}
+    \subitem {classfoo.A}, \hyperpage{52}
+  \item {value2}
+    \subitem {classfoo.A}, \hyperpage{52}
+
+  \indexspace
+
+  \item {write}
+    \subitem {config\_feed\_objsmeth.MainConfigInfo}, \hyperpage{66}
+  \item {write\_info}
+    \subitem {config\_feed\_objsmeth.StateConfigInfo}, \hyperpage{77}
+    \subitem {heavy\_lifting.StateConfigInfo}, \hyperpage{80}
+
+  \indexspace
+
+  \item {x}
+    \subitem {main-\/v1}, \hyperpage{36}
+    \subitem {main-\/v2}, \hyperpage{38}
+
+  \indexspace
+
+  \item {y}
+    \subitem {BlueVortex-\/v2}, \hyperpage{23}
+
+  \indexspace
+
+  \item {z}
+    \subitem {BlueVortex-\/v2}, \hyperpage{23}
+    \subitem {main-\/v1}, \hyperpage{36}
+    \subitem {main-\/v2}, \hyperpage{38}
+
+\end{theindex}

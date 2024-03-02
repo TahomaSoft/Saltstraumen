@@ -4,22 +4,28 @@
 \begin{DoxyCompactItemize}
 \item 
 def \mbox{\hyperlink{classconfig__feed__objsmeth_1_1MainConfigInfo_a586a4bc56e66fcbbad5dc621e328946c}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, main\+\_\+configfile\+\_\+name=\textquotesingle{}salt-\/main.\+toml\textquotesingle{})
+\item 
+def \mbox{\hyperlink{classconfig__feed__objsmeth_1_1MainConfigInfo_a2066e4859839d99ef4203bdb9afd09ee}{read}} (self, main\+\_\+configfile\+\_\+name)
+\item 
+def \mbox{\hyperlink{classconfig__feed__objsmeth_1_1MainConfigInfo_a6787db569423a2b94d0991eeeb69a2ca}{state\+\_\+fname}} (self)
 \end{DoxyCompactItemize}
 \doxysubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-def \mbox{\hyperlink{classconfig__feed__objsmeth_1_1MainConfigInfo_a68e7bd1118b68daa8cfd5adf317ae34a}{create}} (file2create\+\_\+filename)
-\item 
-def \mbox{\hyperlink{classconfig__feed__objsmeth_1_1MainConfigInfo_ade8590c34c092d1a7e6766c34bd42044}{read}} (main\+\_\+configfile\+\_\+name)
+def \mbox{\hyperlink{classconfig__feed__objsmeth_1_1MainConfigInfo_a0b6d58e5d717c6d5e6aa34ce3d394a79}{create}} (file2create\+\_\+filename, n\+\_\+feeds=1)
 \item 
 def \mbox{\hyperlink{classconfig__feed__objsmeth_1_1MainConfigInfo_a5d037d2b6f87b1b532b792b08d5a9420}{check\+\_\+feed\+\_\+nums}} (main\+\_\+config\+\_\+info)
 \item 
-def \mbox{\hyperlink{classconfig__feed__objsmeth_1_1MainConfigInfo_ad6a1111dd76e88d588538d3c731f1c6f}{write}} (dummypass)
+def \mbox{\hyperlink{classconfig__feed__objsmeth_1_1MainConfigInfo_a26bb51acf8a21bb3a7073c42b81ca3da}{write}} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classconfig__feed__objsmeth_1_1MainConfigInfo_ae1a67acc0471c3de056fb9ca1b59e7a3}{file\+\_\+name}}
+\item 
+\mbox{\hyperlink{classconfig__feed__objsmeth_1_1MainConfigInfo_afda3e263c461f6a9387c37443ba84852}{config\+\_\+data}}
+\item 
+\mbox{\hyperlink{classconfig__feed__objsmeth_1_1MainConfigInfo_a5491369a615b209c8f5f0bbc8e6e8d3b}{state\+\_\+file}}
 \end{DoxyCompactItemize}
 
 
@@ -48,38 +54,57 @@ Main config file checking
 Takes the data structure read from the main config file
 as the argument
 \end{DoxyVerb}
- \mbox{\Hypertarget{classconfig__feed__objsmeth_1_1MainConfigInfo_a68e7bd1118b68daa8cfd5adf317ae34a}\label{classconfig__feed__objsmeth_1_1MainConfigInfo_a68e7bd1118b68daa8cfd5adf317ae34a}} 
+ \mbox{\Hypertarget{classconfig__feed__objsmeth_1_1MainConfigInfo_a0b6d58e5d717c6d5e6aa34ce3d394a79}\label{classconfig__feed__objsmeth_1_1MainConfigInfo_a0b6d58e5d717c6d5e6aa34ce3d394a79}} 
 \index{config\_feed\_objsmeth.MainConfigInfo@{config\_feed\_objsmeth.MainConfigInfo}!create@{create}}
 \index{create@{create}!config\_feed\_objsmeth.MainConfigInfo@{config\_feed\_objsmeth.MainConfigInfo}}
 \doxysubsubsection{\texorpdfstring{create()}{create()}}
-{\footnotesize\ttfamily def config\+\_\+feed\+\_\+objsmeth.\+Main\+Config\+Info.\+create (\begin{DoxyParamCaption}\item[{}]{file2create\+\_\+filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily def config\+\_\+feed\+\_\+objsmeth.\+Main\+Config\+Info.\+create (\begin{DoxyParamCaption}\item[{}]{file2create\+\_\+filename,  }\item[{}]{n\+\_\+feeds = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 \begin{DoxyVerb}creates a new skeletal config file
 ** Needs more detail on what to write out **
 \end{DoxyVerb}
- \mbox{\Hypertarget{classconfig__feed__objsmeth_1_1MainConfigInfo_ade8590c34c092d1a7e6766c34bd42044}\label{classconfig__feed__objsmeth_1_1MainConfigInfo_ade8590c34c092d1a7e6766c34bd42044}} 
+ \mbox{\Hypertarget{classconfig__feed__objsmeth_1_1MainConfigInfo_a2066e4859839d99ef4203bdb9afd09ee}\label{classconfig__feed__objsmeth_1_1MainConfigInfo_a2066e4859839d99ef4203bdb9afd09ee}} 
 \index{config\_feed\_objsmeth.MainConfigInfo@{config\_feed\_objsmeth.MainConfigInfo}!read@{read}}
 \index{read@{read}!config\_feed\_objsmeth.MainConfigInfo@{config\_feed\_objsmeth.MainConfigInfo}}
 \doxysubsubsection{\texorpdfstring{read()}{read()}}
-{\footnotesize\ttfamily def config\+\_\+feed\+\_\+objsmeth.\+Main\+Config\+Info.\+read (\begin{DoxyParamCaption}\item[{}]{main\+\_\+configfile\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily def config\+\_\+feed\+\_\+objsmeth.\+Main\+Config\+Info.\+read (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{main\+\_\+configfile\+\_\+name }\end{DoxyParamCaption})}
 
 \begin{DoxyVerb}Reads the existing main config file and returns
               The config info
 \end{DoxyVerb}
- \mbox{\Hypertarget{classconfig__feed__objsmeth_1_1MainConfigInfo_ad6a1111dd76e88d588538d3c731f1c6f}\label{classconfig__feed__objsmeth_1_1MainConfigInfo_ad6a1111dd76e88d588538d3c731f1c6f}} 
+ \mbox{\Hypertarget{classconfig__feed__objsmeth_1_1MainConfigInfo_a6787db569423a2b94d0991eeeb69a2ca}\label{classconfig__feed__objsmeth_1_1MainConfigInfo_a6787db569423a2b94d0991eeeb69a2ca}} 
+\index{config\_feed\_objsmeth.MainConfigInfo@{config\_feed\_objsmeth.MainConfigInfo}!state\_fname@{state\_fname}}
+\index{state\_fname@{state\_fname}!config\_feed\_objsmeth.MainConfigInfo@{config\_feed\_objsmeth.MainConfigInfo}}
+\doxysubsubsection{\texorpdfstring{state\_fname()}{state\_fname()}}
+{\footnotesize\ttfamily def config\+\_\+feed\+\_\+objsmeth.\+Main\+Config\+Info.\+state\+\_\+fname (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classconfig__feed__objsmeth_1_1MainConfigInfo_a26bb51acf8a21bb3a7073c42b81ca3da}\label{classconfig__feed__objsmeth_1_1MainConfigInfo_a26bb51acf8a21bb3a7073c42b81ca3da}} 
 \index{config\_feed\_objsmeth.MainConfigInfo@{config\_feed\_objsmeth.MainConfigInfo}!write@{write}}
 \index{write@{write}!config\_feed\_objsmeth.MainConfigInfo@{config\_feed\_objsmeth.MainConfigInfo}}
 \doxysubsubsection{\texorpdfstring{write()}{write()}}
-{\footnotesize\ttfamily def config\+\_\+feed\+\_\+objsmeth.\+Main\+Config\+Info.\+write (\begin{DoxyParamCaption}\item[{}]{dummypass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily def config\+\_\+feed\+\_\+objsmeth.\+Main\+Config\+Info.\+write (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-
+\begin{DoxyVerb} pass\end{DoxyVerb}
+ 
 
 \doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classconfig__feed__objsmeth_1_1MainConfigInfo_afda3e263c461f6a9387c37443ba84852}\label{classconfig__feed__objsmeth_1_1MainConfigInfo_afda3e263c461f6a9387c37443ba84852}} 
+\index{config\_feed\_objsmeth.MainConfigInfo@{config\_feed\_objsmeth.MainConfigInfo}!config\_data@{config\_data}}
+\index{config\_data@{config\_data}!config\_feed\_objsmeth.MainConfigInfo@{config\_feed\_objsmeth.MainConfigInfo}}
+\doxysubsubsection{\texorpdfstring{config\_data}{config\_data}}
+{\footnotesize\ttfamily config\+\_\+feed\+\_\+objsmeth.\+Main\+Config\+Info.\+config\+\_\+data}
+
 \mbox{\Hypertarget{classconfig__feed__objsmeth_1_1MainConfigInfo_ae1a67acc0471c3de056fb9ca1b59e7a3}\label{classconfig__feed__objsmeth_1_1MainConfigInfo_ae1a67acc0471c3de056fb9ca1b59e7a3}} 
 \index{config\_feed\_objsmeth.MainConfigInfo@{config\_feed\_objsmeth.MainConfigInfo}!file\_name@{file\_name}}
 \index{file\_name@{file\_name}!config\_feed\_objsmeth.MainConfigInfo@{config\_feed\_objsmeth.MainConfigInfo}}
 \doxysubsubsection{\texorpdfstring{file\_name}{file\_name}}
 {\footnotesize\ttfamily config\+\_\+feed\+\_\+objsmeth.\+Main\+Config\+Info.\+file\+\_\+name}
+
+\mbox{\Hypertarget{classconfig__feed__objsmeth_1_1MainConfigInfo_a5491369a615b209c8f5f0bbc8e6e8d3b}\label{classconfig__feed__objsmeth_1_1MainConfigInfo_a5491369a615b209c8f5f0bbc8e6e8d3b}} 
+\index{config\_feed\_objsmeth.MainConfigInfo@{config\_feed\_objsmeth.MainConfigInfo}!state\_file@{state\_file}}
+\index{state\_file@{state\_file}!config\_feed\_objsmeth.MainConfigInfo@{config\_feed\_objsmeth.MainConfigInfo}}
+\doxysubsubsection{\texorpdfstring{state\_file}{state\_file}}
+{\footnotesize\ttfamily config\+\_\+feed\+\_\+objsmeth.\+Main\+Config\+Info.\+state\+\_\+file}
 
 
 

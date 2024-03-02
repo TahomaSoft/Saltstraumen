@@ -1,0 +1,144 @@
+\hypertarget{namespacemain-v3}{}\doxysection{main-\/v3 Namespace Reference}
+\label{namespacemain-v3}\index{main-\/v3@{main-\/v3}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{namespacemain-v3_a7802b8d00c8d2250eb7e9d48df697e6d}{maincf}} = \textquotesingle{}salt-\/main.\+toml\textquotesingle{}
+\item 
+\mbox{\hyperlink{namespacemain-v3_ace36c38f9f8ed3de120581350ef26f7e}{mcinfo}} = \mbox{\hyperlink{classheavy__lifting_1_1MainConfigInfo_a26e0281d5806d3c7f4b3a5025cc34d6f}{Main\+Config\+Info.\+read}}(\mbox{\hyperlink{namespacemain-v3_a7802b8d00c8d2250eb7e9d48df697e6d}{maincf}})
+\item 
+tuple \mbox{\hyperlink{namespacemain-v3_a1831f28157aee44f5a32e9e31c93b675}{statecf}} = (\mbox{\hyperlink{namespacemain-v3_ace36c38f9f8ed3de120581350ef26f7e}{mcinfo}}\mbox{[}\textquotesingle{}GENERAL\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}Statefile\textquotesingle{}\mbox{]})
+\item 
+\mbox{\hyperlink{namespacemain-v3_a00658d183564bb98660cbba0eb03825f}{scinfo}} = \mbox{\hyperlink{classheavy__lifting_1_1StateConfigInfo_a6aaf9f508d8135e8c5fd61444c0ade48}{State\+Config\+Info.\+read}}(\mbox{\hyperlink{namespacemain-v3_a1831f28157aee44f5a32e9e31c93b675}{statecf}})
+\item 
+\mbox{\hyperlink{namespacemain-v3_a2317764c221fa366d11cf5ce71e08f99}{numfeed\+State}} = \mbox{\hyperlink{classheavy__lifting_1_1StateConfigInfo_a2503d24ec6cfacbb7c29254ce91d7375}{State\+Config\+Info.\+check\+\_\+feed\+\_\+nums}} (\mbox{\hyperlink{namespacemain-v3_a00658d183564bb98660cbba0eb03825f}{scinfo}})
+\item 
+\mbox{\hyperlink{namespacemain-v3_a7a7a4843c53163bd40842a3c5427dc9a}{checkmainfeeds}} = \mbox{\hyperlink{classheavy__lifting_1_1MainConfigInfo_aed3c1a6e6e69c8850bba01ee81bf3b3f}{Main\+Config\+Info.\+check\+\_\+feed\+\_\+nums}}(\mbox{\hyperlink{namespacemain-v3_ace36c38f9f8ed3de120581350ef26f7e}{mcinfo}})
+\item 
+\mbox{\hyperlink{namespacemain-v3_a4e37b3dba99934522c99cac3dc37f6ee}{nufeeds}} = \mbox{\hyperlink{classheavy__lifting_1_1MainStateConsistency_aebdbb0ea8e19527f5a3b70824ea02edf}{Main\+State\+Consistency.\+feeds}} (\mbox{\hyperlink{namespacemain-v3_a7802b8d00c8d2250eb7e9d48df697e6d}{maincf}}, \mbox{\hyperlink{namespacemain-v3_a1831f28157aee44f5a32e9e31c93b675}{statecf}})
+\item 
+\mbox{\hyperlink{namespacemain-v3_aad162b0985a963940a1c4d5a90df870b}{alist}} = \mbox{\hyperlink{classheavy__lifting_1_1FetchFeeds_ad863a397a953473c4d7938237d13bfe1}{Fetch\+Feeds.\+find\+\_\+feeds}}(\mbox{\hyperlink{namespacemain-v3_ace36c38f9f8ed3de120581350ef26f7e}{mcinfo}})
+\item 
+list \mbox{\hyperlink{namespacemain-v3_aee42a299bb3547f86b3853d1e4b111f2}{feed\+Data}} = \mbox{[}0\mbox{]} $\ast$ \mbox{\hyperlink{namespacemain-v3_a4e37b3dba99934522c99cac3dc37f6ee}{nufeeds}}
+\item 
+list \mbox{\hyperlink{namespacemain-v3_afe94ec7848d1167f4a2b04f29a37b98b}{items\+Per\+Feed}} = \mbox{[}0\mbox{]} $\ast$ \mbox{\hyperlink{namespacemain-v3_a4e37b3dba99934522c99cac3dc37f6ee}{nufeeds}}
+\item 
+\mbox{\hyperlink{namespacemain-v3_ab7a66727b863d845f058b669a1cf3740}{u\+\_\+scinfo}} = \mbox{\hyperlink{classheavy__lifting_1_1StateConfigInfo_af1ca2b3c52875d4528ac74eafc346863}{State\+Config\+Info.\+update\+\_\+entry\+\_\+times}}(\mbox{\hyperlink{namespacemain-v3_aee42a299bb3547f86b3853d1e4b111f2}{feed\+Data}},\mbox{\hyperlink{namespacemain-v3_a00658d183564bb98660cbba0eb03825f}{scinfo}})
+\item 
+\mbox{\hyperlink{namespacemain-v3_a27e02062c553b14fe5b11323f2079db7}{j}} = \mbox{\hyperlink{classheavy__lifting_1_1StateConfigInfo_a1e4e4c2e9da8410d52c910790f1e5e2a}{State\+Config\+Info.\+write\+\_\+info}}(\mbox{\hyperlink{namespacemain-v3_a1831f28157aee44f5a32e9e31c93b675}{statecf}}, \mbox{\hyperlink{namespacemain-v3_ab7a66727b863d845f058b669a1cf3740}{u\+\_\+scinfo}})
+\item 
+int \mbox{\hyperlink{namespacemain-v3_a60a6d6a429840ce379a59aed3674ae0f}{reftime}} = 0
+\item 
+\mbox{\hyperlink{namespacemain-v3_afb1e5218031cd076aab7da2d0e89b095}{Neu\+Feed\+Data}} = Feed\+Entries\+Mash.\+Which\+Entries2\+Pub(\mbox{\hyperlink{namespacemain-v3_a60a6d6a429840ce379a59aed3674ae0f}{reftime}},\mbox{\hyperlink{namespacemain-v3_aee42a299bb3547f86b3853d1e4b111f2}{feed\+Data}})
+\item 
+\mbox{\hyperlink{namespacemain-v3_acbfdab2c265165b4765a316120a1e79b}{count}} = Feed\+Entries\+Mash.\+Compute\+Num\+Outbound (\mbox{\hyperlink{namespacemain-v3_afb1e5218031cd076aab7da2d0e89b095}{Neu\+Feed\+Data}})
+\item 
+\mbox{\hyperlink{namespacemain-v3_a5a93d69a0798595ddde85b74fc8fd3ba}{keepgoing}} = bool(True)
+\item 
+\mbox{\hyperlink{namespacemain-v3_aaae3d741149e0b737082f5eec9ac9fca}{feed\+In}} = \mbox{\hyperlink{namespacemain-v3_afb1e5218031cd076aab7da2d0e89b095}{Neu\+Feed\+Data}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespacemain-v3_aad162b0985a963940a1c4d5a90df870b}\label{namespacemain-v3_aad162b0985a963940a1c4d5a90df870b}} 
+\index{main-\/v3@{main-\/v3}!alist@{alist}}
+\index{alist@{alist}!main-\/v3@{main-\/v3}}
+\doxysubsubsection{\texorpdfstring{alist}{alist}}
+{\footnotesize\ttfamily main-\/v3.\+alist = \mbox{\hyperlink{classheavy__lifting_1_1FetchFeeds_ad863a397a953473c4d7938237d13bfe1}{Fetch\+Feeds.\+find\+\_\+feeds}}(\mbox{\hyperlink{namespacemain-v3_ace36c38f9f8ed3de120581350ef26f7e}{mcinfo}})}
+
+\mbox{\Hypertarget{namespacemain-v3_a7a7a4843c53163bd40842a3c5427dc9a}\label{namespacemain-v3_a7a7a4843c53163bd40842a3c5427dc9a}} 
+\index{main-\/v3@{main-\/v3}!checkmainfeeds@{checkmainfeeds}}
+\index{checkmainfeeds@{checkmainfeeds}!main-\/v3@{main-\/v3}}
+\doxysubsubsection{\texorpdfstring{checkmainfeeds}{checkmainfeeds}}
+{\footnotesize\ttfamily main-\/v3.\+checkmainfeeds = \mbox{\hyperlink{classheavy__lifting_1_1MainConfigInfo_aed3c1a6e6e69c8850bba01ee81bf3b3f}{Main\+Config\+Info.\+check\+\_\+feed\+\_\+nums}}(\mbox{\hyperlink{namespacemain-v3_ace36c38f9f8ed3de120581350ef26f7e}{mcinfo}})}
+
+\mbox{\Hypertarget{namespacemain-v3_acbfdab2c265165b4765a316120a1e79b}\label{namespacemain-v3_acbfdab2c265165b4765a316120a1e79b}} 
+\index{main-\/v3@{main-\/v3}!count@{count}}
+\index{count@{count}!main-\/v3@{main-\/v3}}
+\doxysubsubsection{\texorpdfstring{count}{count}}
+{\footnotesize\ttfamily main-\/v3.\+count = Feed\+Entries\+Mash.\+Compute\+Num\+Outbound (\mbox{\hyperlink{namespacemain-v3_afb1e5218031cd076aab7da2d0e89b095}{Neu\+Feed\+Data}})}
+
+\mbox{\Hypertarget{namespacemain-v3_aee42a299bb3547f86b3853d1e4b111f2}\label{namespacemain-v3_aee42a299bb3547f86b3853d1e4b111f2}} 
+\index{main-\/v3@{main-\/v3}!feedData@{feedData}}
+\index{feedData@{feedData}!main-\/v3@{main-\/v3}}
+\doxysubsubsection{\texorpdfstring{feedData}{feedData}}
+{\footnotesize\ttfamily list main-\/v3.\+feed\+Data = \mbox{[}0\mbox{]} $\ast$ \mbox{\hyperlink{namespacemain-v3_a4e37b3dba99934522c99cac3dc37f6ee}{nufeeds}}}
+
+\mbox{\Hypertarget{namespacemain-v3_aaae3d741149e0b737082f5eec9ac9fca}\label{namespacemain-v3_aaae3d741149e0b737082f5eec9ac9fca}} 
+\index{main-\/v3@{main-\/v3}!feedIn@{feedIn}}
+\index{feedIn@{feedIn}!main-\/v3@{main-\/v3}}
+\doxysubsubsection{\texorpdfstring{feedIn}{feedIn}}
+{\footnotesize\ttfamily main-\/v3.\+feed\+In = \mbox{\hyperlink{namespacemain-v3_afb1e5218031cd076aab7da2d0e89b095}{Neu\+Feed\+Data}}}
+
+\mbox{\Hypertarget{namespacemain-v3_afe94ec7848d1167f4a2b04f29a37b98b}\label{namespacemain-v3_afe94ec7848d1167f4a2b04f29a37b98b}} 
+\index{main-\/v3@{main-\/v3}!itemsPerFeed@{itemsPerFeed}}
+\index{itemsPerFeed@{itemsPerFeed}!main-\/v3@{main-\/v3}}
+\doxysubsubsection{\texorpdfstring{itemsPerFeed}{itemsPerFeed}}
+{\footnotesize\ttfamily list main-\/v3.\+items\+Per\+Feed = \mbox{[}0\mbox{]} $\ast$ \mbox{\hyperlink{namespacemain-v3_a4e37b3dba99934522c99cac3dc37f6ee}{nufeeds}}}
+
+\mbox{\Hypertarget{namespacemain-v3_a27e02062c553b14fe5b11323f2079db7}\label{namespacemain-v3_a27e02062c553b14fe5b11323f2079db7}} 
+\index{main-\/v3@{main-\/v3}!j@{j}}
+\index{j@{j}!main-\/v3@{main-\/v3}}
+\doxysubsubsection{\texorpdfstring{j}{j}}
+{\footnotesize\ttfamily main-\/v3.\+j = \mbox{\hyperlink{classheavy__lifting_1_1StateConfigInfo_a1e4e4c2e9da8410d52c910790f1e5e2a}{State\+Config\+Info.\+write\+\_\+info}}(\mbox{\hyperlink{namespacemain-v3_a1831f28157aee44f5a32e9e31c93b675}{statecf}}, \mbox{\hyperlink{namespacemain-v3_ab7a66727b863d845f058b669a1cf3740}{u\+\_\+scinfo}})}
+
+\mbox{\Hypertarget{namespacemain-v3_a5a93d69a0798595ddde85b74fc8fd3ba}\label{namespacemain-v3_a5a93d69a0798595ddde85b74fc8fd3ba}} 
+\index{main-\/v3@{main-\/v3}!keepgoing@{keepgoing}}
+\index{keepgoing@{keepgoing}!main-\/v3@{main-\/v3}}
+\doxysubsubsection{\texorpdfstring{keepgoing}{keepgoing}}
+{\footnotesize\ttfamily main-\/v3.\+keepgoing = bool(True)}
+
+\mbox{\Hypertarget{namespacemain-v3_a7802b8d00c8d2250eb7e9d48df697e6d}\label{namespacemain-v3_a7802b8d00c8d2250eb7e9d48df697e6d}} 
+\index{main-\/v3@{main-\/v3}!maincf@{maincf}}
+\index{maincf@{maincf}!main-\/v3@{main-\/v3}}
+\doxysubsubsection{\texorpdfstring{maincf}{maincf}}
+{\footnotesize\ttfamily string main-\/v3.\+maincf = \textquotesingle{}salt-\/main.\+toml\textquotesingle{}}
+
+\mbox{\Hypertarget{namespacemain-v3_ace36c38f9f8ed3de120581350ef26f7e}\label{namespacemain-v3_ace36c38f9f8ed3de120581350ef26f7e}} 
+\index{main-\/v3@{main-\/v3}!mcinfo@{mcinfo}}
+\index{mcinfo@{mcinfo}!main-\/v3@{main-\/v3}}
+\doxysubsubsection{\texorpdfstring{mcinfo}{mcinfo}}
+{\footnotesize\ttfamily main-\/v3.\+mcinfo = \mbox{\hyperlink{classheavy__lifting_1_1MainConfigInfo_a26e0281d5806d3c7f4b3a5025cc34d6f}{Main\+Config\+Info.\+read}}(\mbox{\hyperlink{namespacemain-v3_a7802b8d00c8d2250eb7e9d48df697e6d}{maincf}})}
+
+\mbox{\Hypertarget{namespacemain-v3_afb1e5218031cd076aab7da2d0e89b095}\label{namespacemain-v3_afb1e5218031cd076aab7da2d0e89b095}} 
+\index{main-\/v3@{main-\/v3}!NeuFeedData@{NeuFeedData}}
+\index{NeuFeedData@{NeuFeedData}!main-\/v3@{main-\/v3}}
+\doxysubsubsection{\texorpdfstring{NeuFeedData}{NeuFeedData}}
+{\footnotesize\ttfamily main-\/v3.\+Neu\+Feed\+Data = Feed\+Entries\+Mash.\+Which\+Entries2\+Pub(\mbox{\hyperlink{namespacemain-v3_a60a6d6a429840ce379a59aed3674ae0f}{reftime}},\mbox{\hyperlink{namespacemain-v3_aee42a299bb3547f86b3853d1e4b111f2}{feed\+Data}})}
+
+\mbox{\Hypertarget{namespacemain-v3_a4e37b3dba99934522c99cac3dc37f6ee}\label{namespacemain-v3_a4e37b3dba99934522c99cac3dc37f6ee}} 
+\index{main-\/v3@{main-\/v3}!nufeeds@{nufeeds}}
+\index{nufeeds@{nufeeds}!main-\/v3@{main-\/v3}}
+\doxysubsubsection{\texorpdfstring{nufeeds}{nufeeds}}
+{\footnotesize\ttfamily main-\/v3.\+nufeeds = \mbox{\hyperlink{classheavy__lifting_1_1MainStateConsistency_aebdbb0ea8e19527f5a3b70824ea02edf}{Main\+State\+Consistency.\+feeds}} (\mbox{\hyperlink{namespacemain-v3_a7802b8d00c8d2250eb7e9d48df697e6d}{maincf}}, \mbox{\hyperlink{namespacemain-v3_a1831f28157aee44f5a32e9e31c93b675}{statecf}})}
+
+\mbox{\Hypertarget{namespacemain-v3_a2317764c221fa366d11cf5ce71e08f99}\label{namespacemain-v3_a2317764c221fa366d11cf5ce71e08f99}} 
+\index{main-\/v3@{main-\/v3}!numfeedState@{numfeedState}}
+\index{numfeedState@{numfeedState}!main-\/v3@{main-\/v3}}
+\doxysubsubsection{\texorpdfstring{numfeedState}{numfeedState}}
+{\footnotesize\ttfamily main-\/v3.\+numfeed\+State = \mbox{\hyperlink{classheavy__lifting_1_1StateConfigInfo_a2503d24ec6cfacbb7c29254ce91d7375}{State\+Config\+Info.\+check\+\_\+feed\+\_\+nums}} (\mbox{\hyperlink{namespacemain-v3_a00658d183564bb98660cbba0eb03825f}{scinfo}})}
+
+\mbox{\Hypertarget{namespacemain-v3_a60a6d6a429840ce379a59aed3674ae0f}\label{namespacemain-v3_a60a6d6a429840ce379a59aed3674ae0f}} 
+\index{main-\/v3@{main-\/v3}!reftime@{reftime}}
+\index{reftime@{reftime}!main-\/v3@{main-\/v3}}
+\doxysubsubsection{\texorpdfstring{reftime}{reftime}}
+{\footnotesize\ttfamily int main-\/v3.\+reftime = 0}
+
+\mbox{\Hypertarget{namespacemain-v3_a00658d183564bb98660cbba0eb03825f}\label{namespacemain-v3_a00658d183564bb98660cbba0eb03825f}} 
+\index{main-\/v3@{main-\/v3}!scinfo@{scinfo}}
+\index{scinfo@{scinfo}!main-\/v3@{main-\/v3}}
+\doxysubsubsection{\texorpdfstring{scinfo}{scinfo}}
+{\footnotesize\ttfamily main-\/v3.\+scinfo = \mbox{\hyperlink{classheavy__lifting_1_1StateConfigInfo_a6aaf9f508d8135e8c5fd61444c0ade48}{State\+Config\+Info.\+read}}(\mbox{\hyperlink{namespacemain-v3_a1831f28157aee44f5a32e9e31c93b675}{statecf}})}
+
+\mbox{\Hypertarget{namespacemain-v3_a1831f28157aee44f5a32e9e31c93b675}\label{namespacemain-v3_a1831f28157aee44f5a32e9e31c93b675}} 
+\index{main-\/v3@{main-\/v3}!statecf@{statecf}}
+\index{statecf@{statecf}!main-\/v3@{main-\/v3}}
+\doxysubsubsection{\texorpdfstring{statecf}{statecf}}
+{\footnotesize\ttfamily tuple main-\/v3.\+statecf = (\mbox{\hyperlink{namespacemain-v3_ace36c38f9f8ed3de120581350ef26f7e}{mcinfo}}\mbox{[}\textquotesingle{}GENERAL\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}Statefile\textquotesingle{}\mbox{]})}
+
+\mbox{\Hypertarget{namespacemain-v3_ab7a66727b863d845f058b669a1cf3740}\label{namespacemain-v3_ab7a66727b863d845f058b669a1cf3740}} 
+\index{main-\/v3@{main-\/v3}!u\_scinfo@{u\_scinfo}}
+\index{u\_scinfo@{u\_scinfo}!main-\/v3@{main-\/v3}}
+\doxysubsubsection{\texorpdfstring{u\_scinfo}{u\_scinfo}}
+{\footnotesize\ttfamily main-\/v3.\+u\+\_\+scinfo = \mbox{\hyperlink{classheavy__lifting_1_1StateConfigInfo_af1ca2b3c52875d4528ac74eafc346863}{State\+Config\+Info.\+update\+\_\+entry\+\_\+times}}(\mbox{\hyperlink{namespacemain-v3_aee42a299bb3547f86b3853d1e4b111f2}{feed\+Data}},\mbox{\hyperlink{namespacemain-v3_a00658d183564bb98660cbba0eb03825f}{scinfo}})}
+

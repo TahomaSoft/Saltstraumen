@@ -2,12 +2,13 @@
 ''' Main and State Config File objects and methods'''
 
 
-# import os
+import os
 # import sys
 
 import syslog
 import copy
 from operator import attrgetter
+import json
 import toml
 import feedparser
 from SaxeBlueskyPython.ticktocktime import unix_time_now, iso_time_now
@@ -15,16 +16,21 @@ from SaxeBlueskyPython.ticktocktime import tuple_time2unix, tuple_time2iso
 
 
 class MainConfigInfo:
-    '''open, close, create, update, export/import info Main config file'''
+    '''open, close, create, update, export/import info Main config file
+    Class to manage the main config file and info
+    '''
 
     def __init__(self,main_configfile_name='salt-main.toml'):
         self.file_name = main_configfile_name
+        self.config_data = ''
+        self.feed_URLs = ''
 
-        ''' Class to manage the main config file and info'''
+
     @staticmethod
     def create (file2create_filename, n_feeds=1):
         '''creates a new skeletal config file
-        ** Needs more detail on what to write out **
+        @rst
+        .. hint :: ** Needs more detail on what to write out **
         '''
 
 
@@ -37,17 +43,16 @@ class MainConfigInfo:
             cf.write('NumFeeds =  " " \n')
             cf.write('\n')
 
-            cf.write('[[FEEDS]] \n')
             for i in range (0,n_feeds):
+                cf.write('[[FEEDS]] \n')
                 cf.write('Name =  " " \n')
                 cf.write(f'Number = {i+1} \n')
-                cf.write(' \n')
                 cf.write('URL =  " " \n')
                 cf.write('Type =  " " \n')
                 cf.write('TimeJitter =  " " \n')
                 cf.write('\n')
             # end for loop
-                
+
             cf.write('[BSKY_ACCOUNT]\n')
             cf.write('Username =  " " \n')
             cf.write('App_passwd =  " " \n')
@@ -59,50 +64,89 @@ class MainConfigInfo:
 
             return j
 
-    def read (self,main_configfile_name):
+    def read (self):
         '''Reads the existing main config file and returns
                       The config info
         '''
+        # check for file
+        check_file = os.path.isfile(self.file_name)
+        if check_file == bool(False):
+            raise Exception('No Main file. ')
 
-        with open(main_configfile_name, 'r',encoding="utf-8") as mainconfigfile:
+        with open(self.file_name, 'r',encoding="utf-8") as mainconfigfile:
             toml_in = toml.load(mainconfigfile)
             self.config_data = toml_in
             config_data_out = copy.deepcopy(toml_in)
             mainconfigfile.close()
         return config_data_out
 
-    @staticmethod
-    def check_feed_nums (main_config_info):
+
+    def check_feed_num (self):
         '''Read main config file and deduce number of feeds
         Main config file checking
         Takes the data structure read from the main config file
         as the argument
         '''
 
-        j = len(main_config_info['FEEDS'])
+        j = len(self.config_data['FEEDS'])
         return j
 
-    @staticmethod
-    def write():
-        ''' pass'''
-        return
-    
+    def show_feeds (self):
+        '''Return a small structure with the feed URLs'''
+        numfeeds = self.check_feed_num()
+        cf = self.config_data
+
+        feedURLs = [None] * numfeeds
+        for i in range (0, numfeeds):
+            feedURLs[i] = cf['FEEDS'][i]['URL']
+        self.feed_URLs = copy.deepcopy(feedURLs)
+        return feedURLs
+
+    def write(self,filename2write):
+        '''
+        Write current config data out to filename2write
+        '''
+        with open(filename2write, 'w',encoding="utf-8") as cfo:
+            #jsontest = json.dumps(self.state)
+            # sfo.write(jsontest)
+            toml.dump(self.config_data,cfo)
+            i=cfo.close()
+        return i
+
+
+
     def state_fname(self):
-        self.state_file = self.config_data['GENERAL']['Statefile']
-        return self.state_file
+        ''' return name of the state file'''
+        self.read()
+        state_file = self.config_data['GENERAL']['Statefile']
+        return state_file
+
+
+    def print(self):
+        ''' Print Self'''
+        print ('Main Config Filename: ', self.file_name)
+        print ('Main Config Data: ', self.config_data)
+        return
+
+
 
 class StateConfigInfo:
-    ''' Class to manage the state file and info
-    ** Needs more detail on what to write out **
+    '''Class to manage the state file and info
+
+    NB:
+       **Needs more detail on what to write out**
+
     self info is:
-    self.state (the data read from the statefile)
-    self.filename (the statfile name)
+    * self.state_data (the data read from the statefile)
+    * self.filename (the statefile name)
+
     '''
-    
-    def  __init__(self,file2create_filename='salt-state.toml'):
-        pass
-    
-        
+
+    def  __init__(self,state_file_name='salt-state.toml'):
+
+        self.file_name = state_file_name
+        self.state_data = ''
+        self.feed_URLs = ''
 
     @staticmethod
     def create (file2create_filename='salt-state.toml', n_feeds=1):
@@ -120,9 +164,9 @@ class StateConfigInfo:
             cf.write('\n')
             for i in range (0,n_feeds):
                 cf.write('[[FEEDS]] \n')
-                cf.write('Name = "Nick name for feed" \n')
+                cf.write(f'Name = "Nick name for feed: {i+1}" \n')
                 cf.write(f'Number = "Feed: {i+1}"  \n')
-                cf.write('URL = "feed url string" \n')
+                cf.write(f'URL = "feed url string for feed {i+1}" \n')
                 cf.write('feed_last_read_iso = "" \n')
                 cf.write('feed_last_read_unix = 0 \n')
                 cf.write('feed_previous_last_read_iso = "" \n')
@@ -145,28 +189,47 @@ class StateConfigInfo:
             j= cf.close()
             return j
 
-    
-    def read(self,filename):
-        self.filename = filename
-        ''' read state file '''
-        with open (filename, 'r',encoding="utf-8") as stateconfigfile:
-            statetoml_in = toml.load(stateconfigfile)
-            self.state = statetoml_in
-            stateconfigfile.close()
-        return statetoml_in
+    def add_URLs(self,Config_URLs):
+        ''' tbd'''
 
-    @staticmethod
-    def write_info (stateoutfile_name, data2write):
+        self.read()
+        num_URLs = len (Config_URLs)
+        for i in range (0, num_URLs):
+            self.state_data['FEEDS'][i]['URL'] = Config_URLs[i]
+        return
+
+
+
+
+    def read(self):
+        ''' read state file '''
+
+        with open (self.file_name, 'r',encoding="utf-8") as stateconfigfile:
+            statetoml_in = toml.load(self.file_name)
+            self.state_data = statetoml_in
+            stateconfigfile.close()
+        return copy.deepcopy(statetoml_in)
+
+    def print(self):
+        ''' self print'''
+        print ('State Filename: ', self.file_name)
+        print ('State Data: ', self.state_data)
+        return
+
+
+    def write_state (self):
         '''
         Write current state info out to file
         '''
-        with open(stateoutfile_name, 'w',encoding="utf-8") as stateoutfile:
-            toml.dump(data2write, stateoutfile)
-            i=stateoutfile.close()
+        with open(self.file_name, 'w',encoding="utf-8") as sfo:
+            #jsontest = json.dumps(self.state)
+            # sfo.write(jsontest)
+            toml.dump(self.state_data,sfo)
+            i=sfo.close()
         return i
 
-    @staticmethod
-    def update_bsky_prev (info):
+
+    def update_bsky_prev (self):
         '''
         takes  dict for the state file bsky info,
         updates previous last post date/times
@@ -175,85 +238,103 @@ class StateConfigInfo:
         info variable is an instance of the full state file info
         '''
 
-        info['BSKY_INFO']['previous_last_posted_unix'] \
-            = info['BSKY_INFO'].get('last_posted_unix')
-        info['BSKY_INFO']['previous_last_posted_iso'] \
-            = info['BSKY_INFO']['last_posted_iso']
+        self.state_data['BSKY_INFO']['previous_last_posted_unix'] \
+            = self.state_data['BSKY_INFO'].get('last_posted_unix')
+        self.state_data['BSKY_INFO']['previous_last_posted_iso'] \
+            = self.state_data['BSKY_INFO']['last_posted_iso']
 
-        return info
+        return copy.deepcopy(self.state_data)
 
-    @staticmethod
-    def update_bsky_now (info):
+    def update_bsky_now (self):
         ''' updates post times for bsky
             info variable is an instance of the full state file info
         '''
 
-        info['BSKY_INFO']['last_posted_unix'] = unix_time_now()
-        info['BSKY_INFO']['last_posted_iso'] = iso_time_now()
-        return info
+        self.state_data['BSKY_INFO']['last_posted_unix'] = unix_time_now()
+        self.state_data['BSKY_INFO']['last_posted_iso'] = iso_time_now()
 
-    
+        return copy.deepcopy (self.state_data)
+
+    def decoupled_state_data (self):
+        ''' testing'''
+        a = json.dumps(self.state_data)
+        b = json.loads(a)
+        return b
+
+    def show_feeds (self):
+        '''Return a small structure with the feed URLs'''
+        numfeeds = self.check_feed_num()
+        cf = self.state_data
+        feedURLs = [None] * numfeeds
+        for i in range (0, numfeeds):
+            feedURLs[i] = cf['FEEDS'][i]['URL']
+        self.feed_URLs = copy.deepcopy(feedURLs)
+        return feedURLs
+
+
+
     def check_feed_num (self):
         '''
         Checks feed numbers in STATE file
         info variable is an instance of the full state file info
         '''
-        j = len(self.state['FEEDS'])
+        j = len(self.state_data['FEEDS'])
         return j
 
-    @staticmethod
-    def update_feed_prev (info):
+
+    def update_feed_prev (self):
         ''' Update timestamps of the feed read
 
         info variable is an instance of the full state file info
         '''
-        numfeeds =  StateConfigInfo.check_feed_num (info)
+        numfeeds =  self.check_feed_num ()
 
         for i in range (0, numfeeds):
-            info['FEEDS'][i]['feed_previous_last_read_unix'] \
-                = info['FEEDS'][i]['feed_last_read_unix']
-            info['FEEDS'][i]['feed_previous_last_read_iso'] \
-                = info['FEEDS'][i]['feed_last_read_iso']
+            self.state_data['FEEDS'][i]['feed_previous_last_read_unix'] \
+                = self.state_data['FEEDS'][i]['feed_last_read_unix']
+            self.state_data['FEEDS'][i]['feed_previous_last_read_iso'] \
+                = self.state_data['FEEDS'][i]['feed_last_read_iso']
         # end loop
 
-        return info
+        return copy.deepcopy(self.state_data)
 
-    @staticmethod
-    def update_feed_now (info):
+
+    def update_feed_now (self):
         ''' Update timestamps of the feed read
          info variable is an instance of the full state file info
         '''
-        numfeeds =  StateConfigInfo.check_feed_num (info)
+        numfeeds =  self.check_feed_num ()
         for i in range (0, numfeeds):
-            info['FEEDS'][i]['feed_last_read_unix'] \
+            self.state_data['FEEDS'][i]['feed_last_read_unix'] \
                 = unix_time_now()
-            info['FEEDS'][i]['feed_last_read_iso'] \
+            self.state_data['FEEDS'][i]['feed_last_read_iso'] \
                 = iso_time_now()
-        return info
+        return copy.deepcopy(self.state_data)
 
-    @staticmethod
-    def update_entry_times (sorted_feeds,state_info):
+
+    def update_entry_times (self,sorted_feeds,entries_per_feed):
         ''' update info
-        Takes a feeds that has been sorted. Takes state info
+        Takes a feed that has been sorted. Takes state info
         returns updated state info
         '''
-        si = state_info
+        si = self.state_data
         sf = sorted_feeds
+        fds = self.check_feed_num()
+        epf = entries_per_feed
 
-        j = len(sf)
-        newestEntry = [0]*j
-        oldestEntry = [0]*j
-        oeTime =  [0]*j
-        neTime = [0]*j
-        neTime_iso =  [0]*j
-        neTime_unix = [0]*j
-        oeTime_iso =  [0]*j
-        oeTime_unix = [0]*j
+   
+        newestEntry = [0]*fds
+        oldestEntry = [0]*fds
+        oeTime =  [0]*fds
+        neTime = [0]*fds
+        neTime_iso =  [0]*fds
+        neTime_unix = [0]*fds
+        oeTime_iso =  [0]*fds
+        oeTime_unix = [0]*fds
 
-
-        for i in range (0,j):
-            fi = enumerate_feed_items(sf[i]) # number of feed entries
-
+        
+        for i in range (0,fds):
+            fi = epf[i] # number of feed entries
             newestEntry[i]  = sf[i]['entries'][0]
             oldestEntry[i]  = sf[i]['entries'][fi-1]
 
@@ -270,11 +351,46 @@ class StateConfigInfo:
             si['FEEDS'][i]['oldest_feed_item_iso'] = oeTime_iso[i]
             si['FEEDS'][i]['oldest_feed_item_unix'] = oeTime_unix[i]
 
-
+        self.state_info = si
         return si
 
 
-def chk_main_state(mainconfigfilename, stateconfigfilename):
+    def get_ref_times (self):
+        num_f = self.check_feed_num()
+        flrtimes_unix = []
+        
+        for i in range (0,num_f):
+            flrtimes_unix.append \
+                (self.state_data['FEEDS'][i]['feed_last_read_unix'])
+        return flrtimes_unix
+    
+# End classes
+def chk_main_state (feeds_main, feeds_state):
+    f_mci = feeds_main
+    f_sci = feeds_state
+    
+    if f_mci != f_sci:
+        print ("Main and State Config file mismatch!")
+        print ("Main file lists: ",f_mci)
+        print ("State file lists: ", f_sci)
+        print ("Consider using StateConfigInfo.create routine ...")
+        print ("To fix the problem")
+        syslog.syslog (syslog.LOG_ERR,
+            'SALTSTRAUMEN: Main config and \
+            state file feed number mismatch')
+        # effectively returns error and quits
+        # return 1
+        raise Exception('Config and State File feed mismatch')
+
+
+    else:
+        f_mci == f_sci
+        return f_mci
+
+    
+
+    
+def DePRECATEDchk_main_state(mainconfigfilename, stateconfigfilename):
     '''
     Open both the main and state config files
     from file names and check to see if feeds are consistent.
@@ -285,11 +401,14 @@ def chk_main_state(mainconfigfilename, stateconfigfilename):
     '''
 
 
-    mci = MainConfigInfo.read(mainconfigfilename)
-    sci = StateConfigInfo.read(stateconfigfilename)
+    mco = MainConfigInfo (mainconfigfilename)
+    sco = StateConfigInfo (stateconfigfilename)
 
-    f_mci = MainConfigInfo.check_feed_nums(mci)
-    f_sci = StateConfigInfo.check_feed_nums(sci)
+    mco.read()
+    sco.read()
+
+    f_mci = mco.check_feed_num
+    f_sci = sco.check_feed_num
 
     if f_mci != f_sci:
         print ("Main and State Config file mismatch!")
@@ -311,27 +430,11 @@ def chk_main_state(mainconfigfilename, stateconfigfilename):
 
     return f_mci
 
-def open_read_mconfig (mainconfigfile_name):
-    '''Function to read main config file
-    And open state file based on info in main config file
-    '''
-    main_config = MainConfigInfo.read(mainconfigfile_name)
-    statefile_name = main_config['GENERAL']['statefile']
-    state_config = StateConfigInfo.read(statefile_name)
-    configs = {
-        'main_config':main_config,
-        'state_config':state_config,
-    }
-
-    return configs
-    # End open_read_mconfig
-
-
 
 def find_feeds (main_config_info):
     '''Return a small structure with the feed URLs'''
     cf = main_config_info
-    numfeeds = MainConfigInfo.check_feed_nums(cf)
+    numfeeds = MainConfigInfo.check_feed_num(cf)
     feedURLs = [None] * numfeeds
     for i in range (0, numfeeds):
         feedURLs[i] = cf['FEEDS'][i]['URL']
@@ -342,20 +445,18 @@ def fetch_feed (URL):
     feed = feedparser.parse(URL)
     return feed
 
-def enumerate_feed_items (feed):
+def DEPRECATEDenumerate_feed_items (feed):
     '''Describe how many entries are in a feed'''
     its = len (feed['entries'])
     return its
 
-def sort_entries (a_feed):
+def DEPRECATEDsort_entries (a_feed):
     '''sort one feed
     Merge sorted entries back into feed
     '''
 
     sorted_entries = sorted(a_feed['entries'],
             reverse = True, key=attrgetter('published_parsed'))
-
-
 
     a_feed['entries'] = sorted_entries
 

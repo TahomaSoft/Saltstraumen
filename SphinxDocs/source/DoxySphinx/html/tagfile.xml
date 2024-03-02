@@ -1,0 +1,3975 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<tagfile doxygen_version="1.9.1">
+  <compound kind="file">
+    <name>arraytest.py</name>
+    <path>/home/erikbeck/BlueSky/Saltstraumen/</path>
+    <filename>arraytest_8py.html</filename>
+    <namespace>arraytest</namespace>
+    <member kind="variable">
+      <type>dictionary</type>
+      <name>animal</name>
+      <anchorfile>namespacearraytest.html</anchorfile>
+      <anchor>a603ef9f7d938c4100ae31b44e7406965</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>dictionary</type>
+      <name>person</name>
+      <anchorfile>namespacearraytest.html</anchorfile>
+      <anchor>ae08fdae1f881e10aea9ddbf73043f48d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>list</type>
+      <name>barnyard</name>
+      <anchorfile>namespacearraytest.html</anchorfile>
+      <anchor>a0173fb41c0316808e366fcb2d946d772</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>string</type>
+      <name>SubSystem</name>
+      <anchorfile>namespacearraytest.html</anchorfile>
+      <anchor>a481a4e5c5cda9b39f3ae35411b3ca952</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>list</type>
+      <name>build</name>
+      <anchorfile>namespacearraytest.html</anchorfile>
+      <anchor>af210868cc80b668b19ec3ab012c756a1</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>basictest.py</name>
+    <path>/home/erikbeck/BlueSky/Saltstraumen/</path>
+    <filename>basictest_8py.html</filename>
+    <namespace>basictest</namespace>
+    <member kind="variable">
+      <type>string</type>
+      <name>configfile_name</name>
+      <anchorfile>namespacebasictest.html</anchorfile>
+      <anchor>a0c90b1ad776bd3a8fb7497f8f67f1b65</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>string</type>
+      <name>statefile_name</name>
+      <anchorfile>namespacebasictest.html</anchorfile>
+      <anchor>a32caafaeb1a3396a03573b2d3c2863d6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>main_config</name>
+      <anchorfile>namespacebasictest.html</anchorfile>
+      <anchor>aa5d32da3d998bd14b456e119ad1fbd42</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>q</name>
+      <anchorfile>namespacebasictest.html</anchorfile>
+      <anchor>ad6f9b645754fa7d364fd69c5457c4d1f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>state_config</name>
+      <anchorfile>namespacebasictest.html</anchorfile>
+      <anchor>a749feac8c63ebef400f12de22f0639ce</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>f</name>
+      <anchorfile>namespacebasictest.html</anchorfile>
+      <anchor>ad5238f212fd7dc23b919348d98141452</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>now_unix</name>
+      <anchorfile>namespacebasictest.html</anchorfile>
+      <anchor>a95e718fa11b732b7c0c6c120213912d5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>now_iso</name>
+      <anchorfile>namespacebasictest.html</anchorfile>
+      <anchor>a5965ffb5a75b7eb1049971fdc3f1d918</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>lastread_iso</name>
+      <anchorfile>namespacebasictest.html</anchorfile>
+      <anchor>a561da30793bc1421a0126da7923c75c3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>lastread_unix</name>
+      <anchorfile>namespacebasictest.html</anchorfile>
+      <anchor>ac59b953d8b201b6888a5d0179f51871f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>feed1_url</name>
+      <anchorfile>namespacebasictest.html</anchorfile>
+      <anchor>a797f6902d5fcfea2d9f1fc490902d14c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>feed1</name>
+      <anchorfile>namespacebasictest.html</anchorfile>
+      <anchor>acb1c39ea2f34d36c7aa7433edb69d851</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>items_retrieved</name>
+      <anchorfile>namespacebasictest.html</anchorfile>
+      <anchor>ac204032c37bd781eb5d836d2f6dacc3d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>entries_retrieved</name>
+      <anchorfile>namespacebasictest.html</anchorfile>
+      <anchor>a714c24353e18377e2248884881aec8ee</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>sorted_entries</name>
+      <anchorfile>namespacebasictest.html</anchorfile>
+      <anchor>a392330cc42044321f631af9fd4fff06e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>list</type>
+      <name>boolean_list</name>
+      <anchorfile>namespacebasictest.html</anchorfile>
+      <anchor>a65765a0d3e53df55c94ab0ab98efd44d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>list</type>
+      <name>publish_dates</name>
+      <anchorfile>namespacebasictest.html</anchorfile>
+      <anchor>aea15486a1c941d00a5a01d9514bb5a64</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>compare_date_unix</name>
+      <anchorfile>namespacebasictest.html</anchorfile>
+      <anchor>a250243b251ded15b62a8f40c6efcbadb</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>most_recent</name>
+      <anchorfile>namespacebasictest.html</anchorfile>
+      <anchor>af8e198fa3561df38c3d6362e256fa16d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>oldest</name>
+      <anchorfile>namespacebasictest.html</anchorfile>
+      <anchor>a05327e52a29ea81de74c95db471dc214</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>python_time</name>
+      <anchorfile>namespacebasictest.html</anchorfile>
+      <anchor>a5bf1a86d7e2290ff9bcd58420eeaa99d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>s</name>
+      <anchorfile>namespacebasictest.html</anchorfile>
+      <anchor>a8e17f8fdd48fc21b6512d2cdcab55b1d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>dt</name>
+      <anchorfile>namespacebasictest.html</anchorfile>
+      <anchor>aeac1bd19bf5b05e219502121e8c8acfa</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>rtime</name>
+      <anchorfile>namespacebasictest.html</anchorfile>
+      <anchor>a8be3172b53557c17965354d5814e58ba</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>BlueVortex-v2.py</name>
+    <path>/home/erikbeck/BlueSky/Saltstraumen/</path>
+    <filename>BlueVortex-v2_8py.html</filename>
+    <namespace>BlueVortex-v2</namespace>
+    <member kind="variable">
+      <type>string</type>
+      <name>maincf</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a9ba8696a3fb36223f8fc4caa33897441</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>mcfdata</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a28e925378807b54d5d55905fe2050e25</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>tuple</type>
+      <name>statecf</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>af049f558eef473167462d2743faff160</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>scinfo</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>aef26d5fbfd906329e0058c123603ce26</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>numfeedState</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a719266e922cfdc898d7df6db8c301255</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>numfeeds</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a3edac1bece65f2d5cc3ad7a57dfead6d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>alist</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a572f30be755bed8bbf67daccad61294c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>list</type>
+      <name>feedData</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>aa4c630f512477788f17551b78b4e72b1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>list</type>
+      <name>itemsPerFeed</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a93d8db86fc1ee2c5eb7dcee61bc27a6b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>list</type>
+      <name>flrtimes_unix</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a13283b5c8508075040b0f419a9c7cbfe</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>list</type>
+      <name>flrtimes_iso</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a7522644a4f262c46df5d0c9f477bd451</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>list</type>
+      <name>pflrtimes_u</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a17ab853a39b5124f7f5b7458a79c588c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>list</type>
+      <name>pflrtimes_i</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>aae203be8b647c867088bc7de2d94a143</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>now1</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a0833ffb563c3f2a49b7ae6add1386de5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>now2</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>aca5f6aed74b5d12c75afcdca78bbc144</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>u_scinfo</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a134f688a4a8e4d4a3cd111ddf5633bb3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>j</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>ac2af725423d08a2ac79c9ead8e98deeb</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>list</type>
+      <name>reftimes</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a599692fb167db9d4a1127b8e8d32ef99</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>leData</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a28afd1d59cac9693a4aa25b50b806f9f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>y</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>ab24c6ef97a9548365683540e67d052f2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>z</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>af936fbb44b0df4bee0bbdc7179bef534</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>lDe</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a040ecaf1198337818a2b6492b3a91a35</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>e</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a52cbabb46d6e2d4a0cfe96b57dfa8ec7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>tf</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a33438ebffeab32b3edd4fb7b257e2d18</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>toDoE</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a4c22caf7ff1caa5daef8e20c9fa69a4e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>keepgoing</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>ab85da6138c078fc63a9249efd55aca43</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>list</type>
+      <name>midQueue</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a8c2f5e84c0d741f73948d7628ece29a0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>t</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a00faaf54b88923f4cd56e482fc031996</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>a</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a27f0781de5b28a8913646e9c4c0e75a7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>b</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>ab2837b32cf83fbab1da155fd217decf8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>mca</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>ac375cbed3ff63565552b15d30392ef89</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>altText</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>ae67834793e0730049a3be9531a7305a8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>int</type>
+      <name>skip</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a3a6a5e3df29d5b4667e6b865181592e3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>int</type>
+      <name>noblobs</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a25a06ea6bf2a1691f650dd5e1d7fee29</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>count</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a0e61e45804b26eb1db3974cf92ffdc19</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>Bcred</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>ac4245583193bbadec5c559834130f4ff</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>acct_name</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a24ff4ab57dbb28311238ef7951d3ddf8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>appPass</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>acaaa6a6f59bdc93a075f08d58970f71a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>creds</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a9ec0909430369c92205dc5e8691ec383</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>myPastPosts</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>aa8d70786c7592a070ef5981c05918699</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>bpost</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a20b268733844ba330237f1cb3b4d4742</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>sessT</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>abeb8eb0ce02b33d6ed59ecf843ddbf2a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>myDID</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a391c9ca823faff3aa34590846bc75fc8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>list</type>
+      <name>bskyQueue</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a6aceb66e602bce1404753c31a7345588</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>mQe</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>aa582fd35196385535b934efab9672dba</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>string</type>
+      <name>noBlobs</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>aebdcffddbc60b7630a7b88a7160d5bce</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>IsSen</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a46bc26e245488f2c99ead7c43481b5a3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>bPuck</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a8f68d24ec6030cadf7413c2fe5d5b6f4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>string</type>
+      <name>blobpost</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a23e3f3a8d926d8e95d391102d7cf2142</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>uu_scinfo</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a153dcca7b2b8e32589b602796ff0f973</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>classfoo.py</name>
+    <path>/home/erikbeck/BlueSky/Saltstraumen/</path>
+    <filename>classfoo_8py.html</filename>
+    <class kind="class">classfoo::A</class>
+    <class kind="class">classfoo::B</class>
+    <namespace>classfoo</namespace>
+    <member kind="variable">
+      <type></type>
+      <name>a</name>
+      <anchorfile>namespaceclassfoo.html</anchorfile>
+      <anchor>a2767d0353fb48019e4fae4ae6e82a55e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>b</name>
+      <anchorfile>namespaceclassfoo.html</anchorfile>
+      <anchor>a178e84c4726b0ff13873d2889f76c4db</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>config_feed_objsmeth.py</name>
+    <path>/home/erikbeck/BlueSky/Saltstraumen/</path>
+    <filename>config__feed__objsmeth_8py.html</filename>
+    <class kind="class">config_feed_objsmeth::MainConfigInfo</class>
+    <class kind="class">config_feed_objsmeth::StateConfigInfo</class>
+    <namespace>config_feed_objsmeth</namespace>
+    <member kind="function">
+      <type>def</type>
+      <name>chk_main_state</name>
+      <anchorfile>namespaceconfig__feed__objsmeth.html</anchorfile>
+      <anchor>a306e8f5a189673754e2974bf7da71b5a</anchor>
+      <arglist>(mainconfigfilename, stateconfigfilename)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>open_read_mconfig</name>
+      <anchorfile>namespaceconfig__feed__objsmeth.html</anchorfile>
+      <anchor>a5de96150f6597697ad6432e0571d3041</anchor>
+      <arglist>(mainconfigfile_name)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>find_feeds</name>
+      <anchorfile>namespaceconfig__feed__objsmeth.html</anchorfile>
+      <anchor>a8273690efe82a9cf976508ff8142e5b7</anchor>
+      <arglist>(main_config_info)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>fetch_feed</name>
+      <anchorfile>namespaceconfig__feed__objsmeth.html</anchorfile>
+      <anchor>ad508f9b181fb95a33b3a113a15007cd3</anchor>
+      <arglist>(URL)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>enumerate_feed_items</name>
+      <anchorfile>namespaceconfig__feed__objsmeth.html</anchorfile>
+      <anchor>adf13e73ef0daadf2766a9b27790f7dae</anchor>
+      <arglist>(feed)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>sort_entries</name>
+      <anchorfile>namespaceconfig__feed__objsmeth.html</anchorfile>
+      <anchor>a3ad97bae11b0b5bd4480518b84f61124</anchor>
+      <arglist>(a_feed)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>feedHandleFetchSort</name>
+      <anchorfile>namespaceconfig__feed__objsmeth.html</anchorfile>
+      <anchor>a9d0dcfa3c46272cf061255c28ededc22</anchor>
+      <arglist>(numfeeds, mainconfigdata)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>configread.py</name>
+    <path>/home/erikbeck/BlueSky/Saltstraumen/</path>
+    <filename>configread_8py.html</filename>
+    <namespace>configread</namespace>
+    <member kind="variable">
+      <type>string</type>
+      <name>mainconfigfile_name</name>
+      <anchorfile>namespaceconfigread.html</anchorfile>
+      <anchor>a98d43fd505b16c464c18d36b5d27f15b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>toml_in</name>
+      <anchorfile>namespaceconfigread.html</anchorfile>
+      <anchor>a254cc680cbf6fc6e58140b0ac7b18449</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>string</type>
+      <name>stateconfigfile_name</name>
+      <anchorfile>namespaceconfigread.html</anchorfile>
+      <anchor>add4c1811d16189a85a8d36c4be6de07b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>statetoml_in</name>
+      <anchorfile>namespaceconfigread.html</anchorfile>
+      <anchor>aaaa1e9538aac06ab9640d6da65144e81</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>now_iso</name>
+      <anchorfile>namespaceconfigread.html</anchorfile>
+      <anchor>a9a8b9d78f3c78643266cb85f7fcbc366</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>now_unix</name>
+      <anchorfile>namespaceconfigread.html</anchorfile>
+      <anchor>a492569b886d2661ac923500e900e588d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>string</type>
+      <name>stateoutfile_name</name>
+      <anchorfile>namespaceconfigread.html</anchorfile>
+      <anchor>a78c506dd4a4922f2bdf22d3e2823f6c9</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>FediBskyXwalk.py</name>
+    <path>/home/erikbeck/BlueSky/Saltstraumen/</path>
+    <filename>FediBskyXwalk_8py.html</filename>
+    <class kind="class">FediBskyXwalk::PostXwalk</class>
+    <namespace>FediBskyXwalk</namespace>
+  </compound>
+  <compound kind="file">
+    <name>FediEntryObjects.py</name>
+    <path>/home/erikbeck/BlueSky/Saltstraumen/</path>
+    <filename>FediEntryObjects_8py.html</filename>
+    <namespace>FediEntryObjects</namespace>
+  </compound>
+  <compound kind="file">
+    <name>FediFeedEntries.py</name>
+    <path>/home/erikbeck/BlueSky/Saltstraumen/</path>
+    <filename>FediFeedEntries_8py.html</filename>
+    <class kind="class">FediFeedEntries::BROKENMiddleQueue</class>
+    <class kind="class">FediFeedEntries::HolderFedFeed</class>
+    <class kind="class">FediFeedEntries::FedFeedEntry</class>
+    <namespace>FediFeedEntries</namespace>
+    <member kind="function">
+      <type>def</type>
+      <name>entryAddImages</name>
+      <anchorfile>namespaceFediFeedEntries.html</anchorfile>
+      <anchor>a996b27c28b26e7d970d73b2675e42bdc</anchor>
+      <arglist>(self, rawpost)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>entryFixTags</name>
+      <anchorfile>namespaceFediFeedEntries.html</anchorfile>
+      <anchor>aff6df659875add36603c0e64e43e52c7</anchor>
+      <arglist>(tagstring)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>cw_check</name>
+      <anchorfile>namespaceFediFeedEntries.html</anchorfile>
+      <anchor>aefe3c449913e3e627559fe50b180a0fc</anchor>
+      <arglist>(origTxt)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>entryCreate</name>
+      <anchorfile>namespaceFediFeedEntries.html</anchorfile>
+      <anchor>a8081bba1a829dff10afd350839e74a0a</anchor>
+      <arglist>(rawpost, seqcount)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>entryAddBasic</name>
+      <anchorfile>namespaceFediFeedEntries.html</anchorfile>
+      <anchor>af5b798ae2bda23422dfdc6f2e28a7431</anchor>
+      <arglist>(rawpost)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>entryAddRatings</name>
+      <anchorfile>namespaceFediFeedEntries.html</anchorfile>
+      <anchor>a371ec02840830b57a5351ec4c2e172f3</anchor>
+      <arglist>(rawpost)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>addSummaryDetail</name>
+      <anchorfile>namespaceFediFeedEntries.html</anchorfile>
+      <anchor>a07e984cfd25912e05f25107ef5ee4dd1</anchor>
+      <arglist>(rawpost)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>addContentWarning</name>
+      <anchorfile>namespaceFediFeedEntries.html</anchorfile>
+      <anchor>a252a5d21ab2137501a339ef176b6674d</anchor>
+      <arglist>(origTxt)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>entryCheckSensitive</name>
+      <anchorfile>namespaceFediFeedEntries.html</anchorfile>
+      <anchor>aefdcff2b4a35ec7b429c92621306d8c3</anchor>
+      <arglist>(cleanerPost)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>textTouchUp</name>
+      <anchorfile>namespaceFediFeedEntries.html</anchorfile>
+      <anchor>a7d59f66c620884ad4e42adde8e162106</anchor>
+      <arglist>(main_text, cw, fixed_tags)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>MediaContentAttach</name>
+      <anchorfile>namespaceFediFeedEntries.html</anchorfile>
+      <anchor>a26247f558fe8f9e929be58bcb22d012f</anchor>
+      <arglist>(medElem)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>oolllddMediaContentAttach</name>
+      <anchorfile>namespaceFediFeedEntries.html</anchorfile>
+      <anchor>a30c45cd1a259519c732f989594cd092f</anchor>
+      <arglist>(e)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>MediaContentHandle</name>
+      <anchorfile>namespaceFediFeedEntries.html</anchorfile>
+      <anchor>aa741add60c60de5efb7bed0d462bfcc9</anchor>
+      <arglist>(MediaContentSet)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>GetAltText</name>
+      <anchorfile>namespaceFediFeedEntries.html</anchorfile>
+      <anchor>a23cb843f650f531723a5c89759c2432d</anchor>
+      <arglist>(e)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>FediQueueObjects.py</name>
+    <path>/home/erikbeck/BlueSky/Saltstraumen/</path>
+    <filename>FediQueueObjects_8py.html</filename>
+    <namespace>FediQueueObjects</namespace>
+  </compound>
+  <compound kind="file">
+    <name>FediStructsMisc.py</name>
+    <path>/home/erikbeck/BlueSky/Saltstraumen/</path>
+    <filename>FediStructsMisc_8py.html</filename>
+    <namespace>FediStructsMisc</namespace>
+  </compound>
+  <compound kind="file">
+    <name>FediXbSky.py</name>
+    <path>/home/erikbeck/BlueSky/Saltstraumen/</path>
+    <filename>FediXbSky_8py.html</filename>
+    <namespace>FediXbSky</namespace>
+  </compound>
+  <compound kind="file">
+    <name>feedstructs.py</name>
+    <path>/home/erikbeck/BlueSky/Saltstraumen/</path>
+    <filename>feedstructs_8py.html</filename>
+    <namespace>feedstructs</namespace>
+    <member kind="variable">
+      <type>dictionary</type>
+      <name>simple_bsky_info</name>
+      <anchorfile>namespacefeedstructs.html</anchorfile>
+      <anchor>ad1316e85d6a416e8735bb5d33ad8b41e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>dictionary</type>
+      <name>main_config_genInfo</name>
+      <anchorfile>namespacefeedstructs.html</anchorfile>
+      <anchor>a7a03084c089f218e7f90b57afc0251a7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>dictionary</type>
+      <name>main_config_feedInfo</name>
+      <anchorfile>namespacefeedstructs.html</anchorfile>
+      <anchor>abdbcd924b313dfe6202253c016f3d816</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>dictionary</type>
+      <name>state_config_genInfo</name>
+      <anchorfile>namespacefeedstructs.html</anchorfile>
+      <anchor>a96967763cdf897477e526170a3803294</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>dictionary</type>
+      <name>feed_metadata</name>
+      <anchorfile>namespacefeedstructs.html</anchorfile>
+      <anchor>a7dedf4755800103233a9c04c8b3f8fbb</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>dictionary</type>
+      <name>bsky_post_metadata</name>
+      <anchorfile>namespacefeedstructs.html</anchorfile>
+      <anchor>a1b78e6e2ce488c2f318fb6c9a1d902c0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>dictionary</type>
+      <name>post_constructor</name>
+      <anchorfile>namespacefeedstructs.html</anchorfile>
+      <anchor>a97fa77fe00adbdaaf61f9fd7a5bced6f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>dictionary</type>
+      <name>post_altText_plus</name>
+      <anchorfile>namespacefeedstructs.html</anchorfile>
+      <anchor>acd09242be3f905ad53d2be1418876b6c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>dictionary</type>
+      <name>post_media_item</name>
+      <anchorfile>namespacefeedstructs.html</anchorfile>
+      <anchor>a600cca17ab58e101c8bfaf8fee860c19</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>heavy_lifting.py</name>
+    <path>/home/erikbeck/BlueSky/Saltstraumen/</path>
+    <filename>heavy__lifting_8py.html</filename>
+    <class kind="class">heavy_lifting::MainStateConsistency</class>
+    <class kind="class">heavy_lifting::MainConfigInfo</class>
+    <class kind="class">heavy_lifting::FetchFeeds</class>
+    <class kind="class">heavy_lifting::StateConfigInfo</class>
+    <class kind="class">heavy_lifting::FeedEntriesMash</class>
+    <class kind="class">heavy_lifting::FeedEntriesFix</class>
+    <class kind="class">heavy_lifting::MediaMassage</class>
+    <namespace>heavy_lifting</namespace>
+  </compound>
+  <compound kind="file">
+    <name>main-v1.py</name>
+    <path>/home/erikbeck/BlueSky/Saltstraumen/</path>
+    <filename>main-v1_8py.html</filename>
+    <namespace>main-v1</namespace>
+    <namespace>main</namespace>
+    <member kind="variable">
+      <type></type>
+      <name>rval</name>
+      <anchorfile>namespacemain-v1.html</anchorfile>
+      <anchor>adf732744cdebd9bbde01710d4ad751ac</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>t</name>
+      <anchorfile>namespacemain-v1.html</anchorfile>
+      <anchor>a697e4503d165117017718442bab3df7c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>x</name>
+      <anchorfile>namespacemain-v1.html</anchorfile>
+      <anchor>a6dc230c1d9086b2b50d343c71654b7c1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>z</name>
+      <anchorfile>namespacemain-v1.html</anchorfile>
+      <anchor>a8d7951699fe8690413fe784921207cde</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>hmf</name>
+      <anchorfile>namespacemain-v1.html</anchorfile>
+      <anchor>ab85621e32b12db45d70c68cd60803df3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>list</type>
+      <name>feedURLs</name>
+      <anchorfile>namespacemain-v1.html</anchorfile>
+      <anchor>aec3a40f6f9e43b658332180108c377a9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>list</type>
+      <name>fd_content</name>
+      <anchorfile>namespacemain-v1.html</anchorfile>
+      <anchor>a710f4bc72304cd17353ed5a694d68923</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>j</name>
+      <anchorfile>namespacemain-v1.html</anchorfile>
+      <anchor>a778cfdbeb3305d62f25cb07550ceccc9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>a</name>
+      <anchorfile>namespacemain-v1.html</anchorfile>
+      <anchor>a14f94813de7ebe0b6374f01663ee8640</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>string</type>
+      <name>configfileName</name>
+      <anchorfile>namespacemain-v1.html</anchorfile>
+      <anchor>a24210e8111638f268b51f5eb581af53c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>configDets</name>
+      <anchorfile>namespacemain-v1.html</anchorfile>
+      <anchor>ab59ce90ef99702f057cd0bbeb7b8134a</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>main-v2.py</name>
+    <path>/home/erikbeck/BlueSky/Saltstraumen/</path>
+    <filename>main-v2_8py.html</filename>
+    <namespace>main-v2</namespace>
+    <namespace>main</namespace>
+    <member kind="variable">
+      <type></type>
+      <name>rval</name>
+      <anchorfile>namespacemain-v2.html</anchorfile>
+      <anchor>a08d6f6f6e5c88bee25a5ab57d49a0c0a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>t</name>
+      <anchorfile>namespacemain-v2.html</anchorfile>
+      <anchor>a6df43438105e4e11f708d2961d21752f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>x</name>
+      <anchorfile>namespacemain-v2.html</anchorfile>
+      <anchor>a45c71f0cce4691a22d857270421875f8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>z</name>
+      <anchorfile>namespacemain-v2.html</anchorfile>
+      <anchor>a5906e9308b54c9a1b2462575be381fb6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>foo</name>
+      <anchorfile>namespacemain-v2.html</anchorfile>
+      <anchor>a91656bf802db85b98c00ee2dcf0cb5e6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>numfeeds</name>
+      <anchorfile>namespacemain-v2.html</anchorfile>
+      <anchor>ab958ad1308f97254b7b1b8d7e4b7a3a7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>feedURLs</name>
+      <anchorfile>namespacemain-v2.html</anchorfile>
+      <anchor>a2bc2d7a3d2ce32c58f37862b2c08928c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>reftime_unix</name>
+      <anchorfile>namespacemain-v2.html</anchorfile>
+      <anchor>aaea342461f71d38026b18c39a055cc61</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>sortedFeedDict</name>
+      <anchorfile>namespacemain-v2.html</anchorfile>
+      <anchor>ac3d676f665978815fb48d5b204992860</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>enumFeedItems</name>
+      <anchorfile>namespacemain-v2.html</anchorfile>
+      <anchor>a476bab3a0763c16e3ef7bebd0a36fda5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>sortedEntries</name>
+      <anchorfile>namespacemain-v2.html</anchorfile>
+      <anchor>a3aaf3be9d662c2cab758cad43b199f12</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>uet</name>
+      <anchorfile>namespacemain-v2.html</anchorfile>
+      <anchor>a0f7949d8dc0f6c4fa87489a332d4dc06</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>main-v3.py</name>
+    <path>/home/erikbeck/BlueSky/Saltstraumen/</path>
+    <filename>main-v3_8py.html</filename>
+    <namespace>main-v3</namespace>
+    <namespace>main</namespace>
+    <member kind="variable">
+      <type>string</type>
+      <name>maincf</name>
+      <anchorfile>namespacemain-v3.html</anchorfile>
+      <anchor>a7802b8d00c8d2250eb7e9d48df697e6d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>mcinfo</name>
+      <anchorfile>namespacemain-v3.html</anchorfile>
+      <anchor>ace36c38f9f8ed3de120581350ef26f7e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>tuple</type>
+      <name>statecf</name>
+      <anchorfile>namespacemain-v3.html</anchorfile>
+      <anchor>a1831f28157aee44f5a32e9e31c93b675</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>scinfo</name>
+      <anchorfile>namespacemain-v3.html</anchorfile>
+      <anchor>a00658d183564bb98660cbba0eb03825f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>numfeedState</name>
+      <anchorfile>namespacemain-v3.html</anchorfile>
+      <anchor>a2317764c221fa366d11cf5ce71e08f99</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>checkmainfeeds</name>
+      <anchorfile>namespacemain-v3.html</anchorfile>
+      <anchor>a7a7a4843c53163bd40842a3c5427dc9a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>nufeeds</name>
+      <anchorfile>namespacemain-v3.html</anchorfile>
+      <anchor>a4e37b3dba99934522c99cac3dc37f6ee</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>alist</name>
+      <anchorfile>namespacemain-v3.html</anchorfile>
+      <anchor>aad162b0985a963940a1c4d5a90df870b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>list</type>
+      <name>feedData</name>
+      <anchorfile>namespacemain-v3.html</anchorfile>
+      <anchor>aee42a299bb3547f86b3853d1e4b111f2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>list</type>
+      <name>itemsPerFeed</name>
+      <anchorfile>namespacemain-v3.html</anchorfile>
+      <anchor>afe94ec7848d1167f4a2b04f29a37b98b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>u_scinfo</name>
+      <anchorfile>namespacemain-v3.html</anchorfile>
+      <anchor>ab7a66727b863d845f058b669a1cf3740</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>j</name>
+      <anchorfile>namespacemain-v3.html</anchorfile>
+      <anchor>a27e02062c553b14fe5b11323f2079db7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>int</type>
+      <name>reftime</name>
+      <anchorfile>namespacemain-v3.html</anchorfile>
+      <anchor>a60a6d6a429840ce379a59aed3674ae0f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>NeuFeedData</name>
+      <anchorfile>namespacemain-v3.html</anchorfile>
+      <anchor>afb1e5218031cd076aab7da2d0e89b095</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>count</name>
+      <anchorfile>namespacemain-v3.html</anchorfile>
+      <anchor>acbfdab2c265165b4765a316120a1e79b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>keepgoing</name>
+      <anchorfile>namespacemain-v3.html</anchorfile>
+      <anchor>a5a93d69a0798595ddde85b74fc8fd3ba</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>feedIn</name>
+      <anchorfile>namespacemain-v3.html</anchorfile>
+      <anchor>aaae3d741149e0b737082f5eec9ac9fca</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>oldTester.py</name>
+    <path>/home/erikbeck/BlueSky/Saltstraumen/</path>
+    <filename>oldTester_8py.html</filename>
+    <namespace>oldTester</namespace>
+    <member kind="variable">
+      <type>string</type>
+      <name>maincf</name>
+      <anchorfile>namespaceoldTester.html</anchorfile>
+      <anchor>a4bb2a055fbe19a469e2b4f0329306c8a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>mcfdata</name>
+      <anchorfile>namespaceoldTester.html</anchorfile>
+      <anchor>a8d27d8db42b98e4feec3a58da0bc6858</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>tuple</type>
+      <name>statecf</name>
+      <anchorfile>namespaceoldTester.html</anchorfile>
+      <anchor>a79d2e6dcf92fc3a016f3cda5222b32f8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>scinfo</name>
+      <anchorfile>namespaceoldTester.html</anchorfile>
+      <anchor>a28cdaaf7ba878506085302cb68728e70</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>numfeedState</name>
+      <anchorfile>namespaceoldTester.html</anchorfile>
+      <anchor>acaadec7b772bf2e919f3adebe0925b52</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>numfeeds</name>
+      <anchorfile>namespaceoldTester.html</anchorfile>
+      <anchor>ab2b7eb4f3c9b71da37c917930501297e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>Bcred</name>
+      <anchorfile>namespaceoldTester.html</anchorfile>
+      <anchor>aa2c46622d7a242c8ab3888b20e2d6d29</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>acct_name</name>
+      <anchorfile>namespaceoldTester.html</anchorfile>
+      <anchor>aafc131c84e742ee23eeef30b7bca5f2d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>appPass</name>
+      <anchorfile>namespaceoldTester.html</anchorfile>
+      <anchor>ac1cfd47d95f0cf0760b3c4e88fcbcf3e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>creds</name>
+      <anchorfile>namespaceoldTester.html</anchorfile>
+      <anchor>aa7ab5062bb3c5bfd9f360f644582e1c2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>myPastPosts</name>
+      <anchorfile>namespaceoldTester.html</anchorfile>
+      <anchor>a5217ed40b812c3e3e26256a1df24e193</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>j</name>
+      <anchorfile>namespaceoldTester.html</anchorfile>
+      <anchor>abe0ca98d1872fdbd9a9b29e2aa66d896</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>BskyTest</name>
+      <anchorfile>namespaceoldTester.html</anchorfile>
+      <anchor>ad84cbacf0e9fa4db00f5b1f2e87f3b26</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>sessT</name>
+      <anchorfile>namespaceoldTester.html</anchorfile>
+      <anchor>aef878d37154f13c99919d8f79a75f8d3</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>oops.py</name>
+    <path>/home/erikbeck/BlueSky/Saltstraumen/</path>
+    <filename>oops_8py.html</filename>
+    <namespace>oops</namespace>
+    <member kind="variable">
+      <type>string</type>
+      <name>maincf</name>
+      <anchorfile>namespaceoops.html</anchorfile>
+      <anchor>ae79274bec18b1602ce4e5484db354f25</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>mcinfo</name>
+      <anchorfile>namespaceoops.html</anchorfile>
+      <anchor>a23eef02f128c1abfe3aa9f1ec9b80c62</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>tuple</type>
+      <name>statecf</name>
+      <anchorfile>namespaceoops.html</anchorfile>
+      <anchor>a43560dd7e6d54dfdaea216fcee70a272</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>fred</name>
+      <anchorfile>namespaceoops.html</anchorfile>
+      <anchor>a6354d1dc35a976b31586d7e280035635</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>scinfo</name>
+      <anchorfile>namespaceoops.html</anchorfile>
+      <anchor>aa5ef1d080c35020878370ac3afb95984</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>numfeedState</name>
+      <anchorfile>namespaceoops.html</anchorfile>
+      <anchor>abe3b41a0019f07c6a18d918031512c28</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>checkmainfeeds</name>
+      <anchorfile>namespaceoops.html</anchorfile>
+      <anchor>aab8babe326954f3abd08d369490ea6ea</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>nufeeds</name>
+      <anchorfile>namespaceoops.html</anchorfile>
+      <anchor>a25cb489d29da4a03b1ea07bd7e2fb818</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>alist</name>
+      <anchorfile>namespaceoops.html</anchorfile>
+      <anchor>ac0468d9cebcfcc2e94780553efc4263a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>list</type>
+      <name>feedData</name>
+      <anchorfile>namespaceoops.html</anchorfile>
+      <anchor>af1eba611185f69ff9f692d6132f9603a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>list</type>
+      <name>itemsPerFeed</name>
+      <anchorfile>namespaceoops.html</anchorfile>
+      <anchor>ad88503eb0c4869959d2f809af48672d3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>u_scinfo</name>
+      <anchorfile>namespaceoops.html</anchorfile>
+      <anchor>a648847cbfa1543751bf22ae49ae99756</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>j</name>
+      <anchorfile>namespaceoops.html</anchorfile>
+      <anchor>ac2cc4a8cdbb87f156b47c3b092547da6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>int</type>
+      <name>reftime</name>
+      <anchorfile>namespaceoops.html</anchorfile>
+      <anchor>aaa418ba24f459271cc803588b22ce4e9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>NeuFeedData</name>
+      <anchorfile>namespaceoops.html</anchorfile>
+      <anchor>a75035c15da3e8ee89dbb3b7e8a5afbae</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>count</name>
+      <anchorfile>namespaceoops.html</anchorfile>
+      <anchor>a4e7a5e50bec0eb0550a27725cafe8cfa</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>keepgoing</name>
+      <anchorfile>namespaceoops.html</anchorfile>
+      <anchor>ab1780847af714e9926afdbaf1606a0b9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>feedIn</name>
+      <anchorfile>namespaceoops.html</anchorfile>
+      <anchor>a5472a1058b694393b02345dcedb7240a</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>README.md</name>
+    <path>/home/erikbeck/BlueSky/Saltstraumen/</path>
+    <filename>README_8md.html</filename>
+  </compound>
+  <compound kind="file">
+    <name>temphold.py</name>
+    <path>/home/erikbeck/BlueSky/Saltstraumen/</path>
+    <filename>temphold_8py.html</filename>
+    <namespace>temphold</namespace>
+    <member kind="function">
+      <type>def</type>
+      <name>entryAddRatings</name>
+      <anchorfile>namespacetemphold.html</anchorfile>
+      <anchor>a1e562ec0ac901b689dd5a8fa7f854834</anchor>
+      <arglist>(rawpost)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>addSummaryDetail</name>
+      <anchorfile>namespacetemphold.html</anchorfile>
+      <anchor>a94681658dd198d393097e3c597363b3f</anchor>
+      <arglist>(rawpost)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>timerTest.py</name>
+    <path>/home/erikbeck/BlueSky/Saltstraumen/</path>
+    <filename>timerTest_8py.html</filename>
+    <namespace>timerTest</namespace>
+    <member kind="variable">
+      <type>string</type>
+      <name>maincf</name>
+      <anchorfile>namespacetimerTest.html</anchorfile>
+      <anchor>a4f62776f37c4ddf895796a3e708f6fc6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>mcfdata</name>
+      <anchorfile>namespacetimerTest.html</anchorfile>
+      <anchor>acc2c22868c09c3dce6c367e3866f49ee</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>tuple</type>
+      <name>statecf</name>
+      <anchorfile>namespacetimerTest.html</anchorfile>
+      <anchor>a3ce08df9ee246b5055134a15274ce724</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>scinfo</name>
+      <anchorfile>namespacetimerTest.html</anchorfile>
+      <anchor>a6adff4dc044960bc8a595a0e198c3112</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>numfeedState</name>
+      <anchorfile>namespacetimerTest.html</anchorfile>
+      <anchor>addf8fed8be9ecdc6b107983cc1eac036</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>numfeeds</name>
+      <anchorfile>namespacetimerTest.html</anchorfile>
+      <anchor>a36a55e7e60db88b18d74fb58e7f75252</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>alist</name>
+      <anchorfile>namespacetimerTest.html</anchorfile>
+      <anchor>a8c3fc7d4cb680ddb8013ab7b5420a0bd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>list</type>
+      <name>feedData</name>
+      <anchorfile>namespacetimerTest.html</anchorfile>
+      <anchor>a88f54f80220a487bded642cfa40596a8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>list</type>
+      <name>itemsPerFeed</name>
+      <anchorfile>namespacetimerTest.html</anchorfile>
+      <anchor>a8cd7f2b1b31d00def22cc9210c43131e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>list</type>
+      <name>flrtimes_unix</name>
+      <anchorfile>namespacetimerTest.html</anchorfile>
+      <anchor>aae87631381fdb8e226adceb26836b913</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>list</type>
+      <name>flrtimes_iso</name>
+      <anchorfile>namespacetimerTest.html</anchorfile>
+      <anchor>aa7025aff137008ae3a1c5b349099e5b8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>list</type>
+      <name>pflrtimes_u</name>
+      <anchorfile>namespacetimerTest.html</anchorfile>
+      <anchor>aae8bb6a58cae44e8439b8a2701b3d2e8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>list</type>
+      <name>pflrtimes_i</name>
+      <anchorfile>namespacetimerTest.html</anchorfile>
+      <anchor>a8928ef42944e5930bdf5c5b22cafc137</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>classfoo::A</name>
+    <filename>classclassfoo_1_1A.html</filename>
+    <member kind="function">
+      <type>def</type>
+      <name>__init__</name>
+      <anchorfile>classclassfoo_1_1A.html</anchorfile>
+      <anchor>a3e46e532d5422f6d24fafd2e3145b785</anchor>
+      <arglist>(self)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>print</name>
+      <anchorfile>classclassfoo_1_1A.html</anchorfile>
+      <anchor>acd6d11a7d1c6c055c6f4355c17f6586e</anchor>
+      <arglist>(self)</arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>value</name>
+      <anchorfile>classclassfoo_1_1A.html</anchorfile>
+      <anchor>a447694397b16242c9cca27be7c4639ca</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>value2</name>
+      <anchorfile>classclassfoo_1_1A.html</anchorfile>
+      <anchor>a3cb0ddd0b5c1c5823fbea7ebbcf93c90</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>classfoo::B</name>
+    <filename>classclassfoo_1_1B.html</filename>
+    <base>classfoo::A</base>
+    <member kind="function">
+      <type>def</type>
+      <name>__init__</name>
+      <anchorfile>classclassfoo_1_1B.html</anchorfile>
+      <anchor>af6180391a590f8d2b67a206e9231e017</anchor>
+      <arglist>(self)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>FediFeedEntries::BROKENMiddleQueue</name>
+    <filename>classFediFeedEntries_1_1BROKENMiddleQueue.html</filename>
+    <member kind="function">
+      <type>def</type>
+      <name>__init__</name>
+      <anchorfile>classFediFeedEntries_1_1BROKENMiddleQueue.html</anchorfile>
+      <anchor>a307abd873364e415bb04cf243e8b4001</anchor>
+      <arglist>(self)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>insertr</name>
+      <anchorfile>classFediFeedEntries_1_1BROKENMiddleQueue.html</anchorfile>
+      <anchor>a75545072444eba25d43c62568001a07c</anchor>
+      <arglist>(self, entry)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>qprint</name>
+      <anchorfile>classFediFeedEntries_1_1BROKENMiddleQueue.html</anchorfile>
+      <anchor>a0f5d789c4a4685572d9b54c67d938006</anchor>
+      <arglist>(self)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>json</name>
+      <anchorfile>classFediFeedEntries_1_1BROKENMiddleQueue.html</anchorfile>
+      <anchor>a24e9b5a8cbda93be2b61e45a0cda31de</anchor>
+      <arglist>(self)</arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>fediqueue</name>
+      <anchorfile>classFediFeedEntries_1_1BROKENMiddleQueue.html</anchorfile>
+      <anchor>ac9b252cd130712afc8f93bbaa1d048a3</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>FediFeedEntries::FedFeedEntry</name>
+    <filename>classFediFeedEntries_1_1FedFeedEntry.html</filename>
+    <member kind="function">
+      <type>def</type>
+      <name>__init__</name>
+      <anchorfile>classFediFeedEntries_1_1FedFeedEntry.html</anchorfile>
+      <anchor>a51285e19af72f55dc3f1be8d65c438aa</anchor>
+      <arglist>(self)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>checkEntry2Pub</name>
+      <anchorfile>classFediFeedEntries_1_1FedFeedEntry.html</anchorfile>
+      <anchor>a351080f99b7d3f0ce37f13de59f942fa</anchor>
+      <arglist>(self, fedientry, reftime)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>MarkEntry2Pub</name>
+      <anchorfile>classFediFeedEntries_1_1FedFeedEntry.html</anchorfile>
+      <anchor>a52d0002b9d04fc167200b6e110a0e9d0</anchor>
+      <arglist>(self, fedientry, reftime)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>ingest</name>
+      <anchorfile>classFediFeedEntries_1_1FedFeedEntry.html</anchorfile>
+      <anchor>aa0519c335d8d9a673df9c4e81bc3f22a</anchor>
+      <arglist>(self, fedpost)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>json</name>
+      <anchorfile>classFediFeedEntries_1_1FedFeedEntry.html</anchorfile>
+      <anchor>aa879303b857c36112aadeccad3d7a035</anchor>
+      <arglist>(self)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>exgest</name>
+      <anchorfile>classFediFeedEntries_1_1FedFeedEntry.html</anchorfile>
+      <anchor>a10de8d85ec92481f92e361e121134c43</anchor>
+      <arglist>(self)</arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>fedientry</name>
+      <anchorfile>classFediFeedEntries_1_1FedFeedEntry.html</anchorfile>
+      <anchor>a9f38ff8e99658cd1feaaee96a1f3cf0b</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>heavy_lifting::FeedEntriesFix</name>
+    <filename>classheavy__lifting_1_1FeedEntriesFix.html</filename>
+    <member kind="function">
+      <type>def</type>
+      <name>__init__</name>
+      <anchorfile>classheavy__lifting_1_1FeedEntriesFix.html</anchorfile>
+      <anchor>a4c636faab4ba1c7f1cfe51714b12ca6d</anchor>
+      <arglist>(self)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>print</name>
+      <anchorfile>classheavy__lifting_1_1FeedEntriesFix.html</anchorfile>
+      <anchor>a93f6e2b54e7708a9f5a0c7dea42468f3</anchor>
+      <arglist>(self)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>echo</name>
+      <anchorfile>classheavy__lifting_1_1FeedEntriesFix.html</anchorfile>
+      <anchor>a2ce2c3cfbb4dd8204019d24300ed3022</anchor>
+      <arglist>(self)</arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>p2fix</name>
+      <anchorfile>classheavy__lifting_1_1FeedEntriesFix.html</anchorfile>
+      <anchor>aa6e41a2d8623131efbbeaf42bcdd8255</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>heavy_lifting::FeedEntriesMash</name>
+    <filename>classheavy__lifting_1_1FeedEntriesMash.html</filename>
+    <member kind="function">
+      <type>def</type>
+      <name>DELETEMabyeWhichEntries2Pub</name>
+      <anchorfile>classheavy__lifting_1_1FeedEntriesMash.html</anchorfile>
+      <anchor>a84d36b157f333727edf88cc2976f610f</anchor>
+      <arglist>(reftimes, sf)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>DElComputeNumOutbound</name>
+      <anchorfile>classheavy__lifting_1_1FeedEntriesMash.html</anchorfile>
+      <anchor>a376d4b621ce8ac5d520d54ffdf2a6ea9</anchor>
+      <arglist>(f2e)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>DEADSimplify</name>
+      <anchorfile>classheavy__lifting_1_1FeedEntriesMash.html</anchorfile>
+      <anchor>ad845a10a0f64d4735f03788fe7cb7290</anchor>
+      <arglist>(fI, count)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>DEADMap4Simplify</name>
+      <anchorfile>classheavy__lifting_1_1FeedEntriesMash.html</anchorfile>
+      <anchor>aa2ca44885afbd5771f5f077b2b6af656</anchor>
+      <arglist>(e, ec)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>DEADSensitive_Post_Detect</name>
+      <anchorfile>classheavy__lifting_1_1FeedEntriesMash.html</anchorfile>
+      <anchor>a2589ce2150a55cb7e038e2412b8b8b6e</anchor>
+      <arglist>(thePost)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>DELETEMediaContentAttach</name>
+      <anchorfile>classheavy__lifting_1_1FeedEntriesMash.html</anchorfile>
+      <anchor>a588d399f9bff9aef5a7cddaefe75a517</anchor>
+      <arglist>(e)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>DELETEMediaContentAttachAltText</name>
+      <anchorfile>classheavy__lifting_1_1FeedEntriesMash.html</anchorfile>
+      <anchor>a24ab62509d844607406db23ef5d200ae</anchor>
+      <arglist>(contentAltT)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>ddddMediaContentHandle</name>
+      <anchorfile>classheavy__lifting_1_1FeedEntriesMash.html</anchorfile>
+      <anchor>a8d65e78642fb8f023e08e8928db98e47</anchor>
+      <arglist>(MediaContentSet)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>heavy_lifting::FetchFeeds</name>
+    <filename>classheavy__lifting_1_1FetchFeeds.html</filename>
+    <member kind="function">
+      <type>def</type>
+      <name>find_feeds</name>
+      <anchorfile>classheavy__lifting_1_1FetchFeeds.html</anchorfile>
+      <anchor>ad863a397a953473c4d7938237d13bfe1</anchor>
+      <arglist>(Main_config_info)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>fetch_feed</name>
+      <anchorfile>classheavy__lifting_1_1FetchFeeds.html</anchorfile>
+      <anchor>ae42894bad45e99c657e0e25dc1b7fe26</anchor>
+      <arglist>(URL)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>enumerate_feed_items</name>
+      <anchorfile>classheavy__lifting_1_1FetchFeeds.html</anchorfile>
+      <anchor>a6a9bd3ce110fcf699f3d2d5d50ff61c7</anchor>
+      <arglist>(feed)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>sort_entries</name>
+      <anchorfile>classheavy__lifting_1_1FetchFeeds.html</anchorfile>
+      <anchor>a0b0690ccf5eda1db738ee083690fc8f1</anchor>
+      <arglist>(a_feed)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>feedHandleFetchSort</name>
+      <anchorfile>classheavy__lifting_1_1FetchFeeds.html</anchorfile>
+      <anchor>aca7623e9911f1d34710baf48c1f930e6</anchor>
+      <arglist>(numfeeds, mainconfigdata, reftime_unix)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>FediFeedEntries::HolderFedFeed</name>
+    <filename>classFediFeedEntries_1_1HolderFedFeed.html</filename>
+    <member kind="function">
+      <type>def</type>
+      <name>__init__</name>
+      <anchorfile>classFediFeedEntries_1_1HolderFedFeed.html</anchorfile>
+      <anchor>a85137799b09c4009dfb895bb3842c254</anchor>
+      <arglist>(self, feeds)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>json</name>
+      <anchorfile>classFediFeedEntries_1_1HolderFedFeed.html</anchorfile>
+      <anchor>a7045459036149fb8b7d19bcf1d2c2002</anchor>
+      <arglist>(self)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>checknumfeeds_ex</name>
+      <anchorfile>classFediFeedEntries_1_1HolderFedFeed.html</anchorfile>
+      <anchor>a3e989a609a46692ce858d5fbbda2afac</anchor>
+      <arglist>(self, stateinfo)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>checknumfeeds_in</name>
+      <anchorfile>classFediFeedEntries_1_1HolderFedFeed.html</anchorfile>
+      <anchor>a18d759d27f8fb6bf9c25b5bd394ff213</anchor>
+      <arglist>(self)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>concatFeeds</name>
+      <anchorfile>classFediFeedEntries_1_1HolderFedFeed.html</anchorfile>
+      <anchor>a80e168c911218d8f1b3ef3e767c4ab4f</anchor>
+      <arglist>(self)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>feedcounts</name>
+      <anchorfile>classFediFeedEntries_1_1HolderFedFeed.html</anchorfile>
+      <anchor>a8f8c1fd23e4970ff42e04a1c0d7182bc</anchor>
+      <arglist>(self)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>sort_entries</name>
+      <anchorfile>classFediFeedEntries_1_1HolderFedFeed.html</anchorfile>
+      <anchor>ab7a4983cb3ab71550df0a8b276ca39ea</anchor>
+      <arglist>(self)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>exgest</name>
+      <anchorfile>classFediFeedEntries_1_1HolderFedFeed.html</anchorfile>
+      <anchor>aff03e992595e0e7fd0c5232d80f09096</anchor>
+      <arglist>(self)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>exportFeeds</name>
+      <anchorfile>classFediFeedEntries_1_1HolderFedFeed.html</anchorfile>
+      <anchor>a54370848bd0f211389602850c5e76391</anchor>
+      <arglist>(self)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>DEELETEdorkcomputeTrue</name>
+      <anchorfile>classFediFeedEntries_1_1HolderFedFeed.html</anchorfile>
+      <anchor>af1dfaa6e8fab5ca1f5356bcf6ee4913f</anchor>
+      <arglist>(self)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>newQueue</name>
+      <anchorfile>classFediFeedEntries_1_1HolderFedFeed.html</anchorfile>
+      <anchor>a42e739d55de1e078d230ac962d4afe21</anchor>
+      <arglist>(self, entry)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>newQueueExgest</name>
+      <anchorfile>classFediFeedEntries_1_1HolderFedFeed.html</anchorfile>
+      <anchor>a6d3b4d47b9277481f6874806af2325c5</anchor>
+      <arglist>(self, i)</arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>feeds</name>
+      <anchorfile>classFediFeedEntries_1_1HolderFedFeed.html</anchorfile>
+      <anchor>aa6ec61aeba3599a9864659458660abd4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>AmFeeds</name>
+      <anchorfile>classFediFeedEntries_1_1HolderFedFeed.html</anchorfile>
+      <anchor>ad9890bd1254b3c914160a807fb8b601b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>feedQ</name>
+      <anchorfile>classFediFeedEntries_1_1HolderFedFeed.html</anchorfile>
+      <anchor>abd6695238e576d74dd9d6d725884968d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>counter</name>
+      <anchorfile>classFediFeedEntries_1_1HolderFedFeed.html</anchorfile>
+      <anchor>ae10af0c31d0877d32f8a069be893703f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>UniFeed</name>
+      <anchorfile>classFediFeedEntries_1_1HolderFedFeed.html</anchorfile>
+      <anchor>a8f07bb6bff5c69ec78e8c9ddbe1b8d6d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>numtrue</name>
+      <anchorfile>classFediFeedEntries_1_1HolderFedFeed.html</anchorfile>
+      <anchor>ad2ebb3b3491e3e3aab7b7eabd703a25f</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>config_feed_objsmeth::MainConfigInfo</name>
+    <filename>classconfig__feed__objsmeth_1_1MainConfigInfo.html</filename>
+    <member kind="function">
+      <type>def</type>
+      <name>__init__</name>
+      <anchorfile>classconfig__feed__objsmeth_1_1MainConfigInfo.html</anchorfile>
+      <anchor>a586a4bc56e66fcbbad5dc621e328946c</anchor>
+      <arglist>(self, main_configfile_name=&apos;salt-main.toml&apos;)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>read</name>
+      <anchorfile>classconfig__feed__objsmeth_1_1MainConfigInfo.html</anchorfile>
+      <anchor>a2066e4859839d99ef4203bdb9afd09ee</anchor>
+      <arglist>(self, main_configfile_name)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>state_fname</name>
+      <anchorfile>classconfig__feed__objsmeth_1_1MainConfigInfo.html</anchorfile>
+      <anchor>a6787db569423a2b94d0991eeeb69a2ca</anchor>
+      <arglist>(self)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>def</type>
+      <name>create</name>
+      <anchorfile>classconfig__feed__objsmeth_1_1MainConfigInfo.html</anchorfile>
+      <anchor>a0b6d58e5d717c6d5e6aa34ce3d394a79</anchor>
+      <arglist>(file2create_filename, n_feeds=1)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>def</type>
+      <name>check_feed_nums</name>
+      <anchorfile>classconfig__feed__objsmeth_1_1MainConfigInfo.html</anchorfile>
+      <anchor>a5d037d2b6f87b1b532b792b08d5a9420</anchor>
+      <arglist>(main_config_info)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>def</type>
+      <name>write</name>
+      <anchorfile>classconfig__feed__objsmeth_1_1MainConfigInfo.html</anchorfile>
+      <anchor>a26bb51acf8a21bb3a7073c42b81ca3da</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>file_name</name>
+      <anchorfile>classconfig__feed__objsmeth_1_1MainConfigInfo.html</anchorfile>
+      <anchor>ae1a67acc0471c3de056fb9ca1b59e7a3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>config_data</name>
+      <anchorfile>classconfig__feed__objsmeth_1_1MainConfigInfo.html</anchorfile>
+      <anchor>afda3e263c461f6a9387c37443ba84852</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>state_file</name>
+      <anchorfile>classconfig__feed__objsmeth_1_1MainConfigInfo.html</anchorfile>
+      <anchor>a5491369a615b209c8f5f0bbc8e6e8d3b</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>heavy_lifting::MainConfigInfo</name>
+    <filename>classheavy__lifting_1_1MainConfigInfo.html</filename>
+    <member kind="function">
+      <type>def</type>
+      <name>create</name>
+      <anchorfile>classheavy__lifting_1_1MainConfigInfo.html</anchorfile>
+      <anchor>a332ce870f7b1718d6df2118d7bef2645</anchor>
+      <arglist>(file2create_filename)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>read</name>
+      <anchorfile>classheavy__lifting_1_1MainConfigInfo.html</anchorfile>
+      <anchor>a26e0281d5806d3c7f4b3a5025cc34d6f</anchor>
+      <arglist>(MAINconfigfile_name)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>check_feed_nums</name>
+      <anchorfile>classheavy__lifting_1_1MainConfigInfo.html</anchorfile>
+      <anchor>aed3c1a6e6e69c8850bba01ee81bf3b3f</anchor>
+      <arglist>(Main_config_info)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>heavy_lifting::MainStateConsistency</name>
+    <filename>classheavy__lifting_1_1MainStateConsistency.html</filename>
+    <member kind="function">
+      <type>def</type>
+      <name>feeds</name>
+      <anchorfile>classheavy__lifting_1_1MainStateConsistency.html</anchorfile>
+      <anchor>aebdbb0ea8e19527f5a3b70824ea02edf</anchor>
+      <arglist>(mainconfigfilename, stateconfigfilename)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>open_read_mconfig</name>
+      <anchorfile>classheavy__lifting_1_1MainStateConsistency.html</anchorfile>
+      <anchor>a6e4fd545390df730ce6b27ee62106164</anchor>
+      <arglist>(mainconfigfile_name)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>heavy_lifting::MediaMassage</name>
+    <filename>classheavy__lifting_1_1MediaMassage.html</filename>
+    <member kind="function">
+      <type>def</type>
+      <name>createTmpDir</name>
+      <anchorfile>classheavy__lifting_1_1MediaMassage.html</anchorfile>
+      <anchor>a0d76ff0e1d7fa08223a94e937a9fc91e</anchor>
+      <arglist>(dirname)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>remoteImageGet</name>
+      <anchorfile>classheavy__lifting_1_1MediaMassage.html</anchorfile>
+      <anchor>aab4d59053e4c93689ec4aa83f9765188</anchor>
+      <arglist>(url)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>CheckImageSize</name>
+      <anchorfile>classheavy__lifting_1_1MediaMassage.html</anchorfile>
+      <anchor>aa83fb86847a9fa2066be684d0e38ee69</anchor>
+      <arglist>(filename)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>FediBskyXwalk::PostXwalk</name>
+    <filename>classFediBskyXwalk_1_1PostXwalk.html</filename>
+    <member kind="function">
+      <type>def</type>
+      <name>__init__</name>
+      <anchorfile>classFediBskyXwalk_1_1PostXwalk.html</anchorfile>
+      <anchor>a710fe2c5eda0fbc4e039cc5120c7b44d</anchor>
+      <arglist>(self)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>print</name>
+      <anchorfile>classFediBskyXwalk_1_1PostXwalk.html</anchorfile>
+      <anchor>a5888af8aae8e265ee77da35943a15052</anchor>
+      <arglist>(self)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>mapper_main</name>
+      <anchorfile>classFediBskyXwalk_1_1PostXwalk.html</anchorfile>
+      <anchor>ad7ee0261b97f0bb85d823fd34239fee4</anchor>
+      <arglist>(self, FediPost)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>simple_p_map</name>
+      <anchorfile>classFediBskyXwalk_1_1PostXwalk.html</anchorfile>
+      <anchor>aa498c5016f8ace121661373868eabe41</anchor>
+      <arglist>(self, FediPost)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>extendedF2Pmap</name>
+      <anchorfile>classFediBskyXwalk_1_1PostXwalk.html</anchorfile>
+      <anchor>a95cf9cceedef42423861253d37d325ae</anchor>
+      <arglist>(self, FediPost)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>addDID</name>
+      <anchorfile>classFediBskyXwalk_1_1PostXwalk.html</anchorfile>
+      <anchor>a32dbee3370229a4c2c2e7ce8be9fc6f2</anchor>
+      <arglist>(self, mainCredsDID)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>addTextRaw</name>
+      <anchorfile>classFediBskyXwalk_1_1PostXwalk.html</anchorfile>
+      <anchor>a9f119e2b7bb4aff74878a171f14d9c2c</anchor>
+      <arglist>(self, textString)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>addText</name>
+      <anchorfile>classFediBskyXwalk_1_1PostXwalk.html</anchorfile>
+      <anchor>ae0eff83bd4ba4ea98b97e35ea551a0ce</anchor>
+      <arglist>(self, textString)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>stringsize</name>
+      <anchorfile>classFediBskyXwalk_1_1PostXwalk.html</anchorfile>
+      <anchor>a64636be1615d2ca8e9cf33b59e95a30d</anchor>
+      <arglist>(self)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>addTime</name>
+      <anchorfile>classFediBskyXwalk_1_1PostXwalk.html</anchorfile>
+      <anchor>a85c9eb8d27654524e808cfdbe45ee6e4</anchor>
+      <arglist>(self)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>ignore</name>
+      <anchorfile>classFediBskyXwalk_1_1PostXwalk.html</anchorfile>
+      <anchor>a9f11d47f42b4da7ca718e3e73a6dffc1</anchor>
+      <arglist>(self)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>echo</name>
+      <anchorfile>classFediBskyXwalk_1_1PostXwalk.html</anchorfile>
+      <anchor>a0d4595f7080fc03d87be7670429e49a9</anchor>
+      <arglist>(self)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>bEcho</name>
+      <anchorfile>classFediBskyXwalk_1_1PostXwalk.html</anchorfile>
+      <anchor>ae9237272e5a38da8e8814850d7e8fb95</anchor>
+      <arglist>(self)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>json</name>
+      <anchorfile>classFediBskyXwalk_1_1PostXwalk.html</anchorfile>
+      <anchor>ad2e421f9f9d9a4a8593997101923b059</anchor>
+      <arglist>(self)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>addBlobFlag</name>
+      <anchorfile>classFediBskyXwalk_1_1PostXwalk.html</anchorfile>
+      <anchor>a0f27c91212480aea7a3a46c714557380</anchor>
+      <arglist>(self, ifBlobBool)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>checkBlobFlag</name>
+      <anchorfile>classFediBskyXwalk_1_1PostXwalk.html</anchorfile>
+      <anchor>a51fd687cf6d1890634fc50cda1599073</anchor>
+      <arglist>(self)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>checkSensitive</name>
+      <anchorfile>classFediBskyXwalk_1_1PostXwalk.html</anchorfile>
+      <anchor>add24f4731206789fa18b7a7a13910ece</anchor>
+      <arglist>(self)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>addBlobInfo</name>
+      <anchorfile>classFediBskyXwalk_1_1PostXwalk.html</anchorfile>
+      <anchor>a6a590fcfdd3f5d42766422a7a80df5ab</anchor>
+      <arglist>(self, blobstuff)</arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>bpost</name>
+      <anchorfile>classFediBskyXwalk_1_1PostXwalk.html</anchorfile>
+      <anchor>acf1aa4ca2670efee63e8ba0d295c748f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>blobinfos</name>
+      <anchorfile>classFediBskyXwalk_1_1PostXwalk.html</anchorfile>
+      <anchor>ab127800a2fc2f76aa7eaf36752045fc1</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>config_feed_objsmeth::StateConfigInfo</name>
+    <filename>classconfig__feed__objsmeth_1_1StateConfigInfo.html</filename>
+    <member kind="function">
+      <type>def</type>
+      <name>__init__</name>
+      <anchorfile>classconfig__feed__objsmeth_1_1StateConfigInfo.html</anchorfile>
+      <anchor>a0ae779299c4a57cfd9e8060d6349ddab</anchor>
+      <arglist>(self, file2create_filename=&apos;salt-state.toml&apos;)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>read</name>
+      <anchorfile>classconfig__feed__objsmeth_1_1StateConfigInfo.html</anchorfile>
+      <anchor>af6a0d29f413e810ad5544888ce02dad7</anchor>
+      <arglist>(self, filename)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>check_feed_num</name>
+      <anchorfile>classconfig__feed__objsmeth_1_1StateConfigInfo.html</anchorfile>
+      <anchor>aecf8eaaa178cc29e43520c0e427f476d</anchor>
+      <arglist>(self)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>def</type>
+      <name>create</name>
+      <anchorfile>classconfig__feed__objsmeth_1_1StateConfigInfo.html</anchorfile>
+      <anchor>a79123865045d268293f19fad3a7be503</anchor>
+      <arglist>(file2create_filename=&apos;salt-state.toml&apos;, n_feeds=1)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>def</type>
+      <name>write_info</name>
+      <anchorfile>classconfig__feed__objsmeth_1_1StateConfigInfo.html</anchorfile>
+      <anchor>ad17dc98baba90a95b79f87fb018fb324</anchor>
+      <arglist>(stateoutfile_name, data2write)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>def</type>
+      <name>update_bsky_prev</name>
+      <anchorfile>classconfig__feed__objsmeth_1_1StateConfigInfo.html</anchorfile>
+      <anchor>a2d13e2d8fdd4497b4c20c2d6e4a99cda</anchor>
+      <arglist>(info)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>def</type>
+      <name>update_bsky_now</name>
+      <anchorfile>classconfig__feed__objsmeth_1_1StateConfigInfo.html</anchorfile>
+      <anchor>a10509ca1e82477e64b17ca338e022f7b</anchor>
+      <arglist>(info)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>def</type>
+      <name>update_feed_prev</name>
+      <anchorfile>classconfig__feed__objsmeth_1_1StateConfigInfo.html</anchorfile>
+      <anchor>a207ea688176cf4bef51086e33c33173e</anchor>
+      <arglist>(info)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>def</type>
+      <name>update_feed_now</name>
+      <anchorfile>classconfig__feed__objsmeth_1_1StateConfigInfo.html</anchorfile>
+      <anchor>aa9c11d88538409295bf7ede9b333e588</anchor>
+      <arglist>(info)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>def</type>
+      <name>update_entry_times</name>
+      <anchorfile>classconfig__feed__objsmeth_1_1StateConfigInfo.html</anchorfile>
+      <anchor>ae4188e31ad6db13d0a4bb152937d74ba</anchor>
+      <arglist>(sorted_feeds, state_info)</arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>filename</name>
+      <anchorfile>classconfig__feed__objsmeth_1_1StateConfigInfo.html</anchorfile>
+      <anchor>a673a77b219c459462558a7993e44d2d1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>state</name>
+      <anchorfile>classconfig__feed__objsmeth_1_1StateConfigInfo.html</anchorfile>
+      <anchor>a7506380698aa7d2404ebea2406c0ae47</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>heavy_lifting::StateConfigInfo</name>
+    <filename>classheavy__lifting_1_1StateConfigInfo.html</filename>
+    <member kind="function">
+      <type>def</type>
+      <name>__init__</name>
+      <anchorfile>classheavy__lifting_1_1StateConfigInfo.html</anchorfile>
+      <anchor>a892993b85646074a3b2256386aa3e3d2</anchor>
+      <arglist>(self)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>create</name>
+      <anchorfile>classheavy__lifting_1_1StateConfigInfo.html</anchorfile>
+      <anchor>a09fa49f4c87183579c3589135e5b5e57</anchor>
+      <arglist>(file2create_filename, NFeeds=1)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>read</name>
+      <anchorfile>classheavy__lifting_1_1StateConfigInfo.html</anchorfile>
+      <anchor>a6aaf9f508d8135e8c5fd61444c0ade48</anchor>
+      <arglist>(filename)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>write_info</name>
+      <anchorfile>classheavy__lifting_1_1StateConfigInfo.html</anchorfile>
+      <anchor>a1e4e4c2e9da8410d52c910790f1e5e2a</anchor>
+      <arglist>(stateoutfile_name, data2write)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>update_bsky_prev</name>
+      <anchorfile>classheavy__lifting_1_1StateConfigInfo.html</anchorfile>
+      <anchor>a9ada4a893c518e5b12f84ffe67937778</anchor>
+      <arglist>(info)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>update_bsky_now</name>
+      <anchorfile>classheavy__lifting_1_1StateConfigInfo.html</anchorfile>
+      <anchor>a8b423b53ecf2315b1862a269ba677759</anchor>
+      <arglist>(info)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>check_feed_nums</name>
+      <anchorfile>classheavy__lifting_1_1StateConfigInfo.html</anchorfile>
+      <anchor>a2503d24ec6cfacbb7c29254ce91d7375</anchor>
+      <arglist>(info)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>update_feed_prev</name>
+      <anchorfile>classheavy__lifting_1_1StateConfigInfo.html</anchorfile>
+      <anchor>a437c56ab0c4a0771c367dd1d4e853c23</anchor>
+      <arglist>(info)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>update_feed_now</name>
+      <anchorfile>classheavy__lifting_1_1StateConfigInfo.html</anchorfile>
+      <anchor>a45b2592956d355c3168f4b9977fe4729</anchor>
+      <arglist>(info)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>update_entry_times</name>
+      <anchorfile>classheavy__lifting_1_1StateConfigInfo.html</anchorfile>
+      <anchor>af1ca2b3c52875d4528ac74eafc346863</anchor>
+      <arglist>(sorted_feeds, state_info)</arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>nothing</name>
+      <anchorfile>classheavy__lifting_1_1StateConfigInfo.html</anchorfile>
+      <anchor>a702dd6d6e7db451f1325a54e6d23f6c0</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="namespace">
+    <name>arraytest</name>
+    <filename>namespacearraytest.html</filename>
+    <member kind="variable">
+      <type>dictionary</type>
+      <name>animal</name>
+      <anchorfile>namespacearraytest.html</anchorfile>
+      <anchor>a603ef9f7d938c4100ae31b44e7406965</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>dictionary</type>
+      <name>person</name>
+      <anchorfile>namespacearraytest.html</anchorfile>
+      <anchor>ae08fdae1f881e10aea9ddbf73043f48d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>list</type>
+      <name>barnyard</name>
+      <anchorfile>namespacearraytest.html</anchorfile>
+      <anchor>a0173fb41c0316808e366fcb2d946d772</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>string</type>
+      <name>SubSystem</name>
+      <anchorfile>namespacearraytest.html</anchorfile>
+      <anchor>a481a4e5c5cda9b39f3ae35411b3ca952</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>list</type>
+      <name>build</name>
+      <anchorfile>namespacearraytest.html</anchorfile>
+      <anchor>af210868cc80b668b19ec3ab012c756a1</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="namespace">
+    <name>basictest</name>
+    <filename>namespacebasictest.html</filename>
+    <member kind="variable">
+      <type>string</type>
+      <name>configfile_name</name>
+      <anchorfile>namespacebasictest.html</anchorfile>
+      <anchor>a0c90b1ad776bd3a8fb7497f8f67f1b65</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>string</type>
+      <name>statefile_name</name>
+      <anchorfile>namespacebasictest.html</anchorfile>
+      <anchor>a32caafaeb1a3396a03573b2d3c2863d6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>main_config</name>
+      <anchorfile>namespacebasictest.html</anchorfile>
+      <anchor>aa5d32da3d998bd14b456e119ad1fbd42</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>q</name>
+      <anchorfile>namespacebasictest.html</anchorfile>
+      <anchor>ad6f9b645754fa7d364fd69c5457c4d1f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>state_config</name>
+      <anchorfile>namespacebasictest.html</anchorfile>
+      <anchor>a749feac8c63ebef400f12de22f0639ce</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>f</name>
+      <anchorfile>namespacebasictest.html</anchorfile>
+      <anchor>ad5238f212fd7dc23b919348d98141452</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>now_unix</name>
+      <anchorfile>namespacebasictest.html</anchorfile>
+      <anchor>a95e718fa11b732b7c0c6c120213912d5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>now_iso</name>
+      <anchorfile>namespacebasictest.html</anchorfile>
+      <anchor>a5965ffb5a75b7eb1049971fdc3f1d918</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>lastread_iso</name>
+      <anchorfile>namespacebasictest.html</anchorfile>
+      <anchor>a561da30793bc1421a0126da7923c75c3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>lastread_unix</name>
+      <anchorfile>namespacebasictest.html</anchorfile>
+      <anchor>ac59b953d8b201b6888a5d0179f51871f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>feed1_url</name>
+      <anchorfile>namespacebasictest.html</anchorfile>
+      <anchor>a797f6902d5fcfea2d9f1fc490902d14c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>feed1</name>
+      <anchorfile>namespacebasictest.html</anchorfile>
+      <anchor>acb1c39ea2f34d36c7aa7433edb69d851</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>items_retrieved</name>
+      <anchorfile>namespacebasictest.html</anchorfile>
+      <anchor>ac204032c37bd781eb5d836d2f6dacc3d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>entries_retrieved</name>
+      <anchorfile>namespacebasictest.html</anchorfile>
+      <anchor>a714c24353e18377e2248884881aec8ee</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>sorted_entries</name>
+      <anchorfile>namespacebasictest.html</anchorfile>
+      <anchor>a392330cc42044321f631af9fd4fff06e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>list</type>
+      <name>boolean_list</name>
+      <anchorfile>namespacebasictest.html</anchorfile>
+      <anchor>a65765a0d3e53df55c94ab0ab98efd44d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>list</type>
+      <name>publish_dates</name>
+      <anchorfile>namespacebasictest.html</anchorfile>
+      <anchor>aea15486a1c941d00a5a01d9514bb5a64</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>compare_date_unix</name>
+      <anchorfile>namespacebasictest.html</anchorfile>
+      <anchor>a250243b251ded15b62a8f40c6efcbadb</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>most_recent</name>
+      <anchorfile>namespacebasictest.html</anchorfile>
+      <anchor>af8e198fa3561df38c3d6362e256fa16d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>oldest</name>
+      <anchorfile>namespacebasictest.html</anchorfile>
+      <anchor>a05327e52a29ea81de74c95db471dc214</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>python_time</name>
+      <anchorfile>namespacebasictest.html</anchorfile>
+      <anchor>a5bf1a86d7e2290ff9bcd58420eeaa99d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>s</name>
+      <anchorfile>namespacebasictest.html</anchorfile>
+      <anchor>a8e17f8fdd48fc21b6512d2cdcab55b1d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>dt</name>
+      <anchorfile>namespacebasictest.html</anchorfile>
+      <anchor>aeac1bd19bf5b05e219502121e8c8acfa</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>rtime</name>
+      <anchorfile>namespacebasictest.html</anchorfile>
+      <anchor>a8be3172b53557c17965354d5814e58ba</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="namespace">
+    <name>BlueVortex-v2</name>
+    <filename>namespaceBlueVortex-v2.html</filename>
+    <member kind="variable">
+      <type>string</type>
+      <name>maincf</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a9ba8696a3fb36223f8fc4caa33897441</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>mcfdata</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a28e925378807b54d5d55905fe2050e25</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>tuple</type>
+      <name>statecf</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>af049f558eef473167462d2743faff160</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>scinfo</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>aef26d5fbfd906329e0058c123603ce26</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>numfeedState</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a719266e922cfdc898d7df6db8c301255</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>numfeeds</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a3edac1bece65f2d5cc3ad7a57dfead6d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>alist</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a572f30be755bed8bbf67daccad61294c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>list</type>
+      <name>feedData</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>aa4c630f512477788f17551b78b4e72b1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>list</type>
+      <name>itemsPerFeed</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a93d8db86fc1ee2c5eb7dcee61bc27a6b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>list</type>
+      <name>flrtimes_unix</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a13283b5c8508075040b0f419a9c7cbfe</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>list</type>
+      <name>flrtimes_iso</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a7522644a4f262c46df5d0c9f477bd451</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>list</type>
+      <name>pflrtimes_u</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a17ab853a39b5124f7f5b7458a79c588c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>list</type>
+      <name>pflrtimes_i</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>aae203be8b647c867088bc7de2d94a143</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>now1</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a0833ffb563c3f2a49b7ae6add1386de5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>now2</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>aca5f6aed74b5d12c75afcdca78bbc144</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>u_scinfo</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a134f688a4a8e4d4a3cd111ddf5633bb3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>j</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>ac2af725423d08a2ac79c9ead8e98deeb</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>list</type>
+      <name>reftimes</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a599692fb167db9d4a1127b8e8d32ef99</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>leData</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a28afd1d59cac9693a4aa25b50b806f9f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>y</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>ab24c6ef97a9548365683540e67d052f2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>z</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>af936fbb44b0df4bee0bbdc7179bef534</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>lDe</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a040ecaf1198337818a2b6492b3a91a35</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>e</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a52cbabb46d6e2d4a0cfe96b57dfa8ec7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>tf</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a33438ebffeab32b3edd4fb7b257e2d18</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>toDoE</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a4c22caf7ff1caa5daef8e20c9fa69a4e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>keepgoing</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>ab85da6138c078fc63a9249efd55aca43</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>list</type>
+      <name>midQueue</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a8c2f5e84c0d741f73948d7628ece29a0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>t</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a00faaf54b88923f4cd56e482fc031996</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>a</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a27f0781de5b28a8913646e9c4c0e75a7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>b</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>ab2837b32cf83fbab1da155fd217decf8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>mca</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>ac375cbed3ff63565552b15d30392ef89</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>altText</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>ae67834793e0730049a3be9531a7305a8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>int</type>
+      <name>skip</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a3a6a5e3df29d5b4667e6b865181592e3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>int</type>
+      <name>noblobs</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a25a06ea6bf2a1691f650dd5e1d7fee29</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>count</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a0e61e45804b26eb1db3974cf92ffdc19</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>Bcred</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>ac4245583193bbadec5c559834130f4ff</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>acct_name</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a24ff4ab57dbb28311238ef7951d3ddf8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>appPass</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>acaaa6a6f59bdc93a075f08d58970f71a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>creds</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a9ec0909430369c92205dc5e8691ec383</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>myPastPosts</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>aa8d70786c7592a070ef5981c05918699</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>bpost</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a20b268733844ba330237f1cb3b4d4742</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>sessT</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>abeb8eb0ce02b33d6ed59ecf843ddbf2a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>myDID</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a391c9ca823faff3aa34590846bc75fc8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>list</type>
+      <name>bskyQueue</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a6aceb66e602bce1404753c31a7345588</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>mQe</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>aa582fd35196385535b934efab9672dba</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>string</type>
+      <name>noBlobs</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>aebdcffddbc60b7630a7b88a7160d5bce</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>IsSen</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a46bc26e245488f2c99ead7c43481b5a3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>bPuck</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a8f68d24ec6030cadf7413c2fe5d5b6f4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>string</type>
+      <name>blobpost</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a23e3f3a8d926d8e95d391102d7cf2142</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>uu_scinfo</name>
+      <anchorfile>namespaceBlueVortex-v2.html</anchorfile>
+      <anchor>a153dcca7b2b8e32589b602796ff0f973</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="namespace">
+    <name>classfoo</name>
+    <filename>namespaceclassfoo.html</filename>
+    <class kind="class">classfoo::A</class>
+    <class kind="class">classfoo::B</class>
+    <member kind="variable">
+      <type></type>
+      <name>a</name>
+      <anchorfile>namespaceclassfoo.html</anchorfile>
+      <anchor>a2767d0353fb48019e4fae4ae6e82a55e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>b</name>
+      <anchorfile>namespaceclassfoo.html</anchorfile>
+      <anchor>a178e84c4726b0ff13873d2889f76c4db</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="namespace">
+    <name>config_feed_objsmeth</name>
+    <filename>namespaceconfig__feed__objsmeth.html</filename>
+    <class kind="class">config_feed_objsmeth::MainConfigInfo</class>
+    <class kind="class">config_feed_objsmeth::StateConfigInfo</class>
+    <member kind="function">
+      <type>def</type>
+      <name>chk_main_state</name>
+      <anchorfile>namespaceconfig__feed__objsmeth.html</anchorfile>
+      <anchor>a306e8f5a189673754e2974bf7da71b5a</anchor>
+      <arglist>(mainconfigfilename, stateconfigfilename)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>open_read_mconfig</name>
+      <anchorfile>namespaceconfig__feed__objsmeth.html</anchorfile>
+      <anchor>a5de96150f6597697ad6432e0571d3041</anchor>
+      <arglist>(mainconfigfile_name)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>find_feeds</name>
+      <anchorfile>namespaceconfig__feed__objsmeth.html</anchorfile>
+      <anchor>a8273690efe82a9cf976508ff8142e5b7</anchor>
+      <arglist>(main_config_info)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>fetch_feed</name>
+      <anchorfile>namespaceconfig__feed__objsmeth.html</anchorfile>
+      <anchor>ad508f9b181fb95a33b3a113a15007cd3</anchor>
+      <arglist>(URL)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>enumerate_feed_items</name>
+      <anchorfile>namespaceconfig__feed__objsmeth.html</anchorfile>
+      <anchor>adf13e73ef0daadf2766a9b27790f7dae</anchor>
+      <arglist>(feed)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>sort_entries</name>
+      <anchorfile>namespaceconfig__feed__objsmeth.html</anchorfile>
+      <anchor>a3ad97bae11b0b5bd4480518b84f61124</anchor>
+      <arglist>(a_feed)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>feedHandleFetchSort</name>
+      <anchorfile>namespaceconfig__feed__objsmeth.html</anchorfile>
+      <anchor>a9d0dcfa3c46272cf061255c28ededc22</anchor>
+      <arglist>(numfeeds, mainconfigdata)</arglist>
+    </member>
+  </compound>
+  <compound kind="namespace">
+    <name>configread</name>
+    <filename>namespaceconfigread.html</filename>
+    <member kind="variable">
+      <type>string</type>
+      <name>mainconfigfile_name</name>
+      <anchorfile>namespaceconfigread.html</anchorfile>
+      <anchor>a98d43fd505b16c464c18d36b5d27f15b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>toml_in</name>
+      <anchorfile>namespaceconfigread.html</anchorfile>
+      <anchor>a254cc680cbf6fc6e58140b0ac7b18449</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>string</type>
+      <name>stateconfigfile_name</name>
+      <anchorfile>namespaceconfigread.html</anchorfile>
+      <anchor>add4c1811d16189a85a8d36c4be6de07b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>statetoml_in</name>
+      <anchorfile>namespaceconfigread.html</anchorfile>
+      <anchor>aaaa1e9538aac06ab9640d6da65144e81</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>now_iso</name>
+      <anchorfile>namespaceconfigread.html</anchorfile>
+      <anchor>a9a8b9d78f3c78643266cb85f7fcbc366</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>now_unix</name>
+      <anchorfile>namespaceconfigread.html</anchorfile>
+      <anchor>a492569b886d2661ac923500e900e588d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>string</type>
+      <name>stateoutfile_name</name>
+      <anchorfile>namespaceconfigread.html</anchorfile>
+      <anchor>a78c506dd4a4922f2bdf22d3e2823f6c9</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="namespace">
+    <name>FediBskyXwalk</name>
+    <filename>namespaceFediBskyXwalk.html</filename>
+    <class kind="class">FediBskyXwalk::PostXwalk</class>
+  </compound>
+  <compound kind="namespace">
+    <name>FediEntryObjects</name>
+    <filename>namespaceFediEntryObjects.html</filename>
+  </compound>
+  <compound kind="namespace">
+    <name>FediFeedEntries</name>
+    <filename>namespaceFediFeedEntries.html</filename>
+    <class kind="class">FediFeedEntries::BROKENMiddleQueue</class>
+    <class kind="class">FediFeedEntries::HolderFedFeed</class>
+    <class kind="class">FediFeedEntries::FedFeedEntry</class>
+    <member kind="function">
+      <type>def</type>
+      <name>entryAddImages</name>
+      <anchorfile>namespaceFediFeedEntries.html</anchorfile>
+      <anchor>a996b27c28b26e7d970d73b2675e42bdc</anchor>
+      <arglist>(self, rawpost)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>entryFixTags</name>
+      <anchorfile>namespaceFediFeedEntries.html</anchorfile>
+      <anchor>aff6df659875add36603c0e64e43e52c7</anchor>
+      <arglist>(tagstring)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>cw_check</name>
+      <anchorfile>namespaceFediFeedEntries.html</anchorfile>
+      <anchor>aefe3c449913e3e627559fe50b180a0fc</anchor>
+      <arglist>(origTxt)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>entryCreate</name>
+      <anchorfile>namespaceFediFeedEntries.html</anchorfile>
+      <anchor>a8081bba1a829dff10afd350839e74a0a</anchor>
+      <arglist>(rawpost, seqcount)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>entryAddBasic</name>
+      <anchorfile>namespaceFediFeedEntries.html</anchorfile>
+      <anchor>af5b798ae2bda23422dfdc6f2e28a7431</anchor>
+      <arglist>(rawpost)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>entryAddRatings</name>
+      <anchorfile>namespaceFediFeedEntries.html</anchorfile>
+      <anchor>a371ec02840830b57a5351ec4c2e172f3</anchor>
+      <arglist>(rawpost)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>addSummaryDetail</name>
+      <anchorfile>namespaceFediFeedEntries.html</anchorfile>
+      <anchor>a07e984cfd25912e05f25107ef5ee4dd1</anchor>
+      <arglist>(rawpost)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>addContentWarning</name>
+      <anchorfile>namespaceFediFeedEntries.html</anchorfile>
+      <anchor>a252a5d21ab2137501a339ef176b6674d</anchor>
+      <arglist>(origTxt)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>entryCheckSensitive</name>
+      <anchorfile>namespaceFediFeedEntries.html</anchorfile>
+      <anchor>aefdcff2b4a35ec7b429c92621306d8c3</anchor>
+      <arglist>(cleanerPost)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>textTouchUp</name>
+      <anchorfile>namespaceFediFeedEntries.html</anchorfile>
+      <anchor>a7d59f66c620884ad4e42adde8e162106</anchor>
+      <arglist>(main_text, cw, fixed_tags)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>MediaContentAttach</name>
+      <anchorfile>namespaceFediFeedEntries.html</anchorfile>
+      <anchor>a26247f558fe8f9e929be58bcb22d012f</anchor>
+      <arglist>(medElem)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>oolllddMediaContentAttach</name>
+      <anchorfile>namespaceFediFeedEntries.html</anchorfile>
+      <anchor>a30c45cd1a259519c732f989594cd092f</anchor>
+      <arglist>(e)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>MediaContentHandle</name>
+      <anchorfile>namespaceFediFeedEntries.html</anchorfile>
+      <anchor>aa741add60c60de5efb7bed0d462bfcc9</anchor>
+      <arglist>(MediaContentSet)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>GetAltText</name>
+      <anchorfile>namespaceFediFeedEntries.html</anchorfile>
+      <anchor>a23cb843f650f531723a5c89759c2432d</anchor>
+      <arglist>(e)</arglist>
+    </member>
+  </compound>
+  <compound kind="namespace">
+    <name>FediQueueObjects</name>
+    <filename>namespaceFediQueueObjects.html</filename>
+  </compound>
+  <compound kind="namespace">
+    <name>FediStructsMisc</name>
+    <filename>namespaceFediStructsMisc.html</filename>
+  </compound>
+  <compound kind="namespace">
+    <name>FediXbSky</name>
+    <filename>namespaceFediXbSky.html</filename>
+  </compound>
+  <compound kind="namespace">
+    <name>feedstructs</name>
+    <filename>namespacefeedstructs.html</filename>
+    <member kind="variable">
+      <type>dictionary</type>
+      <name>simple_bsky_info</name>
+      <anchorfile>namespacefeedstructs.html</anchorfile>
+      <anchor>ad1316e85d6a416e8735bb5d33ad8b41e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>dictionary</type>
+      <name>main_config_genInfo</name>
+      <anchorfile>namespacefeedstructs.html</anchorfile>
+      <anchor>a7a03084c089f218e7f90b57afc0251a7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>dictionary</type>
+      <name>main_config_feedInfo</name>
+      <anchorfile>namespacefeedstructs.html</anchorfile>
+      <anchor>abdbcd924b313dfe6202253c016f3d816</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>dictionary</type>
+      <name>state_config_genInfo</name>
+      <anchorfile>namespacefeedstructs.html</anchorfile>
+      <anchor>a96967763cdf897477e526170a3803294</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>dictionary</type>
+      <name>feed_metadata</name>
+      <anchorfile>namespacefeedstructs.html</anchorfile>
+      <anchor>a7dedf4755800103233a9c04c8b3f8fbb</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>dictionary</type>
+      <name>bsky_post_metadata</name>
+      <anchorfile>namespacefeedstructs.html</anchorfile>
+      <anchor>a1b78e6e2ce488c2f318fb6c9a1d902c0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>dictionary</type>
+      <name>post_constructor</name>
+      <anchorfile>namespacefeedstructs.html</anchorfile>
+      <anchor>a97fa77fe00adbdaaf61f9fd7a5bced6f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>dictionary</type>
+      <name>post_altText_plus</name>
+      <anchorfile>namespacefeedstructs.html</anchorfile>
+      <anchor>acd09242be3f905ad53d2be1418876b6c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>dictionary</type>
+      <name>post_media_item</name>
+      <anchorfile>namespacefeedstructs.html</anchorfile>
+      <anchor>a600cca17ab58e101c8bfaf8fee860c19</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="namespace">
+    <name>heavy_lifting</name>
+    <filename>namespaceheavy__lifting.html</filename>
+    <class kind="class">heavy_lifting::MainStateConsistency</class>
+    <class kind="class">heavy_lifting::MainConfigInfo</class>
+    <class kind="class">heavy_lifting::FetchFeeds</class>
+    <class kind="class">heavy_lifting::StateConfigInfo</class>
+    <class kind="class">heavy_lifting::FeedEntriesMash</class>
+    <class kind="class">heavy_lifting::FeedEntriesFix</class>
+    <class kind="class">heavy_lifting::MediaMassage</class>
+  </compound>
+  <compound kind="namespace">
+    <name>main</name>
+    <filename>namespacemain.html</filename>
+  </compound>
+  <compound kind="namespace">
+    <name>main-v1</name>
+    <filename>namespacemain-v1.html</filename>
+    <member kind="variable">
+      <type></type>
+      <name>rval</name>
+      <anchorfile>namespacemain-v1.html</anchorfile>
+      <anchor>adf732744cdebd9bbde01710d4ad751ac</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>t</name>
+      <anchorfile>namespacemain-v1.html</anchorfile>
+      <anchor>a697e4503d165117017718442bab3df7c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>x</name>
+      <anchorfile>namespacemain-v1.html</anchorfile>
+      <anchor>a6dc230c1d9086b2b50d343c71654b7c1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>z</name>
+      <anchorfile>namespacemain-v1.html</anchorfile>
+      <anchor>a8d7951699fe8690413fe784921207cde</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>hmf</name>
+      <anchorfile>namespacemain-v1.html</anchorfile>
+      <anchor>ab85621e32b12db45d70c68cd60803df3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>list</type>
+      <name>feedURLs</name>
+      <anchorfile>namespacemain-v1.html</anchorfile>
+      <anchor>aec3a40f6f9e43b658332180108c377a9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>list</type>
+      <name>fd_content</name>
+      <anchorfile>namespacemain-v1.html</anchorfile>
+      <anchor>a710f4bc72304cd17353ed5a694d68923</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>j</name>
+      <anchorfile>namespacemain-v1.html</anchorfile>
+      <anchor>a778cfdbeb3305d62f25cb07550ceccc9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>a</name>
+      <anchorfile>namespacemain-v1.html</anchorfile>
+      <anchor>a14f94813de7ebe0b6374f01663ee8640</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>string</type>
+      <name>configfileName</name>
+      <anchorfile>namespacemain-v1.html</anchorfile>
+      <anchor>a24210e8111638f268b51f5eb581af53c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>configDets</name>
+      <anchorfile>namespacemain-v1.html</anchorfile>
+      <anchor>ab59ce90ef99702f057cd0bbeb7b8134a</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="namespace">
+    <name>main-v2</name>
+    <filename>namespacemain-v2.html</filename>
+    <member kind="variable">
+      <type></type>
+      <name>rval</name>
+      <anchorfile>namespacemain-v2.html</anchorfile>
+      <anchor>a08d6f6f6e5c88bee25a5ab57d49a0c0a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>t</name>
+      <anchorfile>namespacemain-v2.html</anchorfile>
+      <anchor>a6df43438105e4e11f708d2961d21752f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>x</name>
+      <anchorfile>namespacemain-v2.html</anchorfile>
+      <anchor>a45c71f0cce4691a22d857270421875f8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>z</name>
+      <anchorfile>namespacemain-v2.html</anchorfile>
+      <anchor>a5906e9308b54c9a1b2462575be381fb6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>foo</name>
+      <anchorfile>namespacemain-v2.html</anchorfile>
+      <anchor>a91656bf802db85b98c00ee2dcf0cb5e6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>numfeeds</name>
+      <anchorfile>namespacemain-v2.html</anchorfile>
+      <anchor>ab958ad1308f97254b7b1b8d7e4b7a3a7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>feedURLs</name>
+      <anchorfile>namespacemain-v2.html</anchorfile>
+      <anchor>a2bc2d7a3d2ce32c58f37862b2c08928c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>reftime_unix</name>
+      <anchorfile>namespacemain-v2.html</anchorfile>
+      <anchor>aaea342461f71d38026b18c39a055cc61</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>sortedFeedDict</name>
+      <anchorfile>namespacemain-v2.html</anchorfile>
+      <anchor>ac3d676f665978815fb48d5b204992860</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>enumFeedItems</name>
+      <anchorfile>namespacemain-v2.html</anchorfile>
+      <anchor>a476bab3a0763c16e3ef7bebd0a36fda5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>sortedEntries</name>
+      <anchorfile>namespacemain-v2.html</anchorfile>
+      <anchor>a3aaf3be9d662c2cab758cad43b199f12</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>uet</name>
+      <anchorfile>namespacemain-v2.html</anchorfile>
+      <anchor>a0f7949d8dc0f6c4fa87489a332d4dc06</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="namespace">
+    <name>main-v3</name>
+    <filename>namespacemain-v3.html</filename>
+    <member kind="variable">
+      <type>string</type>
+      <name>maincf</name>
+      <anchorfile>namespacemain-v3.html</anchorfile>
+      <anchor>a7802b8d00c8d2250eb7e9d48df697e6d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>mcinfo</name>
+      <anchorfile>namespacemain-v3.html</anchorfile>
+      <anchor>ace36c38f9f8ed3de120581350ef26f7e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>tuple</type>
+      <name>statecf</name>
+      <anchorfile>namespacemain-v3.html</anchorfile>
+      <anchor>a1831f28157aee44f5a32e9e31c93b675</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>scinfo</name>
+      <anchorfile>namespacemain-v3.html</anchorfile>
+      <anchor>a00658d183564bb98660cbba0eb03825f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>numfeedState</name>
+      <anchorfile>namespacemain-v3.html</anchorfile>
+      <anchor>a2317764c221fa366d11cf5ce71e08f99</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>checkmainfeeds</name>
+      <anchorfile>namespacemain-v3.html</anchorfile>
+      <anchor>a7a7a4843c53163bd40842a3c5427dc9a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>nufeeds</name>
+      <anchorfile>namespacemain-v3.html</anchorfile>
+      <anchor>a4e37b3dba99934522c99cac3dc37f6ee</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>alist</name>
+      <anchorfile>namespacemain-v3.html</anchorfile>
+      <anchor>aad162b0985a963940a1c4d5a90df870b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>list</type>
+      <name>feedData</name>
+      <anchorfile>namespacemain-v3.html</anchorfile>
+      <anchor>aee42a299bb3547f86b3853d1e4b111f2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>list</type>
+      <name>itemsPerFeed</name>
+      <anchorfile>namespacemain-v3.html</anchorfile>
+      <anchor>afe94ec7848d1167f4a2b04f29a37b98b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>u_scinfo</name>
+      <anchorfile>namespacemain-v3.html</anchorfile>
+      <anchor>ab7a66727b863d845f058b669a1cf3740</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>j</name>
+      <anchorfile>namespacemain-v3.html</anchorfile>
+      <anchor>a27e02062c553b14fe5b11323f2079db7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>int</type>
+      <name>reftime</name>
+      <anchorfile>namespacemain-v3.html</anchorfile>
+      <anchor>a60a6d6a429840ce379a59aed3674ae0f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>NeuFeedData</name>
+      <anchorfile>namespacemain-v3.html</anchorfile>
+      <anchor>afb1e5218031cd076aab7da2d0e89b095</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>count</name>
+      <anchorfile>namespacemain-v3.html</anchorfile>
+      <anchor>acbfdab2c265165b4765a316120a1e79b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>keepgoing</name>
+      <anchorfile>namespacemain-v3.html</anchorfile>
+      <anchor>a5a93d69a0798595ddde85b74fc8fd3ba</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>feedIn</name>
+      <anchorfile>namespacemain-v3.html</anchorfile>
+      <anchor>aaae3d741149e0b737082f5eec9ac9fca</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="namespace">
+    <name>oldTester</name>
+    <filename>namespaceoldTester.html</filename>
+    <member kind="variable">
+      <type>string</type>
+      <name>maincf</name>
+      <anchorfile>namespaceoldTester.html</anchorfile>
+      <anchor>a4bb2a055fbe19a469e2b4f0329306c8a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>mcfdata</name>
+      <anchorfile>namespaceoldTester.html</anchorfile>
+      <anchor>a8d27d8db42b98e4feec3a58da0bc6858</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>tuple</type>
+      <name>statecf</name>
+      <anchorfile>namespaceoldTester.html</anchorfile>
+      <anchor>a79d2e6dcf92fc3a016f3cda5222b32f8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>scinfo</name>
+      <anchorfile>namespaceoldTester.html</anchorfile>
+      <anchor>a28cdaaf7ba878506085302cb68728e70</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>numfeedState</name>
+      <anchorfile>namespaceoldTester.html</anchorfile>
+      <anchor>acaadec7b772bf2e919f3adebe0925b52</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>numfeeds</name>
+      <anchorfile>namespaceoldTester.html</anchorfile>
+      <anchor>ab2b7eb4f3c9b71da37c917930501297e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>Bcred</name>
+      <anchorfile>namespaceoldTester.html</anchorfile>
+      <anchor>aa2c46622d7a242c8ab3888b20e2d6d29</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>acct_name</name>
+      <anchorfile>namespaceoldTester.html</anchorfile>
+      <anchor>aafc131c84e742ee23eeef30b7bca5f2d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>appPass</name>
+      <anchorfile>namespaceoldTester.html</anchorfile>
+      <anchor>ac1cfd47d95f0cf0760b3c4e88fcbcf3e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>creds</name>
+      <anchorfile>namespaceoldTester.html</anchorfile>
+      <anchor>aa7ab5062bb3c5bfd9f360f644582e1c2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>myPastPosts</name>
+      <anchorfile>namespaceoldTester.html</anchorfile>
+      <anchor>a5217ed40b812c3e3e26256a1df24e193</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>j</name>
+      <anchorfile>namespaceoldTester.html</anchorfile>
+      <anchor>abe0ca98d1872fdbd9a9b29e2aa66d896</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>BskyTest</name>
+      <anchorfile>namespaceoldTester.html</anchorfile>
+      <anchor>ad84cbacf0e9fa4db00f5b1f2e87f3b26</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>sessT</name>
+      <anchorfile>namespaceoldTester.html</anchorfile>
+      <anchor>aef878d37154f13c99919d8f79a75f8d3</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="namespace">
+    <name>oops</name>
+    <filename>namespaceoops.html</filename>
+    <member kind="variable">
+      <type>string</type>
+      <name>maincf</name>
+      <anchorfile>namespaceoops.html</anchorfile>
+      <anchor>ae79274bec18b1602ce4e5484db354f25</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>mcinfo</name>
+      <anchorfile>namespaceoops.html</anchorfile>
+      <anchor>a23eef02f128c1abfe3aa9f1ec9b80c62</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>tuple</type>
+      <name>statecf</name>
+      <anchorfile>namespaceoops.html</anchorfile>
+      <anchor>a43560dd7e6d54dfdaea216fcee70a272</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>fred</name>
+      <anchorfile>namespaceoops.html</anchorfile>
+      <anchor>a6354d1dc35a976b31586d7e280035635</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>scinfo</name>
+      <anchorfile>namespaceoops.html</anchorfile>
+      <anchor>aa5ef1d080c35020878370ac3afb95984</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>numfeedState</name>
+      <anchorfile>namespaceoops.html</anchorfile>
+      <anchor>abe3b41a0019f07c6a18d918031512c28</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>checkmainfeeds</name>
+      <anchorfile>namespaceoops.html</anchorfile>
+      <anchor>aab8babe326954f3abd08d369490ea6ea</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>nufeeds</name>
+      <anchorfile>namespaceoops.html</anchorfile>
+      <anchor>a25cb489d29da4a03b1ea07bd7e2fb818</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>alist</name>
+      <anchorfile>namespaceoops.html</anchorfile>
+      <anchor>ac0468d9cebcfcc2e94780553efc4263a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>list</type>
+      <name>feedData</name>
+      <anchorfile>namespaceoops.html</anchorfile>
+      <anchor>af1eba611185f69ff9f692d6132f9603a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>list</type>
+      <name>itemsPerFeed</name>
+      <anchorfile>namespaceoops.html</anchorfile>
+      <anchor>ad88503eb0c4869959d2f809af48672d3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>u_scinfo</name>
+      <anchorfile>namespaceoops.html</anchorfile>
+      <anchor>a648847cbfa1543751bf22ae49ae99756</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>j</name>
+      <anchorfile>namespaceoops.html</anchorfile>
+      <anchor>ac2cc4a8cdbb87f156b47c3b092547da6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>int</type>
+      <name>reftime</name>
+      <anchorfile>namespaceoops.html</anchorfile>
+      <anchor>aaa418ba24f459271cc803588b22ce4e9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>NeuFeedData</name>
+      <anchorfile>namespaceoops.html</anchorfile>
+      <anchor>a75035c15da3e8ee89dbb3b7e8a5afbae</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>count</name>
+      <anchorfile>namespaceoops.html</anchorfile>
+      <anchor>a4e7a5e50bec0eb0550a27725cafe8cfa</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>keepgoing</name>
+      <anchorfile>namespaceoops.html</anchorfile>
+      <anchor>ab1780847af714e9926afdbaf1606a0b9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>feedIn</name>
+      <anchorfile>namespaceoops.html</anchorfile>
+      <anchor>a5472a1058b694393b02345dcedb7240a</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="namespace">
+    <name>temphold</name>
+    <filename>namespacetemphold.html</filename>
+    <member kind="function">
+      <type>def</type>
+      <name>entryAddRatings</name>
+      <anchorfile>namespacetemphold.html</anchorfile>
+      <anchor>a1e562ec0ac901b689dd5a8fa7f854834</anchor>
+      <arglist>(rawpost)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>addSummaryDetail</name>
+      <anchorfile>namespacetemphold.html</anchorfile>
+      <anchor>a94681658dd198d393097e3c597363b3f</anchor>
+      <arglist>(rawpost)</arglist>
+    </member>
+  </compound>
+  <compound kind="namespace">
+    <name>timerTest</name>
+    <filename>namespacetimerTest.html</filename>
+    <member kind="variable">
+      <type>string</type>
+      <name>maincf</name>
+      <anchorfile>namespacetimerTest.html</anchorfile>
+      <anchor>a4f62776f37c4ddf895796a3e708f6fc6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>mcfdata</name>
+      <anchorfile>namespacetimerTest.html</anchorfile>
+      <anchor>acc2c22868c09c3dce6c367e3866f49ee</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>tuple</type>
+      <name>statecf</name>
+      <anchorfile>namespacetimerTest.html</anchorfile>
+      <anchor>a3ce08df9ee246b5055134a15274ce724</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>scinfo</name>
+      <anchorfile>namespacetimerTest.html</anchorfile>
+      <anchor>a6adff4dc044960bc8a595a0e198c3112</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>numfeedState</name>
+      <anchorfile>namespacetimerTest.html</anchorfile>
+      <anchor>addf8fed8be9ecdc6b107983cc1eac036</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>numfeeds</name>
+      <anchorfile>namespacetimerTest.html</anchorfile>
+      <anchor>a36a55e7e60db88b18d74fb58e7f75252</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type></type>
+      <name>alist</name>
+      <anchorfile>namespacetimerTest.html</anchorfile>
+      <anchor>a8c3fc7d4cb680ddb8013ab7b5420a0bd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>list</type>
+      <name>feedData</name>
+      <anchorfile>namespacetimerTest.html</anchorfile>
+      <anchor>a88f54f80220a487bded642cfa40596a8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>list</type>
+      <name>itemsPerFeed</name>
+      <anchorfile>namespacetimerTest.html</anchorfile>
+      <anchor>a8cd7f2b1b31d00def22cc9210c43131e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>list</type>
+      <name>flrtimes_unix</name>
+      <anchorfile>namespacetimerTest.html</anchorfile>
+      <anchor>aae87631381fdb8e226adceb26836b913</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>list</type>
+      <name>flrtimes_iso</name>
+      <anchorfile>namespacetimerTest.html</anchorfile>
+      <anchor>aa7025aff137008ae3a1c5b349099e5b8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>list</type>
+      <name>pflrtimes_u</name>
+      <anchorfile>namespacetimerTest.html</anchorfile>
+      <anchor>aae8bb6a58cae44e8439b8a2701b3d2e8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>list</type>
+      <name>pflrtimes_i</name>
+      <anchorfile>namespacetimerTest.html</anchorfile>
+      <anchor>a8928ef42944e5930bdf5c5b22cafc137</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="page">
+    <name>md_README</name>
+    <title>Saltstraumen</title>
+    <filename>md_README.html</filename>
+  </compound>
+</tagfile>

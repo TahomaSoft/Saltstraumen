@@ -1,0 +1,46 @@
+\hypertarget{oops_8py}{}\doxysection{oops.\+py File Reference}
+\label{oops_8py}\index{oops.py@{oops.py}}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceoops}{oops}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{namespaceoops_ae79274bec18b1602ce4e5484db354f25}{oops.\+maincf}} = \textquotesingle{}salt-\/main.\+toml\textquotesingle{}
+\item 
+\mbox{\hyperlink{namespaceoops_a23eef02f128c1abfe3aa9f1ec9b80c62}{oops.\+mcinfo}} = Main\+Config\+Info.\+read(maincf)
+\item 
+tuple \mbox{\hyperlink{namespaceoops_a43560dd7e6d54dfdaea216fcee70a272}{oops.\+statecf}} = (mcinfo\mbox{[}\textquotesingle{}GENERAL\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}Statefile\textquotesingle{}\mbox{]})
+\item 
+\mbox{\hyperlink{namespaceoops_a6354d1dc35a976b31586d7e280035635}{oops.\+fred}} = State\+Config\+Info.\+create(statecf, NFeeds=2)
+\item 
+\mbox{\hyperlink{namespaceoops_aa5ef1d080c35020878370ac3afb95984}{oops.\+scinfo}} = State\+Config\+Info.\+read(statecf)
+\item 
+\mbox{\hyperlink{namespaceoops_abe3b41a0019f07c6a18d918031512c28}{oops.\+numfeed\+State}} = State\+Config\+Info.\+check\+\_\+feed\+\_\+nums (scinfo)
+\item 
+\mbox{\hyperlink{namespaceoops_aab8babe326954f3abd08d369490ea6ea}{oops.\+checkmainfeeds}} = Main\+Config\+Info.\+check\+\_\+feed\+\_\+nums(mcinfo)
+\item 
+\mbox{\hyperlink{namespaceoops_a25cb489d29da4a03b1ea07bd7e2fb818}{oops.\+nufeeds}} = Main\+State\+Consistency.\+feeds (maincf, statecf)
+\item 
+\mbox{\hyperlink{namespaceoops_ac0468d9cebcfcc2e94780553efc4263a}{oops.\+alist}} = Fetch\+Feeds.\+find\+\_\+feeds(mcinfo)
+\item 
+list \mbox{\hyperlink{namespaceoops_af1eba611185f69ff9f692d6132f9603a}{oops.\+feed\+Data}} = \mbox{[}0\mbox{]} $\ast$ nufeeds
+\item 
+list \mbox{\hyperlink{namespaceoops_ad88503eb0c4869959d2f809af48672d3}{oops.\+items\+Per\+Feed}} = \mbox{[}0\mbox{]} $\ast$ nufeeds
+\item 
+\mbox{\hyperlink{namespaceoops_a648847cbfa1543751bf22ae49ae99756}{oops.\+u\+\_\+scinfo}} = State\+Config\+Info.\+update\+\_\+entry\+\_\+times(feed\+Data,scinfo)
+\item 
+\mbox{\hyperlink{namespaceoops_ac2cc4a8cdbb87f156b47c3b092547da6}{oops.\+j}} = State\+Config\+Info.\+write\+\_\+info(statecf, u\+\_\+scinfo)
+\item 
+int \mbox{\hyperlink{namespaceoops_aaa418ba24f459271cc803588b22ce4e9}{oops.\+reftime}} = 0
+\item 
+\mbox{\hyperlink{namespaceoops_a75035c15da3e8ee89dbb3b7e8a5afbae}{oops.\+Neu\+Feed\+Data}} = Feed\+Entries\+Mash.\+Which\+Entries2\+Pub(reftime,feed\+Data)
+\item 
+\mbox{\hyperlink{namespaceoops_a4e7a5e50bec0eb0550a27725cafe8cfa}{oops.\+count}} = Feed\+Entries\+Mash.\+Compute\+Num\+Outbound (Neu\+Feed\+Data)
+\item 
+\mbox{\hyperlink{namespaceoops_ab1780847af714e9926afdbaf1606a0b9}{oops.\+keepgoing}} = bool(True)
+\item 
+\mbox{\hyperlink{namespaceoops_a5472a1058b694393b02345dcedb7240a}{oops.\+feed\+In}} = Neu\+Feed\+Data
+\end{DoxyCompactItemize}
