@@ -1,12 +1,13 @@
 #!/usr/bin/python3
+import copy
 import json
 from config_feed_objsmeth import MainConfigInfo, StateConfigInfo,chk_main_state
 from config_feed_objsmeth import fetch_feed #, enumerate_feed_items
 from FediQueueObjects import FirstFediQueue
 from FediXbSky import BasicBlueskyQueue
-from SaxeBlueskyPython.saxe_bluesky import BskyCredentials
-from SaxeBlueskyPython.saxeblueobjects import SimplePostQueue
-from SaxeBlueskyPython.ticktocktime import unix_time_now, bsky_time_now
+# from saxe_bluesky import 
+from saxeblueobjects import SimplePostQueue, BskyCredentials
+from ticktocktime import unix_time_now, bsky_time_now
 
 # this is the main program
 
@@ -73,8 +74,8 @@ state_config.update_entry_times(fqueue_1.sorted_feeds,j)
 
 
 
-reftimes = state_config.get_ref_times()
-reftimes = (0,0) # for testing
+#reftimes = state_config.get_ref_times()
+reftimes = (2222,222) # for testing
 
 
 state_config.write_state()
@@ -84,17 +85,21 @@ fqueue_1.mark_entries4pub(reftimes)
 
 # fqueue_1.json_marked_queue()
 
-# for i in fqueue_1.marked_feed_entries2pub:
-#    print (json.dumps(i))
+'''
+for i in fqueue_1.marked_feed_entries2pub:
+    print ()
+    print ('*******************')
+    print (json.dumps(i))
+    print ()
+'''
+
+# BasicBlueskyQueue(fqueue_1.marked_feed_entries2pub)
 
 Bsky_1 = BasicBlueskyQueue(fqueue_1.marked_feed_entries2pub)
-# Bsky_1.json()
-
-
-
 
 Bsky_1.first_clean()
 # Bsky_1.json_firstpassq()
+
 
 Bcred = BskyCredentials()
 
@@ -112,13 +117,30 @@ Bcred.get_did ()
 Bcred.set_appPW (appPass)
 Bcred.start_session()
 sessT = Bcred.get_sessT()
-
+# print (sessT)
 myDID = Bcred.myDID()
 
 spq = SimplePostQueue(Bcred.echo())
-for i in Bsky_1.first_pass_queue:
-    spq.item_add(i)
+
+jj= Bsky_1.queue_sze()
+
+tt = len (Bsky_1.first_pass_queue)
 
 
 
-spq.json_queue()
+for i in range (0,jj):  # skip first element because init with [{}]
+    item =''
+    item = Bsky_1.queue_itm_exgest(i)
+    #print()
+    #print ('*****~~~~~******')
+    #print (item)
+    #print ()
+    #print ('^^^^^^^^^^^')
+    mod_item = copy.deepcopy(spq.item_craft(item))
+    #print (mod_item)
+    #print ('~~~~~~~~~~~~')
+    #temp_q.append (mod_item)
+
+#spq.json_queue()
+
+spq.post_all_in_queue()

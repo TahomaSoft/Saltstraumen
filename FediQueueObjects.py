@@ -2,7 +2,7 @@ import copy
 import json
 from operator import attrgetter
 from FediEntryObjects import check_entry2pub
-from SaxeBlueskyPython.ticktocktime import tuple_time2unix
+from ticktocktime import tuple_time2unix
 
 ''' Feed Queues'''
 

@@ -6,9 +6,10 @@ import shutil
 import urllib.request
 import tempfile
 import json
+import pandoc
 from  html2text import HTML2Text
 
-from SaxeBlueskyPython.ticktocktime import bsky_time_now, tuple_time2unix
+from ticktocktime import bsky_time_now, tuple_time2unix
 
 class BasicBlueskyQueue:
     ''' basic queue holder'''
@@ -27,13 +28,29 @@ class BasicBlueskyQueue:
         print (json.dumps(self.first_pass_queue))
         return
 
+    def queue_itm_exgest(self,index):
+        ''' return element of the first pass queue'''
+        i = index
+        j = self.first_pass_queue[i]
+        return j
+        
+
+    def queue_sze (self):
+        j = len(self.first_pass_queue)
+        return j
 
     def first_clean(self):
         ''' tbd'''
+
         for i in self.raw_fedi_feed:
             enry = FirstEntryXwalk(i)
             j = enry.mapper()
-
+            # print ()
+            # print ("*********************")
+            # print (j)
+            # print()
+            #print (type(j))
+            
             self.first_pass_queue.append(j)
         return
 
@@ -156,6 +173,10 @@ def MediaContentHandle(MediaContentSet):
 def entryAddBasic(rawpost):
     ''' Starting process of transforming fedi post to bsky post
     does the super basic, should always be there fields.
+    NB: current use of html2text needs improvement.
+    First cut: use option to remove links
+    Second cut: use pandoc
+    Third idea: combine html2text and pandoc
     '''
 
     h = HTML2Text()

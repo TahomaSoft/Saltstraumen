@@ -11,8 +11,8 @@ from operator import attrgetter
 import json
 import toml
 import feedparser
-from SaxeBlueskyPython.ticktocktime import unix_time_now, iso_time_now
-from SaxeBlueskyPython.ticktocktime import tuple_time2unix, tuple_time2iso
+from ticktocktime import unix_time_now, iso_time_now
+from ticktocktime import tuple_time2unix, tuple_time2iso
 
 
 class MainConfigInfo:
