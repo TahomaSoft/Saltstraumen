@@ -143,4 +143,4 @@ for i in range (0,jj):  # skip first element because init with [{}]
 
 #spq.json_queue()
 
-spq.post_all_in_queue()
+# spq.post_all_in_queue()

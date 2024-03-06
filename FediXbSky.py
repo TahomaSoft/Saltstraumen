@@ -103,6 +103,20 @@ class FirstEntryXwalk:
         return
 
 
+
+class MessyText:
+    ''' Class to clean up the messy mastodon/fediverse main text string
+    '''
+    def __init__(self, rawstring):
+        self.rawstring = ''
+        self.cw = None
+        self.body_txt = None
+        self.split_text = None
+    
+    def cw_split(self):
+        self.split_text=self.rawstring.split('<hr />')
+        return self.split_text
+
 # End Classess
 
 # Start Functions
@@ -270,8 +284,12 @@ def entry_cw_check (rawpost): # Change this to rawpost
     check for html string '<hr />'
     indicates text left of it is a content warning
     '''
-
-
+    j = MessyText(rawpost['summary'])
+    cw_text = j.cw_split()
+    print (cw_text)
+    return
+    
+'''
     e = rawpost
     h = HTML2Text()
     g = {
@@ -304,6 +322,8 @@ def entry_cw_check (rawpost): # Change this to rawpost
     cw_text_dict = g
 
     return cw_text_dict
+'''
+
 
 def entryCheckSensitive(cleanerPost):
 
@@ -345,3 +365,4 @@ def CheckImageSize(filename):
     file_stats = os.stat(filename)
     filesize = file_stats.st_size
     return filesize
+
